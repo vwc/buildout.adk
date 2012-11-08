@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="adk.sitecontent">
+<body>
+    <div metal:fill-slot="main">
+        <h1 class="documentFirstHeading"
+            i18n:translate=""
+            tal:condition="view/label"
+            tal:content="view/label">Form label</h1>
+        <p i18n:translate="">
+            Thank you for your request. The details of your course reservation have been forwarded to us.</p>
+        <p i18n:translate="">We will reply to it shortly.</p>
+        <p><span i18n:translate="">
+            Thank you and best regards</span><br />
+            Augsburger Deutschkurse</p>
+    </div>
+</body>
+</html>

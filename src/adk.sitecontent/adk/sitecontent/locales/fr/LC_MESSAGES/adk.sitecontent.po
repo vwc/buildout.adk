@@ -1,0 +1,219 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: adk.sitecontent\n"
+"POT-Creation-Date: Do May 30 15:19:00 2010\n"
+"POT-Revision-Date: \n"
+"Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
+"Language-Team: VW Language Team <cb@vorwaerts-werbung.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: adk.sitecontent\n"
+"PO-Revision-Date: \n"
+"X-Poedit-Language: Franch\n"
+"X-Poedit-Country: FRANCE\n"
+
+msgid "ADKFolder"
+msgstr "ADK Ordner"
+
+msgid "ADKPage"
+msgstr "ADK Seite"
+
+msgid "Preview Image"
+msgstr "Preview Bild"
+
+msgid "read_more"
+msgstr "Lire la suite..."
+
+msgid "Upload an image that will be displayed as a preview image in listings and search results."
+msgstr "Laden Sie hier ein Vorschaubild hoch. Dieses wird in Suchtreffer Listen und Ordneransichten als Vorschau angezeigt."
+
+msgid "Salutation"
+msgstr "Titre"
+
+msgid "Mrs."
+msgstr "Madame"
+
+msgid "Mr."
+msgstr "Monsieur"
+
+msgid "Firstname"
+msgstr "Prénom"
+
+msgid "Lastname"
+msgstr "Nom"
+
+msgid "Street"
+msgstr "Rue"
+
+msgid "City"
+msgstr "Domicile"
+
+msgid "Postal code"
+msgstr "Code postal"
+
+msgid "Country"
+msgstr "Pays"
+
+msgid "Occupation"
+msgstr "Proféssion"
+
+msgid "Phone"
+msgstr "Téléphone"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "E-Mail"
+msgstr "Votre Courriel"
+
+msgid "Date of Birth"
+msgstr "Date de naissance"
+
+msgid "Nationality"
+msgstr "Nationalité"
+
+msgid "Herby, I register for following course"
+msgstr "Par la présénte je m´inscris pour le cours suivant"
+
+msgid "Intensive Course"
+msgstr "Cours intensif"
+
+msgid "Intensive Plus Course (24 lessions)"
+msgstr "Cours intensif plus (25)"
+
+msgid "Intensive Plus Course (30 lessions)"
+msgstr "Cours intensif plus (30)"
+
+msgid "Private Tuition"
+msgstr "Cours individuel"
+
+msgid "DSH Preperation Course"
+msgstr "DSH Cours de preparation"
+
+msgid "TestDAF Preparation Course"
+msgstr "TestDAF Cours de preparation"
+
+msgid "Sommer Course Classic"
+msgstr "Cours intensif de vacances"
+
+msgid "Summer Course Multisport"
+msgstr "Cours intensif de vacances, Multisport"
+
+msgid "Course starting date"
+msgstr "Commencement du cours"
+
+msgid "Course duration in weeks"
+msgstr "Durée du cours"
+
+msgid "German language skills"
+msgstr "Connaissances d'allemand selon"
+
+msgid "none"
+msgstr "Aucunes"
+
+msgid "elementary"
+msgstr "Faibles"
+
+msgid "intermediate"
+msgstr "Moyennes"
+
+msgid "good"
+msgstr "Bonnes"
+
+msgid "advanced"
+msgstr "Tre bonnes"
+
+msgid " I learned about Augsburger Deutschkurse from"
+msgstr "J´ai appris de votes Augsburger Deutschkurse de"
+
+msgid "advertisment"
+msgstr "Publication"
+
+msgid "former student"
+msgstr "Estudiants anterieurs"
+
+msgid "recommendation"
+msgstr "Recommandation"
+
+msgid "website"
+msgstr "Internet"
+
+msgid "other sources"
+msgstr "Autres"
+
+msgid "Preferred type of accomodation"
+msgstr "Logement"
+
+msgid "host family, double room, half board"
+msgstr "Famille d'accuell, chambre double, demi-pension"
+
+msgid "host family, double room, full board"
+msgstr "Famille d'acuell, chambre double, pension complete"
+
+msgid "host family, single room, half board"
+msgstr "famille d'accuell, chambre individuelle, demi-pension"
+
+msgid "host family, single room, full board"
+msgstr "Famille d'accuell, chambre individuelle, pension complete"
+
+msgid "hotel or guesthouse"
+msgstr "Hotel ou pension"
+
+msgid "room in a shared flat"
+msgstr "Quohabitation"
+
+msgid "no accomodation needed"
+msgstr "Pas besoin de logement"
+
+msgid "Day of arrival"
+msgstr "Date d´arrivee"
+
+msgid "Day of departure"
+msgstr "Date de depart"
+
+msgid "I will arrive by"
+msgstr "J'arrive avec"
+
+msgid "plane"
+msgstr "Avion"
+
+msgid "train"
+msgstr "Train"
+
+msgid "car"
+msgstr "Auto"
+
+msgid "Airport transfer"
+msgstr "Transfert aéroport-famille"
+
+msgid "Do you smoke?"
+msgstr "Vous fumez?"
+
+msgid "Message"
+msgstr "Votre message"
+
+msgid "yes"
+msgstr "Qui"
+
+msgid "no"
+msgstr "No"
+
+msgid "Register"
+msgstr ""
+
+msgid "Your reservation has been forwarded successfully."
+msgstr ""
+
+msgid "Thank you for your request. The details of your course reservation have been forwarded to us."
+msgstr ""
+
+msgid "We will reply to it shortly."
+msgstr ""
+
+msgid "Thank you and best regards"
+msgstr ""
+

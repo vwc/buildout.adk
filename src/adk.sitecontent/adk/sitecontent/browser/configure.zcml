@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="adk.sitecontent">
+
+  <include package="plone.app.contentmenu" />
+
+  <!-- -*- extra stuff goes here -*- -->
+    
+    <browser:page
+        for="*"
+        name="registration-form"
+        class=".registrationform.RegistrationForm"
+        permission="zope.Public" />
+
+
+  <browser:page
+      for="..interfaces.IADKPage"
+      name="view"
+      class=".adkpage.ADKPageView"
+      template="adkpage.pt"
+      allowed_interface=".adkpage.IADKPageView"
+      permission="zope.Public"
+      />
+
+  <browser:viewlet
+      for="..interfaces.IADKPage"
+      name="plone.tableofconents"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+      class="plone.app.layout.viewlets.common.TableOfContentsViewlet"
+      permission="zope2.View"
+      />
+
+
+  <browser:page
+      for="..interfaces.IADKFolder"
+      name="view"
+      class=".adkfolder.AdkFolderView"
+      allowed_interface=".adkfolder.IAdkFolderView"
+      permission="zope.Public"
+      />
+
+</configure>

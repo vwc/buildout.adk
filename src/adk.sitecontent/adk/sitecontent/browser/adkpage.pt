@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="adk.sitecontent">
+<body>
+    <div metal:fill-slot="main">
+        <tal:main-macro metal:define-macro="main"
+                        tal:define="text here/getText;">
+            
+            <h1 class="documentFirstHeading">
+                <metal:field use-macro="python:here.widget('title', mode='view')">
+                    Title
+                </metal:field>
+            </h1>
+            
+            
+            <div tal:replace="structure provider:plone.abovecontentbody" />
+            <tal:comment tal:content="nothing">
+            </tal:comment>
+            
+            
+            <p tal:condition="python: not text and is_editable"
+               i18n:translate="no_body_text"
+               class="discreet">
+                This item does not have any body text, click the edit tab to change it.
+            </p>
+            
+            <metal:field use-macro="python:here.widget('text', mode='view')">
+            Body text
+            </metal:field>
+            
+            <div class="parentLink">
+                    <tal:block tal:repeat="parentinfo view/parent_info">
+                        <a href="" tal:attributes="href parentinfo/url;
+                                                   title parentinfo/title">
+                            Zur&uuml;ck zur &Uuml;bersicht</a>
+                    </tal:block>
+            </div>
+            
+        </tal:main-macro>
+    </div>
+</body>
+</html>

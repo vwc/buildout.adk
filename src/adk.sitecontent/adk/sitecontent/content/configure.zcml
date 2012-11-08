@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="adk.sitecontent">
+
+  <!-- configure your content components here -->
+  
+  <!-- -*- extra stuff goes here -*- -->
+  <class class=".adkpage.ADKPage">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IADKPage"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.IADKPage"
+        />
+  </class>
+  <class class=".adkfolder.ADKFolder">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IADKFolder"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.IADKFolder"
+        />
+  </class>
+
+</configure>

@@ -1,0 +1,219 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: adk.sitecontent\n"
+"POT-Creation-Date: Do May 30 15:19:00 2010\n"
+"POT-Revision-Date: \n"
+"Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
+"Language-Team: VW Language Team <cb@vorwaerts-werbung.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Code: it\n"
+"Language-Name: Italian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: adk.sitecontent\n"
+"PO-Revision-Date: \n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+
+msgid "ADKFolder"
+msgstr "ADK Ordner"
+
+msgid "ADKPage"
+msgstr "ADK Seite"
+
+msgid "Preview Image"
+msgstr "Preview Bild"
+
+msgid "read_more"
+msgstr "Leggi il resto..."
+
+msgid "Upload an image that will be displayed as a preview image in listings and search results."
+msgstr "Laden Sie hier ein Vorschaubild hoch. Dieses wird in Suchtreffer Listen und Ordneransichten als Vorschau angezeigt."
+
+msgid "Salutation"
+msgstr "Titolo"
+
+msgid "Mrs."
+msgstr "Signora"
+
+msgid "Mr."
+msgstr "Signore"
+
+msgid "Firstname"
+msgstr "Cognome"
+
+msgid "Lastname"
+msgstr "Nome"
+
+msgid "Street"
+msgstr "Indirizzo"
+
+msgid "City"
+msgstr "Città"
+
+msgid "Postal code"
+msgstr "CAP"
+
+msgid "Country"
+msgstr "Paese"
+
+msgid "Occupation"
+msgstr "Professione"
+
+msgid "Phone"
+msgstr "Tel."
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "E-Mail"
+msgstr "E-Mail"
+
+msgid "Date of Birth"
+msgstr "Data di nascita"
+
+msgid "Nationality"
+msgstr "Nazionalita"
+
+msgid "Herby, I register for following course"
+msgstr "Con la presente mi iscrivo per il corso"
+
+msgid "Intensive Course"
+msgstr "Corso intensivo"
+
+msgid "Intensive Plus Course (24 lessions)"
+msgstr "Corso intensivo piú (25)"
+
+msgid "Intensive Plus Course (30 lessions)"
+msgstr "Corso intensivo piú (30"
+
+msgid "Private Tuition"
+msgstr "Lezioni individuali"
+
+msgid "DSH Preperation Course"
+msgstr "Corso preparazione al DSH "
+
+msgid "TestDAF Preparation Course"
+msgstr "Corso preparazione TestDAF"
+
+msgid "Sommer Course Classic"
+msgstr "Corso intensivo estivo"
+
+msgid "Summer Course Multisport"
+msgstr "Corso intensivo estivo, Multisport"
+
+msgid "Course starting date"
+msgstr "Data di Inizio"
+
+msgid "Course duration in weeks"
+msgstr "Durata del corso"
+
+msgid "German language skills"
+msgstr "Conoscenza della lingua tedesca secondo la propria valutazione"
+
+msgid "none"
+msgstr "nessuna"
+
+msgid "elementary"
+msgstr "poca"
+
+msgid "intermediate"
+msgstr "media"
+
+msgid "good"
+msgstr "buona"
+
+msgid "advanced"
+msgstr "eccellente"
+
+msgid " I learned about Augsburger Deutschkurse from"
+msgstr "Sono venuto a conoscenza degli Augsburger Deutschkurse tramite:"
+
+msgid "advertisment"
+msgstr "Annuncio pubblicitario"
+
+msgid "former student"
+msgstr "Primi studenti"
+
+msgid "recommendation"
+msgstr "Raccomandazione"
+
+msgid "website"
+msgstr "Internet"
+
+msgid "other sources"
+msgstr "Altri"
+
+msgid "Preferred type of accomodation"
+msgstr "Per la durata della mia partecipazione al corso desidero il seguente alloggio"
+
+msgid "host family, double room, half board"
+msgstr "Sistemazione presso una famiglia, camera doppla, mezza pensione"
+
+msgid "host family, double room, full board"
+msgstr "Sistemazione presso una famiglia, camera doppla, pensione completa"
+
+msgid "host family, single room, half board"
+msgstr "Sistemazione presso una famiglia, camera singola, mezza pensione"
+
+msgid "host family, single room, full board"
+msgstr "Sistemazione presso una famiglia, camera singola, pensione completa"
+
+msgid "hotel or guesthouse"
+msgstr "Albergo / Pensione"
+
+msgid "room in a shared flat"
+msgstr "Stanza in appartamento in commune"
+
+msgid "no accomodation needed"
+msgstr "Non e necessario l'alloggio"
+
+msgid "Day of arrival"
+msgstr "Partenza il"
+
+msgid "Day of departure"
+msgstr "Ritorno il"
+
+msgid "I will arrive by"
+msgstr "Arrivo col"
+
+msgid "plane"
+msgstr "Aero"
+
+msgid "train"
+msgstr "Treno"
+
+msgid "car"
+msgstr "Macchina"
+
+msgid "Airport transfer"
+msgstr "Desidero il servizio di bus-navetta dall´aeroporto?"
+
+msgid "Do you smoke?"
+msgstr "È und fumatore?"
+
+msgid "Message"
+msgstr "Messaggio"
+
+msgid "yes"
+msgstr "Ja"
+
+msgid "no"
+msgstr "Nein"
+
+msgid "Register"
+msgstr ""
+
+msgid "Your reservation has been forwarded successfully."
+msgstr ""
+
+msgid "Thank you for your request. The details of your course reservation have been forwarded to us."
+msgstr ""
+
+msgid "We will reply to it shortly."
+msgstr ""
+
+msgid "Thank you and best regards"
+msgstr ""
+

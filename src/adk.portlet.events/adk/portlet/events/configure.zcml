@@ -1,0 +1,35 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="adk.portlet.events">
+
+    <five:registerPackage package="." initialize=".initialize" />
+
+    <genericsetup:registerProfile
+       name="default"
+       title="ADK Event Portlet"
+       directory="profiles/default"
+       description="A custom event portlet for the ADK website."
+       provides="Products.GenericSetup.interfaces.EXTENSION"
+       />
+
+     <!-- Register the portlet -->
+
+     <!-- If the portlet has no configurable parameters, you can remove
+          the EditForm declaration in adkeventportlet.py and delete
+          the 'editview' attribute from this statement.
+       -->
+
+     <plone:portlet
+         name="adk.portlet.events.ADKEventPortlet"
+         interface=".adkeventportlet.IADKEventPortlet"
+         assignment=".adkeventportlet.Assignment"
+         view_permission="zope2.View"
+         edit_permission="cmf.ManagePortal"
+         renderer=".adkeventportlet.Renderer"
+         addview=".adkeventportlet.AddForm"
+         />
+
+</configure>

@@ -1,0 +1,204 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: adk.sitecontent\n"
+"POT-Creation-Date: Do May 30 15:19:00 2010\n"
+"POT-Revision-Date: \n"
+"Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
+"Language-Team: VW Language Team <cb@vorwaerts-werbung.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Code: en\n"
+"Language-Name: Spanish\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: adk.sitecontent\n"
+"PO-Revision-Date: \n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+
+msgid "Encabezamiento"
+msgstr "Anrede"
+
+msgid "Mrs."
+msgstr "Senora"
+
+msgid "Mr."
+msgstr "Hombre"
+
+msgid "Firstname"
+msgstr "Nombre"
+
+msgid "Lastname"
+msgstr "Apellido"
+
+msgid "Street"
+msgstr "Calle"
+
+msgid "City"
+msgstr "Lugar de residencia"
+
+msgid "Postal code"
+msgstr "Codigo postal"
+
+msgid "Country"
+msgstr "Campo"
+
+msgid "Occupation"
+msgstr "Profesion"
+
+msgid "Phone"
+msgstr "Telefono"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "E-Mail"
+msgstr "Correo Electronico"
+
+msgid "Date of Birth"
+msgstr "Fecha de nacimiento"
+
+msgid "Nationality"
+msgstr "Nacionalidad"
+
+msgid "Herby, I register for following course"
+msgstr "Con la presente me inscribo en el siguiente curso."
+
+msgid "Intensive Course"
+msgstr "Curso intensivo"
+
+msgid "Intensive Plus Course (24 lessions)"
+msgstr "Curso plus intensivo (25)"
+
+msgid "Intensive Plus Course (30 lessions)"
+msgstr "Curso plus intensivo (30)"
+
+msgid "Private Tuition"
+msgstr "Clases individuales"
+
+msgid "DSH Preperation Course"
+msgstr "Curso preparación para el examen DSH"
+
+msgid "TestDAF Preparation Course"
+msgstr "Curso preparación para examen TestDAF"
+
+msgid "Sommer Course Classic"
+msgstr "Curso intensivo de verano"
+
+msgid "Summer Course Multisport"
+msgstr "Curso intensivo de verano, Multisport"
+
+msgid "Course starting date"
+msgstr "Initio del curso"
+
+msgid "Course duration in weeks"
+msgstr "Duración del curso"
+
+msgid "German language skills"
+msgstr "Conocimientos de aleman según su propia valoracion"
+
+msgid "none"
+msgstr "ninguno"
+
+msgid "elementary"
+msgstr "escasos"
+
+msgid "intermediate"
+msgstr "medio"
+
+msgid "good"
+msgstr "bueno"
+
+msgid "advanced"
+msgstr "muy bueno"
+
+msgid " I learned about Augsburger Deutschkurse from"
+msgstr "Augsburger Deutschkurse los conozco a traves de"
+
+msgid "advertisment"
+msgstr "Anuncio"
+
+msgid "former student"
+msgstr "Estudiantes anteriores"
+
+msgid "recommendation"
+msgstr "Recomendatión"
+
+msgid "website"
+msgstr "Internet"
+
+msgid "other sources"
+msgstr "otros"
+
+msgid "Preferred type of accomodation"
+msgstr "Durante me participation en el curso necesito un alojamiento en un/una"
+
+msgid "host family, double room, half board"
+msgstr "Invitado-familia doble, se aloja media tabla"
+
+msgid "host family, double room, full board"
+msgstr "Invitado-familia los cuartos dobles, la table llena"
+
+msgid "host family, single room, half board"
+msgstr "Invitado-familia, solo, se aloja media table"
+
+msgid "host family, single room, full board"
+msgstr "Invitado-familia, solo, la table llena"
+
+msgid "hotel or guesthouse"
+msgstr "Hotel o pension"
+
+msgid "room in a shared flat"
+msgstr "Habitación en piso para compatir"
+
+msgid "no accomodation needed"
+msgstr "No necesito acomodacion"
+
+msgid "Day of arrival"
+msgstr "Dia de llegado"
+
+msgid "Day of departure"
+msgstr "Dia de salida"
+
+msgid "I will arrive by"
+msgstr "Llegado con"
+
+msgid "plane"
+msgstr "Avion"
+
+msgid "train"
+msgstr "Tren"
+
+msgid "car"
+msgstr "Automovil"
+
+msgid "Airport transfer"
+msgstr "Deseo la aeropuerto-transferencia?"
+
+msgid "Do you smoke?"
+msgstr "Fuma usted?"
+
+msgid "Message"
+msgstr "Su Mensaje"
+
+msgid "yes"
+msgstr "Si"
+
+msgid "no"
+msgstr "No"
+
+msgid "Register"
+msgstr ""
+
+msgid "Your reservation has been forwarded successfully."
+msgstr ""
+
+msgid "Thank you for your request. The details of your course reservation have been forwarded to us."
+msgstr ""
+
+msgid "We will reply to it shortly."
+msgstr ""
+
+msgid "Thank you and best regards"
+msgstr ""
+

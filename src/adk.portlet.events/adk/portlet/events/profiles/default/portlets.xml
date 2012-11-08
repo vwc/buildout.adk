@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<portlets>
+
+ <!-- Portlet type registrations -->
+
+ <portlet
+   addview="adk.portlet.events.ADKEventPortlet"
+   title="ADK Event Portlet"
+   description="A custom event portlet for the ADK website."
+   />
+
+</portlets>
