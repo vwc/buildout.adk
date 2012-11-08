@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
@@ -18,16 +17,134 @@
 	<title>Theme</title>
     <base href="#" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/grid12.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+    <!--<link rel="stylesheet" href="css/grid12.css" type="text/css" media="screen" />-->
+	<link rel="stylesheet" href="css/styles-old.css" type="text/css" media="screen" />
 
 	<!--[if lte IE 8]><style type="text/css" media="all">@import url(http://adk-german-courses.com/static/css/ie.css);</style><![endif]-->
 
 </head>
 <body>
 
+    <header id="editbar-wrapper">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container" id="editbar">CMS UI - editbar</div>
+        </div>
+      </div>
+    </header>
+
+    <header id="topbar">
+        <div class="container">
+        <div id="language-flags-wrapper" class="pull-right">
+            <a href="http://augsburger-deutschkurse.de/" id="flag-de" class="language-flag-link">DE</a>
+            <a href="http://adk-german-courses.com/" id="flag-en" class="language-flag-link">EN</a>
+            <a href="http://apprendre-allemand.fr/" id="flag-fr" class="language-flag-link">FR</a>
+            <a href="http://studiare-tedesco.it/" id="flag-it" class="language-flag-link">IT</a>
+            <a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link">ES</a>
+        </div>
+        <div id="global-quicklinks" class="pull-right">
+        <ul>
+            <li><a href="/en-en/downloads-en">Downloads</a></li>
+            <li><a href="/en-en/links-1-en">Links</a></li>
+            <li><a href="/en-en/fotos-1-en">Gallery</a></li>
+            <li><a href="/en-en/agb-1-en">Terms &amp; Conditions</a></li>
+        </ul>
+        </div>
+        <div id="logo-wrapper">
+            <a href="/" id="logo">Logo</a>
+         </div>
+     </div>
+    </header>
+
+    <section id="site-wrapper" class="container">
+        <div class="row-fluid">
+        
+        <div id="left-sidebar-wrapper" class="span3">
+            <div id="left-sidebar">
+                <!-- Sidebar -->
+            </div>
+        </div>
+        
+        <div id="main-wrapper" class="span6">
+            <div id="region-content">
+                <div id="content">
+                    <!-- content -->
+                </div>
+            </div>
+        </div> <!-- End cell -->
+
+        <div id="right-sidebar-wrapper" class="span3">
+            <div id="right-sidebar">
+                <div class="actionBox" id="actionbox-phone">
+                    <div class="actionBoxBody">
+                        <h3>+ 49 (0) 821 - 31 49 05</h3>
+                    </div>
+                </div>
+                <div class="actionBox rounded">
+                    <div class="actionBoxBody">
+                        <form id="search" name="search" action="/search"> 
+                            <input id="search-site"
+                                name="SearchableText"
+                                title="Search this site&hellip;" accesskey="4"
+                                class="inputLabel roundedleft" size="15"
+                                />
+                            <input class="searchButton roundedright"
+                                type="submit"
+                                value="Search"
+                                id="search-site-button"
+                                />
+                        </form>
+                    </div>
+                    <div class="visualClear"><!-- --></div>
+                </div>
+                <div class="actionBox" id="actionbox-toc">
+                    <div class="actionBoxHeader">
+                        <h2>Table of Contents:</h2>
+                    </div>
+                    <div class="actionBoxBody" id="actionbox-toc-content">
+                        TOC goes here
+                    </div>
+                </div>
+                <div class="actionBox rounded" id="actionbox-news">
+                    <div class="actionBoxHeader">
+                        <h2>News</h2>
+                    </div>
+                    <div class="actionBoxBody">
+                        <p>News and events by Augsburger Deutschkurse:</p>
+                        <p><a href="/news" class="more-link">News</a></p>
+                        <p><a href="/events" class="more-link">Events</a></p>
+                    </div>
+                </div>
+                <div class="actionBox rounded">
+                    <div class="actionBoxHeader">
+                        <h2><a href="/en-en/anmeldung-en">Registration</a></h2>
+                    </div>
+                    <div class="actionBoxBody">
+                        <p>Sign up now for a German course at Augsburger Deutschkurse! Applications may be submitted here!</p>
+                        <p><a href="/en-en/anmeldung-en" class="more-link">Sign up now&hellip;</a></p>
+                    </div>
+                </div>
+                <div class="actionBox rounded" id="actionbox-contact">
+                    <div class="actionBoxHeader">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="actionBoxBody">
+                        Augsburger Deutschkurse<br />
+                        Schaezlerstr. 8<br />
+                        86150 Augsburg<br />
+                        + 49 (0) 821 - 31 49 05<br />
+                        + 49 (0) 821 - 31 49 10<br />
+                        info@augsburger-deutschkurse.de
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End row -->
+    </section>
+
+
 <div id="outer-wrapper"><div id="middle-wrapper"><div id="inner-wrapper">
-<div id="top-wrapper">
+<!--<div id="top-wrapper">
 <div id="header-wrapper">
 <div id="header">
     <div id="language-flags-wrapper">
@@ -50,7 +167,7 @@
     </div>
 </div>
 </div>
-</div>
+</div>-->
 
 <div id="edit-bar-wrapper">
     <div id="edit-bar"></div>
@@ -59,95 +176,13 @@
 <div id="content-outmost-wrapper">
 <div id="content-outer-wrapper">
 <div id="content-inner-wrapper">
-<div id="content-wrapper">
-	<div class="row">
-	    
-	    <div id="left-sidebar-wrapper" class="cell position-0 width-1:4">
-			<div id="left-sidebar">
-                <!-- Sidebar -->
-			</div>
-		</div>
-	    
-		<div id="main-wrapper" class="cell position-1:4 width-1:2">
-			<div id="region-content">
-			    <div id="content">
-                    <!-- content -->
-                </div>
-			</div>
-		</div> <!-- End cell -->
-
-		<div id="right-sidebar-wrapper" class="cell position-3:4 width-1:4">
-			<div id="right-sidebar">
-			    <div class="actionBox" id="actionbox-phone">
-			        <div class="actionBoxBody">
-			            <h3>+ 49 (0) 821 - 31 49 05</h3>
-			        </div>
-			    </div>
-			    <div class="actionBox rounded">
-			        <div class="actionBoxBody">
-			            <form id="search" name="search" action="/search"> 
-                    		<input id="search-site"
-                    			name="SearchableText"
-                    			title="Search this site&hellip;" accesskey="4"
-                    			class="inputLabel roundedleft" size="15"
-                    			/>
-                        	<input class="searchButton roundedright"
-                                type="submit"
-                                value="Search"
-                                id="search-site-button"
-                                />
-                    	</form>
-                    </div>
-                    <div class="visualClear"><!-- --></div>
-                </div>
-                <div class="actionBox" id="actionbox-toc">
-                    <div class="actionBoxHeader">
-                        <h2>Table of Contents:</h2>
-                    </div>
-                    <div class="actionBoxBody" id="actionbox-toc-content">
-                        TOC goes here
-                    </div>
-                </div>
-			    <div class="actionBox rounded" id="actionbox-news">
-			        <div class="actionBoxHeader">
-			            <h2>News</h2>
-			        </div>
-			        <div class="actionBoxBody">
-			            <p>News and events by Augsburger Deutschkurse:</p>
-			            <p><a href="/news" class="more-link">News</a></p>
-			            <p><a href="/events" class="more-link">Events</a></p>
-			        </div>
-			    </div>
-			    <div class="actionBox rounded">
-			        <div class="actionBoxHeader">
-			            <h2><a href="/en-en/anmeldung-en">Registration</a></h2>
-			        </div>
-			        <div class="actionBoxBody">
-			            <p>Sign up now for a German course at Augsburger Deutschkurse! Applications may be submitted here!</p>
-			            <p><a href="/en-en/anmeldung-en" class="more-link">Sign up now&hellip;</a></p>
-			        </div>
-			    </div>
-			    <div class="actionBox rounded" id="actionbox-contact">
-			        <div class="actionBoxHeader">
-			            <h2>Contact</h2>
-			        </div>
-			        <div class="actionBoxBody">
-			            Augsburger Deutschkurse<br />
-                        Schaezlerstr. 8<br />
-                        86150 Augsburg<br />
-                        + 49 (0) 821 - 31 49 05<br />
-                        + 49 (0) 821 - 31 49 10<br />
-                        info@augsburger-deutschkurse.de
-			        </div>
-			    </div>
-			</div>
-		</div>
-	</div> <!-- End row -->
-	<div class="row" id="copyright-wrapper">
-	    <div class="cell width-3 position-6" id="copyright-block">
+<div id="content-wrapper" class="container">
+	
+	<div class="row-fluid" id="copyright-wrapper">
+	    <div class="span6 offset2" id="copyright-block">
 	            <span>Copyright &copy;</span> augsburger deutschkurse 2010
 	    </div>
-	    <div class="cell width-2 position-10" id="sm-block">
+	    <div class="span3" id="sm-block">
 	        <ul>
 	            <li><a href="http://www.xing.com/profile/Sabine_Steinacher;key=085fb7abbfb07145.0"><img src="images/sm-bookmark.png" alt="Social Bookmark Xing" /></a></li>
 	            <li><a href="http://www.facebook.com/adksteinacher?v=wall&ref=search"><img src="images/facebook.png" alt="Social Bookmark Facebook" /></a></li>
@@ -168,9 +203,9 @@
 
 <div id="footer-wrapper">
 	<!--<div id="footer-gradient"></div> -->
-	<div id="footer">
+	<div id="footer" class="container">
         <div id="sitemap" class="row">
-            <div class="cell position-0 width-12">
+            <div class="span12">
                 <dl>
                     <dt><a href="/en-en/sprachschule-en">Language School</a></dt>
                 </dl>

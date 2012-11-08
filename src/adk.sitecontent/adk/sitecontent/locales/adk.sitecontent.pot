@@ -1,0 +1,248 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-11-08 14:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: adk.sitecontent\n"
+
+#: ./../content/adkpage.py:41
+msgid ""
+msgstr ""
+
+#: ./../profiles/default/types/ADKFolder.xml
+msgid "A dedicated folder content type with automatic listings"
+msgstr ""
+
+#: ./../profiles/default/types/ADKPage.xml
+msgid "A lingua plone aware documents providing preview images."
+msgstr ""
+
+#: ./../profiles/default/types/ADKFolder.xml
+msgid "ADKFolder"
+msgstr ""
+
+#: ./../profiles/default/types/ADKPage.xml
+msgid "ADKPage"
+msgstr ""
+
+#: ./../browser/registrationform.py:177
+msgid "DSH Preparation Course"
+msgstr ""
+
+#: ./../browser/registrationform.pt:19
+msgid "Error"
+msgstr ""
+
+#: ./../interfaces/adkpage.py:22
+msgid "Field description"
+msgstr ""
+
+#: ./../browser/registrationform.py:321
+msgid "I confirm the correctness of my entries and acknowledge the terms and conditions of ADK."
+msgstr ""
+
+#: ./../browser/registrationform.pt:27
+msgid "Info"
+msgstr ""
+
+#: ./../browser/registrationform.py:166
+msgid "Intensive Course"
+msgstr ""
+
+#: ./../browser/registrationform.py:169
+msgid "Intensive Plus Course (24 lessions)"
+msgstr ""
+
+#: ./../browser/registrationform.py:172
+msgid "Intensive Plus Course (30 lessons)"
+msgstr ""
+
+#: ./../browser/registrationform.py:71
+msgid "Mr."
+msgstr ""
+
+#: ./../browser/registrationform.py:70
+msgid "Mrs."
+msgstr ""
+
+#: ./../content/adkpage.py:27
+#: ./../interfaces/adkpage.py:14
+msgid "Preview Image"
+msgstr ""
+
+#: ./../browser/registrationform.py:174
+msgid "Private Tuition"
+msgstr ""
+
+#: ./../browser/registrationform.py:342
+msgid "Register"
+msgstr ""
+
+#: ./../browser/registrationform.py:338
+msgid "Register with Augsburger Deutschkurse."
+msgstr ""
+
+#: ./../browser/registrationform.py:337
+msgid "Registration Form"
+msgstr ""
+
+#: ./../browser/registrationform.py:183
+msgid "Summer Course Classic"
+msgstr ""
+
+#: ./../browser/registrationform.py:180
+msgid "TestDAF Preparation Course"
+msgstr ""
+
+#: ./../content/adkpage.py:40
+#: ./../interfaces/adkpage.py:20
+msgid "Text"
+msgstr ""
+
+#: ./../browser/reservation_result.pt:14
+msgid "Thank you and best regards"
+msgstr ""
+
+#: ./../browser/reservation_result.pt:11
+msgid "Thank you for your request. The details of your course reservation have been forwarded to us."
+msgstr ""
+
+#: ./../content/adkpage.py:28
+#: ./../interfaces/adkpage.py:16
+msgid "Upload an image that will be displayed as a preview image in listings and search results."
+msgstr ""
+
+#: ./../browser/reservation_result.pt:13
+msgid "We will reply to it shortly."
+msgstr ""
+
+#: ./../browser/registrationform.py:360
+msgid "Your reservation has been forwarded successfully."
+msgstr ""
+
+#: ./../browser/registrationform.py:214
+msgid "advanced"
+msgstr ""
+
+#: ./../browser/registrationform.py:225
+msgid "advertisment"
+msgstr ""
+
+#: ./../browser/registrationform.py:288
+msgid "car"
+msgstr ""
+
+#: ./../browser/registrationform.py:209
+msgid "elementary"
+msgstr ""
+
+#: ./../browser/registrationform.py:227
+msgid "former student"
+msgstr ""
+
+#: ./../browser/registrationform.py:212
+msgid "good"
+msgstr ""
+
+#. Default: "Table of contents"
+#: ./../content/adkpage.py:53
+msgid "help_enable_table_of_contents"
+msgstr ""
+
+#. Default: "If selected, this will show a table of contents at the top of the page."
+#: ./../content/adkpage.py:55
+msgid "help_enable_table_of_contents_description"
+msgstr ""
+
+#: ./../browser/registrationform.py:247
+msgid "host family, double room, full board"
+msgstr ""
+
+#: ./../browser/registrationform.py:244
+msgid "host family, double room, half board"
+msgstr ""
+
+#: ./../browser/registrationform.py:253
+msgid "host family, single room, full board"
+msgstr ""
+
+#: ./../browser/registrationform.py:250
+msgid "host family, single room, half board"
+msgstr ""
+
+#: ./../browser/registrationform.py:256
+msgid "hotel or guesthouse"
+msgstr ""
+
+#: ./../browser/registrationform.py:211
+msgid "intermediate"
+msgstr ""
+
+#: ./../browser/registrationform.py:299
+msgid "no"
+msgstr ""
+
+#: ./../browser/registrationform.py:262
+msgid "no accomodation needed"
+msgstr ""
+
+#. Default: "This item does not have any body text, click the edit tab to change it."
+#: ./../browser/adkpage.pt:22
+msgid "no_body_text"
+msgstr ""
+
+#: ./../browser/registrationform.py:207
+msgid "none"
+msgstr ""
+
+#: ./../browser/registrationform.py:232
+msgid "other sources"
+msgstr ""
+
+#: ./../browser/registrationform.py:286
+msgid "plane"
+msgstr ""
+
+#. Default: "More…"
+#: ./../browser/adkfolderlisting.pt:34
+#: ./../browser/adklisting.pt:37
+msgid "read_more"
+msgstr ""
+
+#: ./../browser/registrationform.py:229
+msgid "recommendation"
+msgstr ""
+
+#: ./../browser/registrationform.py:259
+msgid "room in a shared flat"
+msgstr ""
+
+#. Default: "Required"
+#: ./../browser/registrationform.pt:95
+msgid "title_required"
+msgstr ""
+
+#: ./../browser/registrationform.py:287
+msgid "train"
+msgstr ""
+
+#: ./../browser/registrationform.py:230
+msgid "website"
+msgstr ""
+
+#: ./../browser/registrationform.py:298
+msgid "yes"
+msgstr ""
+

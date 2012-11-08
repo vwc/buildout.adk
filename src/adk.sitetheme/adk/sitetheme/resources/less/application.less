@@ -1,0 +1,168 @@
+// Main Stylesheet for application specific overrides
+
+@adkBlue:       #314DA1;
+@adkRed:        #AF1E4A;
+
+
+#topbar {
+    background: @adkBlue;
+    height:@navbarHeight * 2.5;
+    #global-quicklinks {
+        float: right;
+        clear:right;
+        margin-top: 20px;
+        width: 300px;
+        border: 0px solid red;
+        ul li {
+            margin-right: 5px;
+            list-style: none;
+            display: inline-block;
+            .ie7-inline-block();
+            a {
+                color: @white;
+                font-size: @fontSizeSmall;
+            }
+        }
+    }
+    .section-it-it #global-quicklinks,
+    .section-es-es #global-quicklinks,
+    .section-fr-fr #global-quicklinks {
+        width: 400px;
+    }
+    #logo {
+        position:absolute;
+
+        margin: 0 22px 25px;
+        background: 0 0px url(../images/logo.png);
+        width: 455px;
+        height: 141px;
+        display: block;
+        text-indent: -3000px;
+        overflow:hidden;
+    }
+}
+
+#toolbar + #topbar {
+    margin-top: @navbarHeight;
+}
+
+#site-wrapper {
+    padding-top: @baseLineHeight * 2;
+}
+
+// Test some content styles
+
+/* @tileListings */
+.tileItem {
+    clear: both;
+    background:url(../images/dotted-line.png) 0% 100% repeat-x transparent;
+    padding: 0px;
+}
+
+h2.itemHeadline {
+    background: url(../images/icon-globe-red.png) 0 9px no-repeat transparent !important;
+    padding-left: 10px !important;
+    font-size: 1.2em;
+}
+
+.itemHeadline a:link,
+p.tileFooter a:link,
+.itemHeadline a:visited,
+p.tileFooter a:visited {
+    color: #af1e4a !important;
+    text-decoration: underline;
+    border-bottom: 0px solid #af1e4a !important;
+}
+
+.itemHeadline a:hover {
+    color: #314da1;
+}
+
+p.itemDescription {
+    margin: 0px;
+}
+
+/* @group Navigation portlet */
+
+dl.portletNavigationTree {
+    margin-right: -2em;
+}
+
+ul.navTree {
+    margin-left: 0 !important;
+}
+
+dl.portletNavigationTree dd {
+    padding: 1em 0;
+}
+
+dl.portletNavigationTree dd a {
+    display: block;
+}
+
+dl.portletNavigationTree li {
+    display: block;
+    list-style: none;
+}
+
+dl.portletNavigationTree li a {
+    border: none !important;
+    display: block;
+    padding: 0.75em 0;
+    color: white !important;
+    background:url(../images/navitem.png) 0 0 no-repeat transparent;
+}
+
+dl.portletNavigationTree li a span {
+    margin-left: 0.5em;
+}
+
+dl.portletNavigationTree .navTreeCurrentItem {
+    background:url(../images/navitem-selected.png) 0 0 no-repeat transparent;
+}
+dl.portletNavigationTree li a.navTreeItemInPath {
+    background:url(../images/navitem-selected.png) 0 0 no-repeat transparent;
+}
+
+dl.portletNavigationTree li.navTreeItemInPath {
+    background: transparent;
+}
+
+dl.portletNavigationTree li a.navTreeCurrentItem span {
+    color: black;
+}
+
+dl.portletNavigationTree ul {
+    margin: 0 !important;
+}
+dl.portletNavigationTree .navTreeLevel0 li a {
+    padding-left: 1em;
+}
+dl.portletNavigationTree .navTreeLevel1 li a {
+    padding-left: 1em;
+    padding-right: 3.5em;
+    background: transparent;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: black !important;
+}
+
+dl.portletNavigationTree .navTreeLevel1 li a.navTreeCurrentItem span {
+    color: #af1e4a;
+}
+
+dl.portletNavigationTree .navTreeLevel2 li a {
+    padding-left: 3em;
+}
+dl.portletNavigationTree .navTreeLevel3 li a {
+    padding-left: 4em;
+}
+
+/* @end */
+
+
+#footer-wrapper {
+/* Sticky footer */
+    height: 20em;
+    background: #af1e4a;
+}
