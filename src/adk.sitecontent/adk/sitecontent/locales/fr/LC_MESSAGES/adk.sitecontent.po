@@ -1,219 +1,244 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adk.sitecontent\n"
-"POT-Creation-Date: Do May 30 15:19:00 2010\n"
-"POT-Revision-Date: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: \n"
 "Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
 "Language-Team: VW Language Team <cb@vorwaerts-werbung.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "Language-Code: fr\n"
 "Language-Name: French\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: adk.sitecontent\n"
-"PO-Revision-Date: \n"
+"POT-Revision-Date: \n"
 "X-Poedit-Language: Franch\n"
 "X-Poedit-Country: FRANCE\n"
 
+#: ./../profiles/default/types/ADKFolder.xml
+msgid "A dedicated folder content type with automatic listings"
+msgstr ""
+
+#: ./../profiles/default/types/ADKPage.xml
+msgid "A lingua plone aware documents providing preview images."
+msgstr ""
+
+#: ./../profiles/default/types/ADKFolder.xml
 msgid "ADKFolder"
 msgstr "ADK Ordner"
 
+#: ./../profiles/default/types/ADKPage.xml
 msgid "ADKPage"
 msgstr "ADK Seite"
 
-msgid "Preview Image"
-msgstr "Preview Bild"
+#: ./../browser/registrationform.py:177
+msgid "DSH Preparation Course"
+msgstr ""
 
-msgid "read_more"
-msgstr "Lire la suite..."
+#: ./../browser/registrationform.pt:19
+msgid "Error"
+msgstr ""
 
-msgid "Upload an image that will be displayed as a preview image in listings and search results."
-msgstr "Laden Sie hier ein Vorschaubild hoch. Dieses wird in Suchtreffer Listen und Ordneransichten als Vorschau angezeigt."
+#: ./../interfaces/adkpage.py:22
+msgid "Field description"
+msgstr ""
 
-msgid "Salutation"
-msgstr "Titre"
+#: ./../browser/registrationform.py:321
+msgid "I confirm the correctness of my entries and acknowledge the terms and conditions of ADK."
+msgstr "Je suis d´accord  avec les conditions générales du stage de ADK"
 
-msgid "Mrs."
-msgstr "Madame"
+#: ./../browser/registrationform.pt:27
+msgid "Info"
+msgstr ""
 
-msgid "Mr."
-msgstr "Monsieur"
-
-msgid "Firstname"
-msgstr "Prénom"
-
-msgid "Lastname"
-msgstr "Nom"
-
-msgid "Street"
-msgstr "Rue"
-
-msgid "City"
-msgstr "Domicile"
-
-msgid "Postal code"
-msgstr "Code postal"
-
-msgid "Country"
-msgstr "Pays"
-
-msgid "Occupation"
-msgstr "Proféssion"
-
-msgid "Phone"
-msgstr "Téléphone"
-
-msgid "Fax"
-msgstr "Fax"
-
-msgid "E-Mail"
-msgstr "Votre Courriel"
-
-msgid "Date of Birth"
-msgstr "Date de naissance"
-
-msgid "Nationality"
-msgstr "Nationalité"
-
-msgid "Herby, I register for following course"
-msgstr "Par la présénte je m´inscris pour le cours suivant"
-
+#: ./../browser/registrationform.py:166
 msgid "Intensive Course"
 msgstr "Cours intensif"
 
+#: ./../browser/registrationform.py:169
 msgid "Intensive Plus Course (24 lessions)"
 msgstr "Cours intensif plus (25)"
 
-msgid "Intensive Plus Course (30 lessions)"
-msgstr "Cours intensif plus (30)"
+#: ./../browser/registrationform.py:172
+msgid "Intensive Plus Course (30 lessons)"
+msgstr ""
 
+#: ./../browser/registrationform.py:71
+msgid "Mr."
+msgstr "Monsieur"
+
+#: ./../browser/registrationform.py:70
+msgid "Mrs."
+msgstr "Madame"
+
+#: ./../content/adkpage.py:27
+#: ./../interfaces/adkpage.py:14
+msgid "Preview Image"
+msgstr "Preview Bild"
+
+#: ./../browser/registrationform.py:174
 msgid "Private Tuition"
 msgstr "Cours individuel"
 
-msgid "DSH Preperation Course"
-msgstr "DSH Cours de preparation"
-
-msgid "TestDAF Preparation Course"
-msgstr "TestDAF Cours de preparation"
-
-msgid "Sommer Course Classic"
-msgstr "Cours intensif de vacances"
-
-msgid "Summer Course Multisport"
-msgstr "Cours intensif de vacances, Multisport"
-
-msgid "Course starting date"
-msgstr "Commencement du cours"
-
-msgid "Course duration in weeks"
-msgstr "Durée du cours"
-
-msgid "German language skills"
-msgstr "Connaissances d'allemand selon"
-
-msgid "none"
-msgstr "Aucunes"
-
-msgid "elementary"
-msgstr "Faibles"
-
-msgid "intermediate"
-msgstr "Moyennes"
-
-msgid "good"
-msgstr "Bonnes"
-
-msgid "advanced"
-msgstr "Tre bonnes"
-
-msgid " I learned about Augsburger Deutschkurse from"
-msgstr "J´ai appris de votes Augsburger Deutschkurse de"
-
-msgid "advertisment"
-msgstr "Publication"
-
-msgid "former student"
-msgstr "Estudiants anterieurs"
-
-msgid "recommendation"
-msgstr "Recommandation"
-
-msgid "website"
-msgstr "Internet"
-
-msgid "other sources"
-msgstr "Autres"
-
-msgid "Preferred type of accomodation"
-msgstr "Logement"
-
-msgid "host family, double room, half board"
-msgstr "Famille d'accuell, chambre double, demi-pension"
-
-msgid "host family, double room, full board"
-msgstr "Famille d'acuell, chambre double, pension complete"
-
-msgid "host family, single room, half board"
-msgstr "famille d'accuell, chambre individuelle, demi-pension"
-
-msgid "host family, single room, full board"
-msgstr "Famille d'accuell, chambre individuelle, pension complete"
-
-msgid "hotel or guesthouse"
-msgstr "Hotel ou pension"
-
-msgid "room in a shared flat"
-msgstr "Quohabitation"
-
-msgid "no accomodation needed"
-msgstr "Pas besoin de logement"
-
-msgid "Day of arrival"
-msgstr "Date d´arrivee"
-
-msgid "Day of departure"
-msgstr "Date de depart"
-
-msgid "I will arrive by"
-msgstr "J'arrive avec"
-
-msgid "plane"
-msgstr "Avion"
-
-msgid "train"
-msgstr "Train"
-
-msgid "car"
-msgstr "Auto"
-
-msgid "Airport transfer"
-msgstr "Transfert aéroport-famille"
-
-msgid "Do you smoke?"
-msgstr "Vous fumez?"
-
-msgid "Message"
-msgstr "Votre message"
-
-msgid "yes"
-msgstr "Qui"
-
-msgid "no"
-msgstr "No"
-
+#: ./../browser/registrationform.py:342
 msgid "Register"
 msgstr ""
 
-msgid "Your reservation has been forwarded successfully."
+#: ./../browser/registrationform.py:338
+msgid "Register with Augsburger Deutschkurse."
 msgstr ""
 
+#: ./../browser/registrationform.py:337
+msgid "Registration Form"
+msgstr ""
+
+#: ./../browser/registrationform.py:183
+msgid "Summer Course Classic"
+msgstr ""
+
+#: ./../browser/registrationform.py:180
+msgid "TestDAF Preparation Course"
+msgstr "TestDAF Cours de preparation"
+
+#: ./../content/adkpage.py:40
+#: ./../interfaces/adkpage.py:20
+msgid "Text"
+msgstr ""
+
+#: ./../browser/reservation_result.pt:14
+msgid "Thank you and best regards"
+msgstr ""
+
+#: ./../browser/reservation_result.pt:11
 msgid "Thank you for your request. The details of your course reservation have been forwarded to us."
 msgstr ""
 
+#: ./../content/adkpage.py:28
+#: ./../interfaces/adkpage.py:16
+msgid "Upload an image that will be displayed as a preview image in listings and search results."
+msgstr "Laden Sie hier ein Vorschaubild hoch. Dieses wird in Suchtreffer Listen und Ordneransichten als Vorschau angezeigt."
+
+#: ./../browser/reservation_result.pt:13
 msgid "We will reply to it shortly."
 msgstr ""
 
-msgid "Thank you and best regards"
+#: ./../browser/registrationform.py:360
+msgid "Your reservation has been forwarded successfully."
 msgstr ""
+
+#: ./../browser/registrationform.py:214
+msgid "advanced"
+msgstr "Tre bonnes"
+
+#: ./../browser/registrationform.py:225
+msgid "advertisment"
+msgstr "Publication"
+
+#: ./../browser/registrationform.py:288
+msgid "car"
+msgstr "Auto"
+
+#: ./../browser/registrationform.py:209
+msgid "elementary"
+msgstr "Faibles"
+
+#: ./../browser/registrationform.py:227
+msgid "former student"
+msgstr "Estudiants anterieurs"
+
+#: ./../browser/registrationform.py:212
+msgid "good"
+msgstr "Bonnes"
+
+#. Default: "Table of contents"
+#: ./../content/adkpage.py:53
+msgid "help_enable_table_of_contents"
+msgstr ""
+
+#. Default: "If selected, this will show a table of contents at the top of the page."
+#: ./../content/adkpage.py:55
+msgid "help_enable_table_of_contents_description"
+msgstr ""
+
+#: ./../browser/registrationform.py:247
+msgid "host family, double room, full board"
+msgstr "Famille d'acuell, chambre double, pension complete"
+
+#: ./../browser/registrationform.py:244
+msgid "host family, double room, half board"
+msgstr "Famille d'accuell, chambre double, demi-pension"
+
+#: ./../browser/registrationform.py:253
+msgid "host family, single room, full board"
+msgstr "Famille d'accuell, chambre individuelle, pension complete"
+
+#: ./../browser/registrationform.py:250
+msgid "host family, single room, half board"
+msgstr "famille d'accuell, chambre individuelle, demi-pension"
+
+#: ./../browser/registrationform.py:256
+msgid "hotel or guesthouse"
+msgstr "Hotel ou pension"
+
+#: ./../browser/registrationform.py:211
+msgid "intermediate"
+msgstr "Moyennes"
+
+#: ./../browser/registrationform.py:299
+msgid "no"
+msgstr "No"
+
+#: ./../browser/registrationform.py:262
+msgid "no accomodation needed"
+msgstr "Pas besoin de logement"
+
+#. Default: "This item does not have any body text, click the edit tab to change it."
+#: ./../browser/adkpage.pt:22
+msgid "no_body_text"
+msgstr ""
+
+#: ./../browser/registrationform.py:207
+msgid "none"
+msgstr "Aucunes"
+
+#: ./../browser/registrationform.py:232
+msgid "other sources"
+msgstr "Autres"
+
+#: ./../browser/registrationform.py:286
+msgid "plane"
+msgstr "Avion"
+
+#. Default: "More…"
+#: ./../browser/adkfolderlisting.pt:34
+#: ./../browser/adklisting.pt:37
+msgid "read_more"
+msgstr "Lire la suite..."
+
+#: ./../browser/registrationform.py:229
+msgid "recommendation"
+msgstr "Recommandation"
+
+#: ./../browser/registrationform.py:259
+msgid "room in a shared flat"
+msgstr "Quohabitation"
+
+#. Default: "Required"
+#: ./../browser/registrationform.pt:95
+msgid "title_required"
+msgstr ""
+
+#: ./../browser/registrationform.py:287
+msgid "train"
+msgstr "Train"
+
+#: ./../browser/registrationform.py:230
+msgid "website"
+msgstr "Internet"
+
+#: ./../browser/registrationform.py:298
+msgid "yes"
+msgstr "Qui"
 
