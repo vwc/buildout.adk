@@ -6,7 +6,7 @@
 
 #topbar {
     background: @adkBlue;
-    height:@navbarHeight * 2.5;
+    height:@navbar-height * 2.5;
     #global-quicklinks {
         float: right;
         clear:right;
@@ -17,10 +17,9 @@
             margin-right: 5px;
             list-style: none;
             display: inline-block;
-            .ie7-inline-block();
             a {
-                color: @white;
-                font-size: @fontSizeSmall;
+                color: white;
+                font-size: @font-size-small;
             }
         }
     }
@@ -42,12 +41,13 @@
     }
 }
 
-#toolbar + #topbar {
-    margin-top: @navbarHeight;
+#toolbar + #topbar,
+#editbar-wrapper + #topbar {
+    margin-top: @navbar-height;
 }
 
 #site-wrapper {
-    padding-top: @baseLineHeight * 2;
+    padding-top: @line-height-base * 2;
 }
 
 // Test some content styles
