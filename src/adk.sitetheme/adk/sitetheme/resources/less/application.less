@@ -3,6 +3,15 @@
 @adk-blue:       #314DA1;
 @adk-red:        #AF1E4A;
 
+#header-phone .navbar {
+    background-color: @adk-blue;
+    .brand {
+        color: #fff;
+    }
+    .nav > li > a {
+        color: #fff;
+    }
+}
 
 #topbar {
     border-top: 5px solid @adk-blue;
@@ -30,11 +39,10 @@
     }
     #logo {
         position:absolute;
-
         margin: 0 22px 25px;
-        background: 0 0px url(../images/logo.png);
-        width: 455px;
-        height: 141px;
+        background: 0 0px url(../images/logo-adk.png) no-repeat;
+        .size(310px, 75px);
+        margin: @line-height-base @line-height-base @line-height-base 0;
         display: block;
         text-indent: -3000px;
         overflow:hidden;
@@ -170,4 +178,8 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 /* Sticky footer */
     height: 20em;
     background: #af1e4a;
+    color: #fff;
+    a {
+        color: #fff;
+    }
 }

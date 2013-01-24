@@ -4623,6 +4623,15 @@ table.grid th {
 .visualClear {
   clear: both;
 }
+#header-phone .navbar {
+  background-color: #314da1;
+}
+#header-phone .navbar .brand {
+  color: #fff;
+}
+#header-phone .navbar .nav > li > a {
+  color: #fff;
+}
 #topbar {
   border-top: 5px solid #314da1;
   border-bottom: 1px solid #999999;
@@ -4651,9 +4660,10 @@ table.grid th {
 #topbar #logo {
   position: absolute;
   margin: 0 22px 25px;
-  background: 0 0px url(../images/logo.png);
-  width: 455px;
-  height: 141px;
+  background: 0 0px url(../images/logo-adk.png) no-repeat;
+  width: 310px;
+  height: 75px;
+  margin: 20px 20px 20px 0;
   display: block;
   text-indent: -3000px;
   overflow: hidden;
@@ -4761,4 +4771,8 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 
   height: 20em;
   background: #af1e4a;
+  color: #fff;
+}
+#footer-wrapper a {
+  color: #fff;
 }

@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta property="og:title" content="ADK Augsburger Deutschkurse - Learning German in Augsburg"/>
     <meta property="og:type" content="website"/>
@@ -32,17 +33,45 @@
 </head>
 <body>
 
-    <header id="editbar-wrapper">
+    <header id="header-phone" class="visible-phone">
       <div class="navbar navbar-fixed-top">
-        <a href="." class="brand">CMS UI Editbar</a>
-        <ul class="nav">
-            <li><a href=".">Contents</a></li>
-            <li><a href=".">Edit</a></li>
-        </ul>
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a href="." class="brand">Augsburger Deutschkurse</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href=".">Sprachschule</a></li>
+                    <li><a href=".">Philosopie</a></li>
+                    <li><a href=".">Anmeldung</a></li>
+                </ul>
+            </div>
       </div>
     </header>
 
-    <header id="topbar">
+
+    <header id="editbar-wrapper" class="hidden-phone">
+      <div class="navbar navbar-fixed-top">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a href="." class="brand">CMS UI Editbar</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href=".">Contents</a></li>
+                    <li><a href=".">Edit</a></li>
+                </ul>
+            </div>
+      </div>
+    </header>
+
+    <header id="topbar" class="hidden-phone">
         <div class="container">
         <div id="language-flags-wrapper" class="pull-right">
             <ul class="nav nav-pills">
@@ -223,6 +252,7 @@
             </div>
     	</div>
     </footer>
+<script src="js/bootstrap.js"></script>
 <script src="js/holder.js"></script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
