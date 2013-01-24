@@ -1,24 +1,24 @@
 // Main Stylesheet for application specific overrides
 
-@adkBlue:       #314DA1;
-@adkRed:        #AF1E4A;
+@adk-blue:       #314DA1;
+@adk-red:        #AF1E4A;
 
 
 #topbar {
-    background: @adkBlue;
+    border-top: 5px solid @adk-blue;
+    border-bottom: 1px solid @grayLight;
     height:@navbar-height * 2.5;
     #global-quicklinks {
         float: right;
         clear:right;
         margin-top: 20px;
-        width: 300px;
         border: 0px solid red;
         ul li {
             margin-right: 5px;
             list-style: none;
             display: inline-block;
             a {
-                color: white;
+                color: @text-color;
                 font-size: @font-size-small;
             }
         }
@@ -160,6 +160,11 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 
 /* @end */
 
+#sm-block {
+    ul li {
+        display: inline;
+    }
+}
 
 #footer-wrapper {
 /* Sticky footer */
