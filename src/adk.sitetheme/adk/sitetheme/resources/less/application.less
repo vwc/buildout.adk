@@ -117,8 +117,20 @@
     margin-top: @navbar-height;
 }
 
+#header-phone {
+    .navbar-brand {
+        color: @grayLighter;
+    }
+}
 
 .jumbotron {
+    h1 {
+        color: @adk-blue;
+        text-align: center;
+    }
+    p {
+        color: @adk-red;
+    }
     li {
         list-style: none;
     }
@@ -187,6 +199,18 @@
     }
 
 }
+
+// Conten styles
+// -----------------------------
+
+@media (max-width: 767px) {
+    #content,
+    #sidebar {
+        padding: @line-height-base / 2;
+        font-size: @font-size-base * 0.85;
+    }
+}
+
 
 // Test some content styles
 

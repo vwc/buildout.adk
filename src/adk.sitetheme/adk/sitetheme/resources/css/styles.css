@@ -5552,6 +5552,16 @@ table.grid th {
 #editbar-wrapper + #topbar {
   margin-top: 50px;
 }
+#header-phone .navbar-brand {
+  color: #eeeeee;
+}
+.jumbotron h1 {
+  color: #314da1;
+  text-align: center;
+}
+.jumbotron p {
+  color: #af1e4a;
+}
 .jumbotron li {
   list-style: none;
 }
@@ -5615,6 +5625,13 @@ table.grid th {
 #site-wrapper .splashbox .actionBoxBody a {
   color: #000;
   text-decoration: underline;
+}
+@media (max-width: 767px) {
+  #content,
+  #sidebar {
+    padding: 10px;
+    font-size: 11.9px;
+  }
 }
 /* @tileListings */
 .tileItem {
