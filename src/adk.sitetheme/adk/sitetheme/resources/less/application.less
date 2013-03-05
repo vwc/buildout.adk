@@ -3,6 +3,8 @@
 @adk-blue:       #314DA1;
 @adk-red:        #AF1E4A;
 @adk-grey:       #E7E7E7;
+
+
 #header-phone .navbar {
     background-color: @adk-blue;
     .brand {
@@ -16,11 +18,23 @@
 #topbar {
     display: block;
     border-top: 5px solid @adk-blue;
+    margin-bottom: @line-height-base;
+    #logo-wrapper {
+        border-bottom: 2px solid @adk-grey;
+        #logo {
+            display: block;
+            background: 0 0px url(../images/logo-adk.png) no-repeat;
+            .size(310px, 75px);
+            text-indent: -3000px;
+            overflow:hidden;
+        }
+    }
+
     a {
         color: #000;
     }
 //    border-bottom: 1px solid @adk-grey;
-    height:@navbar-height * 3.5;
+    //height:@navbar-height * 3.5;
 
     #global-quicklinks {
         float: right;
@@ -56,18 +70,18 @@
     .nav {
         font-size: 11.9px;    
     }
-    #logo {
-        position:absolute;
-        margin: 0 22px 25px;
-        background: 0 0px url(../images/logo-adk.png) no-repeat;
-        .size(310px, 75px);
-        margin: @line-height-base @line-height-base @line-height-base @line-height-base * 20;
-        display: block;
-        text-indent: -3000px;
-        overflow:hidden;
-        padding-bottom: 12px;
-        border-bottom: 2px solid @adk-grey;
-    }
+    //#logo {
+    //    position:absolute;
+    //    margin: 0 22px 25px;
+    //    background: 0 0px url(../images/logo-adk.png) no-repeat;
+    //    .size(310px, 75px);
+    //    margin: @line-height-base @line-height-base @line-height-base @line-height-base * 20;
+    //    display: block;
+    //    text-indent: -3000px;
+    //    overflow:hidden;
+    //    padding-bottom: 12px;
+    //    border-bottom: 2px solid @adk-grey;
+    //}
     #navigation {
         width: 30%
         position:absolute;
@@ -103,6 +117,12 @@
     margin-top: @navbar-height;
 }
 
+
+.jumbotron {
+    li {
+        list-style: none;
+    }
+}
 
 
 #site-wrapper {

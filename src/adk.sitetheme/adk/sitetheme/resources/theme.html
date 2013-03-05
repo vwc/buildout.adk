@@ -28,20 +28,38 @@
     <![endif]-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.js"></script>
     <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
-    <script type="text/javascript" src="js/less-1.3.0.min.js"></script>
+    <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
 
 </head>
 <body>
 
-    <header id="header-phone" class="visible-phone">
+    <!--<header id="editbar-wrapper" class="hidden-phone">
       <div class="navbar navbar-fixed-top">
         <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a href="." class="brand">Augsburger Deutschkurse</a>
+            <a href="." class="navbar-brand">CMS UI Editbar</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href=".">Contents</a></li>
+                    <li><a href=".">Edit</a></li>
+                </ul>
+            </div>
+      </div>
+    </header>-->
+
+    <header id="header-phone" class="visible-phone">
+      <div class="navbar navbar-static-top">
+        <div class="container">
+            <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a href="." class="navbar-brand">Augsburger Deutschkurse</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <li><a href=".">Sprachschule</a></li>
@@ -52,51 +70,60 @@
       </div>
     </header>
 
-    <header id="editbar-wrapper" class="hidden-phone">
-      <div class="navbar navbar-fixed-top">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a href="." class="brand">CMS UI Editbar</a>
-            <div class="nav-collapse collapse">
-                <ul class="nav">
-                    <li><a href=".">Contents</a></li>
-                    <li><a href=".">Edit</a></li>
-                </ul>
-            </div>
-      </div>
-    </header>
-
     <header id="topbar" class="hidden-phone">
         <div class="container">
-        <div id="language-flags-wrapper" class="pull-right">
+            <div id="language-flags-wrapper" class="pull-right">
             <ul class="nav nav-pills">
                 <li><a href="http://augsburger-deutschkurse.de/" id="flag-de" class="language-flag-link">DE</a></li>
                 <li><a href="http://adk-german-courses.com/" id="flag-en" class="language-flag-link">EN</a></li>
                 <li><a href="http://apprendre-allemand.fr/" id="flag-fr" class="language-flag-link">FR</a></li>
                 <li><a href="http://studiare-tedesco.it/" id="flag-it" class="language-flag-link">IT</a></li>
                 <li><a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link">ES</a></li>
+                </ul>
+            </div>
+            <h1 id="logo-wrapper" class="pull-left">
+                <a href="/" id="logo">Augsburger Deutschkurse</a>
+            </h1>
+        <div class="navbar visualClear">
+            <ul class="nav">
+                <li><a href=".">Sprachschule</a></li>
+                <li><a href=".">Termine &amp; Preise</a></li>
+                <li><a href=".">Sch&uuml;lerkommentare</a></li>
+                <li><a href=".">Kursprogramm</a></li>
+                <li><a href=".">Anreise</a></li>
+                <li><a href=".">Anmeldung</a></li>
+                <li><a href=".">Sprachreisen</a></li>
+                <li><a href=".">Unterkunft</a></li>
+                <li><a href=".">Sommerkurse</a></li>
+                <li><a href=".">Augsburg</a></li>
             </ul>
-        </div>
-        <div id="global-quicklinks" class="pull-right">
-        <ul class="nav nav-pills nav-stacked">
-            <li><a href="/en-en/downloads-en">Downloads</a></li>
-            <li><a href="/en-en/links-1-en">Links</a></li>
-            <li><a href="/en-en/fotos-1-en">Gallery</a></li>
-            <li><a href="/en-en/agb-1-en">Terms &amp; Conditions</a></li>
-        </ul>
-        </div>
-        <div id="logo-wrapper">
-            <a href="/" id="logo">Logo</a>
-         </div>
+            </div>
      </div>
     </header>
 
+    <section class="container">
+        <div class="jumbotron">
+            <h1>Deutschlernen in Deutschland</h1>
+            <p class="lead">
+                Lernen Sie Deutsch in einem Intensivkurs,
+                bereiten Sie sich auf deutsche Sprachprüfungen vor, oder verbessern
+                Sie Ihr berufsbezogenes Deutsch.
+                Wir sind ein zertifiziertes Institut und garantieren die Qualität
+                unserer Kurse.
+            </p>
+            <ul>
+                <li><i class="icon-ok"></i> In unseren Sommerkursen in Bayern entdecken und erleben Jugendliche
+                aus der ganzen Welt Deutschland</li>
+                <li><i class="icon-ok"></i> Angebote für Sprachreisen und Klassenfahrten</li>
+                <li><i class="icon-ok"></i> Zugelassener Träger von geförderten
+                Integrationskursen</li>
+            </ul>
+
+        </div>
+    </section>
+
     <section id="site-wrapper" class="container">
-        <div class="row-fluid">
+        <div class="row">
         
         <div id="main-wrapper" class="span9">
             <div id="region-content">
@@ -189,6 +216,19 @@
                     </div>
                     <div class="visualClear"><!-- --></div>
                 </div>
+                <div id="global-quicklinks" class="actionBox">
+                    <div class="page-header">
+                        <h4>Wissenswertes</h4>
+                    </div>
+                    <div class="actionBoxBody">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/en-en/downloads-en">Downloads</a></li>
+                        <li><a href="/en-en/links-1-en">Links</a></li>
+                        <li><a href="/en-en/fotos-1-en">Gallery</a></li>
+                        <li><a href="/en-en/agb-1-en">Terms &amp; Conditions</a></li>
+                    </ul>
+                    </div>
+                </div>
                 <div class="actionBox rounded" id="actionbox-news">
                     <div class="page-header">
                         <h4>News</h4>
@@ -210,7 +250,7 @@
                 </div>
                 <div class="actionBox rounded" id="actionbox-contact">
                     <div class="page-header">
-                        <h4>Contact</h4>
+                        <h4>Kontakt</h4>
                     </div>
                     <div class="actionBoxBody">
                         Augsburger Deutschkurse<br />
