@@ -5736,7 +5736,7 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 #footer-wrapper {
   /* Sticky footer */
 
-  height: 20em;
+  padding: 20px;
   background: #af1e4a;
   color: #fff;
 }
