@@ -6,26 +6,26 @@
     
     <!-- Rules applying to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
-        <rules if="$host = 'adk-german-courses.com'">
+        <!--<rules if="$host = 'adk-german-courses.com'">
             <theme href="frontpage-en.html" css:if-content="body.section-front-page" />
             <theme href="theme-en.html" />
-        </rules>
-        <rules if="$host = 'augsburger-deutschkurse.de'">
+        </rules>-->
+        <!--<rules if="$host = 'augsburger-deutschkurse.de'">
             <theme href="frontpage-de.html" css:if-content="body.section-front-page" />
             <theme href="theme-de.html" />
-        </rules>
-        <rules if="$host = 'estudiar-aleman.es'">
+        </rules>-->
+        <!--<rules if="$host = 'estudiar-aleman.es'">
             <theme href="frontpage-es.html" css:if-content="body.section-front-page" />
             <theme href="theme-es.html" />
-        </rules>
-        <rules if="$host = 'studiare-tedesco.it'">
+        </rules> -->
+        <!--<rules if="$host = 'studiare-tedesco.it'">
             <theme href="frontpage-it.html" css:if-content="body.section-front-page" />
             <theme href="theme-it.html" />
-        </rules>
-        <rules if="$host = 'apprendre-allemand.fr'">
+        </rules>-->
+        <!-- <rules if="$host = 'apprendre-allemand.fr'">
             <theme href="frontpage-fr.html" css:if-content="body.section-front-page" />
             <theme href="theme-fr.html" />
-        </rules>
+        </rules>-->
         <theme href="theme-de.html" />
         
         <!-- Copy standard header tags, including base (very important for
@@ -83,15 +83,15 @@
         <replace css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
 
         <!-- Document Content -->
-        <drop css:content="#content" css:if-content="body.section-front-page" />
+        <!--<drop css:content="#content" css:if-content="body.section-front-page" />-->
         <replace css:content-children="#content" css:theme-children="#content" />
         
         <!-- Edit bar -->
-        <replace css:content="#edit-bar" css:theme="#edit-bar" />
+ <!--       <replace css:content="#edit-bar" css:theme="#edit-bar" /> -->
         <drop css:theme="#editbar-wrapper"
             css:if-content="#anon-personalbar" />
-        <!--<replace css:theme="#editbar-wrapper"
-            css:content="#toolbar" />-->
+        <replace css:theme="#editbar-wrapper"
+            css:content="#toolbar" />
         
         <!-- Status messages not inside #content -->
         <drop css:content="#content .portalMessage"/>

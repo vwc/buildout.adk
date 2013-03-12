@@ -37,9 +37,10 @@
     //height:@navbar-height * 3.5;
 
     #global-quicklinks {
+     /*   background-color: @adk-blue; */
         float: right;
         clear:right;
- //       margin-top: 20px;
+        margin-top: 10px;
         border: 0px solid red;
         ul {
             width: 140px;
@@ -83,6 +84,7 @@
     //    border-bottom: 2px solid @adk-grey;
     //}
     #navigation {
+
         width: 30%
         position:absolute;
 
@@ -263,6 +265,7 @@ dl.portletNavigationTree dd a {
 }
 
 dl.portletNavigationTree li {
+    float: left;
     display: block;
     list-style: none;
 }
@@ -271,20 +274,20 @@ dl.portletNavigationTree li a {
     border: none !important;
     display: block;
     padding: 0.75em 0;
-    color: white !important;
-    background:url(../images/navitem.png) 0 0 no-repeat transparent;
+    color: #000 !important;
+  //  background:url(../images/navitem.png) 0 0 no-repeat transparent;
 }
 
 dl.portletNavigationTree li a span {
     margin-left: 0.5em;
 }
 
-dl.portletNavigationTree .navTreeCurrentItem {
-    background:url(../images/navitem-selected.png) 0 0 no-repeat transparent;
-}
-dl.portletNavigationTree li a.navTreeItemInPath {
-    background:url(../images/navitem-selected.png) 0 0 no-repeat transparent;
-}
+//dl.portletNavigationTree .navTreeCurrentItem {
+//    background:url(../images/navitem-selected.png) 0 0 no-repeat transparent;
+//}
+//dl.portletNavigationTree li a.navTreeItemInPath {
+//    background:url(../images/navitem-selected.png) 0 0 no-repeat transparent;
+//}
 
 dl.portletNavigationTree li.navTreeItemInPath {
     background: transparent;
