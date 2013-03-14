@@ -20,7 +20,7 @@
     border-top: 5px solid @adk-blue;
     margin-bottom: @line-height-base;
     #logo-wrapper {
-        border-bottom: 2px solid @adk-grey;
+    //    border-bottom: 2px solid @adk-grey;
         #logo {
             display: block;
             background: 0 0px url(../images/logo-adk.png) no-repeat;
@@ -35,18 +35,22 @@
     }
 //    border-bottom: 1px solid @adk-grey;
     //height:@navbar-height * 3.5;
+    .navbar {
+        width: 65%
+    }
 
     #global-quicklinks {
      /*   background-color: @adk-blue; */
         float: right;
         clear:right;
         margin-top: 10px;
+        margin-bottom: 10px;
         border: 0px solid red;
         ul {
             width: 140px;
             li {
             width: 120px;
-            height: 10px;
+            height: 20px;
             margin-right: 5px;
             list-style: none;
             display: inline-block;
@@ -265,21 +269,29 @@ dl.portletNavigationTree dd a {
 }
 
 dl.portletNavigationTree li {
+    width: 180px;
     float: left;
     display: block;
     list-style: none;
 }
 
-dl.portletNavigationTree li a {
+dl.portletNavigationTree li {
+    a {
     border: none !important;
     display: block;
-    padding: 0.75em 0;
+    padding: 0.75em;
     color: #000 !important;
+    text-decoration: none;
   //  background:url(../images/navitem.png) 0 0 no-repeat transparent;
+    }
+    a:hover {
+        background-color: #D7D7D7; 
+    }
 }
 
 dl.portletNavigationTree li a span {
     margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 //dl.portletNavigationTree .navTreeCurrentItem {
@@ -301,9 +313,10 @@ dl.portletNavigationTree ul {
     margin: 0 !important;
 }
 dl.portletNavigationTree .navTreeLevel0 li a {
+    width: 170px;
     padding-left: 1em;
 }
-dl.portletNavigationTree .navTreeLevel1 li a {
+dl.portletNavigationTree .navTreeLevel1 li a, .dl.portletNavigationTree .navTreeLevel0 li a:hover {
     padding-left: 1em;
     padding-right: 3.5em;
     background: transparent;
@@ -328,7 +341,7 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 #sm-block {
     margin-top: 39px;
     margin-left: 85px;
-    border-bottom: 2px solid @adk-grey;
+//    border-bottom: 2px solid @adk-grey;
     ul  {
         margin-left: 0px;
         margin-bottom: 0px;
