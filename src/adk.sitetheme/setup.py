@@ -27,6 +27,8 @@ setup(name='adk.sitetheme',
           'setuptools',
           'plone.app.theming',
           'plone.app.themingplugins',
+          'plone.app.toolbar',
+          'plone.app.widgets[archetypes]',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

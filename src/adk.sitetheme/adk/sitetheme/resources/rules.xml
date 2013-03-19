@@ -52,6 +52,8 @@
             <link rel="shortcut icon" href="/++theme++adk.sitetheme/images/favicon.ico" type="image/x-icon" />
         </after>
         
+        <after theme="/html/body"
+               content="//div[@data-iframe='plone-toolbar']" />
         <!-- Copy over the id/class attributes on the body tag. This is important
              for per-section styling -->
         <copy attributes="class id dir" content="/html/body" theme="/html/body" />
@@ -92,7 +94,7 @@
             css:if-content="#anon-personalbar" />
         <replace css:theme="#editbar-wrapper"
             css:content="#toolbar" />
-        
+
         <!-- Status messages not inside #content -->
         <drop css:content="#content .portalMessage"/>
         <before css:content=".portalMessage" method="raw" css:theme="#document-content" />
