@@ -18,6 +18,7 @@
 #topbar {
     display: block;
     border-top: 5px solid @adk-blue;
+    margin-top: auto !important;
     margin-bottom: @line-height-base;
     #logo-wrapper {
     //    border-bottom: 2px solid @adk-grey;
@@ -282,7 +283,11 @@ dl.portletNavigationTree li {
     padding: 0.75em;
     color: #000 !important;
     text-decoration: none;
+    
   //  background:url(../images/navitem.png) 0 0 no-repeat transparent;
+    }
+    img {
+        display: none;
     }
     a:hover {
         background-color: #D7D7D7; 
@@ -338,6 +343,23 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 
 /* @end */
 
+#portal-globalnav .nav li {
+    a {
+    border: none !important;
+    display: block;
+    padding: 0.75em;
+    color: #000 !important;
+    text-decoration: none;
+    
+  //  background:url(../images/navitem.png) 0 0 no-repeat transparent;
+    }
+    img {
+        display: none;
+    }
+    a:hover {
+        background-color: #D7D7D7; 
+    }
+}
 #sm-block {
     margin-top: 39px;
     margin-left: 85px;

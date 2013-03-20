@@ -79,8 +79,7 @@
         </after>
 
         <!-- Global navigation -->
-        <replace css:content='#portal-globalnav li' css:theme-children='#global-navigation' />
-
+        <replace css:content='#portal-globalnav li' css:theme-children="#main-nav" />
         <!-- Breadcrumbs -->
         <replace css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
 
