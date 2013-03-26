@@ -63,7 +63,7 @@
 			</a>
 			<a href="." class="navbar-brand">ADK Augsburger Deutschkurse</a>
 			<div class="nav-collapse collapse">
-				<ul class="nav">
+				<ul class="nav" id="main-nav">
 					<li><a href=".">Sprachschule</a></li>
 					<li><a href=".">Sprachschule</a></li>
 					<li><a href=".">Sprachschule</a></li>
@@ -113,7 +113,7 @@
 			</ul> -->
 			
 			<div id="navigation">
-				<ul>
+				<ul id="main-nav">
 					<li><a href="http://localhost:8499/adk/de-de/sprachschule">Sprachschule</a></li>
 					<li><a href="http://localhost:8499/adk/adk-ihre-vorteile">ADK Ihre Vorteile</a></li>
 					<li><a href="http://localhost:8499/adk/sprachkurse-programm">Sprachkurse Programm</a></li>
@@ -222,23 +222,15 @@
 				</div>
 				<div class="visualClear"><!-- --></div>
 			</div>
-			<div class="actionBox" id="actionbox-toc">
-				<div class="actionBoxHeader">
-					<h2>Inhaltsverzeichnis:</h2>
-				</div>
-				<div class="actionBoxBody" id="actionbox-toc-content">
-				 TOC goes here
-				</div>
-			</div>
 			<div class="actionBox rounded" id="actionbox-news">
 			        <div class="actionBoxHeader">
 			            <h2>Aktuelles</h2>
 			        </div>
 			        <div class="actionBoxBody">
-			            <p>Aktuelle Termine und Neuigkeiten rund um Augsburger Deutschkurse
+			            <p class="discreet">Aktuelle Termine und Neuigkeiten rund um Augsburger Deutschkurse
 			                finden Sie hier:</p>
-			            <p class="fancy"><a href="/news" class="more-link"><i class="icon-hand-right"></i>Nachrichten</a></p>
-			            <p class="fancy"><a href="/events" class="more-link"><i class="icon-hand-right"></i>Termine</a></p>
+			            <p><a href="/news" class="btn btn-primary btn-block"><i class="icon-hand-right"></i> Nachrichten</a></p>
+			            <p><a href="/events" class="btn btn-block"><i class="icon-hand-right"></i> Termine</a></p>
 			        </div>
 			</div>
 			<div class="actionBox rounded">
@@ -246,7 +238,7 @@
 			            <h2><a href="/de-de/anmeldung">Anmeldung</a></h2>
 			        </div>
 			        <div class="actionBoxBody">
-			            <p>Melden Sie sich jetzt
+			            <p class="muted">Melden Sie sich jetzt
 			                für einen Deutschkurs bei Augsburger Deutschkurse an!</p>
 			            <p><a href="/de-de/anmeldung" class="more-link">Zur Anmeldung&hellip;</a></p>
 			        </div>

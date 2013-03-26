@@ -5,6 +5,12 @@
 @adk-grey:       #E7E7E7;
 
 
+input.context,
+input.standalone {
+    .btn();
+}
+
+
 #header-phone .navbar {
     background-color: @adk-blue;
     .brand {
@@ -90,10 +96,10 @@
     //}
     #navigation {        
         ul {
-            width:70%;
+            //width:70%;
             li {
                 margin-right: 15px;
-                width: 190px;
+                //width: 190px;
                 font-size: 80%;
                 display: inline-block;
                 list-style: none;
@@ -132,8 +138,11 @@
                     color: #000;
                     
                 }
+                &.selected > a {
+                    background: @adk-blue;
+                    color: #fff;
+                }
             }
-
         }
 
     }
@@ -165,7 +174,7 @@
 
 #site-wrapper {
     #content {
-       width: 80%;
+       //width: 80%;
        
        h2 {
             color: @adk-blue;
@@ -189,12 +198,10 @@
        }
     }
     .documentFirstHeading {
-        background: url(../images/icon-globe.png) 0 50% no-repeat scroll transparent;
+        //background: url(../images/icon-globe.png) 0 50% no-repeat scroll transparent;
         color: @adk-blue;
-        padding-left: 20px;
-        border-bottom: 5px solid @adk-blue;
-        font-size: 1.925em;
-        font-weight: bold;
+        //padding-left: 20px;
+        //border-bottom: 5px solid @adk-blue;
     }
     padding-top: @line-height-base * 2;
     .actionBoxHeader {
@@ -207,7 +214,7 @@
     }
     .actionBoxBody {
         margin-top: 10px;
-        text-align: center;
+        //text-align: center;
         .fancy {
            height: 40px;
            padding-top: 10px;
