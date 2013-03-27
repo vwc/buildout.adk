@@ -14,55 +14,33 @@
         .navbar {
             color: #fff;
             background-color: @adk-blue;
-            #navigation {        
+            #navigation {
+                max-width: 900px;
                 ul {
                     margin-top: 10px;
                     li {
-                    display: inline-block;
-                    list-style: none;
-                a {
-                    color: #fff;
-                    margin-right: 15px;
-                    display: block;
-                    padding: 0.75em;
-                    text-decoration: none;
-                }
-                a:hover {
-                    border: none !important;
-                    display: block;
-                    padding: 0.75em;
-                    color: #fff !important;
-                    text-decoration: none;
-                    background-color: @adk-red;
-                    color: #000;
-                }
-                a:focus {
-                    border: none !important;
-                    display: block;
-                    padding: 0.75em;
-                    color: #fff !important;
-                    text-decoration: none;
-                    background-color: @adk-red;
-                    color: #000;
-                    
-                }
-                a:active {
-                    border: none !important;
-                    display: block;
-                    padding: 0.75em;
-                    color: #fff !important;
-                    text-decoration: none;
-                    background-color: @adk-red;
-                    color: #000;
-                    
+                        display: inline-block;
+                        list-style: none;
+                        a {
+                            color: #fff;
+                            margin-right: 15px;
+                            display: block;
+                            padding: 0.75em;
+                            text-decoration: none;
+                        }
+                        a:hover, a:focus, a:active {
+                            border: none !important;
+                            display: block;
+                            padding: 0.75em;
+                            color: #fff !important;
+                            text-decoration: none;
+                            background-color: @adk-red;
+                            color: #000;
+                        }
+                    }
                 }
             }
-
         }
-
-        }
-        
-    }
 }
 
 input.context,
@@ -83,7 +61,7 @@ input.standalone {
 #topbar {
     display: block;
     border-top: 5px solid @adk-blue;
-    margin-top: @navbar-height / 2 !important;
+    padding-top: @navbar-height + (@navbar-height / 2) !important;
     margin-bottom: @line-height-base;
     #logo-wrapper {
     //    border-bottom: 2px solid @adk-grey;
@@ -101,8 +79,6 @@ input.standalone {
     }
 //    border-bottom: 1px solid @adk-grey;
     //height:@navbar-height * 3.5;
-
-
 
     .section-it-it #global-quicklinks,
     .section-es-es #global-quicklinks,
@@ -124,12 +100,12 @@ input.standalone {
     //    padding-bottom: 12px;
     //    border-bottom: 2px solid @adk-grey;
     //}
-
 }
+
 
 #toolbar + #topbar,
 #editbar-wrapper + #topbar {
-    margin-top: @navbar-height;
+    padding-top: @navbar-height;
 }
 
 
@@ -154,16 +130,20 @@ input.standalone {
 }
 
 #site-wrapper {
+    margin-top: -50px;
+    #sidebar {
+        min-width: 75%
+    }
     #content {
-       width: 80%;       
+       width: 90%;
        h2 {
             color: @adk-blue;
        }
        .tileImage {
-           padding-top: 40px;
+           padding-top: 30px;
        }
        .row {
-            margin-bottom: 20px;
+            margin-bottom: 20px;            
        }
        
        .pullquote {
@@ -180,11 +160,15 @@ input.standalone {
     .documentFirstHeading {
         color: @adk-blue;
         padding-left: 20px;
-        border-bottom: 5px solid @adk-blue;
+        //border-bottom: 5px solid @adk-blue;
         font-size: 1.925em;
         font-weight: bold;
     }
+    
     padding-top: @line-height-base * 2;
+    .actionBox {
+        margin-bottom: 20px;
+    }
     .actionBoxHeader {
         color: @adk-blue;
         border-bottom: 5px solid @adk-blue;
@@ -193,22 +177,14 @@ input.standalone {
           text-decoration: none;
         }
     }
+
     .actionBoxBody {
         margin-top: 10px;
-        .fancy {
-           height: 40px;
-           padding-top: 10px;
-           background-color: @adk-red;
-           border-radius: 5px 5px 5px 5px;
-           font-size: 150%;
-           text-align: center;
-            a {
-                width: 100%;
-                text-decoration: none;
-                padding: 0.75em;
-                margin-top: -5px;
+        .btn {
+            background-color: @adk-red;
+            .more-link {
                 color: #fff;
-
+                background-color: @adk-red;
             }
             i {
                 padding-right: 10px;
@@ -333,10 +309,25 @@ input.standalone {
     #sidebar {
         padding: @line-height-base / 2;
         font-size: @font-size-base * 0.85;      
-
+    }
+    #content {
+        .pullquote {
+            float: none;
+            width: 90%;
+        }
     }
 }
 
+@media (max-width: 940px) {
+    #editbar-wrapper.hidden-phone {
+        .navbar-brand {
+            visibility: collapse;
+            height: 0 !important;
+            width: 0 !important;
+        }
+        
+        }
+}
 
 // Test some content styles
 
