@@ -87,12 +87,21 @@
         <!--<drop css:content="#content" css:if-content="body.section-front-page" />-->
         <replace css:content-children="#content" css:theme-children="#content" />
         
+        <append theme="/html/body"
+                content="//div[@data-iframe='plone-toolbar']"/>
+        
+        <append theme="/html/head">
+            <link rel="stylesheet" type="text/css"
+                href="++resource++plone.app.toolbar_init.css"/>
+            <script type="text/javascript"
+                    src="++resource++plone.app.toolbar_init.js"></script>
+        </append>
         <!-- Edit bar -->
- <!--       <replace css:content="#edit-bar" css:theme="#edit-bar" /> -->
+ <!--       <replace css:content="#edit-bar" css:theme="#edit-bar" /> 
         <drop css:theme="#editbar-wrapper"
             css:if-content="#anon-personalbar" />
         <replace css:theme="#editbar-wrapper"
-            css:content="#toolbar" />
+            css:content="#toolbar" />-->
 
         <!-- Status messages not inside #content -->
         <drop css:content="#content .portalMessage"/>

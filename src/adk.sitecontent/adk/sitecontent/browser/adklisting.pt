@@ -8,13 +8,15 @@
 
         <tal:pagelist tal:define="pages view/pages" tal:condition="not: view/has_one_page">
         
+        <header class="page-header">
         <h1 class="documentFirstHeading">
             <metal:field use-macro="python:here.widget('title', mode='view')">
-                Folder Title
+                Folder Titlex
             </metal:field>
         </h1>
+        </header>
         
-        <p class="documentDescription">
+        <p class="documentDescription lead">
             <metal:field use-macro="python:here.widget('description', mode='view')">
                 Description
             </metal:field>
@@ -22,19 +24,21 @@
         <div class="dottedline">&nbsp;</div>
             <tal:list tal:repeat="page pages">
                 <div class="row">
-                    <div class="cell width-1:3 position-0">
-                        <img src="" tal:replace="structure page/image_tag" />
+                    <div class="span3">
+                        <div class="thumbnail">
+                            <img src="" tal:replace="structure page/image_tag" />
+                        </div>
                     </div>
-                    <div class="cell width-2:3 position-1:3">
-                    <h2 class="itemHeadline">
+                    <div class="span9">
+                    <h2 class="xxitemHeadline">
                         <a href="" tal:attributes="href page/url"
                                     tal:content="page/title">Page Title</a>
                     </h2>
                     <p class="itemDescription" tal:content="page/description">
                         Description
                     </p>
-                    <p class="tileFooter">
-                        <a href=""
+                    <p>
+                        <a href="" classd="btn"
                            tal:attributes="href page/url;"
                            i18n:translate="read_more">
                         More&hellip;
@@ -42,8 +46,7 @@
                     </p>
                     </div>
                 </div>
-                <div class="dottedline">&nbsp;</div>
-                
+                <hr>                
             </tal:list>
         </tal:pagelist>
         
