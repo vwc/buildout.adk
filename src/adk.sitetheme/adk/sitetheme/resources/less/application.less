@@ -5,100 +5,25 @@
 @adk-grey:       #E7E7E7;
 
 
-#header-phone .navbar {
-    background-color: @adk-blue;
-    .brand {
-        color: #fff;
-    }
-    .nav > li > a {
-        color: #fff;
-    }
-}
-
-#topbar {
-    display: block;
-    border-top: 5px solid @adk-blue;
-    margin-top: auto !important;
-    margin-bottom: @line-height-base;
-    #logo-wrapper {
-    //    border-bottom: 2px solid @adk-grey;
-        #logo {
-            display: block;
-            background: 0 0px url(../images/logo-adk.png) no-repeat;
-            .size(310px, 75px);
-            text-indent: -3000px;
-            overflow:hidden;
-        }
-    }
-
-    a {
-        color: #000;
-    }
-//    border-bottom: 1px solid @adk-grey;
-    //height:@navbar-height * 3.5;
-    .navbar {
-        width: 65%
-    }
-
-    #global-quicklinks {
-     /*   background-color: @adk-blue; */
-        float: right;
-        clear:right;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border: 0px solid red;
-        ul {
-            width: 140px;
-            li {
-            width: 120px;
-            height: 20px;
-            margin-right: 5px;
-            list-style: none;
-            display: inline-block;
-
-            a {
-                border-bottom: 2px solid @adk-grey;
-                padding: 0px 0px 0px 0px;
-                color: @text-color;
-                font-size: @font-size-small;
-            }
-            }
-            i {
-                padding-right: 10px;
+#editbar-wrapper {
+        .navbar-brand {
+            color: #fff;
+            a:hover, a:focus, a:active {
+                color: #fff;
             }
         }
-    }
-    .section-it-it #global-quicklinks,
-    .section-es-es #global-quicklinks,
-    .section-fr-fr #global-quicklinks {
-        width: 400px;
-    }
-    .nav {
-        font-size: 11.9px;    
-    }
-    //#logo {
-    //    position:absolute;
-    //    margin: 0 22px 25px;
-    //    background: 0 0px url(../images/logo-adk.png) no-repeat;
-    //    .size(310px, 75px);
-    //    margin: @line-height-base @line-height-base @line-height-base @line-height-base * 20;
-    //    display: block;
-    //    text-indent: -3000px;
-    //    overflow:hidden;
-    //    padding-bottom: 12px;
-    //    border-bottom: 2px solid @adk-grey;
-    //}
-    #navigation {        
-        ul {
-            width:70%;
-            li {
-                margin-right: 15px;
-                width: 190px;
-                font-size: 80%;
-                display: inline-block;
-                list-style: none;
+        .navbar {
+            color: #fff;
+            background-color: @adk-blue;
+            #navigation {        
+                ul {
+                    margin-top: 10px;
+                    li {
+                    display: inline-block;
+                    list-style: none;
                 a {
-                    border-bottom: 2px solid @adk-blue;
+                    color: #fff;
+                    margin-right: 15px;
                     display: block;
                     padding: 0.75em;
                     text-decoration: none;
@@ -109,7 +34,7 @@
                     padding: 0.75em;
                     color: #fff !important;
                     text-decoration: none;
-                    background-color: @adk-blue;
+                    background-color: @adk-red;
                     color: #000;
                 }
                 a:focus {
@@ -136,7 +61,69 @@
 
         }
 
+        }
+        
     }
+
+
+
+}
+
+#header-phone .navbar {
+    background-color: @adk-blue;
+    .brand {
+        color: #fff;
+    }
+    .nav > li > a {
+        color: #fff;
+    }
+}
+
+#topbar {
+    display: block;
+    border-top: 5px solid @adk-blue;
+    margin-top: @navbar-height / 2 !important;
+    margin-bottom: @line-height-base;
+    #logo-wrapper {
+    //    border-bottom: 2px solid @adk-grey;
+        #logo {
+            display: block;
+            background: 0 0px url(../images/logo-adk.png) no-repeat;
+            .size(310px, 75px);
+            text-indent: -3000px;
+            overflow:hidden;
+        }
+    }
+
+    a {
+        color: #000;
+    }
+//    border-bottom: 1px solid @adk-grey;
+    //height:@navbar-height * 3.5;
+
+
+
+    .section-it-it #global-quicklinks,
+    .section-es-es #global-quicklinks,
+    .section-fr-fr #global-quicklinks {
+        width: 400px;
+    }
+    .nav {
+        font-size: 11.9px;
+    }
+    //#logo {
+    //    position:absolute;
+    //    margin: 0 22px 25px;
+    //    background: 0 0px url(../images/logo-adk.png) no-repeat;
+    //    .size(310px, 75px);
+    //    margin: @line-height-base @line-height-base @line-height-base @line-height-base * 20;
+    //    display: block;
+    //    text-indent: -3000px;
+    //    overflow:hidden;
+    //    padding-bottom: 12px;
+    //    border-bottom: 2px solid @adk-grey;
+    //}
+
 }
 
 #toolbar + #topbar,
@@ -144,11 +131,13 @@
     margin-top: @navbar-height;
 }
 
+
 #header-phone {
     .navbar-brand {
-        color: @grayLighter;
+        color: #fff;
     }
 }
+
 
 .jumbotron {
     h1 {
@@ -165,8 +154,7 @@
 
 #site-wrapper {
     #content {
-       width: 80%;
-       
+       width: 80%;       
        h2 {
             color: @adk-blue;
        }
@@ -189,7 +177,6 @@
        }
     }
     .documentFirstHeading {
-        background: url(../images/icon-globe.png) 0 50% no-repeat scroll transparent;
         color: @adk-blue;
         padding-left: 20px;
         border-bottom: 5px solid @adk-blue;
@@ -207,7 +194,6 @@
     }
     .actionBoxBody {
         margin-top: 10px;
-        text-align: center;
         .fancy {
            height: 40px;
            padding-top: 10px;
@@ -287,7 +273,55 @@
             }
         }
     }
-
+    
+    #sm-block {      
+        margin-top: 19px;
+        margin-left: 5px;
+        border-bottom: 2px solid @adk-grey;
+            ul  {
+                width: 100%;
+                height: 90%;
+                padding: 0px;
+                margin-left: 0px;
+                margin-bottom: 0px;
+                    li {
+                        a {
+                            color: #000;
+                        }
+                        display: inline-block;
+                        i {
+                            height: 100%;
+                        }
+                    }
+            }
+    }
+        #global-quicklinks {
+        /*   background-color: @adk-blue; */
+            float: right;
+            clear:right;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 0px solid red;
+            ul {
+                width: 140px;
+                    li {
+                        width: 120px;
+                        height: 20px;
+                        margin-right: 5px;
+                        list-style: none;
+                        display: inline-block;
+                        a {
+                            border-bottom: 2px solid @adk-grey;
+                            padding: 0px 0px 0px 0px;
+                            color: @text-color;
+                            font-size: @font-size-small;
+                        }
+                    }
+                    i {
+                        padding-right: 10px;
+                    }
+                }
+        }
 }
 
 // Conten styles
@@ -313,8 +347,8 @@
 }
 
 h2.itemHeadline {
-    background: url(../images/icon-globe-red.png) 0 50% no-repeat transparent !important;
-    padding-left: 15px !important;
+//    background: url(../images/icon-globe-red.png) 0 50% no-repeat transparent !important;
+    padding-left: 5px !important;
     font-size: 1.2em;
 }
 
@@ -424,20 +458,7 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 
 /* @end */
 
-#sm-block {
-    margin-top: 39px;
-    margin-left: 85px;
-//    border-bottom: 2px solid @adk-grey;
-    ul  {
-        margin-left: 0px;
-        margin-bottom: 0px;
 
-        li {
-            display: inline;
-        }
-
-    }
-}
 
 #footer-wrapper {
 /* Sticky footer */
