@@ -5,17 +5,27 @@
 @adk-grey:       #E7E7E7;
 
 #editbar-wrapper {
+            position: fixed;
+            z-index: 1;        
         .navbar-brand {
+            width: 0px;
+            height: 0px;
+            visibility: collapse;
             color: #fff;
             a:hover, a:focus, a:active {
                 color: #fff;
             }
         }
         .navbar {
+            z-index: 2;
             color: #fff;
             background-color: @adk-blue;
             #navigation {
-                max-width: 900px;
+                background-color: @adk-blue;
+                position: relative;
+                z-index: 10;
+                margin-right: 180px;
+                max-width: 960px;
                 ul {
                     margin-top: 10px;
                     li {
@@ -50,6 +60,7 @@ input.standalone {
 
 #header-phone .navbar {
     background-color: @adk-blue;
+    position:relative;
     .brand {
         color: #fff;
     }
@@ -59,15 +70,25 @@ input.standalone {
 }
 
 #topbar {
+    position: relative;
     display: block;
     border-top: 5px solid @adk-blue;
     padding-top: @navbar-height + (@navbar-height / 2) !important;
     margin-bottom: @line-height-base;
-    #logo-wrapper {
+         #logo-wrapper {
+            margin-top: -65px;
+        margin-left: -60px;
+        background-color: #fff;
+        position: fixed;
+        z-index: 3;
     //    border-bottom: 2px solid @adk-grey;
         #logo {
+            z-index: 4;
             display: block;
             background: 0 0px url(../images/logo-adk.png) no-repeat;
+            border-left: 5px solid #fff;
+            border-right: 5px solid #fff;
+            background-size: 100%;
             .size(310px, 75px);
             text-indent: -3000px;
             overflow:hidden;
@@ -76,6 +97,9 @@ input.standalone {
 
     a {
         color: #000;
+    }
+    #language-flags-wrapper {
+        margin-right: 50px;
     }
 //    border-bottom: 1px solid @adk-grey;
     //height:@navbar-height * 3.5;
@@ -135,12 +159,22 @@ input.standalone {
         min-width: 75%
     }
     #content {
+        .thumbnail {
+            display: block;
+            margin: auto;
+            max-width:100%;
+            height: 150px;
+        }
        width: 90%;
+
        h2 {
             color: @adk-blue;
        }
+       .xxitemHeadline a {
+            color: @adk-red;
+       }
        .tileImage {
-           padding-top: 30px;
+           //padding-top: 30px;
        }
        .row {
             margin-bottom: 20px;            
@@ -253,15 +287,13 @@ input.standalone {
     
     #sm-block {      
         margin-top: 19px;
-        margin-left: 5px;
-        border-bottom: 2px solid @adk-grey;
+        margin-bottom: 20px;
             ul  {
                 width: 100%;
                 height: 90%;
                 padding: 0px;
-                margin-left: 0px;
-                margin-bottom: 0px;
                     li {
+                        margin-right: 10px;
                         a {
                             color: #000;
                         }
@@ -274,24 +306,22 @@ input.standalone {
     }
         #global-quicklinks {
         /*   background-color: @adk-blue; */
-            float: right;
-            clear:right;
             margin-top: 10px;
             margin-bottom: 10px;
             border: 0px solid red;
             ul {
-                width: 140px;
+                width: 100%;
                     li {
-                        width: 120px;
-                        height: 20px;
+                        width: 100%;
+                        height: 40px;
                         margin-right: 5px;
                         list-style: none;
                         display: inline-block;
                         a {
+                            font-size: 150%;
                             border-bottom: 2px solid @adk-grey;
                             padding: 0px 0px 0px 0px;
                             color: @text-color;
-                            font-size: @font-size-small;
                         }
                     }
                     i {
@@ -318,6 +348,7 @@ input.standalone {
     }
 }
 
+
 @media (max-width: 940px) {
     #editbar-wrapper.hidden-phone {
         .navbar-brand {
@@ -325,8 +356,57 @@ input.standalone {
             height: 0 !important;
             width: 0 !important;
         }
-        
+        #navigation {
+            float: right;
+            width: 60%;
+            ul {
+                margin-right: -20px;
+                li {
+                    height: 30px;
+                }
+            }
         }
+        }
+    #topbar {
+        #logo-wrapper {
+            #logo {
+                padding-left: 0.75em;
+                padding-top: 0.25em;
+                background-color: none;
+                background-size: 90%;
+                width: 150px;
+                height: 80px;
+                //.size(800,300);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1240px) {
+    #editbar-wrapper.hidden-phone {
+        .navbar-brand {
+            visibility: collapse;
+            height: 0 !important;
+            width: 0 !important;
+        }
+        #navigation {
+            margin-right: -10px;
+        }
+    }
+    #topbar {
+        #logo-wrapper {
+            #logo {
+                padding-left: 0.75em;
+                padding-top: 0.25em;
+                background-color: none;
+                background-size: 90%;
+                width: 300px;
+                height: 80px;
+                //.size(800,300);
+            }
+        }
+    }
 }
 
 // Test some content styles
