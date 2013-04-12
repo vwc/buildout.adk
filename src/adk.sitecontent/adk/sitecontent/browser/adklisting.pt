@@ -24,12 +24,12 @@
         <div class="dottedline">&nbsp;</div>
             <tal:list tal:repeat="page pages">
                 <div class="row">
-                    <div class="span3">
+                    <div class="col-span-3">
                         <div class="thumbnail">
                             <img src="" tal:replace="structure page/image_tag" />
                         </div>
                     </div>
-                    <div class="span9">
+                    <div class="col-span-9">
                     <h2 class="xxitemHeadline">
                         <a href="" tal:attributes="href page/url"
                                     tal:content="page/title">Page Title</a>
