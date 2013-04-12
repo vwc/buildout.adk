@@ -3,6 +3,14 @@
 // --------------------------------------------------
 
 
+// Reset the box-sizing
+// -------------------------
+
+* {
+  .box-sizing(border-box);
+}
+
+
 // Body reset
 // -------------------------
 
@@ -22,24 +30,21 @@ html {
 }
 
 body {
-  margin: 0;
-  color: @text-color;
   font-family: @font-family-base;
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 1.5;
-  background-color: @body-background;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  background-color: @body-bg;
 }
 
 // Reset fonts for revelant elements
-body,
 input,
 button,
 select,
 textarea {
-  font-family: @font-family-base;
-  font-size: @font-size-base;
-  line-height: @line-height-base;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 
@@ -52,7 +57,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: @link-color-hover;
+  color: @link-hover-color;
   text-decoration: underline;
 }
 a:focus {

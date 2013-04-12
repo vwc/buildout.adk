@@ -33,7 +33,7 @@
     width: 35%;
     clear: right;
     color: @grayLight;
-    #font > .shorthand(14px,300,@line-height-base * 1.25);
+    //#font > .shorthand(14px,300,@line-height-base * 1.25);
     line-height: @line-height-base - 3;
     padding: @line-height-base / 2 @line-height-base;
     margin: @line-height-base 0 @line-height-base @line-height-base;
@@ -45,7 +45,7 @@
     padding: @line-height-base;
     margin: 0 0 @line-height-base;
     border-left: 5px solid @grayLight;
-    #font > .shorthand(16px,300,@line-height-base * 1.25);
+    //#font > .shorthand(16px,300,@line-height-base * 1.25);
     clear: both;
 }
 
@@ -97,7 +97,7 @@ input.standalone {
         border-radius:4px;
     }
     a.link-category:hover {
-        background: @link-color-hover;
+        background: @link-hover-color;
     }
     .separator {
         display: none;
@@ -165,7 +165,7 @@ input.datetime-widget,
     font-weight: bold;
     span.formHelp {
         .help-block();
-        .muted();
+        .text-muted();
         font-weight: normal;
     }
 }
@@ -217,7 +217,7 @@ dl.portalMessage {
         .label();
     }
     .state-private {
-        background-color: @state-error-text;
+        background-color: @state-danger-text;
     }
     .state-published {
         background-color: @state-success-text;
