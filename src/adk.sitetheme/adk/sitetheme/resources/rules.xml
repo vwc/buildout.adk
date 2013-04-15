@@ -26,7 +26,7 @@
             <theme href="frontpage-fr.html" css:if-content="body.section-front-page" />
             <theme href="theme-fr.html" />
         </rules>-->
-        <theme href="theme-de.html" />
+        <theme href="theme.html" />
         
         <!-- Copy standard header tags, including base (very important for
              Plone default pages to work correctly), meta, title and
