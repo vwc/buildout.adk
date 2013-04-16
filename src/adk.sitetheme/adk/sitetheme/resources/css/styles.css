@@ -260,12 +260,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #af1e4a;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #6e132e;
   text-decoration: underline;
 }
 a:focus {
@@ -1829,14 +1829,14 @@ fieldset[disabled] .btn-link {
   border-color: transparent;
 }
 .btn-link {
-  color: #428bca;
+  color: #af1e4a;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #2a6496;
+  color: #6e132e;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3577,7 +3577,7 @@ button.close {
 }
 a.thumbnail:hover,
 a.thumbnail:focus {
-  border-color: #428bca;
+  border-color: #af1e4a;
 }
 .thumbnail > img {
   display: block;
@@ -3691,7 +3691,7 @@ a.badge:focus {
 }
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #428bca;
+  color: #af1e4a;
   background-color: #fff;
 }
 .nav-pills > li > a > .badge {
@@ -5252,13 +5252,13 @@ dd.image-caption {
 #category a.link-category,
 #category span.selectedTag {
   padding: 0.25em 0.5em;
-  background: #428bca;
+  background: #af1e4a;
   color: #fff;
   border-radius: 0.5em;
   border-radius: 4px;
 }
 #category a.link-category:hover {
-  background: #2a6496;
+  background: #6e132e;
 }
 #category .separator {
   display: none;
