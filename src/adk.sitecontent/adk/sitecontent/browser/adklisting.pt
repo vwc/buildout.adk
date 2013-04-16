@@ -8,20 +8,21 @@
 
         <tal:pagelist tal:define="pages view/pages" tal:condition="not: view/has_one_page">
         
-        <header class="page-header">
-        <h1 class="documentFirstHeading">
-            <metal:field use-macro="python:here.widget('title', mode='view')">
-                Folder Titlex
-            </metal:field>
-        </h1>
+        <header id="content-header">
+            <div class="page-header">
+                <h1 class="documentFirstHeading">
+                    <metal:field use-macro="python:here.widget('title', mode='view')">
+                        Folder Titlex
+                    </metal:field>
+                </h1>
+            </div>
+            <p class="documentDescription lead">
+                <metal:field use-macro="python:here.widget('description', mode='view')">
+                    Description
+                </metal:field>
+            </p>
         </header>
-        
-        <p class="documentDescription lead">
-            <metal:field use-macro="python:here.widget('description', mode='view')">
-                Description
-            </metal:field>
-        </p>
-        <div class="dottedline">&nbsp;</div>
+        <section id="content-core">
             <tal:list tal:repeat="page pages">
                 <div class="row">
                     <div class="col-span-3">
@@ -48,18 +49,23 @@
                 </div>
                 <hr>                
             </tal:list>
+        </section>
         </tal:pagelist>
         
         <tal:singlepage tal:condition="view/has_one_page">
             <tal:block tal:define="page view/first_page">
-            
-            <h1 class="documentFirstHeading" tal:content="page/title">Title</h1>
 
-            <p class="documentDescription" tal:content="page/description">Description</p>
-            
-            
-            
-            <div class="documentBody" tal:content="structure page/text">Body Text</div>
+            <header class="page-header" id="content-header">
+                <div class="page-header">
+                    <h1 class="documentFirstHeading" tal:content="page/title">Title</h1>
+                </div>
+                <p class="documentDescription lead"
+                    tal:condition="page/description"
+                    tal:content="page/description" />
+            </header>
+            <section id="content-core">
+                <div class="documentBody" tal:content="structure page/text">Body Text</div>
+            </section>
             </tal:block>
             
             

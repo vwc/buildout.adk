@@ -73,6 +73,24 @@
 
     <header id="topbar" class="hidden-phone">
         <div class="container">
+            <form id="search" class="pull-right" name="search" action="/search">
+                <div class="input-group span12">
+                <input id="search-site"
+                    type="text"
+                    name="SearchableText"
+                    title="Search this site&hellip;" accesskey="4"
+                    class="inputLabel roundedleft" size="15"
+                    />
+                <span class="input-group-btn">
+                <button class="btn btn-primary"
+                    type="submit"
+                    value="Search"
+                    id="search-site-button">
+                    <i class="icon-search"></i>&nbsp;
+                </button>
+                </span>
+                </div>
+            </form>
             <div id="language-flags-wrapper" class="pull-right">
             <ul class="nav nav-pills">
                 <li><a href="http://augsburger-deutschkurse.de/" id="flag-de" class="language-flag-link">DE</a></li>
@@ -82,9 +100,9 @@
                 <li><a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link">ES</a></li>
                 </ul>
             </div>
-            <h1 id="logo-wrapper" class="pull-left">
+            <div id="logo-wrapper" class="pull-left">
                 <a href="/" id="logo">ADK Augsburger Deutschkurse</a>
-            </h1>
+            </div>
         <div class="navbar visualClear">
             <ul class="nav" id="main-nav">
                 <li><a href=".">Sprachschule</a></li>
@@ -104,7 +122,7 @@
 
     <section id="hero-text">
         <div class="jumbotron">
-        <div class="container">
+        <div class="container" id="hero-content">
             <h1>Deutschlernen in Deutschland</h1>
             <p>
                 Lernen Sie Deutsch in einem Intensivkurs,

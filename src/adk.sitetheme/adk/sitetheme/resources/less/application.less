@@ -76,14 +76,14 @@ input.standalone {
     position: relative;
     display: block;
     border-top: 5px solid @adk-blue;
-    padding-top: @navbar-height + (@navbar-height / 2) !important;
+    //padding-top: @navbar-height + (@navbar-height / 2) !important;
     margin-bottom: @line-height-base;
-         #logo-wrapper {
-            margin-top: -65px;
-        margin-left: -60px;
-        background-color: #fff;
-        position: fixed;
-        z-index: 3;
+    #logo-wrapper {
+        //margin-top: -65px;
+        //margin-left: -60px;
+        //background-color: #fff;
+        ////position: fixed;
+        //z-index: 3;
     //    border-bottom: 2px solid @adk-grey;
         #logo {
             z-index: 4;
@@ -103,6 +103,15 @@ input.standalone {
     }
     #language-flags-wrapper {
         margin-right: 50px;
+        ul.nav-pills > li > a {
+            background: @adk-blue;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 0px;
+            &:hover {
+                background: @adk-red;
+            }
+        }
     }
 //    border-bottom: 1px solid @adk-grey;
     //height:@navbar-height * 3.5;
@@ -112,8 +121,9 @@ input.standalone {
     .section-fr-fr #global-quicklinks {
         width: 400px;
     }
-    .nav {
-        font-size: 11.9px;
+    .navbar {
+        margin-top: @line-height-base;
+        //font-size: 11.9px;
     }
     //#logo {
     //    position:absolute;
@@ -127,6 +137,14 @@ input.standalone {
     //    padding-bottom: 12px;
     //    border-bottom: 2px solid @adk-grey;
     //}
+    #search-site,
+    #search-site-button {
+        border-radius: 0px;
+    }
+    #search-site-button {
+        background: @adk-blue;
+        border-color: @adk-blue;
+    }
 }
 
 
@@ -134,6 +152,24 @@ input.standalone {
 #editbar-wrapper + #topbar {
     padding-top: @navbar-height;
 }
+
+
+// OVERRIDES - STYLE ALTERNATIVES
+// DE can be used to implement a different layout
+
+body.section-de-de {
+    // Custom styles here
+    #logo-wrapper {
+        margin-top: -65px;
+        margin-left: -60px;
+        background-color: #fff;
+        position: fixed;
+        z-index: 3;
+        border-bottom: 2px solid @adk-grey;
+    }
+}
+
+/// END OVERRIDES
 
 
 #header-phone {
@@ -160,6 +196,8 @@ input.standalone {
     background: @adk-red;
     border-radius: 0px;
     color: #fff;
+    padding-top: @navbar-height * 1.5;
+    padding-bottom: @line-height-base / 2;
     h1 {
         color: #fff;
     }
