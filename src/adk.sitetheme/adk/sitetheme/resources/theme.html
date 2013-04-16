@@ -143,9 +143,8 @@
     </section>
 
     <section id="site-wrapper" class="container">
-        <div class="row">
         
-        <div id="main-wrapper" class="col-span-12">
+        <div id="main-wrapper">
             <div id="region-content">
                 <div id="content">
                     <article>
@@ -207,36 +206,34 @@
             </div>
         </div> <!-- End cell -->
 
-        <aside id="right-sidebar-wrapper" class="col-span-3">
-            <div id="sidebar">
-                <div class="actionBox" id="actionbox-phone">
+        <hr>
+
+        <aside id="right-sidebar-wrapper">
+            <div id="sidebar" class="row">
+                <div class="col-span-4" id="actionbox-phone">
+                    <div class="actionBox rounded" id="actionbox-news">
                     <div class="page-header">
-                        <h3>+ 49 (0) 821 - 31 49 05</h3>
+                        <h4>News</h4>
                     </div>
-                </div>
-                <div class="actionBox rounded">
                     <div class="actionBoxBody">
-                        <form id="search" name="search" action="/search">
-                            <div class="input-group span12">
-                            <input id="search-site"
-                                type="text"
-                                name="SearchableText"
-                                title="Search this site&hellip;" accesskey="4"
-                                class="inputLabel roundedleft" size="15"
-                                />
-                            <span class="input-group-btn">
-                            <button class="btn"
-                                type="submit"
-                                value="Search"
-                                id="search-site-button">
-                                Suche</button>
-                            </span>
-                            </div>
-                        </form>
+                        <p>News and events by Augsburger Deutschkurse:</p>
+                        <p><a href="/news" class="btn btn-block more-link">News</a></p>
+                        <p><a href="/events" class="btn btn-block more-link">Events</a></p>
                     </div>
-                    <div class="visualClear"><!-- --></div>
                 </div>
-                <div id="global-quicklinks" class="actionBox">
+                </div>
+                <div class="col-span-4">
+                    <div class="actionBoxBody">
+                        <div class="page-header">
+                        <h4><a href="/en-en/anmeldung-en">Registration</a></h4>
+                    </div>
+                    <div class="actionBoxBody">
+                        <p>Sign up now for a German course at Augsburger Deutschkurse! Applications may be submitted here!</p>
+                        <p><a href="/en-en/anmeldung-en" class="btn more-link">Sign up now&hellip;</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="global-quicklinks" class="col-span-4">
                     <div class="page-header">
                         <h4>Wissenswertes</h4>
                     </div>
@@ -249,41 +246,9 @@
                     </ul>
                     </div>
                 </div>
-                <div class="actionBox rounded" id="actionbox-news">
-                    <div class="page-header">
-                        <h4>News</h4>
-                    </div>
-                    <div class="actionBoxBody">
-                        <p>News and events by Augsburger Deutschkurse:</p>
-                        <p><a href="/news" class="btn btn-block more-link">News</a></p>
-                        <p><a href="/events" class="btn btn-block more-link">Events</a></p>
-                    </div>
-                </div>
-                <div class="actionBox rounded">
-                    <div class="page-header">
-                        <h4><a href="/en-en/anmeldung-en">Registration</a></h4>
-                    </div>
-                    <div class="actionBoxBody">
-                        <p>Sign up now for a German course at Augsburger Deutschkurse! Applications may be submitted here!</p>
-                        <p><a href="/en-en/anmeldung-en" class="btn more-link">Sign up now&hellip;</a></p>
-                    </div>
-                </div>
-                <div class="actionBox rounded" id="actionbox-contact">
-                    <div class="page-header">
-                        <h4>Kontakt</h4>
-                    </div>
-                    <div class="actionBoxBody">
-                        Augsburger Deutschkurse<br />
-                        Schaezlerstr. 8<br />
-                        86150 Augsburg<br />
-                        + 49 (0) 821 - 31 49 05<br />
-                        + 49 (0) 821 - 31 49 10<br />
-                        info@augsburger-deutschkurse.de
-                    </div>
-                </div>
+                
             </div>
         </aside>
-    </div> <!-- End row -->
     </section>
     <div class="row" id="copyright-wrapper">
         <div class="col-span-6 offset2" id="copyright-block">

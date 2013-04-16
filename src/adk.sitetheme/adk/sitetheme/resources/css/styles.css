@@ -6253,6 +6253,7 @@ input.standalone [class*=" icon-"].icon-spin.icon-large {
   height: 75px;
   text-indent: -3000px;
   overflow: hidden;
+  margin: 25px 0 25px;
 }
 #topbar a {
   color: #000;
@@ -6267,7 +6268,7 @@ input.standalone [class*=" icon-"].icon-spin.icon-large {
   border-radius: 0px;
 }
 #topbar #language-flags-wrapper ul.nav-pills > li > a:hover {
-  background: #af1e4a;
+  background: #6782d1;
 }
 #topbar .section-it-it #global-quicklinks,
 #topbar .section-es-es #global-quicklinks,
@@ -6275,7 +6276,7 @@ input.standalone [class*=" icon-"].icon-spin.icon-large {
   width: 400px;
 }
 #topbar .navbar {
-  margin-top: 25px;
+  background: #fff;
 }
 #topbar #search-site,
 #topbar #search-site-button {
