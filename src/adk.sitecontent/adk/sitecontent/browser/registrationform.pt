@@ -11,7 +11,8 @@
 <metal:main fill-slot="main">
 
     <metal:form metal:define-macro="form">
-    <metal:override define-slot="main">    
+    <metal:override define-slot="main">
+      <header id="content-header">
     
         <tal:status define="status view/status" condition="status">
             <dl class="portalMessage error"
@@ -31,7 +32,7 @@
             </dl>
         </tal:status>
       
-      <div class="page-header">
+      <div class="xpage-header">
         <h1  class="documentFirstHeading"
              i18n:translate=""
              tal:condition="view/label"
@@ -41,7 +42,7 @@
       </div>
 
         <div class="lead documentDescription" tal:content="view/description|nothing">Description</div>
-
+      </header>
         <div id="content-core">
             <form action="." metal:define-macro="master"
                   tal:attributes="action request/URL;

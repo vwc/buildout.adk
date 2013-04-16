@@ -6278,6 +6278,9 @@ input.standalone [class*=" icon-"].icon-spin.icon-large {
 #topbar .navbar {
   background: #fff;
 }
+#topbar #search {
+  max-width: 320px;
+}
 #topbar #search-site,
 #topbar #search-site-button {
   border-radius: 0px;
@@ -6311,7 +6314,7 @@ body.section-de-de #logo-wrapper {
   list-style: none;
 }
 #hero-text .jumbotron {
-  background: #af1e4a;
+  background: #314da1;
   border-radius: 0px;
   color: #fff;
   padding-top: 75px;
