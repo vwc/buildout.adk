@@ -6066,7 +6066,7 @@ table.grid th {
   background-color: #314da1;
   position: relative;
   z-index: 10;
-  margin-right: 180px;
+  margin-right: auto;
   max-width: 960px;
 }
 #editbar-wrapper .navbar #navigation ul {
@@ -6294,12 +6294,35 @@ input.standalone [class*=" icon-"].icon-spin.icon-large {
   padding-top: 50px;
 }
 body.section-de-de #logo-wrapper {
-  margin-top: -65px;
-  margin-left: -60px;
+  margin-left: auto;
   background-color: #fff;
   position: fixed;
-  z-index: 3;
   border-bottom: 2px solid #e7e7e7;
+}
+body.section-de-de #logo-wrapper #logo {
+  z-index: 4;
+  display: block;
+  background: 0 0px url(../images/logo-adk.png) no-repeat;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  background-size: 100%;
+  width: 310px;
+  height: 75px;
+  text-indent: -3000px;
+  overflow: hidden;
+}
+body.section-de-de #language-flags-wrapper {
+  margin-right: 50px;
+  margin-top: 70px;
+}
+body.section-de-de #content {
+  margin-top: -50px;
+}
+body.section-de-de #content #anmeldung {
+  background-color: #af1e4a;
+}
+body.section-de-de #content #anmeldung a {
+  color: #fff;
 }
 #header-phone .navbar-brand {
   color: #fff;
@@ -6332,6 +6355,14 @@ body.section-de-de #logo-wrapper {
 }
 #site-wrapper #sidebar {
   min-width: 75%;
+}
+#site-wrapper #sidebar .btn {
+  background-color: #af1e4a;
+  color: #fff;
+}
+#site-wrapper #sidebar .btn a {
+  text-decoration: none;
+  color: #fff;
 }
 #site-wrapper #content {
   width: 90%;
