@@ -6298,9 +6298,9 @@ body.section-de-de #logo-wrapper {
   background-color: #fff;
   position: fixed;
   border-bottom: 2px solid #e7e7e7;
+  z-index: 1032;
 }
 body.section-de-de #logo-wrapper #logo {
-  z-index: 4;
   display: block;
   background: 0 0px url(../images/logo-adk.png) no-repeat;
   border-left: 5px solid #fff;
@@ -6316,7 +6316,7 @@ body.section-de-de #language-flags-wrapper {
   margin-top: 70px;
 }
 body.section-de-de #content {
-  margin-top: -50px;
+  margin-top: 50px;
 }
 body.section-de-de #content #anmeldung {
   background-color: #af1e4a;
