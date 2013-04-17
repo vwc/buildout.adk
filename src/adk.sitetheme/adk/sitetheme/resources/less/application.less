@@ -32,7 +32,7 @@
                 background-color: @adk-blue;
                 position: relative;
                 z-index: 10;
-                margin-right: 180px;
+                margin-right: auto;
                 max-width: 960px;
                 ul {
                     margin-top: 10px;
@@ -83,6 +83,27 @@ input.standalone {
     border-top: 5px solid @adk-blue;
     //padding-top: @navbar-height + (@navbar-height / 2) !important;
     margin-bottom: @line-height-base;
+    .section-de-de #logo-wrapper {
+        margin-top: -65px;
+        margin-left: -60px;
+        background-color: #fff;
+        ////position: fixed;
+        z-index: 8;
+    //    border-bottom: 2px solid @adk-grey;
+        #logo {
+            position: relative;
+            z-index: 4;
+            display: block;
+            background: 0 0px url(../images/logo-adk.png) no-repeat;
+            border-left: 5px solid #fff;
+            border-right: 5px solid #fff;
+            background-size: 100%;
+            .size(310px, 75px);
+            text-indent: -3000px;
+            overflow:hidden;
+            margin: @line-height-base 0 @line-height-base;
+        }        
+    }
     #logo-wrapper {
         //margin-top: -65px;
         //margin-left: -60px;
@@ -169,12 +190,35 @@ input.standalone {
 body.section-de-de {
     // Custom styles here
     #logo-wrapper {
-        margin-top: -65px;
-        margin-left: -60px;
+        margin-left: auto;
         background-color: #fff;
         position: fixed;
-        z-index: 3;
         border-bottom: 2px solid @adk-grey;
+        #logo {
+            z-index: 4;
+            display: block;
+            background: 0 0px url(../images/logo-adk.png) no-repeat;
+            border-left: 5px solid #fff;
+            border-right: 5px solid #fff;
+            background-size: 100%;
+            .size(310px, 75px);
+            text-indent: -3000px;
+            overflow:hidden;
+            //margin: @line-height-base 0 @line-height-base;
+        }
+    }
+    #language-flags-wrapper {
+        margin-right: 50px;
+        margin-top: 70px;
+    }
+    #content {
+        margin-top: -50px;
+        #anmeldung {
+            background-color: @adk-red;
+            a {
+                color: #fff;
+            }
+        }
     }
 }
 
@@ -218,7 +262,15 @@ body.section-de-de {
 #site-wrapper {
     margin-top: -50px;
     #sidebar {
-        min-width: 75%
+        min-width: 75%;
+        .btn {
+            background-color: @adk-red;
+            color: #fff;
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
     }
     #content {
         .thumbnail {
