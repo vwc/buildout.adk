@@ -31,9 +31,9 @@
     <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
 
 </head>
-<body>
+<body class="section-de-de">
 
-<header id="editbar-wrapper" class="hidden-phone">
+<header id="editbar-wrapper">
 	<div class="navbar navbar-fixed-top">
 		<div class="container">
 			<a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
@@ -41,8 +41,9 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a href="." class="navbar-brand">ADK Augsburger Deutschkurse</a>
-			
+			<div id="logo-wrapper" class="pull-left">
+            <a href="/" id="logo">ADK Augsburger Deutschkurse</a>
+        </div>
 			<div class="nav-collapse collapse">
 			<div id="navigation" class="pull-right">
 				<ul id="main-nav">
@@ -56,58 +57,6 @@
 	    <div class="visualClear"><!-- Clear space after content block --></div>
 </header>
 
-<header id="header-phone" class="visible-phone">
-	<div class="navbar navbar-static-top">
-		<div class="container">
-			<a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
-			
-			<a href="." class="navbar-brand">ADK Augsburger Deutschkurse</a>
-			<div class="nav-collapse collapse">
-				<ul class="nav" id="main-nav">
-					<li><a href=".">Sprachschule</a></li>
-					<li><a href=".">Sprachschule</a></li>
-					<li><a href=".">Sprachschule</a></li>
-				</ul>
-
-			</div>
-			
-		</div>
-	</div>
-		    <div class="visualClear"><!-- Clear space after content block --></div>
-</header>
-<header id="topbar" class="hidden-phone">
-	<div class="container">
-		<div id="logo-wrapper" class="pull-left">
-			<a href="/" id="logo">ADK Augsburger Deutschkurse</a>
-		</div>
-		<div id="language-flags-wrapper" class="pull-right" >
-		<ul class="nav nav-pills">
-			<li><a href="http://augsburger-deutschkurse.de/" id="flag-de" class="language-flag-link">DE</a></li>
-			<li><a href="http://adk-german-courses.com/" id="flag-en" class="language-flag-link">EN</a></li>
-			<li><a href="http://apprendre-allemand.fr/" id="flag-fr" class="language-flag-link">FR</a></li>
-			<li><a href="http://studiare-tedesco.it/" id="flag-it" class="language-flag-link">IT</a></li>
-			<li><a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link">ES</a></li>
-		 </ul>
-		</div>
-
-
-		<div class="navbar visualClear"></div>
-		<div class="nav-collapse collapse">	
-			<!--<div id="navigation">
-				<ul id="main-nav">
-					<li><a href=".">1st Section</a></li>
-					<li><a href=".">2nd Section</a></li>
-					<li><a href=".">3rd Section</a></li>
-					<li><a href=".">4th Section</a></li>
-				</ul>
-			</div> -->
-		</div>
-	</div>
-</header>
 <div id="outer-wrapper"><div id="middle-wrapper"><div id="inner-wrapper">
 
 <section id="site-wrapper" class="container">
@@ -178,6 +127,15 @@
 	        </div>
 	
 	<aside id="right-sidebar-wrapper" class="col-span-3">
+        <div id="language-flags-wrapper" class="pull-right" >
+        <ul class="nav nav-pills">
+            <li><a href="http://augsburger-deutschkurse.de/" id="flag-de" class="language-flag-link">DE</a></li>
+            <li><a href="http://adk-german-courses.com/" id="flag-en" class="language-flag-link">EN</a></li>
+            <li><a href="http://apprendre-allemand.fr/" id="flag-fr" class="language-flag-link">FR</a></li>
+            <li><a href="http://studiare-tedesco.it/" id="flag-it" class="language-flag-link">IT</a></li>
+            <li><a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link">ES</a></li>
+         </ul>
+        </div>
 		<div id="sidebar" class="discreet">
 			
 			<!--<div class="actionBox" id="actionbox-toc">
@@ -327,6 +285,19 @@
     </footer>
 <script src="js/bootstrap.js"></script>
 <script src="js/holder.js"></script>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Abel::latin', 'Oswald:400,300,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-4402811-8']);

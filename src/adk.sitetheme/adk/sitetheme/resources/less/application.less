@@ -4,17 +4,17 @@
 @adk-red:        #AF1E4A;
 @adk-grey:       #E7E7E7;
 
+@link-color:            @adk-red;
+
 @font-size-base:          16px;
 @line-height-base:        25px;
-
-@link-color:            @adk-red;
 
 // Application styles
 // -------------------
 
 #editbar-wrapper {
-            position: fixed;
-            z-index: 1;        
+        //position: fixed;
+        //z-index: 1;        
         .navbar-brand {
             width: 0px;
             height: 0px;
@@ -25,7 +25,7 @@
             }
         }
         .navbar {
-            z-index: 2;
+            //z-index: 2;
             color: #fff;
             background-color: @adk-blue;
             #navigation {
@@ -168,6 +168,7 @@ input.standalone {
 
 body.section-de-de {
     // Custom styles here
+    padding-top: @navbar-height + @line-height-base;
     #logo-wrapper {
         margin-left: auto;
         background-color: #fff;
@@ -200,6 +201,19 @@ body.section-de-de {
         }
     }
 }
+
+//body.section-en-en {
+//    font-family: 'Abel';
+//    font-size: @font-size-base * 1.25;
+//    .jumbotron h1 {
+//        font-family: 'Oswald';
+//        font-weight: 700;
+//    }
+//    .jumbotron p.lead {
+//        font-family: 'Oswald';
+//        font-weight: 300;
+//    }
+//}
 
 /// END OVERRIDES
 
@@ -618,7 +632,6 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 }
 
 /* @end */
-
 
 
 #footer-wrapper {
