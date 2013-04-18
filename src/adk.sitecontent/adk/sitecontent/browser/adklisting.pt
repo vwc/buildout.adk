@@ -24,22 +24,22 @@
         </header>
         <section id="content-core">
             <tal:list tal:repeat="page pages">
-                <div class="row">
-                    <div class="col-span-3">
-                        <div class="thumbnail">
-                            <img src="" tal:replace="structure page/image_tag" />
-                        </div>
-                    </div>
-                    <div class="col-span-9">
-                    <h2 class="xxitemHeadline">
+                <h2 class="xxitemHeadline">
                         <a href="" tal:attributes="href page/url"
                                     tal:content="page/title">Page Title</a>
-                    </h2>
+                </h2>
+                <div class="row">
+                    <div class="col-span-4">
+                        <span class="img-thumbnail">
+                            <img src="" tal:replace="structure page/image_tag" />
+                        </span>
+                    </div>
+                    <div class="col-span-8">
                     <p class="itemDescription" tal:content="page/description">
                         Description
                     </p>
-                    <p>
-                        <a href="" classd="btn"
+                    <p class="text-right">
+                        <a href="" class="xbtn"
                            tal:attributes="href page/url;"
                            i18n:translate="read_more">
                         More&hellip;
