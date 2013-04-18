@@ -7,7 +7,7 @@
 @link-color:            @adk-red;
 
 @font-size-base:          16px;
-@line-height-base:        @font-size-base * 1.6;
+@line-height-base:        @font-size-base + 8;
 
 // Application styles
 // -------------------
@@ -204,8 +204,12 @@ body.section-de-de {
 }
 
 body.section-en-en {
-    font-family: 'Abel';
-    font-size: @font-size-base * 1.1;
+    //font-family: 'Abel';
+    //font-size: @font-size-base * 1.15;
+    //h1, h2, h3, h4 {
+    //    font-family: 'Oswald';
+    //    font-weight: 300;
+    //}
     #hero-text .jumbotron {
         background: lighten(@adk-blue, 20%)
     }
@@ -233,6 +237,14 @@ body.section-en-en {
         dd {
             font-size: @font-size-small;
         }
+    }
+}
+
+body.subsection-sprachreisen-en-klassenfahrten-und-gruppenreisen {
+    font-family: 'Open Sans';
+    h1, h2, h3, h4 {
+        font-family: 'Arimo';
+        font-weight: 400;
     }
 }
 
