@@ -13,52 +13,52 @@
 // -------------------
 
 #editbar-wrapper {
-        //position: fixed;
-        //z-index: 1;        
-        .navbar-brand {
-            width: 0px;
-            height: 0px;
-            visibility: collapse;
+    //position: fixed;
+    //z-index: 1;        
+    .navbar-brand {
+        width: 0px;
+        height: 0px;
+        visibility: collapse;
+        color: #fff;
+        a:hover, a:focus, a:active {
             color: #fff;
-            a:hover, a:focus, a:active {
-                color: #fff;
-            }
         }
-        .navbar {
-            //z-index: 2;
-            color: #fff;
+    }
+    .navbar {
+        //z-index: 2;
+        color: #fff;
+        background-color: @adk-blue;
+        #navigation {
             background-color: @adk-blue;
-            #navigation {
-                background-color: @adk-blue;
-                position: relative;
-                z-index: 10;
-                margin-right: auto;
-                max-width: 960px;
-                ul {
-                    margin-top: 10px;
-                    li {
-                        display: inline-block;
-                        list-style: none;
-                        a {
-                            color: #fff;
-                            margin-right: 15px;
-                            display: block;
-                            padding: 0.75em;
-                            text-decoration: none;
-                        }
-                        a:hover, a:focus, a:active {
-                            border: none !important;
-                            display: block;
-                            padding: 0.75em;
-                            color: #fff !important;
-                            text-decoration: none;
-                            background-color: @adk-red;
-                            color: #000;
-                        }
+            position: relative;
+            z-index: 10;
+            margin-right: auto;
+            max-width: 960px;
+            ul {
+                margin-top: 10px;
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    a {
+                        color: #fff;
+                        margin-right: 15px;
+                        display: block;
+                        padding: 0.75em;
+                        text-decoration: none;
+                    }
+                    a:hover, a:focus, a:active {
+                        border: none !important;
+                        display: block;
+                        padding: 0.75em;
+                        color: #fff !important;
+                        text-decoration: none;
+                        background-color: @adk-red;
+                        color: #000;
                     }
                 }
             }
         }
+    }
 }
 
 input.context,
@@ -112,6 +112,7 @@ input.standalone {
         ul.nav-pills > li > a {
             background: @adk-blue;
             color: #fff;
+            font-size: @font-size-base;
             padding: 5px 10px;
             border-radius: 0px;
             &:hover {
@@ -202,18 +203,18 @@ body.section-de-de {
     }
 }
 
-//body.section-en-en {
-//    font-family: 'Abel';
-//    font-size: @font-size-base * 1.25;
-//    .jumbotron h1 {
-//        font-family: 'Oswald';
-//        font-weight: 700;
-//    }
-//    .jumbotron p.lead {
-//        font-family: 'Oswald';
-//        font-weight: 300;
-//    }
-//}
+body.section-en-en {
+    font-family: 'Abel';
+    font-size: @font-size-base * 1.1;
+    #hero-text .jumbotron {
+        background: lighten(@adk-blue, 20%)
+    }
+    #main-nav a {
+        background: @adk-red;
+        border-right: 1px solid #fff;
+        color: #fff;
+    }
+}
 
 /// END OVERRIDES
 
@@ -636,6 +637,7 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 
 #footer-wrapper {
 /* Sticky footer */
+    margin-top: @line-height-base;
     padding: @line-height-base;
     background: #af1e4a;
     color: #fff;
