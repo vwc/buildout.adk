@@ -6323,6 +6323,16 @@ body.section-de-de #content #anmeldung {
 body.section-de-de #content #anmeldung a {
   color: #fff;
 }
+body.section-en-en {
+  font-family: 'Open Sans';
+}
+body.section-en-en h1,
+body.section-en-en h2,
+body.section-en-en h3,
+body.section-en-en h4 {
+  font-family: 'Arimo';
+  font-weight: 400;
+}
 body.section-en-en #hero-text .jumbotron {
   background: #6782d1;
 }
@@ -6364,16 +6374,6 @@ body.section-en-en #document-toc dt {
 }
 body.section-en-en #document-toc dd {
   font-size: 13.6px;
-}
-body.subsection-sprachreisen-en-klassenfahrten-und-gruppenreisen {
-  font-family: 'Open Sans';
-}
-body.subsection-sprachreisen-en-klassenfahrten-und-gruppenreisen h1,
-body.subsection-sprachreisen-en-klassenfahrten-und-gruppenreisen h2,
-body.subsection-sprachreisen-en-klassenfahrten-und-gruppenreisen h3,
-body.subsection-sprachreisen-en-klassenfahrten-und-gruppenreisen h4 {
-  font-family: 'Arimo';
-  font-weight: 400;
 }
 #header-phone .navbar-brand {
   color: #fff;
