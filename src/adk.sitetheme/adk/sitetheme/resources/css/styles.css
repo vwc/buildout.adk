@@ -6330,16 +6330,16 @@ body.section-en-en {
 body.section-en-en #hero-text .jumbotron {
   background: #6782d1;
 }
-body.section-en-en #main-nav a {
+body.section-en-en #main-navigation a {
   background: #af1e4a;
   border-right: 1px solid #fff;
   color: #eeeeee;
 }
-body.section-en-en #main-nav a:hover {
+body.section-en-en #main-navigation a:hover {
   color: #fff;
   background: #c52253;
 }
-body.section-en-en #main-nav a.active {
+body.section-en-en #main-navigation a.active {
   background: #da265d;
   color: #fff;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
