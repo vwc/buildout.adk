@@ -6,8 +6,8 @@
 
 @link-color:            @adk-red;
 
-@font-size-base:          16px;
-@line-height-base:        @font-size-base + 8;
+@font-size-base:              16px;
+@line-height-computed:        @font-size-base + 8;
 
 // Application styles
 // -------------------
@@ -82,7 +82,7 @@ input.standalone {
     display: block;
     border-top: 5px solid @adk-blue;
     //padding-top: @navbar-height + (@navbar-height / 2) !important;
-    margin-bottom: @line-height-base;
+    margin-bottom: @line-height-computed;
     #logo-wrapper {
         //margin-top: -65px;
         //margin-left: -60px;
@@ -100,7 +100,7 @@ input.standalone {
             .size(310px, 75px);
             text-indent: -3000px;
             overflow:hidden;
-            margin: @line-height-base 0 @line-height-base;
+            margin: @line-height-computed 0 @line-height-computed;
         }
     }
 
@@ -137,7 +137,7 @@ input.standalone {
     //    margin: 0 22px 25px;
     //    background: 0 0px url(../images/logo-adk.png) no-repeat;
     //    .size(310px, 75px);
-    //    margin: @line-height-base @line-height-base @line-height-base @line-height-base * 20;
+    //    margin: @line-height-computed @line-height-computed @line-height-computed @line-height-computed * 20;
     //    display: block;
     //    text-indent: -3000px;
     //    overflow:hidden;
@@ -160,50 +160,50 @@ input.standalone {
 
 #toolbar + #topbar,
 #editbar-wrapper + #topbar {
-    padding-top: @navbar-height;
+    margin-top: @navbar-height;
 }
 
 
 // OVERRIDES - STYLE ALTERNATIVES
 // DE can be used to implement a different layout
 
-body.section-de-de {
-    // Custom styles here
-    padding-top: @navbar-height + @line-height-base;
-    #logo-wrapper {
-        margin-left: auto;
-        background-color: #fff;
-        position: fixed;
-        border-bottom: 2px solid @adk-grey;
-        z-index: @zindex-navbar-fixed + 2;
-        #logo {
-            display: block;
-            background: 0 0px url(../images/logo-adk.png) no-repeat;
-            border-left: 5px solid #fff;
-            border-right: 5px solid #fff;
-            background-size: 100%;
-            .size(310px, 75px);
-            text-indent: -3000px;
-            overflow:hidden;
-            //margin: @line-height-base 0 @line-height-base;
-        }
-    }
-    #language-flags-wrapper {
-        margin-right: 50px;
-        margin-top: 70px;
-    }
-    #content {
-        margin-top: 50px;
-        #anmeldung {
-            background-color: @adk-red;
-            a {
-                color: #fff;
-            }
-        }
-    }
-}
+//body.section-de-de {
+//    // Custom styles here
+//    padding-top: @navbar-height + @line-height-computed;
+//    #logo-wrapper {
+//        margin-left: auto;
+//        background-color: #fff;
+//        position: fixed;
+//        border-bottom: 2px solid @adk-grey;
+//        z-index: @zindex-navbar-fixed + 2;
+//        #logo {
+//            display: block;
+//            background: 0 0px url(../images/logo-adk.png) no-repeat;
+//            border-left: 5px solid #fff;
+//            border-right: 5px solid #fff;
+//            background-size: 100%;
+//            .size(310px, 75px);
+//            text-indent: -3000px;
+//            overflow:hidden;
+//            //margin: @line-height-computed 0 @line-height-computed;
+//        }
+//    }
+//    #language-flags-wrapper {
+//        margin-right: 50px;
+//        margin-top: 70px;
+//    }
+//    #content {
+//        margin-top: 50px;
+//        #anmeldung {
+//            background-color: @adk-red;
+//            a {
+//                color: #fff;
+//            }
+//        }
+//    }
+//}
 
-body.section-en-en {
+body {
     font-family: 'Open Sans';
     h1, h2, h3, h4 {
         font-family: 'Arimo';
@@ -215,7 +215,7 @@ body.section-en-en {
     #main-navigation a {
         background: @adk-red;
         border-right: 1px solid #fff;
-        color: @grayLighter;
+        color: @gray-lighter;
         &:hover {
             color: #fff;
             background: lighten(@adk-red, 5%);
@@ -267,7 +267,7 @@ body.section-en-en {
     border-radius: 0px;
     color: #fff;
     padding-top: @navbar-height * 1.5;
-    padding-bottom: @line-height-base / 2;
+    padding-bottom: @line-height-computed / 2;
     h1 {
         color: #fff;
     }
@@ -326,7 +326,7 @@ body.section-en-en {
         color: @adk-blue;
     }
     
-    padding-top: @line-height-base * 2;
+    padding-top: @line-height-computed * 2;
     .actionBox {
         margin-bottom: 20px;
     }
@@ -464,7 +464,7 @@ body.section-en-en {
 @media (max-width: 767px) {
     #content,
     #sidebar {
-        padding: @line-height-base / 2;
+        padding: @line-height-computed / 2;
         font-size: @font-size-base * 0.85;      
     }
     #content {
@@ -660,8 +660,8 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 
 #footer-wrapper {
 /* Sticky footer */
-    margin-top: @line-height-base;
-    padding: @line-height-base;
+    margin-top: @line-height-computed;
+    padding: @line-height-computed;
     background: #af1e4a;
     color: #fff;
     a {
