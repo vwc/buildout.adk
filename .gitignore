@@ -25,6 +25,7 @@ var
 etc/**/*
 src/sauna.reload
 src/collective.disqus
+src/plone.app.contenttypes
 src/plone.app.blocks
 src/plone.app.tiles
 src/plone.tiles
