@@ -52,6 +52,14 @@ def test_suite():
 
         # -*- extra stuff goes here -*-
 
+        # Integration tests for ContentPage
+        ztc.ZopeDocFileSuite(
+            'ContentPage.txt',
+            package='adk.contentpages',
+            optionflags = OPTION_FLAGS,
+            test_class=TestCase),
+
+
         ])
 
 if __name__ == '__main__':
