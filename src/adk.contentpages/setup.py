@@ -29,6 +29,7 @@ setup(name='adk.contentpages',
           'plone.app.dexterity [grok, relations]',
           'plone.namedfile [blobs]',
           'five.grok',
+          'plone.api',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

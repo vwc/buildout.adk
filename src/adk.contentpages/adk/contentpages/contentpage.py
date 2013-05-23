@@ -1,4 +1,6 @@
+from Acquisition import aq_inner
 from five import grok
+from plone import api
 from plone.directives import dexterity, form
 
 from zope import schema
@@ -41,3 +43,6 @@ class View(grok.View):
     grok.context(IContentPage)
     grok.require('zope2.View')
     grok.name('view')
+
+    def update(self):
+        self.has_content = len(self.context.items()) > 0

@@ -17,18 +17,38 @@
         tal:content="context/Description" />
     </header>
 
-    <article id="content-core">
+    <section id="content-core">
 
-      <div tal:condition="context/text"
+      <div class="row">
+      <div id="page-body"
+        class="col col-lg-8 col-offset-4"
+        tal:condition="context/text"
         tal:content="structure context/text/output" />
-
-      <div class="alert">
-        <p>This is a folderish content page that will display a custom
-          layout based on the contents
-        </p>
       </div>
+     
+      <div id="page-subcontent"
+        tal:condition="view/has_content">
+        <ul>
+          <li tal:repeat="item python:context.restrictedTraverse('@@folderListing')()">
+            <a tal:attributes="href item/getURL" tal:content="item/Title" />
+          </li>
+        </ul>
 
-    </article>
+        <tal:block  tal:repeat="item python:context.restrictedTraverse('@@folderListing')()">
+          <article class="subpage">
+            <header class="subpage-header">
+              <h2 tal:content="item/Title" />
+              <p class="subpage-description"
+                tal:condition="item/Description"
+                tal:content="item/Description" />
+            </header>
+            <div class="subpage-content">
+              <div tal:content="structure item/text/output" />
+            </div>
+          </article>
+        </tal:block>
+      </div>
+    </section>
 
   </section>
 
