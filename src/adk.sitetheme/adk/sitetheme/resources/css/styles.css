@@ -6284,21 +6284,11 @@ body #document-toc dd {
   font-size: 14px;
 }
 .feature {
-  border-left: 5px solid #6782d1;
-  padding: 24px 24px 24px 48px;
   margin: 24px 24px 24px 72px;
   color: #555555;
   font-size: 20px;
   font-family: 'Arimo';
   font-weight: 700;
-}
-.feature:before {
-  content: "\f0f2";
-  font-family: 'FontAwesome';
-  font-size: 150px;
-  display: block;
-  float: left;
-  margin: 24px;
 }
 .jumbotron h1 {
   color: #314da1;
