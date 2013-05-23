@@ -26,13 +26,10 @@
             <theme href="frontpage-fr.html" css:if-content="body.section-front-page" />
             <theme href="theme-fr.html" />
         </rules>-->
-        <rules css:if-content="body.section-en-en">
-            <theme href="theme.html" />
-        </rules>
         <theme href="theme.html" />
 
-        <replace css:theme="title" css:content="title" />
         <replace css:theme="base" css:content="base" />
+        <replace css:theme="title" css:content="title" />
 
         <drop theme="/html/head/meta" />
 
@@ -79,7 +76,7 @@
         </after>
 
         <!-- Global navigation -->
-        <replace css:content='#portal-globalnav li' css:theme-children="#main-nav" />
+        <replace css:content='#portal-globalnav li' css:theme-children="#main-navigation" />
         <!-- Breadcrumbs -->
         <replace css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
 
@@ -97,7 +94,7 @@
 
         <!-- Status messages not inside #content -->
         <drop css:content="#content .portalMessage"/>
-        <before css:content=".portalMessage" method="raw" css:theme="#document-content" />
+        <before css:content=".portalMessage" method="raw" css:theme="#content" />
         
         <!-- Drop navtree images -->
         <drop css:content="dl#portletNavigationTree img" />

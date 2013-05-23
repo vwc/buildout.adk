@@ -13,19 +13,27 @@
   <section id="contentpage-view">
     <header id="page-header">
       <h1 class="documentFirstHeading" tal:content="context/Title" />
-      <p class="lead" tal:condition="context/Description"
-        tal:content="context/Description" />
+      <div class="row">
+        <div class="col col-lg-9 col-offset-3">
+          
+          <p class="lead" tal:condition="context/Description"
+            tal:content="context/Description" />
+        </div>
+      </div>
     </header>
 
     <section id="content-core">
-
+      <div class="page-header">
+      <h2 class="display-title"
+        tal:condition="context/displayTitle"
+        tal:content="context/displayTitle" />
+      </div>
       <div class="row">
       <div id="page-body"
-        class="col col-lg-8 col-offset-4"
+        class="col col-lg-9"
         tal:condition="context/text"
         tal:content="structure context/text/output" />
       </div>
-     
       <div id="page-subcontent"
         tal:condition="view/has_content">
         <ul>
@@ -37,13 +45,15 @@
         <tal:block  tal:repeat="item python:context.restrictedTraverse('@@folderListing')()">
           <article class="subpage">
             <header class="subpage-header">
-              <h2 tal:content="item/Title" />
+              <h2><a tal:content="item/Title"
+                    tal:attributes="href item/getURL" /></h2>
               <p class="subpage-description"
                 tal:condition="item/Description"
                 tal:content="item/Description" />
             </header>
             <div class="subpage-content">
-              <div tal:content="structure item/text/output" />
+              <a class="btn btn-default" tal:attributes="href item/getURL"
+                i18n:translate="">Read More</a>
             </div>
           </article>
         </tal:block>

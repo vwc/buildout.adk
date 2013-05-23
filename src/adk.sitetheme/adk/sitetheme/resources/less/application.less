@@ -66,142 +66,6 @@ input.standalone {
     .btn();
 }
 
-#header-phone .navbar {
-    background-color: @adk-blue;
-    position:relative;
-    .brand {
-        color: #fff;
-    }
-    .nav > li > a {
-        color: #fff;
-    }
-}
-
-#topbar {
-    position: relative;
-    display: block;
-    border-top: 5px solid @adk-blue;
-    //padding-top: @navbar-height + (@navbar-height / 2) !important;
-    margin-bottom: @line-height-computed;
-    #logo-wrapper {
-        //margin-top: -65px;
-        //margin-left: -60px;
-        //background-color: #fff;
-        ////position: fixed;
-        //z-index: 3;
-    //    border-bottom: 2px solid @adk-grey;
-        #logo {
-            z-index: 4;
-            display: block;
-            background: 0 0px url(../images/logo-adk.png) no-repeat;
-            border-left: 5px solid #fff;
-            border-right: 5px solid #fff;
-            background-size: 100%;
-            .size(310px, 75px);
-            text-indent: -3000px;
-            overflow:hidden;
-            margin: @line-height-computed 0 @line-height-computed;
-        }
-    }
-
-    a {
-        color: #000;
-    }
-    #language-flags-wrapper {
-        margin-right: 50px;
-        ul.nav-pills > li > a {
-            background: @adk-blue;
-            color: #fff;
-            font-size: @font-size-base;
-            padding: 5px 10px;
-            border-radius: 0px;
-            &:hover {
-                background: lighten(@adk-blue, 20%);
-            }
-        }
-    }
-//    border-bottom: 1px solid @adk-grey;
-    //height:@navbar-height * 3.5;
-
-    .section-it-it #global-quicklinks,
-    .section-es-es #global-quicklinks,
-    .section-fr-fr #global-quicklinks {
-        width: 400px;
-    }
-    .navbar {
-        background: #fff;
-        //font-size: 11.9px;
-    }
-    //#logo {
-    //    position:absolute;
-    //    margin: 0 22px 25px;
-    //    background: 0 0px url(../images/logo-adk.png) no-repeat;
-    //    .size(310px, 75px);
-    //    margin: @line-height-computed @line-height-computed @line-height-computed @line-height-computed * 20;
-    //    display: block;
-    //    text-indent: -3000px;
-    //    overflow:hidden;
-    //    padding-bottom: 12px;
-    //    border-bottom: 2px solid @adk-grey;
-    //}
-    #search {
-        max-width: 320px;
-    }
-    #search-site,
-    #search-site-button {
-        border-radius: 0px;
-    }
-    #search-site-button {
-        background: @adk-blue;
-        border-color: @adk-blue;
-    }
-}
-
-
-#toolbar + #topbar,
-#editbar-wrapper + #topbar {
-    margin-top: @navbar-height;
-}
-
-
-// OVERRIDES - STYLE ALTERNATIVES
-// DE can be used to implement a different layout
-
-//body.section-de-de {
-//    // Custom styles here
-//    padding-top: @navbar-height + @line-height-computed;
-//    #logo-wrapper {
-//        margin-left: auto;
-//        background-color: #fff;
-//        position: fixed;
-//        border-bottom: 2px solid @adk-grey;
-//        z-index: @zindex-navbar-fixed + 2;
-//        #logo {
-//            display: block;
-//            background: 0 0px url(../images/logo-adk.png) no-repeat;
-//            border-left: 5px solid #fff;
-//            border-right: 5px solid #fff;
-//            background-size: 100%;
-//            .size(310px, 75px);
-//            text-indent: -3000px;
-//            overflow:hidden;
-//            //margin: @line-height-computed 0 @line-height-computed;
-//        }
-//    }
-//    #language-flags-wrapper {
-//        margin-right: 50px;
-//        margin-top: 70px;
-//    }
-//    #content {
-//        margin-top: 50px;
-//        #anmeldung {
-//            background-color: @adk-red;
-//            a {
-//                color: #fff;
-//            }
-//        }
-//    }
-//}
 
 body {
     font-family: 'Open Sans';
@@ -211,20 +75,6 @@ body {
     }
     #hero-text .jumbotron {
         background: lighten(@adk-blue, 20%)
-    }
-    #main-navigation a {
-        background: @adk-red;
-        border-right: 1px solid #fff;
-        color: @gray-lighter;
-        &:hover {
-            color: #fff;
-            background: lighten(@adk-red, 5%);
-        }
-        &.active {
-            background:lighten(@adk-red, 10%);
-            color: #fff;
-            .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
-        }
     }
     #document-toc {
         width: 30%;
@@ -259,16 +109,6 @@ body {
     }
 }
  
-/// END OVERRIDES
-
-
-#header-phone {
-    .navbar-brand {
-        color: #fff;
-    }
-}
-
-
 .jumbotron {
     h1 {
         color: @adk-blue;
@@ -296,6 +136,8 @@ body {
     }
 }
 
+// Site wrapper
+
 #site-wrapper {
     margin-top: -50px;
     #sidebar {
@@ -316,10 +158,11 @@ body {
             //max-width:100%;
             //height: 150px;
         }
-       width: 90%;
-
        h2 {
             color: @adk-blue;
+            &.display-title {
+                color: @adk-red;
+            }
        }
        .xxitemHeadline a {
             color: @adk-red;
@@ -481,80 +324,80 @@ body {
 // Conten styles
 // -----------------------------
 
-@media (max-width: 767px) {
-    #content,
-    #sidebar {
-        padding: @line-height-computed / 2;
-        font-size: @font-size-base * 0.85;      
-    }
-    #content {
-        .pullquote {
-            float: none;
-            width: 90%;
-        }
-    }
-}
-
-
-@media (max-width: 940px) {
-    #editbar-wrapper.hidden-phone {
-        .navbar-brand {
-            visibility: collapse;
-            height: 0 !important;
-            width: 0 !important;
-        }
-        #navigation {
-            float: right;
-            width: 60%;
-            ul {
-                margin-right: -20px;
-                li {
-                    height: 30px;
-                }
-            }
-        }
-        }
-    #topbar {
-        #logo-wrapper {
-            #logo {
-                padding-left: 0.75em;
-                padding-top: 0.25em;
-                background-color: none;
-                background-size: 90%;
-                width: 150px;
-                height: 80px;
-                //.size(800,300);
-            }
-        }
-    }
-}
-
-
-@media (max-width: 1240px) {
-    #editbar-wrapper.hidden-phone {
-        .navbar-brand {
-            visibility: collapse;
-            height: 0 !important;
-            width: 0 !important;
-        }
-        #navigation {
-            margin-right: -10px;
-        }
-    }
-    #topbar {
-        #logo-wrapper {
-            #logo {
-                padding-left: 0.75em;
-                padding-top: 0.25em;
-                background-color: none;
-                background-size: 90%;
-                width: 300px;
-                height: 80px;
-                //.size(800,300);
-            }
-        }
-    }
-}
+//@media (max-width: 767px) {
+//    #content,
+//    #sidebar {
+//        padding: @line-height-computed / 2;
+//        font-size: @font-size-base * 0.85;      
+//    }
+//    #content {
+//        .pullquote {
+//            float: none;
+//            width: 90%;
+//        }
+//    }
+//}
+//
+//
+//@media (max-width: 940px) {
+//    #editbar-wrapper.hidden-phone {
+//        .navbar-brand {
+//            visibility: collapse;
+//            height: 0 !important;
+//            width: 0 !important;
+//        }
+//        #navigation {
+//            float: right;
+//            width: 60%;
+//            ul {
+//                margin-right: -20px;
+//                li {
+//                    height: 30px;
+//                }
+//            }
+//        }
+//        }
+//    #topbar {
+//        #logo-wrapper {
+//            #logo {
+//                padding-left: 0.75em;
+//                padding-top: 0.25em;
+//                background-color: none;
+//                background-size: 90%;
+//                width: 150px;
+//                height: 80px;
+//                //.size(800,300);
+//            }
+//        }
+//    }
+//}
+//
+//
+//@media (max-width: 1240px) {
+//    #editbar-wrapper.hidden-phone {
+//        .navbar-brand {
+//            visibility: collapse;
+//            height: 0 !important;
+//            width: 0 !important;
+//        }
+//        #navigation {
+//            margin-right: -10px;
+//        }
+//    }
+//    #topbar {
+//        #logo-wrapper {
+//            #logo {
+//                padding-left: 0.75em;
+//                padding-top: 0.25em;
+//                background-color: none;
+//                background-size: 90%;
+//                width: 300px;
+//                height: 80px;
+//                //.size(800,300);
+//            }
+//        }
+//    }
+//}
 
 // Test some content styles
 
