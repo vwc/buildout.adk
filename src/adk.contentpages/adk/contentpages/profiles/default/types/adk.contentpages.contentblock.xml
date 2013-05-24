@@ -1,27 +1,22 @@
 <?xml version="1.0"?>
-<object name="adk.contentpages.contentpage"
+<object name="adk.contentpages.contentblock"
    meta_type="Dexterity FTI"
    i18n:domain="adk.contentpages" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
   <!-- Basic metadata -->
-  <property name="title" i18n:translate="">ContentPage</property>
+  <property name="title" i18n:translate="">ContentBlock</property>
   <property name="description"
-    i18n:translate="">Content page with automatic subcontent listing</property>
-  <property name="icon_expr">string:${portal_url}/folder_icon.png</property>
-  <property name="factory">adk.contentpages.contentpage</property>
+    i18n:translate="">A blcok of content usable inside a content page.</property>
+  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
+  <property name="factory">adk.contentpages.contentblock</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">True</property>
-  <property name="allowed_content_types">
-    <element value="adk.contentpages.contentpage" />
-    <element value="adk.contentpages.contentblock" />
-    <element value="Image" />
-    <element value="File" />
-  </property>
+  <property name="allowed_content_types" />
   <property name="allow_discussion">False</property>
 
   <!-- schema and class used for content items -->
-  <property name="schema">adk.contentpages.contentpage.IContentPage</property>
-  <property name="klass">adk.contentpages.contentpage.ContentPage</property>
+  <property name="schema">adk.contentpages.contentblock.IContentBlock</property>
+  <property name="klass">adk.contentpages.contentblock.ContentBlock</property>
 
   <property name="behaviors">
      <element value="plone.app.content.interfaces.INameFromTitle" />

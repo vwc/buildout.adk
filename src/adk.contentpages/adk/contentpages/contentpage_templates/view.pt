@@ -36,27 +36,46 @@
       </div>
       <div id="page-subcontent"
         tal:condition="view/has_content">
-        <ul>
-          <li tal:repeat="item python:context.restrictedTraverse('@@folderListing')()">
-            <a tal:attributes="href item/getURL" tal:content="item/Title" />
-          </li>
-        </ul>
-
-        <tal:block  tal:repeat="item python:context.restrictedTraverse('@@folderListing')()">
-          <article class="subpage">
-            <header class="subpage-header">
-              <h2><a tal:content="item/Title"
-                    tal:attributes="href item/getURL" /></h2>
-              <p class="subpage-description"
-                tal:condition="item/Description"
-                tal:content="item/Description" />
-            </header>
-            <div class="subpage-content">
-              <a class="btn btn-default" tal:attributes="href item/getURL"
-                i18n:translate="">Read More</a>
-            </div>
-          </article>
-        </tal:block>
+        <div class="subcontent"
+          tal:define="subcontent view/subcontent;
+                      ctype python:subcontent['item_type'];
+                      items python:subcontent['items']">
+          <div class="subcontent-blocks"
+            tal:condition="python:ctype == 'blocks'">
+            <tal:block tal:repeat="item items">
+              <section class="content-block">
+                <header class="content-block-header">
+                  <h3 tal:content="item/Title" />
+                </header>
+                <p class="content-block-description"
+                  tal:condition="item/Description"
+                  tal:content="item/Description" />
+                <div class="content-block-body"
+                  tal:condition="item/text"
+                  tal:content="structure item/text/output" />
+              </section>
+            </tal:block>
+          </div>
+          <div class="subcontent-pages"
+            tal:condition="python:ctype == 'pages'">
+            <tal:block tal:repeat="item items">
+              <article class="subpage">
+                <header class="subpage-header">
+                  <h2><a tal:content="item/Title"
+                        tal:attributes="href item/getURL" /></h2>
+                  <p class="subpage-description"
+                    tal:condition="item/Description"
+                    tal:content="item/Description" />
+                </header>
+                <div class="subpage-content">
+                  <a class="btn btn-default"
+                    tal:attributes="href item/getURL"
+                    i18n:translate="">Read More</a>
+                </div>
+              </article>
+            </tal:block>
+          </div>
+        </div>
       </div>
     </section>
 

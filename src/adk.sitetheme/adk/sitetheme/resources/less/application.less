@@ -61,6 +61,10 @@
     }
 }
 
+.btn {
+    border-radius: 0px;
+}
+
 input.context,
 input.standalone {
     .btn();
@@ -92,9 +96,11 @@ body {
 // Content block highlighted experiments
 
 .feature {
-    //border-left: 5px solid lighten(@adk-blue, 20%);
-    //padding: @line-height-computed @line-height-computed @line-height-computed @line-height-computed * 2;
-    margin: @line-height-computed @line-height-computed @line-height-computed @line-height-computed * 3;
+    border: 5px solid lighten(@adk-blue, 20%);
+    border-width: 5px 0px;
+    padding: @line-height-computed;
+    margin: @line-height-computed * 2 auto;
+    width: 75%;
     color: @gray;
     font-size: @font-size-base * 1.25;
     font-family: 'Arimo';
@@ -153,7 +159,8 @@ body {
        h2 {
             color: @adk-blue;
             &.display-title {
-                color: @adk-red;
+                color: @adk-blue;
+                font-weight: 700;
             }
        }
        .xxitemHeadline a {
@@ -513,6 +520,12 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 /* @end */
 
 
+.subpage {
+    padding: @navbar-height 0;
+    border-top: 1px solid @gray-light;
+}
+
+
 #footer-wrapper {
 /* Sticky footer */
     margin-top: @line-height-computed;
@@ -523,3 +536,28 @@ dl.portletNavigationTree .navTreeLevel3 li a {
         color: #fff;
     }
 }
+
+// Responsive overrides
+
+// Responsive: Tablets and up
+@media screen and (min-width: @screen-tablet) {
+
+}
+
+// Responsive: Desktops and up
+@media screen and (min-width: @screen-desktop) {
+
+}
+
+// Responsive: Large desktops and up
+@media screen and (min-width: @screen-large-desktop) {
+    #page-body,
+    #page-subcontent,
+    #content-core {
+        font-size: ceil(@font-size-base * 1.25);
+        .lead-muted {
+            color: @gray-darker;
+        }
+    }
+}
+

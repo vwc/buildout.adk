@@ -5234,6 +5234,7 @@ input.standalone {
   border: 1px solid transparent;
   border-radius: 4px;
   white-space: nowrap;
+  border-radius: 0px;
   margin-right: 5px;
 }
 input.context:focus,
@@ -6155,6 +6156,9 @@ table.grid th {
   background-color: #af1e4a;
   color: #000;
 }
+.btn {
+  border-radius: 0px;
+}
 input.context,
 input.standalone {
   display: inline-block;
@@ -6169,6 +6173,7 @@ input.standalone {
   border: 1px solid transparent;
   border-radius: 4px;
   white-space: nowrap;
+  border-radius: 0px;
 }
 input.context:focus,
 input.standalone:focus {
@@ -6284,7 +6289,11 @@ body #document-toc dd {
   font-size: 14px;
 }
 .feature {
-  margin: 24px 24px 24px 72px;
+  border: 5px solid #6782d1;
+  border-width: 5px 0px;
+  padding: 24px;
+  margin: 48px auto;
+  width: 75%;
   color: #555555;
   font-size: 20px;
   font-family: 'Arimo';
@@ -6335,7 +6344,8 @@ body #document-toc dd {
   color: #314da1;
 }
 #site-wrapper #content h2.display-title {
-  color: #af1e4a;
+  color: #314da1;
+  font-weight: 700;
 }
 #site-wrapper #content .xxitemHeadline a {
   color: #af1e4a;
@@ -6570,6 +6580,10 @@ dl.portletNavigationTree .navTreeLevel3 li a {
   padding-left: 4em;
 }
 /* @end */
+.subpage {
+  padding: 50px 0;
+  border-top: 1px solid #999999;
+}
 #footer-wrapper {
   /* Sticky footer */
 
@@ -6580,4 +6594,22 @@ dl.portletNavigationTree .navTreeLevel3 li a {
 }
 #footer-wrapper a {
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  
+}
+@media screen and (min-width: 992px) {
+  
+}
+@media screen and (min-width: 1200px) {
+  #page-body,
+  #page-subcontent,
+  #content-core {
+    font-size: 20px;
+  }
+  #page-body .lead-muted,
+  #page-subcontent .lead-muted,
+  #content-core .lead-muted {
+    color: #222222;
+  }
 }

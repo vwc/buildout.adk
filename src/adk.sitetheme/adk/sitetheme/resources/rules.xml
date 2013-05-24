@@ -82,8 +82,17 @@
 
         <!-- Document Content -->
         <!--<drop css:content="#content" css:if-content="body.section-front-page" />-->
-        <replace css:content-children="#page-header" css:theme-children="#hero-content" />
-        <replace css:content-children="#content-core" css:theme-children="#content" />
+
+        <rules css:if-content="#page-header">
+            <replace css:content-children="#page-header"
+                css:theme-children="#hero-content" />
+            <replace css:content-children="#content-core"
+                css:theme-children="#content" />
+        </rules>
+
+        <replace css:content-children="#content"
+            css:theme-children="#content"
+            css:if-not-content="#page-header" />
         
         <!-- Edit bar -->
         <!--<replace css:content="#edit-bar" css:theme="#edit-bar" /> 
