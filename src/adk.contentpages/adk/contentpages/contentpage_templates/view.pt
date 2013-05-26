@@ -28,9 +28,8 @@
         tal:condition="context/displayTitle"
         tal:content="context/displayTitle" />
       </div>
-      <div class="row">
+      <div class="xrow">
       <div id="page-body"
-        class="col col-lg-9"
         tal:condition="context/text"
         tal:content="structure context/text/output" />
       </div>
