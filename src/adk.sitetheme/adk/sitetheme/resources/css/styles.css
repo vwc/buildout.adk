@@ -6554,7 +6554,8 @@ body #document-toc dd {
 }
 #site-wrapper #content h2.display-title {
   color: #af1e4a;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 40px;
 }
 #site-wrapper #content .xxitemHeadline a {
   color: #af1e4a;
@@ -6703,92 +6704,13 @@ body #document-toc dd {
 #site-wrapper #global-quicklinks ul i {
   padding-right: 10px;
 }
-/* @tileListings */
-.tileItem {
-  clear: both;
-  background: url(../images/dotted-line.png) 0% 100% repeat-x transparent;
-  padding: 0px;
+#contentpage-header {
+  margin-bottom: 24px;
+  border: none;
 }
-h2.itemHeadline {
-  padding-left: 5px !important;
-  font-size: 1.2em;
+#contentpage-header .lead {
+  color: #000;
 }
-.itemHeadline a:link,
-p.tileFooter a:link,
-.itemHeadline a:visited,
-p.tileFooter a:visited {
-  color: #af1e4a !important;
-  text-decoration: underline;
-  border-bottom: 0px solid #af1e4a !important;
-}
-.itemHeadline a:hover {
-  color: #314da1;
-}
-p.itemDescription {
-  margin: 0px;
-}
-/* @group Navigation portlet */
-dl.portletNavigationTree {
-  margin-right: -2em;
-}
-ul.navTree {
-  margin-left: 0 !important;
-}
-dl.portletNavigationTree dd {
-  padding: 1em 0;
-}
-dl.portletNavigationTree dd a {
-  display: block;
-}
-dl.portletNavigationTree li a {
-  border: none !important;
-  display: block;
-  padding: 0.75em;
-  color: #000 !important;
-  text-decoration: none;
-}
-dl.portletNavigationTree li img {
-  display: none;
-}
-dl.portletNavigationTree li a:hover {
-  background-color: #D7D7D7;
-}
-dl.portletNavigationTree li a span {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
-dl.portletNavigationTree li.navTreeItemInPath {
-  background: transparent;
-}
-dl.portletNavigationTree li a.navTreeCurrentItem span {
-  color: black;
-}
-dl.portletNavigationTree ul {
-  margin: 0 !important;
-}
-dl.portletNavigationTree .navTreeLevel0 li a {
-  width: 170px;
-  padding-left: 1em;
-}
-dl.portletNavigationTree .navTreeLevel1 li a,
-.dl.portletNavigationTree .navTreeLevel0 li a:hover {
-  padding-left: 1em;
-  padding-right: 3.5em;
-  background: transparent;
-  font-family: Georgia, sans-serif;
-  font-style: italic;
-  color: black !important;
-}
-dl.portletNavigationTree .navTreeLevel1 li a.navTreeCurrentItem span {
-  color: #af1e4a;
-}
-dl.portletNavigationTree .navTreeLevel2 li a {
-  padding-left: 3em;
-}
-dl.portletNavigationTree .navTreeLevel3 li a {
-  padding-left: 4em;
-}
-/* @end */
 .subpage {
   padding: 50px 0;
   border-top: 1px solid #999999;

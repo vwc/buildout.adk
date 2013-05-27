@@ -33,6 +33,16 @@ class IContentPage(form.Schema, IImageScaleTraversable):
                       u"headline"),
         required=False,
     )
+    pageTitle = schema.TextLine(
+        title=_(u"Page Title"),
+        description=_(u"First headline of the page body"),
+        required=False,
+    )
+    pageTeaser = schema.Text(
+        title=_(u"Page Teaser"),
+        description=_(u"Enter a sumamry or teaser text"),
+        required=False,
+    )
     text = RichText(
         title=_(u"Body Text"),
         required=True,

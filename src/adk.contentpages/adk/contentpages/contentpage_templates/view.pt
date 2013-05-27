@@ -23,10 +23,15 @@
     </header>
 
     <section id="content-core">
-      <div class="page-header">
-      <h2 class="display-title"
-        tal:condition="context/displayTitle"
-        tal:content="context/displayTitle" />
+      <div class="page-header" id="contentpage-header">
+        <h2 class="display-title"
+          tal:condition="context/pageTitle"
+          tal:content="context/pageTitle" />
+        <h2 class="display-title"
+          tal:condition="not:context/pageTitle"
+          tal:content="context/displayTitle" />
+        <p class="lead" tal:condition="context/pageTeaser"
+          tal:content="context/pageTeaser" />
       </div>
       <div class="xrow">
       <div id="page-body"
