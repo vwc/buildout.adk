@@ -96,11 +96,10 @@ body {
 // Content block highlighted experiments
 
 .feature {
-    border: 5px solid lighten(@adk-blue, 20%);
+    border: 1px solid lighten(@adk-blue, 20%);
     border-width: 5px 0px;
-    padding: @line-height-computed;
+    padding: @line-height-computed * 3;
     margin: @line-height-computed * 2 auto;
-    width: 75%;
     color: @gray;
     font-size: @font-size-base * 1.25;
     font-family: 'Arimo';
@@ -323,12 +322,20 @@ body {
 
 // Content Page styles
 
+#content {
+    padding: @line-height-computed / 2;
+}
+
 #contentpage-header {
     margin-bottom: @line-height-computed;
     border: none;
     .lead {
         color: #000;
     }
+}
+
+.panel {
+    font-size: @font-size-base;
 }
 
 .subpage {
@@ -362,12 +369,21 @@ body {
 
 // Responsive: Large desktops and up
 @media screen and (min-width: @screen-large-desktop) {
+    #logo {
+        margin-left: 0;
+    }
+    #content {
+        padding: 0;
+    }
     #page-body,
     #page-subcontent,
     #content-core {
         font-size: ceil(@font-size-base * 1.25);
         .lead-muted {
             color: @gray-darker;
+        }
+        p {
+            margin-bottom: @line-height-computed;
         }
     }
 }

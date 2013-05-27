@@ -6258,7 +6258,7 @@ table.grid th {
   height: 75px;
   text-indent: -3000px;
   overflow: hidden;
-  margin: 24px 0 24px;
+  margin: 24px auto 24px;
 }
 #topbar a {
   color: #000;
@@ -6483,6 +6483,7 @@ body #document-toc {
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
 }
 body #document-toc dt {
   margin: -15px -15px 15px;
@@ -6498,11 +6499,10 @@ body #document-toc dd {
   font-size: 14px;
 }
 .feature {
-  border: 5px solid #6782d1;
+  border: 1px solid #6782d1;
   border-width: 5px 0px;
-  padding: 24px;
+  padding: 72px;
   margin: 48px auto;
-  width: 75%;
   color: #555555;
   font-size: 20px;
   font-family: 'Arimo';
@@ -6704,12 +6704,18 @@ body #document-toc dd {
 #site-wrapper #global-quicklinks ul i {
   padding-right: 10px;
 }
+#content {
+  padding: 12px;
+}
 #contentpage-header {
   margin-bottom: 24px;
   border: none;
 }
 #contentpage-header .lead {
   color: #000;
+}
+.panel {
+  font-size: 16px;
 }
 .subpage {
   padding: 50px 0;
@@ -6733,6 +6739,12 @@ body #document-toc dd {
   
 }
 @media screen and (min-width: 1200px) {
+  #logo {
+    margin-left: 0;
+  }
+  #content {
+    padding: 0;
+  }
   #page-body,
   #page-subcontent,
   #content-core {
@@ -6742,5 +6754,10 @@ body #document-toc dd {
   #page-subcontent .lead-muted,
   #content-core .lead-muted {
     color: #222222;
+  }
+  #page-body p,
+  #page-subcontent p,
+  #content-core p {
+    margin-bottom: 24px;
   }
 }
