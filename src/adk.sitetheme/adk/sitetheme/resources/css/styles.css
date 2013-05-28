@@ -2052,12 +2052,12 @@ a.list-group-item.active .list-group-item-text {
   border-color: #eed3d7;
 }
 .panel-info {
-  border-color: #bce8f1;
+  border-color: #c1d3ec;
 }
 .panel-info .panel-heading {
-  color: #3a87ad;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+  color: #314da1;
+  background-color: #dde3f4;
+  border-color: #c1d3ec;
 }
 .list-group-flush {
   margin: 15px -15px -15px;
@@ -3304,15 +3304,15 @@ button.close {
   color: #953b39;
 }
 .alert-info {
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-  color: #3a87ad;
+  background-color: #dde3f4;
+  border-color: #c1d3ec;
+  color: #314da1;
 }
 .alert-info hr {
-  border-top-color: #a6e1ec;
+  border-top-color: #aec5e6;
 }
 .alert-info .alert-link {
-  color: #2d6987;
+  color: #253a7a;
 }
 .alert-block {
   padding-top: 15px;
@@ -5184,6 +5184,24 @@ ul.icons-ul > li .icon-li {
 .icon-share-sign:before {
   content: "\f14d";
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Arimo', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+.btn {
+  border-radius: 0px;
+}
 .avatar {
   margin-right: 2px;
   line-height: 22px;
@@ -5712,7 +5730,7 @@ dl.portalMessage dd {
   background-color: #468847;
 }
 #plone-contentmenu-workflow .state-pending {
-  background-color: #3a87ad;
+  background-color: #314da1;
 }
 #plone-contentmenu-workflow .state-expired {
   background-color: #c09853;
@@ -6410,81 +6428,6 @@ table.grid th {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: 'Arimo', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
-.btn {
-  border-radius: 0px;
-}
-#editbar-wrapper .navbar-brand {
-  width: 0px;
-  height: 0px;
-  visibility: collapse;
-  color: #fff;
-}
-#editbar-wrapper .navbar-brand a:hover,
-#editbar-wrapper .navbar-brand a:focus,
-#editbar-wrapper .navbar-brand a:active {
-  color: #fff;
-}
-#editbar-wrapper .navbar {
-  color: #fff;
-  background-color: #314da1;
-}
-#editbar-wrapper .navbar #navigation {
-  background-color: #314da1;
-  position: relative;
-  z-index: 10;
-  margin-right: auto;
-  max-width: 960px;
-}
-#editbar-wrapper .navbar #navigation ul {
-  margin-top: 10px;
-}
-#editbar-wrapper .navbar #navigation ul li {
-  display: inline-block;
-  list-style: none;
-}
-#editbar-wrapper .navbar #navigation ul li a {
-  color: #fff;
-  margin-right: 15px;
-  display: block;
-  padding: 0.75em;
-  text-decoration: none;
-}
-#editbar-wrapper .navbar #navigation ul li a:hover,
-#editbar-wrapper .navbar #navigation ul li a:focus,
-#editbar-wrapper .navbar #navigation ul li a:active {
-  border: none !important;
-  display: block;
-  padding: 0.75em;
-  color: #fff !important;
-  text-decoration: none;
-  background-color: #af1e4a;
-  color: #000;
-}
-.feature {
-  border: 1px solid #6782d1;
-  border-width: 5px 0px;
-  padding: 66px;
-  margin: 44px auto 66px;
-  color: #555555;
-  font-size: 20px;
-  font-family: 'Arimo';
-  font-weight: 700;
-}
 .jumbotron h1 {
   color: #314da1;
 }
@@ -6510,10 +6453,6 @@ h6,
 #content {
   padding: 11px;
 }
-#content .thumbnail {
-  display: block;
-  margin: auto;
-}
 #content h2 {
   color: #314da1;
 }
@@ -6524,13 +6463,44 @@ h6,
 }
 #content .pullquote {
   background: none repeat scroll 0 0 #fff;
-  border-left: 10px solid #314da1;
+  border-left: 5px solid #6782d1;
   color: #af1e4a;
+  font-size: 16px;
+  margin: 0 0 22px 22px;
 }
 #content .callout {
-  background: none repeat scroll 0 0 #fff;
-  border-left: 10px solid #314da1;
-  color: #af1e4a;
+  padding: 10px 35px 10px 15px;
+  margin-bottom: 22px;
+  color: #c09853;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  border-radius: 4px;
+  background-color: #dde3f4;
+  border-color: #c1d3ec;
+  color: #314da1;
+}
+#content .callout h4 {
+  margin-top: 0;
+  color: inherit;
+}
+#content .callout hr {
+  border-top-color: #f8e5be;
+}
+#content .callout .alert-link {
+  font-weight: 500;
+  color: #a47e3c;
+}
+#content .callout .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+#content .callout hr {
+  border-top-color: #aec5e6;
+}
+#content .callout .alert-link {
+  color: #253a7a;
 }
 #content .documentFirstHeading {
   color: #314da1;
@@ -6541,6 +6511,16 @@ h6,
 }
 #contentpage-header .lead {
   color: #000;
+}
+.feature {
+  border: 1px solid #6782d1;
+  border-width: 5px 0px;
+  padding: 66px;
+  margin: 44px auto 66px;
+  color: #555555;
+  font-size: 20px;
+  font-family: 'Arimo';
+  font-weight: 700;
 }
 #page-body > .row {
   margin-left: -15px;
