@@ -7,7 +7,20 @@
 @link-color:            @adk-red;
 
 @font-size-base:              16px;
-@line-height-computed:        @font-size-base + 8;
+// @line-height-computed:        @font-size-base + 8;
+@font-family-base:            'Open Sans', @font-family-sans-serif;
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Arimo', @font-family-sans-serif;
+    font-weight: 400;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
 
 // Application styles
 // -------------------
@@ -61,38 +74,6 @@
     }
 }
 
-.btn {
-    border-radius: 0px;
-}
-
-input.context,
-input.standalone {
-    .btn();
-}
-
-
-body {
-    font-family: 'Open Sans';
-    h1, h2, h3, h4 {
-        font-family: 'Arimo';
-        font-weight: 400;
-    }
-    #hero-text .jumbotron {
-        background: lighten(@adk-blue, 20%)
-    }
-    #document-toc {
-        width: 30%;
-        .pull-right();
-        .panel();
-        dt {
-            .panel-heading();
-        }
-        dd {
-            font-size: @font-size-small;
-        }
-    }
-}
-
 // Content block highlighted experiments
 
 .feature {
@@ -120,7 +101,7 @@ body {
 }
 
 #hero-text .jumbotron {
-    background: @adk-blue;
+    background: lighten(@adk-blue, 20%);
     border-radius: 0px;
     color: #fff;
     padding-top: @navbar-height * 1.5;
@@ -133,198 +114,43 @@ body {
     }
 }
 
-// Site wrapper
-
-#site-wrapper {
-    margin-top: -50px;
-    #sidebar {
-        min-width: 75%;
-        .btn {
-            background-color: @adk-red;
-            color: #fff;
-            a {
-                text-decoration: none;
-                color: #fff;
-            }
-        }
-    }
-    #content {
-        .thumbnail {
-            display: block;
-            margin: auto;
-            //max-width:100%;
-            //height: 150px;
-        }
-       h2 {
-            color: @adk-blue;
-            &.display-title {
-                color: @adk-red;
-                font-weight: 400;
-                font-size: ceil(@font-size-base * 2.5);
-            }
-       }
-       .xxitemHeadline a {
-            color: @adk-red;
-       }
-       .tileImage {
-           //padding-top: 30px;
-       }
-       .row {
-            margin-bottom: 20px;            
-       }
-       
-       .pullquote {
-            background: none repeat scroll 0 0 #fff;
-            border-left: 10px solid @adk-blue;
-            color: @adk-red;
-       }
-       .callout {
-            background: none repeat scroll 0 0 #fff;
-            border-left: 10px solid @adk-blue;
-            color: @adk-red;
-       }
-    }
-    .documentFirstHeading {
-        color: @adk-blue;
-    }
-    
-    padding-top: @line-height-computed * 2;
-    .actionBox {
-        margin-bottom: 20px;
-    }
-    .actionBoxHeader {
-        color: @adk-blue;
-        border-bottom: 5px solid @adk-blue;
-        a {
-          color: @adk-blue;
-          text-decoration: none;
-        }
-    }
-
-    .actionBoxBody {
-        margin-top: 10px;
-        .btn {
-            background-color: @adk-red;
-            .more-link {
-                color: #fff;
-                background-color: @adk-red;
-            }
-            i {
-                padding-right: 10px;
-            }
-        }
-    }
-    .splashbox {
-        float: left;
-        margin-top: 20px;
-        display: block;
-        .splashboxHeader {
-            width: 80%;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            border-bottom: 2px solid @adk-grey;
-            a {
-                border-radius: 5px 5px 5px 5px;
-                padding-left: 5px;
-                color: #000;
-            }
-        }
-        width: 400px;
-        margin-bottom: 20px;
-        .actionBoxPic {
-            width: 100%;
-            height: 250px;
-            #adkpic1 {
-                background: url(../images/adkpic1.png) 0 0 no-repeat transparent;
-                width: 100%;
-                height: 100%;
-            }
-            #adkpic2 {
-                background: url(../images/adkpic2.png) 0 0 no-repeat transparent;
-                width: 100%;
-                height: 100%;
-            }
-            #adkpic3 {
-                background: url(../images/adkpic3.png) 0 0 no-repeat transparent;
-                width: 100%;
-                height: 100%;
-            }
-            #adkpic4 {
-                background: url(../images/adkpic4.png) 0 0 no-repeat transparent;
-                width: 100%;
-                height: 100%;
-            }
-            #adkpic5 {
-                background: url(../images/adkpic5.png) 0 0 no-repeat transparent;
-                width: 100%;
-                height: 100%;
-            }
-            #adkpic6 {
-                background: url(../images/adkpic6.png) 0 0 no-repeat transparent;
-                width: 100%;
-                height: 100%;
-            }
-        }
-        .actionBoxBody {
-            width: 80%;
-            a {
-            color: #000;
-            text-decoration: underline;
-            }
-        }
-    }
-    
-    #sm-block {      
-        margin-top: 19px;
-        margin-bottom: 20px;
-            ul  {
-                width: 100%;
-                height: 90%;
-                padding: 0px;
-                    li {
-                        margin-right: 10px;
-                        a {
-                            color: #000;
-                        }
-                        display: inline-block;
-                        i {
-                            height: 100%;
-                        }
-                    }
-            }
-    }
-        #global-quicklinks {
-        /*   background-color: @adk-blue; */
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border: 0px solid red;
-            ul {
-                width: 100%;
-                    li {
-                        width: 100%;
-                        height: 40px;
-                        margin-right: 5px;
-                        list-style: none;
-                        display: inline-block;
-                        a {
-                            font-size: 150%;
-                            border-bottom: 2px solid @adk-grey;
-                            padding: 0px 0px 0px 0px;
-                            color: @text-color;
-                        }
-                    }
-                    i {
-                        padding-right: 10px;
-                    }
-                }
-        }
-}
-
 // Content Page styles
 
 #content {
     padding: @line-height-computed / 2;
 }
+
+#content {
+    .thumbnail {
+        display: block;
+        margin: auto;
+        //max-width:100%;
+        //height: 150px;
+    }
+    h2 {
+        color: @adk-blue;
+        &.display-title {
+             color: @adk-red;
+             font-weight: 400;
+             font-size: ceil(@font-size-base * 2.5);
+        }
+    }
+    
+    .pullquote {
+         background: none repeat scroll 0 0 #fff;
+         border-left: 10px solid @adk-blue;
+         color: @adk-red;
+    }
+    .callout {
+         background: none repeat scroll 0 0 #fff;
+         border-left: 10px solid @adk-blue;
+         color: @adk-red;
+    }
+    .documentFirstHeading {
+        color: @adk-blue;
+    }
+}
+    
 
 #contentpage-header {
     margin-bottom: @line-height-computed;
@@ -332,6 +158,11 @@ body {
     .lead {
         color: #000;
     }
+}
+
+// Fix indent added by row/col combination
+#page-body > .row {
+    margin-left: -15px;
 }
 
 .panel {
@@ -344,6 +175,8 @@ body {
 }
 
 
+// Footer styles
+
 #footer-wrapper {
 /* Sticky footer */
     margin-top: @line-height-computed;
@@ -354,6 +187,8 @@ body {
         color: #fff;
     }
 }
+
+
 
 // Responsive overrides
 
@@ -373,7 +208,7 @@ body {
         margin-left: 0;
     }
     #content {
-        padding: 0;
+        padding: @line-height-computed / 2 0 0;
     }
     #page-body,
     #page-subcontent,
@@ -384,6 +219,9 @@ body {
         }
         p {
             margin-bottom: @line-height-computed;
+            &.lead {
+                margin-bottom: @line-height-computed * 2;
+            }
         }
     }
 }
