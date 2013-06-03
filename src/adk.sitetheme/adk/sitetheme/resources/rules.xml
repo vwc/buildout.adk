@@ -48,8 +48,8 @@
             <link rel="shortcut icon" href="/++theme++adk.sitetheme/images/favicon.ico" type="image/x-icon" />
         </after>
         
-        <after theme="/html/body"
-               content="//div[@data-iframe='plone-toolbar']" />
+        <!--<after theme="/html/body"
+               content="//div[@data-iframe='plone-toolbar']" />-->
         <!-- Copy over the id/class attributes on the body tag. This is important
              for per-section styling -->
         <merge attributes="class" css:content="body" css:theme="body" />
@@ -57,6 +57,12 @@
 
         <!-- Logo (link target) -->
         <copy attributes="href" css:content="#portal-logo" css:theme="#logo" />
+
+        <!-- CMSUI Editbar replacements -->
+        <drop css:theme="#cms-toolbar"
+            css:if-content="#anon-personalbar" />
+        <replace css:theme="#cms-toolbar"
+            css:content="#toolbar" />
 
         <!-- Site actions -->
         <replace css:content="#portal-siteactions li" css:theme-children="#actions" />
