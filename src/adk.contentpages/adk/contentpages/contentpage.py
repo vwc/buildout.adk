@@ -4,15 +4,8 @@ from plone import api
 from plone.directives import dexterity, form
 
 from zope import schema
-from zope.schema.interfaces import IContextSourceBinder
-from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
-
-
-from z3c.form import group, field
 
 from plone.namedfile.interfaces import IImageScaleTraversable
-from plone.namedfile.field import NamedImage, NamedFile
-from plone.namedfile.field import NamedBlobImage, NamedBlobFile
 
 from plone.app.textfield import RichText
 
@@ -45,7 +38,7 @@ class IContentPage(form.Schema, IImageScaleTraversable):
     )
     text = RichText(
         title=_(u"Body Text"),
-        required=True,
+        required=False,
     )
 
 

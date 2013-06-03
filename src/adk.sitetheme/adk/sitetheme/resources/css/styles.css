@@ -6591,7 +6591,7 @@ table.grid th {
   color: #fff;
 }
 #content {
-  padding: 11px;
+  padding: 0;
 }
 #content h2 {
   color: #314da1;
@@ -6646,7 +6646,7 @@ table.grid th {
   color: #314da1;
 }
 #contentpage-header {
-  margin-bottom: 22px;
+  margin: 0 0 22px;
   border: none;
 }
 #contentpage-header .lead {
