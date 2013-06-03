@@ -6503,6 +6503,71 @@ table.grid th {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
+#toolbar {
+  background-color: #222222;
+  font-size: 14px;
+}
+#toolbar .navbar-brand {
+  color: #999999;
+}
+#toolbar .navbar-brand:hover,
+#toolbar .navbar-brand:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+#toolbar .navbar-text {
+  color: #999999;
+}
+#toolbar .navbar-nav > li > a {
+  color: #999999;
+}
+#toolbar .navbar-nav > li > a:hover,
+#toolbar .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+#toolbar .navbar-nav > .active > a,
+#toolbar .navbar-nav > .active > a:hover,
+#toolbar .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #080808;
+}
+#toolbar .navbar-nav > .disabled > a,
+#toolbar .navbar-nav > .disabled > a:hover,
+#toolbar .navbar-nav > .disabled > a:focus {
+  color: #444444;
+  background-color: transparent;
+}
+#toolbar .navbar-toggle {
+  border-color: #333;
+}
+#toolbar .navbar-toggle:hover,
+#toolbar .navbar-toggle:focus {
+  background-color: #333;
+}
+#toolbar .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+#toolbar .navbar-nav > .open > a,
+#toolbar .navbar-nav > .open > a:hover,
+#toolbar .navbar-nav > .open > a:focus {
+  background-color: #080808;
+  color: #ffffff;
+}
+#toolbar .navbar-nav > .dropdown > a:hover .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+#toolbar .navbar-nav > .dropdown > a .caret {
+  border-top-color: #999999;
+  border-bottom-color: #999999;
+}
+#toolbar .navbar-nav > .open > a .caret,
+#toolbar .navbar-nav > .open > a:hover .caret,
+#toolbar .navbar-nav > .open > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
 .jumbotron h1 {
   color: #314da1;
 }
