@@ -6481,6 +6481,9 @@ table.grid th {
 #topbar .navbar-toggle {
   background: #555555;
 }
+#toolbar + #topbar {
+  margin-top: 50px;
+}
 #main-navigation a {
   background: #af1e4a;
   border-right: 1px solid #fff;
@@ -6644,6 +6647,9 @@ table.grid th {
 }
 #content .documentFirstHeading {
   color: #314da1;
+}
+#content.mceContentBody {
+  padding: 11px;
 }
 #contentpage-header {
   margin: 0 0 22px;
