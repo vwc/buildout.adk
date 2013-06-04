@@ -25,6 +25,12 @@ class IContentBlock(form.Schema, IImageScaleTraversable):
     """
     A blcok of content usable inside a content page.
     """
+    subtitle = schema.TextLine(
+        title=_(u"Subtitle"),
+        description=_(u"Optional extra information displayed along the "
+                      u"section title"),
+        required=False,
+    )
     text = RichText(
         title=_(u"Content Block Body"),
         required=False,

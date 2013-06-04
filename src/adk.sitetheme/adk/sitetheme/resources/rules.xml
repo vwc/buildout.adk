@@ -96,6 +96,9 @@
                 css:theme-children="#content" />
         </rules>
 
+        <drop css:theme="#hero-content"
+            css:if-not-content="#page-header" />
+
         <replace css:content-children="#content"
             css:theme-children="#content"
             css:if-not-content="#page-header" />

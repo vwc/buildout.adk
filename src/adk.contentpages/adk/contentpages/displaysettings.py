@@ -16,29 +16,7 @@ class IDisplaySettings(form.Schema):
     """
        Marker/Form interface for DisplaySettings
     """
-   
     # -*- Your Zope schema definitions here ... -*-
 
 
-alsoProvides(IDisplaySettings,IFormFieldProvider)
-
-def context_property(name):
-    def getter(self):
-        return getattr(self.context, name)
-    def setter(self, value):
-        setattr(self.context, name, value)
-    def deleter(self):
-        delattr(self.context, name)
-    return property(getter, setter, deleter)
-
-class DisplaySettings(object):
-    """
-       Adapter for DisplaySettings
-    """
-    implements(IDisplaySettings)
-    adapts(IDexterityContent)
-
-    def __init__(self,context):
-        self.context = context
-
-    # -*- Your behavior property setters & getters here ... -*-
+alsoProvides(IDisplaySettings, IFormFieldProvider)

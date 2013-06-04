@@ -101,6 +101,16 @@
           </div>
         </div>
       </div>
+      <section class="content-block"
+        tal:define="context_url context/absolute_url">
+        <div class="tile tile-editable">
+          <a class="btn btn-warning btn-small pull-right"
+            tal:attributes="href python:context_url + '/@@add-content-block'">
+            <i class="icon-plus-sign"></i>
+            <span i18n:translate="">Add block</span>
+          </a>
+        </div>
+      </section>
     </section>
 
   </section>
