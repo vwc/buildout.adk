@@ -1,0 +1,11 @@
+<section class="cp-block">
+  <header class="cp-block-header page-header">
+    <h2 tal:content="context/Title">Title inserted here</h2>
+  </header>
+    <p class="cp-block-teaser text-muted" tal:condition="context/Description"
+      tal:content="context/Description" />
+  <div class="cp-block-content">
+    <div tal:condition="context/text"
+      tal:replace="structure context/text/output" />
+  </div>
+</section>

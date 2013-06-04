@@ -6708,6 +6708,26 @@ table.grid th {
   padding: 50px 0;
   border-top: 1px solid #999999;
 }
+.tile {
+  display: none;
+}
+.tile.tile-editable {
+  border-top: 1px solid #f0ad4e;
+  margin-bottom: -38.5px;
+}
+.tile.tile-editable > small {
+  color: #f0ad4e;
+  font-size: 12px;
+}
+.content-block:hover .tile {
+  display: block;
+}
+.content-block:hover .tile .btn {
+  margin-left: 11px;
+}
+.content-block:hover .cp-block {
+  margin-top: -2px;
+}
 #footer-wrapper {
   /* Sticky footer */
 

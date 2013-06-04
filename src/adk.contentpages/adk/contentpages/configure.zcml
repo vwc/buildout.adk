@@ -34,4 +34,13 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+    <plone:behavior
+        title="DisplaySettings"
+        description="Configure disply options"
+        provides=".displaysettings.IDisplaySettings"
+        factory=".displaysettings.DisplaySettings"
+        for="plone.dexterity.interfaces.IDexterityContent"
+        />
+
+
 </configure>

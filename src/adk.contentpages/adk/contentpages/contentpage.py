@@ -85,3 +85,8 @@ class View(grok.View):
                         review_state='published',
                         sort_on='getObjPositionInParent')
         return items
+
+    def get_contentblock(self, obj):
+        ctx = obj.getObject()
+        tmpl = ctx.restrictedTraverse('@@content-view')()
+        return tmpl

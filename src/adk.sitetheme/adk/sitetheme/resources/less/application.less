@@ -123,6 +123,32 @@
 }
 
 
+.tile {
+    display: none;
+    &.tile-editable {
+        border-top: 1px solid @btn-warning-border;
+        margin-bottom: -(@line-height-computed * 1.75);
+        > small {
+            color: @brand-warning;
+            font-size: @font-size-mini;
+        }
+    }
+}
+
+.content-block {
+    &:hover {
+        .tile {
+            display: block;
+            .btn {
+                margin-left: @line-height-computed / 2;
+            }
+        }
+        .cp-block {
+            margin-top: -2px;
+        }
+    }
+}
+
 // Footer styles
 
 #footer-wrapper {

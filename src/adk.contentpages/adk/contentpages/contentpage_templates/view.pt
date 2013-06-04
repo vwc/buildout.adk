@@ -47,17 +47,36 @@
             tal:condition="python:ctype == 'blocks'">
             <tal:block tal:repeat="item items">
               <section class="content-block">
-                <header class="content-block-header">
-                  <h2 tal:content="item/Title" />
-                </header>
-                <p class="content-block-description"
-                  tal:condition="item/Description"
-                  tal:content="item/Description" />
-                <div class="content-block-body"
-                  tal:condition="item/text"
-                  tal:content="structure item/text/output" />
+                <div class="tile tile-editable"
+                   tal:define="item_count repeat/item/index;">
+                  <a class="btn btn-warning btn-small pull-right"
+                    tal:attributes="href item/getURL">
+                    <i class="icon-edit-sign"></i>
+                    edit</a>
+                  <small class="pull-right">Contentblock <span tal:replace="item_count" /></small>
+                </div>
+                <div tal:define="cbc python:view.get_contentblock(item)">
+                  <span tal:replace="structure cbc" />
+                </div>
               </section>
             </tal:block>
+            <!-- hide direct call for now -->
+            <tal:comment tal:content="nothing">
+              <tal:block tal:repeat="item items">
+                <section class="content-block">
+                  <header class="content-block-header">
+                    <h2 tal:content="item/Title" />
+                  </header>
+                  <p class="content-block-description"
+                    tal:condition="item/Description"
+                    tal:content="item/Description" />
+                  <div class="content-block-body"
+                    tal:condition="item/text"
+                    tal:content="structure item/text/output" />
+                </section>
+              </tal:block>
+            </tal:comment>
+            <!-- /hide direct call for now -->
           </div>
           <div class="subcontent-pages"
             tal:condition="python:ctype == 'pages'">

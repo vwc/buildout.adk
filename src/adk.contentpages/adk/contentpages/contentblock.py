@@ -39,3 +39,9 @@ class View(grok.View):
     grok.context(IContentBlock)
     grok.require('zope2.View')
     grok.name('view')
+
+
+class ContentView(grok.View):
+    grok.context(IContentBlock)
+    grok.require('zope2.View')
+    grok.name('content-view')
