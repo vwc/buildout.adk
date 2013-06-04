@@ -48,7 +48,7 @@
             <tal:block tal:repeat="item items">
               <section class="content-block">
                 <header class="content-block-header">
-                  <h3 tal:content="item/Title" />
+                  <h2 tal:content="item/Title" />
                 </header>
                 <p class="content-block-description"
                   tal:condition="item/Description"

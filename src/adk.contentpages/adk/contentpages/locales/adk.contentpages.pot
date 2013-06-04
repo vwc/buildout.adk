@@ -1,0 +1,79 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2013-06-04 11:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: adk.contentpages\n"
+
+#: ./../profiles/default/types/adk.contentpages.contentblock.xml
+msgid "A blcok of content usable inside a content page."
+msgstr ""
+
+#: ./../profiles/default/types/adk.contentpages.sectionfolder.xml
+msgid "A folder acting as navigation root"
+msgstr ""
+
+#: ./../contentpage.py:25
+msgid "Alternative Title for displaying alternative headline"
+msgstr ""
+
+#: ./../contentpage.py:40
+msgid "Body Text"
+msgstr ""
+
+#: ./../contentblock.py:29
+msgid "Content Block Body"
+msgstr ""
+
+#: ./../profiles/default/types/adk.contentpages.contentpage.xml
+msgid "Content page with automatic subcontent listing"
+msgstr ""
+
+#: ./../profiles/default/types/adk.contentpages.contentblock.xml
+msgid "ContentBlock"
+msgstr ""
+
+#: ./../profiles/default/types/adk.contentpages.contentpage.xml
+msgid "ContentPage"
+msgstr ""
+
+#: ./../contentpage.py:24
+msgid "Display Title"
+msgstr ""
+
+#: ./../contentpage.py:36
+msgid "Enter a sumamry or teaser text"
+msgstr ""
+
+#: ./../contentpage.py:31
+msgid "First headline of the page body"
+msgstr ""
+
+#: ./../contentpage.py:35
+msgid "Page Teaser"
+msgstr ""
+
+#: ./../contentpage.py:30
+msgid "Page Title"
+msgstr ""
+
+#: ./../contentpage_templates/view.pt:74
+msgid "Read more"
+msgstr ""
+
+#: ./../profiles/default/types/adk.contentpages.sectionfolder.xml
+msgid "SectionFolder"
+msgstr ""
+
