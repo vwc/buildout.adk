@@ -51,8 +51,10 @@
                    tal:define="item_count repeat/item/index;">
                   <a class="btn btn-warning btn-small pull-right"
                     tal:attributes="href item/getURL">
-                    <i class="icon-edit-sign"></i>
-                    edit</a>
+                    <i class="icon-edit-sign"></i></a>
+                  <a class="btn btn-warning btn-small pull-right"
+                    tal:attributes="href item/getURL">
+                    <i class="icon-cog"></i></a>
                   <small class="pull-right">Contentblock <span tal:replace="item_count" /></small>
                 </div>
                 <div tal:define="cbc python:view.get_contentblock(item)">
