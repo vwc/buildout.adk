@@ -6709,21 +6709,28 @@ table.grid th {
   border-top: 1px solid #999999;
 }
 .tile {
-  display: none;
+  display: block;
+  font-size: 16px;
 }
 .tile.tile-editable {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
   border-top: 1px solid #f0ad4e;
-  margin-bottom: -38.5px;
+  margin-bottom: 0;
 }
 .tile.tile-editable > small {
   color: #f0ad4e;
   font-size: 12px;
 }
-.content-block:hover .tile {
-  display: block;
-}
-.content-block:hover .tile .btn {
+.tile.tile-editable .btn {
   margin-left: 11px;
+}
+.tile.tile-editable + .page-header {
+  margin-top: 22px;
+}
+.content-block:hover .tile {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .content-block:hover .cp-block {
   margin-top: -2px;
