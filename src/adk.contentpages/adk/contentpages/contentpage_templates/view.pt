@@ -15,7 +15,6 @@
       <h1 class="documentFirstHeading" tal:content="context/Title" />
       <div class="row">
         <div class="col col-lg-9 col-offset-3">
-          
           <p class="lead" tal:condition="context/Description"
             tal:content="context/Description" />
         </div>
@@ -74,7 +73,7 @@
                 <div class="subpage-content">
                   <a class="btn btn-default"
                     tal:attributes="href item/getURL"
-                    i18n:translate="">Read More</a>
+                    i18n:translate="">Read more</a>
                 </div>
               </article>
             </tal:block>

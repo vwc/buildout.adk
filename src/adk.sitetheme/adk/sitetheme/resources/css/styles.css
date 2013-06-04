@@ -6596,6 +6596,9 @@ table.grid th {
 #content {
   padding: 0;
 }
+#content.mceContentBody {
+  padding: 11px;
+}
 #content h2 {
   color: #314da1;
 }
@@ -6648,8 +6651,24 @@ table.grid th {
 #content .documentFirstHeading {
   color: #314da1;
 }
-#content.mceContentBody {
+#content .captioned {
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  border-radius: 0px;
   padding: 11px;
+}
+#content .captioned .image-caption {
+  padding: 9px;
+  font-size: 14px;
+  color: #999999;
 }
 #contentpage-header {
   margin: 0 0 22px;

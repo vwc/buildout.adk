@@ -35,6 +35,9 @@
 
 #content {
     padding: 0;
+    &.mceContentBody {
+        padding: @line-height-computed / 2;
+    }
     h2 {
         color: @adk-blue;
         &.display-title {
@@ -61,9 +64,15 @@
     .documentFirstHeading {
         color: @adk-blue;
     }
-    // Style the editor imput window
-    &.mceContentBody {
+    .captioned {
+        .thumbnail();
+        border-radius: 0px;
         padding: @line-height-computed / 2;
+        .image-caption {
+            padding: 9px;
+            font-size: @font-size-small;
+            color: @gray-light;
+        }
     }
 }
 
