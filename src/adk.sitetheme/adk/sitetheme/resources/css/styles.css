@@ -6649,6 +6649,9 @@ table.grid th {
 #content .callout .alert-link {
   color: #253a7a;
 }
+#content blockquote {
+  font-style: italic;
+}
 #content .documentFirstHeading {
   color: #314da1;
 }
