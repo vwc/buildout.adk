@@ -48,11 +48,17 @@
             <tal:block tal:repeat="item items">
               <section class="content-block">
                 <div class="tile tile-editable"
-                   tal:define="item_count repeat/item/index;">
+                   tal:define="item_count repeat/item/number;">
                   <a class="btn btn-warning btn-small pull-right"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Edit content block"
                     tal:attributes="href item/getURL">
                     <i class="icon-edit-sign"></i></a>
                   <a class="btn btn-warning btn-small pull-right"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Layout and display settings"
                     tal:attributes="href item/getURL">
                     <i class="icon-cog"></i></a>
                   <small class="pull-right">Contentblock <span tal:replace="item_count" /></small>
