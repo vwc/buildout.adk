@@ -90,3 +90,6 @@ class View(grok.View):
         ctx = obj.getObject()
         tmpl = ctx.restrictedTraverse('@@content-view')()
         return tmpl
+
+    def can_edit(self):
+        return not api.user.is_anonymous()
