@@ -5234,7 +5234,8 @@ h6,
   font-family: 'Arimo', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
-.btn {
+.btn,
+.panel {
   border-radius: 0px;
 }
 .avatar {
