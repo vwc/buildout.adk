@@ -12,8 +12,22 @@
   <metal:content-core define-macro="main">
 
   <section class="cp-block" id="content-core">
-    <header class="cp-block-header">
-      <h3 tal:content="context/Title">Title inserted here</h3>
+    <div class="content-block"
+      tal:define="context_url context/absolute_url">
+      <div class="tile tile-editable">
+        <a class="btn btn-warning btn-small pull-right"
+          tal:attributes="href view/parentpage_url">
+          <i class="icon-chevron-up"></i>
+        </a>
+        <small class="pull-right"
+          tal:content="view/parentpage_title">Contentblock 1</small>
+      </div>
+    </div>
+    <header class="cp-block-header page-header">
+      <h2><span tal:replace="context/Title" />
+        <small tal:condition="context/subtitle"
+          tal:content="context/subtitle" />
+      </h2>
       <p class="cp-block-teaser" tal:condition="context/Description"
         tal:content="context/Description" />
     </header>
