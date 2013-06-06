@@ -14,6 +14,7 @@ def deployment():
     env.hosts = ['sechszuvier.vorwaerts-werbung.de']
     env.webserver = '/opt/webserver/buildout.webserver'
     env.code_root = '/opt/sites/adk-staging/buildout.adk'
+    env.sitename = 'adk'
     env.code_user = 'root'
     env.prod_user = 'www'
 
@@ -21,6 +22,19 @@ def deployment():
 def ls():
     with cd(env.code_root):
         run('ls')
+
+
+def status():
+    """
+        Find out the running status of the server and deploy.
+    """
+    # General health of the server.
+    run('cat /proc/loadavg')
+    run('uptime')
+    run('free')
+    run('df -h')
+    with cd(env.webserver):
+        run('bin/supervisorctl status')
 
 
 def update():
@@ -33,7 +47,18 @@ def rebuild():
         run('bin/buildout -Nc deployment.cfg')
 
 
+def instance_restart():
+    with cd(env.webserver):
+        run('nice bin/supervisorctl restart instance-%(sitename)s' % env)
+
+
 def supervisorctl(*cmd):
     """Runs an arbitrary supervisorctl command."""
     with cd(env.webserver):
         run('bin/supervisorctl ' + ' '.join(cmd))
+
+
+def deploy():
+    update()
+    rebuild()
+    instance_restart()
