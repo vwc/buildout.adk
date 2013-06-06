@@ -6738,6 +6738,18 @@ table.grid th {
 .content-block:hover .cp-block {
   margin-top: -2px;
 }
+.show-grid {
+  margin-bottom: 15px;
+}
+.show-grid .col {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eeeeee;
+  border: 1px solid #ddd;
+}
+.show-grid .col:hover {
+  background-color: #ddd;
+}
 #footer-wrapper {
   /* Sticky footer */
 
