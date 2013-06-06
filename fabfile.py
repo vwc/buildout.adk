@@ -6,12 +6,12 @@ from fabric.api import run
 from fabric.api import sudo
 
 
-def deployment():
+def live():
     env.use_ssh_config = True
     env.forward_agent = True
     env.port = '22222'
     env.user = 'root'
-    env.hosts = ['sechszuvier.vorwaerts-werbung.de']
+    env.hosts = ['6zu4']
     env.webserver = '/opt/webserver/buildout.webserver'
     env.code_root = '/opt/sites/adk-staging/buildout.adk'
     env.sitename = 'adk'
@@ -24,15 +24,31 @@ def ls():
         run('ls')
 
 
+def server_uptime():
+    run('uptime')
+
+
+def server_load():
+    run('cat /proc/loadavg')
+
+
+def server_memory():
+    run('free')
+
+
+def server_filesystem():
+    run('df -ha')
+
+
 def status():
     """
         Find out the running status of the server and deploy.
     """
     # General health of the server.
-    run('cat /proc/loadavg')
-    run('uptime')
-    run('free')
-    run('df -h')
+    server_uptime()
+    server_load()
+    server_memory()
+    server_filesystem()
     with cd(env.webserver):
         run('bin/supervisorctl status')
 
@@ -60,5 +76,5 @@ def supervisorctl(*cmd):
 
 def deploy():
     update()
-    rebuild()
+    #rebuild()
     instance_restart()
