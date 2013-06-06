@@ -16,6 +16,11 @@ class IDisplaySettings(form.Schema):
     """
        Marker/Form interface for DisplaySettings
     """
+    form.fieldset(
+        'settings',
+        label=_(u"Display Settings"),
+        fields=['featured', 'selected_layout']
+    )
     featured = schema.Bool(
         title=_(u"Featured Block"),
         description=_(u"Mark as featured to visually highlight this block"),
