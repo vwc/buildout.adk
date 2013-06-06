@@ -7,6 +7,8 @@ from zope.lifecycleevent import modified
 from plone.directives import form
 from z3c.form import button
 
+from plone.app.textfield import RichText
+
 from plone.dexterity.utils import createContentInContainer
 from Products.statusmessages.interfaces import IStatusMessage
 from adk.contentpages.contentpage import IContentPage
@@ -24,6 +26,10 @@ class IBlockAdd(form.Schema):
         title=_(u"Subtitle"),
         description=_(u"Optional extra information displayed along the "
                       u"section title"),
+        required=False,
+    )
+    text = RichText(
+        title=_(u"Content Block Body"),
         required=False,
     )
 
