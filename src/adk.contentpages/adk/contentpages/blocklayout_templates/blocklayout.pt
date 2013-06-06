@@ -33,18 +33,19 @@
       <div class="row">
         <div class="col col-lg-6">
           <div class="panel panel-warning">
-            <h4 class="panel-heading">
-              <i class="icon-circle-blank"></i> 1 Spalte - Standard
-            </h4>
+            <div class="panel-heading">
+              <i class="icon-circle"></i> 1 Spalte - Standard
+              <span class="label pull-right">Aktiv</span>
+            </div>
             <div class="row show-grid">
               <div class="col col-lg-12">
                 100% Textinhalt
               </div>
             </div>
+            <p class="text-right">
+              <button class="btn btn-small btn-link">Layout verwenden</button>
+            </p>
           </div>
-          <p class="text-right">
-            <button class="btn btn-small btn-link">Layout verwenden</button>
-          </p>
         </div>
         <div class="col col-lg-6">
           <div class="panel panel-warning">
@@ -98,8 +99,9 @@
               2/3 Textinhalt
             </div>
           </div>
-          <input class="btn btn-default btn-block" 
-              value="Layout verwenden" />
+          <p class="text-right">
+              <button class="btn btn-small btn-link">Layout verwenden</button>
+            </p>
           </div>
         </div>
       </div>
