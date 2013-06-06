@@ -16,7 +16,16 @@ class IDisplaySettings(form.Schema):
     """
        Marker/Form interface for DisplaySettings
     """
-    # -*- Your Zope schema definitions here ... -*-
+    featured = schema.Bool(
+        title=_(u"Featured Block"),
+        description=_(u"Mark as featured to visually highlight this block"),
+        required=False,
+    )
+    selected_layout = schema.TextLine(
+        title=_(u"Selected Layout"),
+        description=_(u"User selected layout for display as string"),
+        required=False
+    )
 
 
 alsoProvides(IDisplaySettings, IFormFieldProvider)

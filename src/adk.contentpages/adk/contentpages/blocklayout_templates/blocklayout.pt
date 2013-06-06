@@ -30,6 +30,9 @@
       </h2>
     </header>
     <div class="cp-block-content">
+    <form tal:attributes="action request/URL"
+      method="post">
+      <span tal:replace="structure context/@@authenticator/authenticator" />
       <div class="row">
         <div class="col col-lg-6">
           <div class="panel panel-warning">
@@ -43,7 +46,11 @@
               </div>
             </div>
             <p class="text-right">
-              <button class="btn btn-small btn-link">Layout verwenden</button>
+              <button class="btn btn-small btn-link"
+                type="submit"
+                name="form.button.LayoutA">
+                Layout verwenden
+              </button>
             </p>
           </div>
         </div>
@@ -61,7 +68,11 @@
               </div>
             </div>
             <p class="text-right">
-              <button class="btn btn-small btn-link">Layout verwenden</button>
+              <button class="btn btn-small btn-link"
+                type="submit"
+                name="form.button.LayoutB">
+                Layout verwenden
+              </button>
             </p>
           </div>
         </div>
@@ -82,7 +93,11 @@
               </div>
             </div>
             <p class="text-right">
-              <button class="btn btn-small btn-link">Layout verwenden</button>
+              <button class="btn btn-small btn-link"
+                type="submit"
+                name="form.button.LayoutC">
+                Layout verwenden
+              </button>
             </p>
           </div>
         </div>
@@ -100,11 +115,16 @@
             </div>
           </div>
           <p class="text-right">
-              <button class="btn btn-small btn-link">Layout verwenden</button>
+              <button class="btn btn-small btn-link"
+                type="submit"
+                name="form.button.LayoutD">
+                Layout verwenden
+              </button>
             </p>
           </div>
         </div>
       </div>
+    </form>
     </div>
   </section>
 
