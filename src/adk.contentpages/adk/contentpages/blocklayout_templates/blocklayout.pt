@@ -30,6 +30,12 @@
       </h2>
     </header>
     <div class="cp-block-content">
+      <div class="alert alert-warning">
+        <h4><i class="icon-warning-sign"></i>
+          Heads Up!</h4>
+        <p>Diese Seite ist noch nicht funktionsf&auml;hig und gemachte &Auml;nderungen
+          werden noch nicht f&uuml;r die weitere Verwendung nutzbar abgelegt</p>
+      </div>
     <form tal:attributes="action request/URL"
       method="post">
       <span tal:replace="structure context/@@authenticator/authenticator" />

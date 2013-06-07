@@ -49,12 +49,13 @@
               <section class="content-block">
                 <div class="tile tile-editable"
                   tal:condition="view/can_edit"
-                   tal:define="item_count repeat/item/number;">
+                   tal:define="item_count repeat/item/number;
+                              item_url item/getURL">
                   <a class="btn btn-warning btn-small pull-right"
                     data-toggle="tooltip"
                     data-placement="top"
                     title="Edit content block"
-                    tal:attributes="href item/getURL">
+                    tal:attributes="href python:item_url + '/@@block-layout'">
                     <i class="icon-edit-sign"></i></a>
                   <a class="btn btn-warning btn-small pull-right"
                     data-toggle="tooltip"
