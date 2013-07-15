@@ -55,14 +55,14 @@
                     data-toggle="tooltip"
                     data-placement="top"
                     title="Edit content block"
-                    tal:attributes="href python:item_url + '/@@block-layout'">
+                    tal:attributes="href python:item_url + '/@@edit-content-block'">
                     <i class="icon-edit-sign"></i></a>
                   <a class="btn btn-warning btn-small pull-right"
                     data-toggle="tooltip"
                     data-placement="top"
                     title="Layout and display settings"
-                    tal:attributes="href item/getURL">
-                    <i class="icon-cog"></i></a>
+                    tal:attributes="href python:item_url + '/@@block-layout'">
+                    <i class="icon-columns"></i></a>
                   <small class="pull-right">Contentblock <span tal:replace="item_count" /></small>
                 </div>
                 <div tal:define="cbc python:view.get_contentblock(item)">
