@@ -54,7 +54,7 @@
         
         <!-- Add webmastger tools tag -->
         <after theme-children="/html/head">
-            <meta name="google-site-verification" content="Gp55IgEM5GrxGtz5T9NnYtaSu7tLSi6WxsS26SaJsCU" />
+            <meta name="google-site-verification" content="1WfNvtwznLhbixzgm3Qj5_8lAay_EHZrnpWFH09W1a8" />
         </after>
         
         <!-- Copy over the id/class attributes on the body tag. This is important
