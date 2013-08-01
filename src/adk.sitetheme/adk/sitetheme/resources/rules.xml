@@ -52,6 +52,11 @@
             <link rel="shortcut icon" href="/++theme++adk.sitetheme/images/favicon.ico" type="image/x-icon" />
         </after>
         
+        <!-- Add webmastger tools tag -->
+        <after theme-children="/html/head">
+            <meta name="google-site-verification" content="Gp55IgEM5GrxGtz5T9NnYtaSu7tLSi6WxsS26SaJsCU" />
+        </after>
+        
         <!-- Copy over the id/class attributes on the body tag. This is important
              for per-section styling -->
         <copy attributes="class id dir" content="/html/body" theme="/html/body" />
