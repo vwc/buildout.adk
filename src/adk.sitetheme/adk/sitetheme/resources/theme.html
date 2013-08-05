@@ -28,15 +28,15 @@
     <![endif]-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
     <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
-    <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/less-1.4.4.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
 </head>
 <body class="section-en-en">
 
-    <header id="cms-toolbar">
+    <header id="toolbar">
       <div class="navbar navbar-fixed-top">
-        <div class="container"></div>
+        <a class="navbar-brand" href="#">Plone Toolbar</a>
       </div>
     </header>
 
@@ -49,24 +49,7 @@
                     </div>
                 </div>
                 <div class="col col-lg-8">
-                    <form id="search" class="hidden-sm pull-right" name="search" action="/search">
-                        <div class="input-group xspan12">
-                        <input id="search-site"
-                            type="text"
-                            name="SearchableText"
-                            title="Search this site&hellip;" accesskey="4"
-                            class="inputLabel roundedleft" size="15"
-                            />
-                        <span class="input-group-btn">
-                        <button class="btn btn-primary"
-                            type="submit"
-                            value="Search"
-                            id="search-site-button">
-                            <i class="icon-search"></i>&nbsp;
-                        </button>
-                        </span>
-                        </div>
-                    </form>
+                    <a class="btn btn-default" href="#">Anmeldung</a>
                     <div id="language-flags-wrapper" class="hidden-sm pull-right">
                         <ul class="nav nav-pills">
                             <li><a href="http://twitter.com/#!/ADKgermancourse" class="nav-icon"><i class="icon-twitter"></i></a></li>
@@ -221,9 +204,9 @@
             </div>
     	</div>
     </footer>
-<!--<script type="text/javascript">
+<script type="text/javascript">
   WebFontConfig = {
-    google: { families: [ 'Open+Sans:400italic,400,700:latin', 'Arimo:400,700:latin', 'Oswald:400,300,700:latin' ] }
+    google: { families: [ 'Quicksand:400italic,400,700:latin' ] }
   };
   (function() {
     var wf = document.createElement('script');
@@ -233,7 +216,7 @@
     wf.async = 'true';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
-  })(); </script>-->
+  })(); </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-4402811-8']);
