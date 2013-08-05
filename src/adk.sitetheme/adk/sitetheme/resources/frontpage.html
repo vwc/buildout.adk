@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Example Theme, based on Twitter Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta property="og:title" content="ADK Augsburger Deutschkurse - Learning German in Augsburg"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://adk-german-courses.com"/>
@@ -15,197 +15,132 @@
           certified institute and we guarantee you for the best quality in our courses. Our special
           offers: Intensive courses A1 to C1, Preparation for Language examinations, Summer courses for
           teenagers and teens, Language trips to Germany, Class excursions"/>
-    <title>Theme</title>
-    <base href="#" />
-         <!-- Le styles -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
     <link href="less/styles.less" rel="stylesheet/less" type="text/css">
-    <!-- Responsive styles - enable if necessary -->
-    <!--<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">-->
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
     <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
-    <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
-
-</head>
-<body>
-
-    <!--<header id="editbar-wrapper" class="hidden-phone">
-      <div class="navbar navbar-fixed-top">
-        <div class="container">
-            <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a href="." class="navbar-brand">CMS UI Editbar</a>
-            <div class="nav-collapse collapse">
-                <ul class="nav">
-                    <li><a href=".">Contents</a></li>
-                    <li><a href=".">Edit</a></li>
-                </ul>
+    <script type="text/javascript" src="assets/js/less-1.4.1.min.js"></script>
+  </head><body class="site-frontpage">
+<header id="toolbar">
+    <div class="navbar navbar-fixed-top">
+      <a class="navbar-brand" href="#">Plone Toolbar</a>
+    </div>
+</header><header class="topbar" id="topbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="topbar-logo-tile" id="logo-wrapper">
+                    <a href="/" class="topbar-logo" id="logo">ADK Augsburger Deutschkurse</a>
+                </div>
             </div>
-      </div>
-    </header>-->
-
-    <header id="header-phone" class="visible-phone">
-      <div class="navbar navbar-static-top">
-        <div class="container">
-            <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a href="." class="navbar-brand">ADK Augsburger Deutschkurse</a>
-            <div class="nav-collapse collapse">
-                <ul class="nav" id="main-nav">
-                    <li><a href=".">Sprachschule</a></li>
-                    <li><a href=".">Philosopie</a></li>
-                    <li><a href=".">Anmeldung</a></li>
-                </ul>
-            </div>
+            <div class="col-12 col-lg-6">
+                <div class="actionbar">
+    <div class="actionbar-signup">
+        <a class="btn btn-primary" href="#">Anmeldung</a>
+    </div>
+    <div id="actionbar-social" class="actionbar-block actionbar-block-social hidden-sm pull-right">
+        <ul class="nav nav-pills">
+            <li><a href="http://twitter.com/#!/ADKgermancourse" class="nav-icon"><i class="icon-twitter"></i></a></li>
+            <li><a href="http://www.facebook.com/adk.germancourses" class="nav-icon"><i class="icon-facebook"></i></a></li>
+        </ul>
+    </div>
+    <div id="actionbar-language" class="actionbar-block actionbar-block-language hidden-sm pull-right">
+        <ul class="nav nav-pills">
+            <li><a href="http://augsburger-deutschkurse.de/" id="flag-de" class="language-flag-link">DE</a></li>
+            <li><a href="http://adk-german-courses.com/" id="flag-en" class="language-flag-link">EN</a></li>
+            <li><a href="http://apprendre-allemand.fr/" id="flag-fr" class="language-flag-link">FR</a></li>
+            <li><a href="http://studiare-tedesco.it/" id="flag-it" class="language-flag-link">IT</a></li>
+            <li><a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link">ES</a></li>
+        </ul>
+    </div>
+</div>            </div>
         </div>
-      </div>
-    </header>
+    </div>
+    <div class="navbar navbar-inverse site-navbar">
+    <div class="container">
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class="nav nav-justified main-navigation" id="main-navigation">
+            <li><a href="/en-en/sprachschule-en">Language School</a></li>
+            <!--<li><a href=".">Sch&uuml;lerkommentare</a></li>-->
+            <li><a href="/en-en/sprachkurse-programm-en">Language Courses</a></li>
+            <li><a href="/en-en/termine-und-preise-en">Dates &amp; Fees</a></li>
+            <!--<li><a href=".">Anmeldung</a></li>-->
+            <li><a href="/en-en/sprachreisen-en">Study Trips</a></li>
+            <li><a href="/en-en/sommerkurse-1-en">Summercourses</a></li>
+            <!--<li><a href=".">Augsburg</a></li>
+            <li><a href="#">Anreise</a></li>
+            <li><a href=".">Unterkunft</a></li>-->
+        </ul>
+    </div>
+    </div>
+</div></header>
 
-    <header id="topbar" class="hidden-phone">
-        <div class="container">
-            <div id="language-flags-wrapper" class="pull-right">
-            <ul class="nav nav-pills">
-                <li><a href="http://augsburger-deutschkurse.de/" id="flag-de" class="language-flag-link">DE</a></li>
-                <li><a href="http://adk-german-courses.com/" id="flag-en" class="language-flag-link">EN</a></li>
-                <li><a href="http://apprendre-allemand.fr/" id="flag-fr" class="language-flag-link">FR</a></li>
-                <li><a href="http://studiare-tedesco.it/" id="flag-it" class="language-flag-link">IT</a></li>
-                <li><a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link">ES</a></li>
-                </ul>
-            </div>
-            <h1 id="logo-wrapper" class="pull-left">
-                <a href="/" id="logo">ADK Augsburger Deutschkurse</a>
-            </h1>
-        <div class="navbar visualClear">
-            <ul class="nav" id="main-nav">
-                <li><a href=".">Sprachschule</a></li>
-                <li><a href=".">Termine &amp; Preise</a></li>
-                <li><a href=".">Sch&uuml;lerkommentare</a></li>
-                <li><a href=".">Kursprogramm</a></li>
-                <li><a href=".">Anreise</a></li>
-                <li><a href=".">Anmeldung</a></li>
-                <li><a href=".">Sprachreisen</a></li>
-                <li><a href=".">Unterkunft</a></li>
-                <li><a href=".">Sommerkurse</a></li>
-                <li><a href=".">Augsburg</a></li>
-            </ul>
-            </div>
-     </div>
-    </header>
-
-    <section class="container" id="hero-text">
-        <div class="jumbotron">
-            <h1>Deutschlernen in Deutschland</h1>
-            <p>
-                Lernen Sie Deutsch in einem Intensivkurs,
+<section class="hero-unit hero-unit-frontpage" id="hero-text-fp">
+    <div class="container" id="hero-content-fp">
+        <div class="row">
+            <div class="col-6 col-lg-6">
+                <h1>Deutschlernen in Deutschland</h1>
+                <p>Lernen Sie Deutsch in einem Intensivkurs,
                 bereiten Sie sich auf deutsche Sprachprüfungen vor, oder verbessern
                 Sie Ihr berufsbezogenes Deutsch.
                 Wir sind ein zertifiziertes Institut und garantieren die Qualität
                 unserer Kurse.
-            </p>
-            <ul>
-                <li><i class="icon-ok"></i> In unseren Sommerkursen in Bayern entdecken und erleben Jugendliche
-                aus der ganzen Welt Deutschland</li>
-                <li><i class="icon-ok"></i> Angebote für Sprachreisen und Klassenfahrten</li>
-                <li><i class="icon-ok"></i> Zugelassener Träger von geförderten
-                Integrationskursen</li>
-            </ul>
-
+                </p>
+            </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <section id="site-wrapper" class="container">
-        <div class="row">
-            <div class="col-span-4">
-                <h2>Kontakt</h2>
-                <address class="text-muted">
-                    <strong>Augsburger Deutschkurse</strong><br>
-                    Schaezlerstr. 8<br>
-                    86150 Augsburg<br>
-                    <abbr title="Phone">P:</abbr> + 49 (0) 821 - 31 49 05<br>
-                    <abbr title="Fax">F:</abbr> + 49 (0) 821 - 31 49 10<br>
-                    info@augsburger-deutschkurse.de
-                </address>
-            </div>
-            <div class="col-span-4">
-                <div class="actionBox rounded" id="actionbox-news">
-                        <div class="page-header">
-                            <h4>News</h4>
+        
+        <div id="main-wrapper">
+            <div id="region-content">
+                <div id="content">
+                    <section>
+                        <div class="row">
+                            <div class="col col-4 col-lg-4">
+                                <div class="infopanel well">
+                                    <h2>Sprachkurse</h2>
+                                </div>
+                            </div>
+                            <div class="col col-4 col-lg-4">
+                                <div class="infopanel well">
+                                    <h2>Sommerkurse</h2>
+                                </div>
+                            </div>
+                            <div class="col col-4 col-lg-4">
+                                <div class="infopanel well">
+                                    <h2>Sprachreisen</h2>
+                                </div>
+                            </div>
                         </div>
-                        <div class="actionBoxBody">
-                            <p>News and events by Augsburger Deutschkurse:</p>
-                            <p><a href="/news" class="btn btn-block more-link">News</a></p>
-                            <p><a href="/events" class="btn btn-block more-link">Events</a></p>
-                        </div>
+                    </section>
                 </div>
             </div>
-            <div class="col-span-4">
-                <div class="actionBox rounded">
-                    <div class="page-header">
-                        <h4><a href="/en-en/anmeldung-en">Registration</a></h4>
-                    </div>
-                    <div class="actionBoxBody">
-                        <p>Sign up now for a German course at Augsburger Deutschkurse! Applications may be submitted here!</p>
-                        <p><a href="/en-en/anmeldung-en" class="btn more-link">Sign up now&hellip;</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> <!-- End cell -->
+
     </section>
 
-    <hr>
+    <div class="visualClear"><!-- Clear space after content block --></div>
 
-    <section class="container">
-        <div class="row" id="copyright-wrapper">
-            <div class="col-span-8" id="copyright-block">
-                <div class="actionBox rounded">
-                <div class="actionBoxBody">
-                    <form id="search" name="search" action="/search">
-                        <div class="input-group span12">
-                        <input id="search-site"
-                            type="text"
-                            name="SearchableText"
-                            title="Search this site&hellip;" accesskey="4"
-                            class="inputLabel roundedleft" size="15"
-                            />
-                        <span class="input-group-btn">
-                        <button class="btn"
-                            type="submit"
-                            value="Search"
-                            id="search-site-button">
-                            Suche</button>
-                        </span>
-                        </div>
-                    </form>
-                </div>
-                <div class="visualClear"><!-- --></div>
-            </div>
-            </div>
-            <div class="col-span-4" id="sm-block">
-                <ul class="nav nav-pills">
-                    <li><a href="http://www.xing.com/profile/Sabine_Steinacher;key=085fb7abbfb07145.0"><img src="images/sm-bookmark.png" alt="Social Bookmark Xing" /></a></li>
-                    <li><a href="http://www.facebook.com/adksteinacher?v=wall&ref=search"><img src="images/facebook.png" alt="Social Bookmark Facebook" /></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="visualClear"><!-- Clear space after content block --></div>
-    </section>
-
-
-    <footer id="footer-wrapper">
+        <footer class="footer" id="footer-wrapper">
         <!--<div id="footer-gradient"></div> -->
-        <div id="footer" class="container">
+        <div class="container">
             <div class="row">
-                <div class="col-span-4">
+                <div class="col col-lg-6">
                     <address>
                         <strong>Augsburger Deutschkurse</strong><br>
                         Schaezlerstr. 8<br>
@@ -215,32 +150,67 @@
                         info@augsburger-deutschkurse.de
                     </address>
                 </div>
-                <div class="col-span-4">
-                    <address>
-                        <strong>Augsburger Deutschkurse</strong><br>
-                        Schaezlerstr. 8<br>
-                        86150 Augsburg<br>
-                        <abbr title="Phone">P:</abbr> + 49 (0) 821 - 31 49 05<br>
-                        <abbr title="Fax">F:</abbr> + 49 (0) 821 - 31 49 10<br>
-                        info@augsburger-deutschkurse.de
-                    </address>
-                </div>
-                <div class="col-span-4">
-                    <address>
-                        <strong>Augsburger Deutschkurse</strong><br>
-                        Schaezlerstr. 8<br>
-                        86150 Augsburg<br>
-                        <abbr title="Phone">P:</abbr> + 49 (0) 821 - 31 49 05<br>
-                        <abbr title="Fax">F:</abbr> + 49 (0) 821 - 31 49 10<br>
-                        info@augsburger-deutschkurse.de
-                    </address>
+                <div class="col col-lg-6">
+                    <p>Sign up now for a German course at Augsburger Deutschkurse! Applications may be submitted here!</p>
+                    <p><a href="/en-en/anmeldung-en" class="btn btn-default">Sign up now&hellip;</a></p>
                 </div>
             </div>
         </div>
     </footer>
-<script src="js/bootstrap.js"></script>
-<script src="js/holder.js"></script>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="js/application.js"></script>
+    <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Quicksand:400italic,400,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4402811-8']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- Piwik -->
 <script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://fuenfzueins.vorwaerts-werbung.de/piwik/" : "http://fuenfzueins.vorwaerts-werbung.de/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 3);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://fuenfzueins.vorwaerts-werbung.de/piwik/piwik.php?idsite=3" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+  </body>
+</html>    <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Quicksand:400italic,400,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>    <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-4402811-8']);
   _gaq.push(['_trackPageview']);

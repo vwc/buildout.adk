@@ -4,4 +4,22 @@
 .actionbar-signup {
     padding: 0  0 @line-height-computed / 2;
     text-align: right;
+    text-transform: uppercase;
+}
+
+.actionbar-block {
+    margin-right: @navbar-height;
+    .nav-pills > li > a {
+        background: @brand-primary;
+        color: #fff;
+        font-size: @font-size-base;
+        padding: 5px 10px;
+        border-radius: 0px;
+        &:hover {
+            background: lighten(@adk-blue, 20%);
+        }
+        &.nav-icon {
+            padding: 10px;
+        }
+    }
 }
