@@ -1,4 +1,5 @@
 <!-- @include "_includes/head.html" -->
+<body>
 <!-- @import "_includes/toolbar.html" -->
 <!-- @import "_includes/header.kit" -->
 
@@ -72,69 +73,9 @@
 
     <div class="visualClear"><!-- Clear space after content block --></div>
 
-    <footer id="footer-wrapper">
-        <!--<div id="footer-gradient"></div> -->
-        <div id="footer" class="container">
-            <div class="row">
-                <div class="col col-lg-4">
-                    <address>
-                        <strong>Augsburger Deutschkurse</strong><br>
-                        Schaezlerstr. 8<br>
-                        86150 Augsburg<br>
-                        <abbr title="Phone">P:</abbr> + 49 (0) 821 - 31 49 05<br>
-                        <abbr title="Fax">F:</abbr> + 49 (0) 821 - 31 49 10<br>
-                        info@augsburger-deutschkurse.de
-                    </address>
-                </div>
-                <div class="col col-lg-4">
-                    <ul class="nav nav-pills nav-stacked" id="footer-navbar">
-                        <li><a href="/en-en/downloads-en">Downloads</a></li>
-                        <li><a href="/en-en/links-1-en">Links</a></li>
-                        <li><a href="/en-en/fotos-1-en">Gallery</a></li>
-                        <li><a href="/en-en/agb-1-en">Terms &amp; Conditions</a></li>
-                    </ul>
-                </div>
-                <div class="col col-lg-4">
-                    <p>Sign up now for a German course at Augsburger Deutschkurse! Applications may be submitted here!</p>
-                    <p><a href="/en-en/anmeldung-en" class="btn btn-default">Sign up now&hellip;</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-<script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Quicksand:400italic,400,700:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); </script>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-4402811-8']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<!-- Piwik -->
-<script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://fuenfzueins.vorwaerts-werbung.de/piwik/" : "http://fuenfzueins.vorwaerts-werbung.de/piwik/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 3);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="http://fuenfzueins.vorwaerts-werbung.de/piwik/piwik.php?idsite=3" style="border:0" alt="" /></p></noscript>
-<!-- End Piwik Tracking Code -->
+    <!-- @import "_includes/footer.kit" -->
+    <!-- @import "_includes/g-webfonts.html" -->
+    <!-- @import "_includes/analytics.html" -->
+
 </body>
 </html>
