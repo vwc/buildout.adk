@@ -6981,7 +6981,8 @@ ul.visualNoMarker {
 .footer a {
   color: #fff;
 }
-body {
+.site-frontpage,
+.portaltype-adk-contentpages-sectionfolder {
   background: url(../images/lined_paper.png) repeat 0px 0px transparent;
 }
 .jumbotron h1 {
