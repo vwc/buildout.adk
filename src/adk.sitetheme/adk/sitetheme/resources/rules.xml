@@ -67,9 +67,9 @@
         <copy attributes="href" css:content="#portal-logo" css:theme="#logo" />
 
         <!-- CMSUI Editbar replacements -->
-        <drop css:theme="#cms-toolbar"
+        <drop css:theme="#toolbar"
             css:if-content="#anon-personalbar" />
-        <replace css:theme="#cms-toolbar"
+        <replace css:theme="#toolbar"
             css:content="#toolbar" />
 
         <!-- Site actions -->
