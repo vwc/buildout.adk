@@ -30,8 +30,8 @@
     <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
     <script type="text/javascript" src="assets/js/less-1.4.1.min.js"></script>
   </head><body class="site-frontpage">
-<header id="toolbar">
-    <div class="navbar navbar-fixed-top">
+<header class="app-toolbar" id="toolbar">
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <a class="navbar-brand" href="#">Plone Toolbar</a>
     </div>
 </header><header class="topbar" id="topbar">
@@ -65,34 +65,32 @@
 </div>            </div>
         </div>
     </div>
-    <div class="navbar navbar-inverse site-navbar">
+    <nav class="navbar navbar-default app-navbar" role="navigation">
     <div class="container">
-    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-    </button>
-    <div class="nav-collapse collapse navbar-responsive-collapse">
-        <ul class="nav nav-justified main-navigation" id="main-navigation">
-            <li><a href="/en-en/sprachschule-en">Language School</a></li>
-            <!--<li><a href=".">Sch&uuml;lerkommentare</a></li>-->
-            <li><a href="/en-en/sprachkurse-programm-en">Language Courses</a></li>
-            <li><a href="/en-en/termine-und-preise-en">Dates &amp; Fees</a></li>
-            <!--<li><a href=".">Anmeldung</a></li>-->
-            <li><a href="/en-en/sprachreisen-en">Study Trips</a></li>
-            <li><a href="/en-en/sommerkurse-1-en">Summercourses</a></li>
-            <!--<li><a href=".">Augsburg</a></li>
-            <li><a href="#">Anreise</a></li>
-            <li><a href=".">Unterkunft</a></li>-->
-        </ul>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-main-collapse">
+      <ul class="nav nav-justified app-navbar-nav" id="main-navigation">
+          <li><a href="/en-en/sprachschule-en">Language School</a></li>
+          <li><a href="/en-en/sprachkurse-programm-en">Language Courses</a></li>
+          <li><a href="/en-en/termine-und-preise-en">Dates &amp; Fees</a></li>
+          <li><a href="/en-en/sprachreisen-en">Study Trips</a></li>
+          <li><a href="/en-en/sommerkurse-1-en">Summercourses</a></li>
+      </ul>
     </div>
     </div>
-</div></header>
+</nav></header>
 
 <section class="hero-unit hero-unit-fp" id="hero-text-fp">
     <div class="container hero-unit-fp-content" id="hero-content-fp">
         <div class="row">
-            <div class="col-6 col-lg-6">
+            <div class="col-xs-12 col-lg-6">
                 <div class="hero-unit-body">
                     <h1>Deutschlernen in Deutschland</h1>
                     <p>Lernen Sie Deutsch in einem Intensivkurs,
@@ -102,10 +100,10 @@
                     unserer Kurse.
                     </p>
                     <div class="hero-unit-fp-actions">
-                        <a href="" class="btn btn-primary btn-large">
+                        <a href="" class="btn btn-primary btn-lg">
                             Sprachschule
                         </a>
-                        <a href="" class="btn btn-default btn-large">
+                        <a href="" class="btn btn-danger btn-lg">
                             Termine &amp; Preise
                         </a>
                     </div>
@@ -121,37 +119,55 @@
                 <div id="content">
                     <section>
                         <div class="row">
-                            <div class="col col-12 col-lg-4">
-                                <div class="infopanel panel text-center">
-                                    <i class="icon-bullhorn icon-2x"></i>
-                                    <h3 class="text-center">Sprachkurse</h3>
+                            <div class="col-xs-12 col-lg-4">
+                                <div class="app-box text-center">
+                                    <div class="app-box-header">
+                                        <i class="icon-bullhorn icon-2x app-box-icon"></i>
+                                        <h3 class="app-box-title">Sprachkurse</h3>
+                                    </div>
                                     <p>Deutsch in Deutschland lernen Sie effektiv
                                         und erfolgreich in einem Sprachkurs der Sprachschule ADK
                                         Augsburger Deutschkurse
                                     </p>
                                     <img src="images/board.jpg" />
                                 </div>
+                                <div class="app-box-ribbon">
+                                    <a href="#">Mehr</a>
+                                    <i class="icon-caret-up"></i>
+                                </div>
                             </div>
                             <div class="col col-12 col-lg-4">
-                                <div class="infopanel panel text-center">
-                                    <i class="icon-sun icon-2x"></i>
-                                    <h3 class="text-center">Sommerkurse</h3>
+                                <div class="app-box text-center">
+                                    <div class="app-box-header">
+                                        <i class="icon-sun icon-2x app-box-icon"></i>
+                                        <h3 class="app-box-title">Sommerkurse</h3>
+                                    </div>
                                     <p>Deutsch in Deutschland lernen Sie effektiv
                                         und erfolgreich in einem Sprachkurs der Sprachschule ADK
                                         Augsburger Deutschkurse
                                     </p>
                                     <img src="images/summer.jpg" />
                                 </div>
+                                <div class="app-box-ribbon">
+                                    <a href="#">Mehr</a>
+                                    <i class="icon-caret-up"></i>
+                                </div>
                             </div>
                             <div class="col col-12 col-lg-4">
-                                <div class="infopanel panel text-center">
-                                    <i class="icon-suitcase icon-2x"></i>
-                                    <h3 class="text-center">Sprachreisen</h3>
+                                <div class="app-box text-center">
+                                    <div class="app-box-header">
+                                        <i class="icon-suitcase icon-2x app-box-icon"></i>
+                                        <h3 class="app-box-title">Sprachreisen</h3>
+                                    </div>
                                     <p>Deutsch in Deutschland lernen Sie effektiv
                                         und erfolgreich in einem Sprachkurs der Sprachschule ADK
                                         Augsburger Deutschkurse
                                     </p>
                                     <img src="images/bulli.jpg" />
+                                </div>
+                                <div class="app-box-ribbon">
+                                    <a href="#">Mehr</a>
+                                    <i class="icon-caret-up"></i>
                                 </div>
                             </div>
                         </div>
@@ -164,32 +180,92 @@
 
     <div class="visualClear"><!-- Clear space after content block --></div>
 
-        <footer class="footer" id="footer-wrapper">
-        <div class="footer-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-6">
-                        <address>
-                            <strong>Augsburger Deutschkurse</strong><br>
-                            Schaezlerstr. 8<br>
-                            86150 Augsburg<br>
-                            <abbr title="Phone">P:</abbr> + 49 (0) 821 - 31 49 05<br>
-                            <abbr title="Fax">F:</abbr> + 49 (0) 821 - 31 49 10<br>
-                            info@augsburger-deutschkurse.de
-                        </address>
-                    </div>
-                    <div class="col col-lg-6">
-                        <p>Sign up now for a German course at Augsburger Deutschkurse! Applications may be submitted here!</p>
-                        <p><a href="/en-en/anmeldung-en" class="btn btn-default">Sign up now&hellip;</a></p>
-                    </div>
+        <footer class="app-footer" id="footer-wrapper">
+        <div class="app-footer-content">
+            <div class="container app-footer-boxes">
+    <div class="row">
+        <div class="col-xs-12 col-lg-6">
+            <div class="footer-box">
+                <div class="footer-box-header">
+                    <i class="icon-globe icon-2x pull-right"></i>
+                    <h4>Über uns</h4>
+                </div>
+                <div class="footer-box-content">
+                    <p class="h5">ADK in Augsburg, Bayern ist die Sprachschule,
+                        um in Deutschland Deutsch zu lernen. Lernen Sie Deutsch
+                        in einem Intensivkurs, bereiten Sie sich auf deutsche
+                        Sprachprüfungen vor oder verbessern Sie Ihr
+                        berufsbezogenes Deutsch.</p>
+                    <p>ADK ist ein "Familienunternehmen" unter persönlicher Leitung der Inhaber. Unbürokratisch, flexibel und persönlich - so ist hier der Service. Das unterscheidet ADK von großen Schulen.</p>
+                    <a class="btn btn-default btn-lg" href="/">Mehr</a>
                 </div>
             </div>
         </div>
+        <div class="col-xs-12 col-lg-6">
+            <div class="footer-box">
+                <div class="footer-box-header">
+                    <i class="icon-comment icon-2x pull-right"></i>
+                    <h4>Schülermeinungen</h4>
+                </div>
+                <div class="footer-box-content">
+                    <blockquote>
+                        <i class="icon-quote-left icon-4x pull-left icon-muted"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                    </blockquote>
+                    <a class="btn btn-default btn-lg" href="/">Mehr</a>
+                </div>
+            </div>
         </div>
-        <div class="colophon container">
-            <p>&copy; Copyright 2013 - ADK Augsburger Deutschkurse</p>
-            <p>Deutschlernen in Augsburg</p>
+    </div>
+     <div class="row">
+        <div class="col-xs-12 col-lg-6">
+            <div class="footer-box">
+                <div class="footer-box-header">
+                    <i class="icon-thumbs-up icon-2x pull-right"></i>
+                    <h4>Zertifikate</h4>
+                </div>
+                <div class="footer-box-content">
+                    <p>Add Certificate images here</p>
+                </div>
+            </div>
         </div>
+        <div class="col-xs-12 col-lg-6">
+            <div class="footer-box">
+                <div class="footer-box-header">
+                    <i class="icon-envelope icon-2x pull-right"></i>
+                    <h4>Kontakt</h4>
+                </div>
+                <div class="footer-box-content">
+                    <address>
+                        <strong>Augsburger Deutschkurse</strong><br>
+                        Schaezlerstr. 8<br>
+                        86150 Augsburg<br>
+                        <abbr title="Phone">P:</abbr> + 49 (0) 821 - 31 49 05<br>
+                        <abbr title="Fax">F:</abbr> + 49 (0) 821 - 31 49 10<br>
+                        info@augsburger-deutschkurse.de
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        </div>
+        </div>
+        <div class="container">
+            <div class="app-colophon">
+<div class="row">
+    <div class="col-xs-12 col-lg-5">
+        <p class="colophon-actions">
+        <a href="/kontakt">Kontakt</a>
+        - <a href="/impressum">Impressum</a>
+        </p>
+    </div>
+     <div class="col-xs-12 col-lg-5 col-md-offset-2">
+        <p>&copy; Copyright 2013 - ADK Augsburger Deutschkurse</p>
+        <p>Deutschlernen in Augsburg</p>
+    </div>
+</div>
+</div>        </div>
     </footer>
 
     <!-- Le javascript
