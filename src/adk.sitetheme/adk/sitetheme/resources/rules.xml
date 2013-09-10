@@ -4,6 +4,11 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
+    <!-- Setup custom login form -->
+    <theme href="signin.html" css:if-content="body.template-login_form" />
+    <theme href="signin.html" css:if-content="body.template-logged_out" />
+    <theme href="signin.html" css:if-content="body.template-login_failed" />
+    <theme href="signin.html" css:if-content="body.template-mail_password_form" />
 
     <theme href="frontpage.html" css:if-content="body.portaltype-adk-contentpages-sectionfolder" />
 
@@ -88,6 +93,17 @@
         <replace css:content='#portal-globalnav li' css:theme-children="#main-navigation" />
         <!-- Breadcrumbs -->
         <replace css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
+
+        <!-- Login form rules -->
+        <replace css:content-children="#content-core"
+                css:theme-children="#page-content"
+                css:if-content="body.template-login_form" />
+        <replace css:content-children="#content-core"
+                css:theme-children="#page-content"
+                css:if-content="body.template-logged_out" />
+        <replace css:content-children="#content"
+                css:theme-children="#page-content"
+                css:if-content="body.template-mail_password_form" />
 
         <!-- Document Content -->
         <!--<drop css:content="#content" css:if-content="body.section-front-page" />-->
