@@ -11,7 +11,7 @@ env.hosts = ['6zu4']
 env.webserver = '/opt/webserver/buildout.webserver'
 env.code_root = '/opt/sites/adk-staging/buildout.adk'
 env.local_root = '/Users/cb/devel/adk/buildout.adk'
-env.sitename = 're'
+env.sitename = 'adk'
 env.code_user = 'root'
 env.prod_user = 'www'
 

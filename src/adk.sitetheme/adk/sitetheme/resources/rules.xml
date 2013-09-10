@@ -4,6 +4,9 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
+
+    <theme href="frontpage.html" css:if-content="body.portaltype-adk-contentpages-sectionfolder" />
+
     <!-- Rules applying to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
         <!--<rules if="$host = 'adk-german-courses.com'">
