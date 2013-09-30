@@ -95,17 +95,6 @@
         <!-- Breadcrumbs -->
         <replace css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
 
-        <!-- Login form rules -->
-        <replace css:content-children="#content-core"
-                css:theme-children="#page-content"
-                css:if-content="body.template-login_form" />
-        <replace css:content-children="#content-core"
-                css:theme-children="#page-content"
-                css:if-content="body.template-logged_out" />
-        <replace css:content-children="#content"
-                css:theme-children="#page-content"
-                css:if-content="body.template-mail_password_form" />
-
         <!-- Document Content -->
         <!--<drop css:content="#content" css:if-content="body.section-front-page" />-->
 
@@ -116,12 +105,24 @@
                 css:theme-children="#content" />
         </rules>
 
+        <rules css:if-not-content="#page-header">
+            <!-- Login form rules -->
+            <replace css:content-children="#content-core"
+                    css:theme-children="#app-signin-content"
+                    css:if-content="body.template-login_form" />
+            <replace css:content-children="#content-core"
+                    css:theme-children="#page-content"
+                    css:if-content="body.template-logged_out" />
+            <replace css:content-children="#content"
+                    css:theme-children="#page-content"
+                    css:if-content="body.template-mail_password_form" />
+        </rules>
+
         <drop css:theme="#hero-content"
             css:if-not-content="#page-header" />
 
         <replace css:content-children="#content"
-            css:theme-children="#content"
-            css:if-not-content="#page-header" />
+            css:theme-children="#content" />
         
         <!-- Edit bar -->
         <!--<replace css:content="#edit-bar" css:theme="#edit-bar" /> 

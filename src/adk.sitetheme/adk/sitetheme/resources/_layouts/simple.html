@@ -9,15 +9,9 @@
   </head>
   <body>
     <a class="sr-only" href="#content">Skip navigation</a>
-    <section id="site-wrapper" class="container">
-        <div id="main-wrapper">
-            <div id="region-content">
-                <div id="content">
-                  {{ content }}
-                </div>
-            </div>
-        </div> <!-- End cell -->
-    </section>
+    <div class="container" role="main">
+        {{ content }}
+    </div>
     {% include javascript.html %}
     {% include g-webfonts.html %}
 </body>

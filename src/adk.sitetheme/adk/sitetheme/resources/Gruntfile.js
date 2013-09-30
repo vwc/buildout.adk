@@ -199,7 +199,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-cb', ['rev']);
 
     // Template distribution task.
-    grunt.registerTask('dist-templates', ['jekyll:theme']);
+    grunt.registerTask('dist-templates', ['jekyll:theme', 'theme-templates']);
 
     // Full distribution task.
     grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
