@@ -10625,7 +10625,6 @@ ul.visualNoMarker {
 }
 
 .app-topbar {
-  position: relative;
   display: block;
   margin-bottom: 22px;
   border-top: 5px solid #234493;
@@ -10715,7 +10714,7 @@ ul.visualNoMarker {
 }
 
 #toolbar {
-  font-size: 14px;
+  font-size: 16px;
   background-color: #222222;
   border-color: #080808;
 }

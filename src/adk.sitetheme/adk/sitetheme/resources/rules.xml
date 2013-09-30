@@ -70,7 +70,7 @@
         <!-- CMSUI Editbar replacements -->
         <drop css:theme="#app-toolbar"
             css:if-content="#anon-personalbar" />
-        <replace css:theme="#toolbar"
+        <replace css:theme="#app-toolbar"
             css:content="#toolbar" />
 
         <!-- Site actions -->
