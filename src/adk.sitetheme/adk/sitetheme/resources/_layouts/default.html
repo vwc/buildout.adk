@@ -1,0 +1,57 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip navigation</a>
+    {% include toolbar.html %}
+
+    <header class="app-topbar" id="app-topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-6">
+                    <div class="topbar-logo-tile" id="logo-wrapper">
+                        <a href="/" class="topbar-logo" id="logo">ADK Augsburger Deutschkurse</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                  {% include metanavigation.html %}
+                </div>
+            </div>
+        </div>
+        {% include navigation.html %}
+    </header>
+    {% include content-top.html %}
+    <section class="container" id="site-wrapper">
+        <div id="main-wrapper">
+            <div class="app-region-content" id="region-content">
+                <div class="app-content" id="content">
+                  {{ content }}
+                </div>
+            </div>
+        </div> <!-- End cell -->
+    </section>
+
+    <div class="visualClear"><!-- Clear space after content block --></div>
+
+    <footer class="app-footer" id="footer-wrapper">
+        <div class="app-footer-content">
+          {% include footer-boxes.html %}
+        </div>
+        </div>
+        <div class="container">
+          {% include footer-colophon.html %}
+        </div>
+    </footer>
+    {% include javascript.html %}
+    <div id="app-fonts-dev">
+        {% include g-webfonts.html %}
+    </div>
+    {% include analytics.html %}
+</body>
+</html>

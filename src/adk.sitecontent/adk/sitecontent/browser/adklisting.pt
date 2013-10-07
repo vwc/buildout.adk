@@ -8,33 +8,38 @@
 
         <tal:pagelist tal:define="pages view/pages" tal:condition="not: view/has_one_page">
         
-        <h1 class="documentFirstHeading">
-            <metal:field use-macro="python:here.widget('title', mode='view')">
-                Folder Title
-            </metal:field>
-        </h1>
-        
-        <p class="documentDescription">
-            <metal:field use-macro="python:here.widget('description', mode='view')">
-                Description
-            </metal:field>
-        </p>
-        <div class="dottedline">&nbsp;</div>
+        <header id="content-header">
+            <div class="page-header">
+                <h1 class="documentFirstHeading">
+                    <metal:field use-macro="python:here.widget('title', mode='view')">
+                        Folder Titlex
+                    </metal:field>
+                </h1>
+            </div>
+            <p class="documentDescription lead">
+                <metal:field use-macro="python:here.widget('description', mode='view')">
+                    Description
+                </metal:field>
+            </p>
+        </header>
+        <section id="content-core">
             <tal:list tal:repeat="page pages">
-                <div class="row">
-                    <div class="cell width-1:3 position-0">
-                        <img src="" tal:replace="structure page/image_tag" />
-                    </div>
-                    <div class="cell width-2:3 position-1:3">
-                    <h2 class="itemHeadline">
+                <h2 class="xxitemHeadline">
                         <a href="" tal:attributes="href page/url"
                                     tal:content="page/title">Page Title</a>
-                    </h2>
+                </h2>
+                <div class="row">
+                    <div class="col-span-4">
+                        <span class="img-thumbnail">
+                            <img src="" tal:replace="structure page/image_tag" />
+                        </span>
+                    </div>
+                    <div class="col-span-8">
                     <p class="itemDescription" tal:content="page/description">
                         Description
                     </p>
-                    <p class="tileFooter">
-                        <a href=""
+                    <p class="text-right">
+                        <a href="" class="xbtn"
                            tal:attributes="href page/url;"
                            i18n:translate="read_more">
                         More&hellip;
@@ -42,21 +47,25 @@
                     </p>
                     </div>
                 </div>
-                <div class="dottedline">&nbsp;</div>
-                
+                <hr>                
             </tal:list>
+        </section>
         </tal:pagelist>
         
         <tal:singlepage tal:condition="view/has_one_page">
             <tal:block tal:define="page view/first_page">
-            
-            <h1 class="documentFirstHeading" tal:content="page/title">Title</h1>
 
-            <p class="documentDescription" tal:content="page/description">Description</p>
-            
-            
-            
-            <div class="documentBody" tal:content="structure page/text">Body Text</div>
+            <header class="page-header" id="content-header">
+                <div class="page-header">
+                    <h1 class="documentFirstHeading" tal:content="page/title">Title</h1>
+                </div>
+                <p class="documentDescription lead"
+                    tal:condition="page/description"
+                    tal:content="page/description" />
+            </header>
+            <section id="content-core">
+                <div class="documentBody" tal:content="structure page/text">Body Text</div>
+            </section>
             </tal:block>
             
             

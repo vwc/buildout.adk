@@ -1,0 +1,17 @@
+adk.contentpages Installation
+-----------------------------
+
+To install adk.contentpages using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``adk.contentpages`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        adk.contentpages
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout

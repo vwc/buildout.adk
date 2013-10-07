@@ -1,0 +1,51 @@
+// Ovverrides + settings
+
+@adk-blue:       #234493;
+@adk-red:        #af0c41;
+@adk-grey:       #E7E7E7;
+
+@brand-primary:         @adk-blue;
+@brand-danger:          @adk-red;
+@link-color:            @adk-red;
+
+@font-size-base:              16px;
+// @line-height-computed:        @font-size-base + 8;
+@font-family-base:            'Quicksand', 'brandon-grotesque', @font-family-sans-serif;
+@headings-font-weight:          600;
+
+@border-radius-base:            0;
+@border-radius-large:            0;
+@border-radius-small:            0;
+
+@state-info-text:                @adk-blue;
+@state-info-bg:                  lighten(@adk-blue, 50%);
+
+
+// Font awesome font path
+
+@FontAwesomePath:    "../../bower_components/font-awesome/font";
+
+
+
+// Invisibles & Helper Classes
+
+.hiddenStructure {
+    display: block;
+    background: transparent;
+    background-image: none; /* safari bug */
+    border: none;
+    height: 0.1em;
+    overflow: hidden;
+    padding: 0;
+    margin: -0.1em 0 0 -0.1em;
+    width: 1px;
+}
+
+ul.visualNoMarker {
+    list-style:none;
+    margin-left: 0;
+}
+
+.visualClear {
+    clear: both;
+}

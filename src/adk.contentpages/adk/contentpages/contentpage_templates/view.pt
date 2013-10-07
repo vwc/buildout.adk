@@ -1,0 +1,132 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="adk.contentpages">
+<body>
+
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
+
+  <section id="contentpage-view">
+    <header id="page-header">
+      <h1 class="documentFirstHeading" tal:content="context/Title" />
+      <div class="row">
+        <div class="col col-lg-9 col-offset-3">
+          <p class="lead" tal:condition="context/Description"
+            tal:content="context/Description" />
+        </div>
+      </div>
+    </header>
+
+    <section id="content-core">
+      <div class="page-header" id="contentpage-header">
+        <h2 class="display-title"
+          tal:condition="context/pageTitle"
+          tal:content="context/pageTitle" />
+        <h2 class="display-title"
+          tal:condition="not:context/pageTitle"
+          tal:content="context/displayTitle" />
+        <p class="lead" tal:condition="context/pageTeaser"
+          tal:content="context/pageTeaser" />
+      </div>
+      <div class="xrow">
+      <div id="page-body"
+        tal:condition="context/text"
+        tal:content="structure context/text/output" />
+      </div>
+      <div id="page-subcontent"
+        tal:condition="view/has_content">
+        <div class="subcontent"
+          tal:define="subcontent view/subcontent;
+                      ctype python:subcontent['item_type'];
+                      items python:subcontent['items']">
+          <div class="subcontent-blocks"
+            tal:condition="python:ctype == 'blocks'">
+            <tal:block tal:repeat="item items">
+              <section class="content-block">
+                <div class="tile tile-editable"
+                  tal:condition="view/can_edit"
+                   tal:define="item_count repeat/item/number;
+                              item_url item/getURL">
+                  <a class="btn btn-warning btn-small pull-right"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Edit content block"
+                    tal:attributes="href python:item_url + '/@@edit-content-block'">
+                    <i class="icon-edit-sign"></i></a>
+                  <a class="btn btn-warning btn-small pull-right"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Layout and display settings"
+                    tal:attributes="href python:item_url + '/@@block-layout'">
+                    <i class="icon-columns"></i></a>
+                  <small class="pull-right">Contentblock <span tal:replace="item_count" /></small>
+                </div>
+                <div tal:define="cbc python:view.get_contentblock(item)">
+                  <span tal:replace="structure cbc" />
+                </div>
+              </section>
+            </tal:block>
+            <!-- hide direct call for now -->
+            <tal:comment tal:content="nothing">
+              <tal:block tal:repeat="item items">
+                <section class="content-block">
+                  <header class="content-block-header">
+                    <h2 tal:content="item/Title" />
+                  </header>
+                  <p class="content-block-description"
+                    tal:condition="item/Description"
+                    tal:content="item/Description" />
+                  <div class="content-block-body"
+                    tal:condition="item/text"
+                    tal:content="structure item/text/output" />
+                </section>
+              </tal:block>
+            </tal:comment>
+            <!-- /hide direct call for now -->
+          </div>
+          <div class="subcontent-pages"
+            tal:condition="python:ctype == 'pages'">
+            <tal:block tal:repeat="item items">
+              <article class="subpage">
+                <header class="subpage-header">
+                  <h2><a tal:content="item/Title"
+                        tal:attributes="href item/getURL" /></h2>
+                  <p class="subpage-description"
+                    tal:condition="item/Description"
+                    tal:content="item/Description" />
+                </header>
+                <div class="subpage-content">
+                  <a class="btn btn-default"
+                    tal:attributes="href item/getURL"
+                    i18n:translate="">Read more</a>
+                </div>
+              </article>
+            </tal:block>
+          </div>
+        </div>
+      </div>
+      <section class="content-block"
+        tal:condition="view/can_edit"
+        tal:define="context_url context/absolute_url">
+        <div class="tile tile-editable">
+          <a class="btn btn-warning btn-small pull-right"
+            tal:attributes="href python:context_url + '/@@add-content-block'">
+            <i class="icon-plus-sign"></i>
+            <span i18n:translate="">Add block</span>
+          </a>
+        </div>
+      </section>
+    </section>
+
+  </section>
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+

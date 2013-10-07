@@ -4,65 +4,82 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
+    <!-- Setup custom login form -->
+    <theme href="dist/signin.html" css:if-content="body.template-login_form" />
+    <theme href="dist/signin.html" css:if-content="body.template-logged_out" />
+    <theme href="dist/signin.html" css:if-content="body.template-login_failed" />
+    <theme href="dist/signin.html" css:if-content="body.template-mail_password_form" />
+
+    <theme href="dist/frontpage.html" css:if-content="body.portaltype-adk-contentpages-sectionfolder" />
+
     <!-- Rules applying to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
-        <rules if="$host = 'adk-german-courses.com'">
+        
+        <!--<rules if="$host = 'adk-german-courses.com'">
             <theme href="frontpage-en.html" css:if-content="body.section-front-page" />
             <theme href="theme-en.html" />
-        </rules>
-        <rules if="$host = 'augsburger-deutschkurse.de'">
+        </rules>-->
+        <!--<rules if="$host = 'augsburger-deutschkurse.de'">
             <theme href="frontpage-de.html" css:if-content="body.section-front-page" />
             <theme href="theme-de.html" />
-        </rules>
-        <rules if="$host = 'estudiar-aleman.es'">
+        </rules>-->
+        <!--<rules if="$host = 'estudiar-aleman.es'">
             <theme href="frontpage-es.html" css:if-content="body.section-front-page" />
             <theme href="theme-es.html" />
-        </rules>
-        <rules if="$host = 'studiare-tedesco.it'">
+        </rules> -->
+        <!--<rules if="$host = 'studiare-tedesco.it'">
             <theme href="frontpage-it.html" css:if-content="body.section-front-page" />
             <theme href="theme-it.html" />
-        </rules>
-        <rules if="$host = 'apprendre-allemand.fr'">
+        </rules>-->
+        <!-- <rules if="$host = 'apprendre-allemand.fr'">
             <theme href="frontpage-fr.html" css:if-content="body.section-front-page" />
             <theme href="theme-fr.html" />
-        </rules>
-        <theme href="theme-de.html" />
-        
-        <!-- Copy standard header tags, including base (very important for
-             Plone default pages to work correctly), meta, title and
-             style sheets/scripts, in the order they appear in the content.
-         -->
+        </rules>-->
+        <theme href="dist/theme.html" />
+
+        <replace css:theme="base" css:content="base" />
+        <replace css:theme="title" css:content="title" />
+
         <drop theme="/html/head/meta" />
-        <drop theme="/html/head/title" />
-        <drop theme="/html/head/base" />
+
+        <after content="/html/head/meta" theme-children="/html/head" />
+        
+        <after
+            content="/html/head/style | /html/head/script | /html/head/link"
+            theme-children="/html/head"
+            />
+
         <drop theme="/html/head/style" />
         <drop theme="/html/head/script" />
         <drop theme="/html/head/link" />
-        <drop theme="/html/head/comment()" />
-        
-        <after content="/html/head/meta" theme-children="/html/head" />
-        <after content="/html/head/title" theme-children="/html/head" />
-        
-        <after
-            content="/html/head/base | /html/head/style | /html/head/script | /html/head/link | /html/head/comment()"
-            theme-children="/html/head"
-            />
         
         <after theme="/html/head">
             <link rel="shortcut icon" href="/++theme++adk.sitetheme/images/favicon.ico" type="image/x-icon" />
         </after>
         
+<<<<<<< HEAD
         <!-- Add webmastger tools tag -->
         <after theme-children="/html/head">
             <meta name="google-site-verification" content="1WfNvtwznLhbixzgm3Qj5_8lAay_EHZrnpWFH09W1a8" />
         </after>
         
+=======
+        <!--<after theme="/html/body"
+               content="//div[@data-iframe='plone-toolbar']" />-->
+>>>>>>> newlayout
         <!-- Copy over the id/class attributes on the body tag. This is important
              for per-section styling -->
-        <copy attributes="class id dir" content="/html/body" theme="/html/body" />
+        <merge attributes="class" css:content="body" css:theme="body" />
+        <copy attributes="id dir" css:content="body" css:theme="body" />
 
         <!-- Logo (link target) -->
         <copy attributes="href" css:content="#portal-logo" css:theme="#logo" />
+
+        <!-- CMSUI Editbar replacements -->
+        <drop css:theme="#app-toolbar"
+            css:if-content="#anon-personalbar" />
+        <replace css:theme="#app-toolbar"
+            css:content="#toolbar" />
 
         <!-- Site actions -->
         <replace css:content="#portal-siteactions li" css:theme-children="#actions" />
@@ -82,25 +99,49 @@
         </after>
 
         <!-- Global navigation -->
-        <replace css:content='#portal-globalnav li' css:theme-children='#global-navigation' />
-
+        <replace css:content='#portal-globalnav li' css:theme-children="#main-navigation" />
         <!-- Breadcrumbs -->
         <replace css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
 
         <!-- Document Content -->
-        <drop css:content="#content" css:if-content="body.section-front-page" />
-        <replace css:content-children="#content" css:theme-children="#content" />
+        <!--<drop css:content="#content" css:if-content="body.section-front-page" />-->
+
+        <rules css:if-content="#page-header">
+            <replace css:content-children="#page-header"
+                css:theme-children="#hero-content" />
+            <replace css:content-children="#content-core"
+                css:theme-children="#content" />
+        </rules>
+
+        <rules css:if-not-content="#page-header">
+            <!-- Login form rules -->
+            <replace css:content-children="#content-core"
+                    css:theme-children="#app-signin-content"
+                    css:if-content="body.template-login_form" />
+            <replace css:content-children="#content-core"
+                    css:theme-children="#page-content"
+                    css:if-content="body.template-logged_out" />
+            <replace css:content-children="#content"
+                    css:theme-children="#page-content"
+                    css:if-content="body.template-mail_password_form" />
+        </rules>
+
+        <drop css:theme="#hero-content"
+            css:if-not-content="#page-header" />
+
+        <replace css:content-children="#content"
+            css:theme-children="#content" />
         
         <!-- Edit bar -->
-        <replace css:content="#edit-bar" css:theme="#edit-bar" />
+        <!--<replace css:content="#edit-bar" css:theme="#edit-bar" /> 
         <drop css:theme="#editbar-wrapper"
             css:if-content="#anon-personalbar" />
-        <!--<replace css:theme="#editbar-wrapper"
+        <replace css:theme="#editbar-wrapper"
             css:content="#toolbar" />-->
-        
+
         <!-- Status messages not inside #content -->
         <drop css:content="#content .portalMessage"/>
-        <before css:content=".portalMessage" method="raw" css:theme="#document-content" />
+        <before css:content=".portalMessage" method="raw" css:theme="#content" />
         
         <!-- Drop navtree images -->
         <drop css:content="dl#portletNavigationTree img" />
@@ -114,6 +155,8 @@
 
         <!-- Footer -->
         <after css:content="#kss-spinner" theme-children="/html/body" />
+
+        <drop css:theme="#app-fonts-dev" />
     
     </rules>
 

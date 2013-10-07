@@ -17,111 +17,190 @@
           für Jugendliche, Sprachreisen und Klassenfahrten."/>
 	<title>Theme</title>
     <base href="#" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/grid12.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
 
-	<!--[if lte IE 8]><style type="text/css" media="all">@import url(http://adk-german-courses.com/static/css/ie.css);</style><![endif]-->	
+     <!-- Le styles -->
+    <link href="less/styles.less" rel="stylesheet/less" type="text/css">
+    <!-- Responsive styles - enable if necessary -->
+    <!--<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">-->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.js"></script>
+    <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
 
 </head>
-<body>
+<body class="section-de-de">
 
-<div id="outer-wrapper"><div id="middle-wrapper"><div id="inner-wrapper">
-<div id="top-wrapper">
-<div id="header-wrapper">
-<div id="header">
-    <div id="language-flags-wrapper">
-        <a href="http://augsburger-deutschkurse.de/" id="flag-de" class="language-flag-link">DE</a>
-        <a href="http://adk-german-courses.com/" id="flag-en" class="language-flag-link">EN</a>
-        <a href="http://apprendre-allemand.fr/" id="flag-fr" class="language-flag-link">FR</a>
-        <a href="http://studiare-tedesco.it/" id="flag-it" class="language-flag-link">IT</a>
-        <a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link">ES</a>
-    </div>
-    <div id="global-quicklinks">
-        <ul>
-            <li><a href="/de-de/downloads">Downloads</a></li>
-            <li><a href="/de-de/links-1">Links</a></li>
-            <li><a href="/de-de/fotos-1">Fotos</a></li>
-            <li><a href="/de-de/agb-1/impressum">Impressum</a></li>
-            <li><a href="/de-de/agb-1">AGB</a></li>
-        </ul>
-    </div>
-    <div id="logo-wrapper">
-        <a href="/" id="logo">Logo</a>
-    </div>
-</div>
-</div>
-</div>
-
-<div id="edit-bar">
-	<div id="action-menu"></div>
-	<div id="edit-menu"></div>
-</div>
-
-<div id="content-outmost-wrapper">
-<div id="content-outer-wrapper">
-<div id="content-inner-wrapper">
-<div id="content-wrapper">
-	<div class="row">
-	    
-	    <div id="left-sidebar-wrapper" class="cell position-0 width-1:4">
-			<div id="left-sidebar">
-                <!-- Sidebar goes here -->
+<header id="editbar-wrapper">
+	<div class="navbar navbar-fixed-top">
+		<div class="container">
+			<a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<div id="logo-wrapper" class="pull-left">
+            <a href="/" id="logo">ADK Augsburger Deutschkurse</a>
+        </div>
+			<div class="nav-collapse collapse">
+			<div id="navigation" class="pull-right">
+				<ul id="main-nav">
+					<li><a href=".">Contents</a></li>
+					<li><a href=".">Edit</a></li>
+				</ul>
+			</div>
 			</div>
 		</div>
-	    
-		<div id="main-wrapper" class="cell position-1:4 width-1:2">
-			<div id="region-content">
-			    <div id="content">
-                    <!-- Content goes here -->
-                </div>
-			</div>
-		</div> <!-- End cell -->
+	</div>
+	    <div class="visualClear"><!-- Clear space after content block --></div>
+</header>
 
-		<div id="right-sidebar-wrapper" class="cell position-3:4 width-1:4">
-			<div id="right-sidebar">
-			    <div class="actionBox" id="actionbox-phone">
-			        <div class="actionBoxBody">
-			            <h3>+ 49 (0) 821 - 31 49 05</h3>
-			        </div>
-			    </div>
-			    <div class="actionBox rounded">
-			        <div class="actionBoxBody">
-			            <form id="search" name="search" action="/search"> 
-                    		<input id="search-site"
-                    			name="SearchableText"
-                    			title="Diese Seite durchsuchen&hellip;" accesskey="4"
-                    			class="inputLabel roundedleft" size="15"
-                    			/>
-                        	<input class="searchButton roundedright"
-                                type="submit"
-                                value="Suche"
-                                id="search-site-button"
-                                />
-                    	</form>
-                    </div>
-                    <div class="visualClear"><!-- --></div>
-                </div>
-                <div class="actionBox" id="actionbox-toc">
-                    <div class="actionBoxHeader">
-                        <h2>Inhaltsverzeichnis:</h2>
-                    </div>
-                    <div class="actionBoxBody" id="actionbox-toc-content">
-                        TOC goes here
-                    </div>
-                </div>
-			    <div class="actionBox rounded" id="actionbox-news">
+<div id="outer-wrapper"><div id="middle-wrapper"><div id="inner-wrapper">
+
+<section id="site-wrapper" class="container">
+	<div class="row">
+		<div id="main-wrapper" class="col-span-9">
+		<div id="region-content">
+            <div id="hero-content">
+                <h1>Deutschlernen in Deutschland</h1>
+            </div>
+			<div id="content" >
+			<article>
+				<header class="content-header">
+				<div class="page-header">
+					<h1><i class="icon-info-sign"></i>
+                        Our philosopy
+                    </h1>
+				</div>
+				<p class="lead">
+					Text
+				</p>
+				</header>
+				<section>
+				    <h3><img src="holder.js/400x200//social"></h3>
+				    <h2>Our language school</h2>
+				    <blockquote class="pullquote">ADK Augsburger Deutschkurse – that means learning German in one of the leading private institutes in Germany. We are a certified shool. <br /></blockquote>
+				    <p>Being one of the most renowned and surely one of the oldest language schools in Augsburg [founded in 1963], ADK has specialized in teaching German as a foreign language right from the start.</p>
+				    <p>Sabine Steinacher and Bernd Weichlein welcome you in the office mostly together. If they are going on holiday (they spend time together even after work because they are married) Sabine Kallweit is the person in charge.</p>
+				    <p>Office hourse Monday to Friday 9 a.m. to 3 p.m.(no lunch break), and we try to answr your emails in 24 hrs.</p>
+				    <p align="justify"><span>ADK language school is              located in the heart of the city. Our <span>teaching              experience, our emphasis on quality, the highly qualified teachers, an       international, welcoming, and friendly atmosphere, the concentration on       the students' needs and the affordable course fees</span><span> - all that has made ADK one of the most succesful German language centers in Augsburg.</span></span><span> </span></p>
+				    <p align="justify">ADK is renowned for its hospitality and friendly       atmosphere. We are delighted to assist you with questions regarding the       language courses, accomodation, leisure activities and any other concerns to ensure that your language course is a success and your stay       in Augsburg is as pleasant as possible.</p>
+				    <p>ADK means learn German while having fun: We offer lively interesting lessons, and you will be able to see that we created a familiar atmosphere which makes it easy to learn and live the language.</p>
+				    <p>Consistent quality is as important to us as a relaxed and friendly atmosphere. The satisfaction and the success of our students is our best advertisement. At the moment there are about 100 students from over 30 countries from all over the world learning German in 8 classes at our school…80% of our students join our courses upon the recommendation of former customers and we are very proud on the high success rate of our participants in exams!</p>
+				    <p class="callout">We are situated in the city centre, just a few walking minutes from Königsplatz, the main train station and the city market. 12 classrooms and 3 cafeterias on 3 levels are available, during the break you can socialize, make friends and have tea or coffee. FREE WIFI available for our students!</p>
+				    <h3>What makes the difference…</h3>
+				    <p>We are a private language institute and <span class="content">we are proud of our high standard of teaching and the personal touch.</span>In 1995 we took over the school from the former director (ADK is the oldest and most famous language school in Augsburg, existing since 1963 under the name ADK Augsburger Deutschkurse).</p>
+				    <h3>Quality<img src="holder.js/120x120//social" />
+				    <img alt="copy_of_logo_bamf.jpg" class="image-inline" src="holder.js/200x120//social" style="float: right; " /></h3>
+				    <p class=" ">We are a certified school and acredited by the Bundesamt</p>
+				    <p><img alt="copy_of_logo_cns.jpg" class="pull-left" src="holder.js/64x64//social" /></p>
+				    <p>Students from Sweden: The Swedish student grant system CSN has recognised ADK , therefore Swedish students can receive funds. <a class="external-link" href="http://www.csn.se/">For details please ask CSN! </a></p>
+				    <h3 class="visualClear">What makes us different?</h3>
+				    <p class=" ">We are a family of professional linguists and teachers and feel that we understand better than most the difficulties you face using German at work and in your free time. We are also personally involved in the school at every level – a degree of commitment which is feasible in a school of our size.  Our methods are the best there are for learning German in a fast and effivient way. Our staff and teachers will make your stay at Augsburger Deutschkurse an experience to remember, one that will prove invaluable to your future.  In our so called family business, all our teachers work with us for many years, are experienced and dispose of a relevant University degree. Our students are near to our heart, we are available at any time.</p>
+				    <p>Unbureaucratic, flexible and individual – this is our service and something which makes us so special and distinguishes us from other schools.<br />Our modern methods are effective and up-to-date, we make an effort to organize your stay as pleasant as possible – an experience which you will remember!</p>
+                                    <p><strong>We look forward to meeting you in Augsburg! </strong></p>
+				    <p><span class="discreet">Sabine Steinacher and Bernd Weichlein </span></p>
+				    <table class="writereview">
+				    <tbody>
+                                    <tr>
+                                        <td><a href="http://www.my-language-travel.com/" target="_blank"><img height="36" src="http://www.my-language-travel.com/badges/wr_purple1.jpg" width="240" /></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="wrschool">Review<br /> Our Language School</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        <div id="wrbutton"><a href="http://www.my-language-travel.com/" target="_blank">Write Review</a></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="wrfooter"><a href="http://www.my-language-travel.com/" target="_blank">Share you experience!</a></td>
+                                    </tr>
+				    </tbody>
+                                    </table>
+			        </section>
+			</article>
+			</div>
+		</div>
+	        </div>
+	
+	<aside id="right-sidebar-wrapper" class="col-span-3">
+        <div id="language-flags-wrapper" class="pull-right" >
+        <ul class="nav nav-pills">
+            <li><a href="http://augsburger-deutschkurse.de/" id="flag-de" class="language-flag-link">DE</a></li>
+            <li><a href="http://adk-german-courses.com/" id="flag-en" class="language-flag-link">EN</a></li>
+            <li><a href="http://apprendre-allemand.fr/" id="flag-fr" class="language-flag-link">FR</a></li>
+            <li><a href="http://studiare-tedesco.it/" id="flag-it" class="language-flag-link">IT</a></li>
+            <li><a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link">ES</a></li>
+         </ul>
+        </div>
+		<div id="sidebar" class="discreet">
+			
+			<!--<div class="actionBox" id="actionbox-toc">
+				<div class="actionBoxHeader">
+					<h2>Inhaltsverzeichnis:</h2>
+				</div>
+				<div class="actionBoxBody" id="actionbox-toc-content">
+				 TOC goes here
+				</div>
+			</div>-->
+			<div class="actionBox rounded">
+				<div class="actionBoxBody">
+					<form class="navbar-search">
+						<input type="text" class="search-query" placeholder="Suche">
+					</form>
+				</div>
+			</div>
+			<div class="actionBox rounded" id="sm-block">
+				<div class="actionBoxBody">
+					<ul>
+						<li><a href="http://www.xing.com/profile/Sabine_Steinacher;key=085fb7abbfb07145.0"><img src="images/sm-bookmark.png" alt="Social Bookmark Xing" /></a></li>
+						<li><a href="http://www.facebook.com/adksteinacher?v=wall&ref=search"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="actionBox rounded" id="global-quicklinks">
+				<div class="actionBoxBody">
+					<ul class="nav nav-pills nav-stacked">
+						<li><a href="/en-en/downloads-en"><i class="icon-download"></i>Downloads</a></li>
+						<li><a href="/en-en/links-1-en"><i class="icon-external-link"></i>Links</a></li>
+						<li><a href="/en-en/fotos-1-en"><i class="icon-picture"></i>Fotos</a></li>
+					</ul>	
+				</div>
+			</div>
+			<button class="btn btn-block" type="button" id="anmeldung">
+				<a href="/de-de/anmeldung" class="more-link"><i class="icon-hand-right"></i>Anmeldung</a>
+			</button>
+			<div class="actionBox rounded" id="actionbox-news" class="thumbnail">
 			        <div class="actionBoxHeader">
 			            <h2>Aktuelles</h2>
 			        </div>
 			        <div class="actionBoxBody">
 			            <p>Aktuelle Termine und Neuigkeiten rund um Augsburger Deutschkurse
 			                finden Sie hier:</p>
-			            <p><a href="/news" class="more-link">Nachrichten</a></p>
-			            <p><a href="/events" class="more-link">Termine</a></p>
+			        <!--    <p>
+					<button class="btn btn-block" type="button">
+						<a href="/news" class="more-link"><i class="icon-hand-right"></i>Nachrichten</a>
+					</button>
+				    </p>
+			            <p>
+					<button class="btn btn-block" type="button">
+						<a href="/events" class="more-link"><i class="icon-hand-right"></i>Termine</a>
+					</button>
+				    </p>-->
+				    <p>
+					<button class="btn btn-block" type="button">
+						<a href="/news" class="more-link"><i class="icon-hand-right"></i>Mehr ...</a>
+					</button>					
+				    </p>
 			        </div>
-			    </div>
-			    <div class="actionBox rounded">
+			</div>
+		<!--	<div class="actionBox rounded">
 			        <div class="actionBoxHeader">
 			            <h2><a href="/de-de/anmeldung">Anmeldung</a></h2>
 			        </div>
@@ -130,52 +209,45 @@
 			                für einen Deutschkurs bei Augsburger Deutschkurse an!</p>
 			            <p><a href="/de-de/anmeldung" class="more-link">Zur Anmeldung&hellip;</a></p>
 			        </div>
-			    </div>
-			    <div class="actionBox rounded" id="actionbox-contact">
+			</div>-->
+			<div class="actionBox rounded" id="actionbox-contact">
 			        <div class="actionBoxHeader">
 			            <h2>Kontakt</h2>
 			        </div>
 			        <div class="actionBoxBody">
 			            Augsburger Deutschkurse<br />
-                        Schaezlerstr. 8<br />
-                        86150 Augsburg<br />
-                        + 49 (0) 821 - 31 49 05<br />
-                        + 49 (0) 821 - 31 49 10<br />
-                        <a href="mailto:info@augsburger-deutschkurse.de">info@augsburger-deutschkurse.de</a>
+					Schaezlerstr. 8<br />
+					 86150 Augsburg<br />
+					+ 49 (0) 821 - 31 49 05<br />
+					  + 49 (0) 821 - 31 49 10<br />
+				<a href="mailto:info@augsburger-deutschkurse.de">info@augsburger-deutschkurse.de</a>
 			        </div>
 			    </div>
 			</div>
 		</div>
-	</div> <!-- End row -->
-	<div class="row" id="copyright-wrapper">
-	    <div class="cell width-3 position-6" id="copyright-block">
-	            <span>Copyright &copy;</span> augsburger deutschkurse 2010
-	    </div>
-	    <div class="cell width-2 position-10" id="sm-block">
-	        <ul>
-	            <li><a href="http://www.xing.com/profile/Sabine_Steinacher;key=085fb7abbfb07145.0"><img src="images/sm-bookmark.png" alt="Social Bookmark Xing" /></a></li>
-	            <li><a href="http://www.facebook.com/pages/ADK-german-courses/151888841497156"><img src="images/facebook.png" alt="Social Bookmark Facebook" /></a></li>
-	            <li><a href="http://twitter.com/#!/ADKgermancourse"><img src="images/twitter.png" alt="Social Bookmark Twitter" /></a></li>
-	        </ul>
-	    </div>
+	
+	</aside>
 	</div>
-	<div class="visualClear"><!-- Clear space after content block --></div>
-</div>
-</div>
-</div>
-</div>
-<div style="clear:both"><!-- Clear space before footer --></div>
+</section>
+<div class="row" id="copyright-wrapper">
+        <div class="span6 offset2" id="copyright-block">
+                <span>Copyright &copy;</span> augsburger deutschkurse 2010
+        </div>
+        <div class="span3" id="sm-block">
+            <ul>
+                <li><a href="http://www.xing.com/profile/Sabine_Steinacher;key=085fb7abbfb07145.0"><img src="images/sm-bookmark.png" alt="Social Bookmark Xing" /></a></li>
+                <li><a href="http://www.facebook.com/adksteinacher?v=wall&ref=search"><img src="images/facebook.png" alt="Social Bookmark Facebook" /></a></li>
+            	<li><a href="http://twitter.com/#!/ADKgermancourse"><img src="images/twitter.png" alt="Social Bookmark Twitter" /></a></li>
+	    </ul>
+        </div>
+    </div>
+    <div class="visualClear"><!-- Clear space after content block --></div>
 
-</div><!-- end inner-wrapper -->
-<!--<div id="push"></div>-->
-</div>
-</div> <!-- end outer-wrapper -->
-
-<div id="footer-wrapper">
-	<!--<div id="footer-gradient"></div> -->
-	<div id="footer">
+    <footer id="footer-wrapper">
+    	<!--<div id="footer-gradient"></div> -->
+    	<div id="footer" class="container">
         <div id="sitemap" class="row">
-            <div class="cell position-0 width-12">
+            <div class="col-span-4">
                 <dl>
                     <dt><a href="/de-de/sprachschule">Unsere Sprachschule</a></dt>
                     <dd><a href="/de-de/sprachschule/philosophie-was-uns-wichtig-ist">Philosophie</a></dd>
@@ -187,6 +259,8 @@
                 <dl>
                     <dt><a href="/de-de/schuelerkommentare">Unsere Sch&uuml;ler &uuml;ber uns</a></dt>
                 </dl>
+	    </div>
+	    <div class="col-span-4">
                 <dl>
                     <dt><a href="/de-de/sprachkurse-programm">Programm</a></dt>
                     <dd><a href="/de-de/sprachkurse-programm/deutsch-intensivkurse">Deutsch Intensivkurse</a></dd>
@@ -195,6 +269,8 @@
                     <dd><a href="/de-de/sprachkurse-programm/deutsch-fuer-den-beruf-einzeltraining">Firmenservice</a></dd>
                     <dd><a href="/de-de/sprachkurse-programm/integrationskurse">Integrationskurse</a></dd>
                 </dl>
+	    </div>
+	    <div class="col-span-4">
                 <dl>
                     <dt><a href="/de-de/sprachreisen">Sprachreisen</a></dt>
                 </dl>
@@ -206,8 +282,10 @@
                 </dl>
             </div>                         
         </div>
-	</div>
-</div>
+    	</div>
+    </footer>
+<script src="js/bootstrap.js"></script>
+<script src="js/holder.js"></script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-4402811-8']);

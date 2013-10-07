@@ -7,6 +7,8 @@
     i18n_domain="adk.sitetheme">
 
   <five:registerPackage package="." initialize=".initialize" />
+
+  <includeDependencies package="." />
   
   <plone:static
       directory="resources"

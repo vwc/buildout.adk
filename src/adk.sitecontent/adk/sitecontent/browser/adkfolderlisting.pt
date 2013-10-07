@@ -8,18 +8,21 @@
 
         <tal:folderlist tal:define="folders view/subfolders">
         
-        <h1 class="documentFirstHeading">
-            <metal:field use-macro="python:here.widget('title', mode='view')">
-                Folder Title
-            </metal:field>
-        </h1>
-        
-        <p class="documentDescription">
-            <metal:field use-macro="python:here.widget('description', mode='view')">
-                Description
-            </metal:field>
-        </p>
-        <div class="dottedline">&nbsp;</div>
+        <header id="content-header">
+
+            <h1 class="documentFirstHeading">
+                <metal:field use-macro="python:here.widget('title', mode='view')">
+                    Folder Title
+                </metal:field>
+            </h1>
+            
+            <p class="documentDescription lead">
+                <metal:field use-macro="python:here.widget('description', mode='view')">
+                    Description
+                </metal:field>
+            </p>
+        </header>
+        <section id="content-core">
             <tal:list tal:repeat="folder folders">
                 <div class="row">
                     <div class="cell width-12 position-0">
@@ -42,6 +45,7 @@
                 <div class="dottedline">&nbsp;</div>
                 
             </tal:list>
+        </section>
         </tal:folderlist>
 
         </tal:main-macro>

@@ -1,0 +1,20 @@
+<tal:block tal:define="portal_url viewlet/portal_url">
+<div id="footer-navbar">
+    <ul class="nav nav-pills nav-stacked" id="footer-navbar">
+        <li><a href="/en-en/downloads-en"
+                tal:attributes="href python:portal_url + '/downloads'"
+                i18n:translate="">
+                Downloads</a>
+        </li>
+        <li><a href="/en-en/links-1-en"
+                tal:attributes="href python:portal_url + '/links'"
+                i18n:translate="">Links</a></li>
+        <li><a href="/en-en/fotos-1-en"
+                tal:attributes="href python:portal_url + '/imprint'"
+                i18n:translate="">Site Notice</a></li>
+        <li><a href="/en-en/agb-1-en"
+                tal:attributes="href python:portal_url + '/en/terms-and-conditions'"
+                i18n:translate="">Terms &amp; Conditions</a></li>
+    </ul>
+</div>
+</tal:block>

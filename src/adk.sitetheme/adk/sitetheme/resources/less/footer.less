@@ -1,0 +1,43 @@
+// Site footer styles
+// ------------------
+
+.app-footer {
+    margin-top: @line-height-computed;
+    padding-top: @line-height-computed * 2;
+    background:url(../../assets/img/skyline.png) repeat-x 0 0 transparent;
+}
+
+.app-footer-content {
+    margin-top: @line-height-computed;
+    padding: @line-height-computed * 2 @line-height-computed;
+    background: #234493;
+    color: #fff;
+}
+
+// Footer boxes responsive
+.footer-box-header {
+    padding: (@line-height-computed / 4) @line-height-computed;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-box-content {
+    padding: (@line-height-computed / 2) @line-height-computed;
+}
+
+
+// Colophon
+
+.app-colophon {
+    padding: @line-height-computed 0;
+    @media screen and (min-width: @screen-desktop) {
+        background:url(../../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
+    }
+}
+
+// Responsive: Desktops and up
+@media screen and (min-width: @screen-desktop) {
+    .colophon-actions {
+        .text-right();
+    }
+}

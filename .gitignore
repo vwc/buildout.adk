@@ -25,9 +25,13 @@ var
 etc/**/*
 src/sauna.reload
 src/collective.disqus
+src/plone.app.contenttypes
 src/plone.app.blocks
 src/plone.app.tiles
 src/plone.tiles
 src/vwc.tiles
 src/vwc.toolbar
+src/ade25.fabfiles
+src/ade25.typekit
+src/ade25.toolbar
 src/vwc.opengraph

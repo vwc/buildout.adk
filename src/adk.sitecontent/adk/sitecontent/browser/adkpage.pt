@@ -6,17 +6,23 @@
     <div metal:fill-slot="main">
         <tal:main-macro metal:define-macro="main"
                         tal:define="text here/getText;">
-            
-            <h1 class="documentFirstHeading">
-                <metal:field use-macro="python:here.widget('title', mode='view')">
-                    Title
+        
+        <header id="content-header">
+            <div class="xxpage-header">
+                <h1 class="documentFirstHeading">
+                    <metal:field use-macro="python:here.widget('title', mode='view')">
+                        Folder Titlex
+                    </metal:field>
+                </h1>
+            </div>
+            <p class="documentDescription lead">
+                <metal:field use-macro="python:here.widget('description', mode='view')">
+                    Description
                 </metal:field>
-            </h1>
-            
-            
+            </p>
+        </header>
+        <section id="content-core">
             <div tal:replace="structure provider:plone.abovecontentbody" />
-            <tal:comment tal:content="nothing">
-            </tal:comment>
             
             
             <p tal:condition="python: not text and is_editable"
@@ -36,6 +42,9 @@
                             Zur&uuml;ck zur &Uuml;bersicht</a>
                     </tal:block>
             </div>
+        </section>
+            
+            
             
         </tal:main-macro>
     </div>

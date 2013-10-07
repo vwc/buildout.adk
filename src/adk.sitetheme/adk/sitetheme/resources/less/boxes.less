@@ -1,0 +1,58 @@
+//
+// Content boxes and panels
+// ------------------------------------------------
+
+.app-box {
+    .panel();
+    .panel-default();
+    padding: @line-height-computed;
+}
+
+.app-box-header {
+    > i {
+        color: @adk-red;
+    }
+}
+
+.app-box-title {
+    color: @adk-blue;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.app-box-ribbon {
+ position: relative;
+ display: block;
+ .square(@navbar-height);
+ margin: -(@line-height-computed) auto @line-height-computed;
+ background: @link-color;
+ color: #fff;
+ text-align: center;
+ > a {
+    display: inline-block;
+    margin-bottom: 6px;
+    color: #fff;
+    font-size: @font-size-small;
+    text-transform: uppercase;
+ }
+ > .icon-caret-up {
+    line-height: @line-height-computed;
+    font-size: (@navbar-height * 1.75);
+ }
+}
+
+.app-box-arrow {
+    .center-block();
+    width: 0;
+    height: 0;
+    border-left: (@line-height-computed) solid transparent;
+    border-right: (@line-height-computed) solid transparent;
+    border-top: (@line-height-computed) solid transparent;
+}
+.app-box-arrow-default {
+    border-bottom: (@line-height-computed) solid @gray-light;
+}
+.app-box-arrow-light {
+    border-bottom: (@line-height-computed) solid #fff;
+    margin-top: -(@line-height-computed);
+}
