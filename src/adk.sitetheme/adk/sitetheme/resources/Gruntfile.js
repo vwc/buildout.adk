@@ -169,7 +169,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-recess');
     grunt.loadNpmTasks('grunt-rev');
-    grunt.loadNpmTasks('browserstack-runner');
 
     // Copy jekyll generated templates and rename for diazo
     grunt.registerTask('theme-templates', '', function () {
