@@ -25,7 +25,7 @@ setup(name='adk.testimonials',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'plone.app.dexterity [grok]',
+          'plone.app.dexterity [grok, relations]',
           'plone.namedfile [blobs]',
           # -*- Extra requirements: -*-
       ],
