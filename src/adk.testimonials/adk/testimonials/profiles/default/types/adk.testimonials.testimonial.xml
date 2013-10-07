@@ -9,9 +9,8 @@
     i18n:translate="">A sinlge customer statement</property>
   <property name="icon_expr">string:${portal_url}/document_icon.png</property>
   <property name="factory">adk.testimonials.testimonial</property>
-  <property name="global_allow">True</property>
+  <property name="global_allow">False</property>
   <property name="filter_content_types">True</property>
-  <property name="allowed_content_types" />
   <property name="allow_discussion">False</property>
 
   <!-- schema and class used for content items -->
@@ -20,7 +19,6 @@
 
   <property name="behaviors">
      <element value="plone.app.content.interfaces.INameFromTitle" />
-     <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
    </property>
 
   <!-- View information -->

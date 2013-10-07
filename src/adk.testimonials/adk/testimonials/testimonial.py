@@ -21,7 +21,7 @@ class ITestimonial(form.Schema, IImageScaleTraversable):
     """
     A sinlge customer statement
     """
-    name = schema.TextLine(
+    title = schema.TextLine(
         title=_(u"Fullname"),
         required=False,
     )
