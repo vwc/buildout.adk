@@ -52,6 +52,22 @@ def test_suite():
 
         # -*- extra stuff goes here -*-
 
+        # Integration tests for Testimonial
+        ztc.ZopeDocFileSuite(
+            'Testimonial.txt',
+            package='adk.testimonials',
+            optionflags = OPTION_FLAGS,
+            test_class=TestCase),
+
+
+        # Integration tests for Testimonials
+        ztc.ZopeDocFileSuite(
+            'Testimonials.txt',
+            package='adk.testimonials',
+            optionflags = OPTION_FLAGS,
+            test_class=TestCase),
+
+
         ])
 
 if __name__ == '__main__':
