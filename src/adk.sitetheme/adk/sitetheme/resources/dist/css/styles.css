@@ -10920,12 +10920,12 @@ ul.visualNoMarker {
   background: url(../../assets/img/lined_paper.png) repeat 0 0px transparent;
 }
 
-.jumbotron h1 {
-  color: #234493;
+.jumbotron {
+  font-size: 32px;
 }
 
-.jumbotron p {
-  color: #af0c41;
+.jumbotron h1 {
+  color: #234493;
 }
 
 .jumbotron li {
@@ -10933,19 +10933,9 @@ ul.visualNoMarker {
 }
 
 #hero-text .jumbotron {
-  padding-top: 75px;
   padding-bottom: 11px;
-  color: #fff;
-  background: #4871d4;
+  background: transparent;
   border-radius: 0;
-}
-
-#hero-text .jumbotron h1 {
-  color: #fff;
-}
-
-#hero-text .jumbotron p {
-  color: #fff;
 }
 
 #content {
@@ -10963,7 +10953,7 @@ ul.visualNoMarker {
 #content h2.display-title {
   font-size: 40px;
   font-weight: 400;
-  color: #af0c41;
+  color: #234493;
 }
 
 #content .pullquote {

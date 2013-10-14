@@ -10,12 +10,10 @@
 // Jumbotron - hero unit styles
 
 .jumbotron {
+    font-size: @font-size-base * 2;
     h1 {
         color: @adk-blue;
         //text-align: center;
-    }
-    p {
-        color: @adk-red;
     }
     li {
         list-style: none;
@@ -23,17 +21,16 @@
 }
 
 #hero-text .jumbotron {
-    background: lighten(@adk-blue, 20%);
+    background: transparent;
     border-radius: 0px;
-    color: #fff;
-    padding-top: @navbar-height * 1.5;
+    //padding-top: @navbar-height * 1.5;
     padding-bottom: @line-height-computed / 2;
-    h1 {
-        color: #fff;
-    }
-    p {
-        color: #fff;
-    }
+    //h1 {
+    //    color: #fff;
+    //}
+    //p {
+    //    color: #fff;
+    //}
 }
 
 .hero-unit-frontpage {
@@ -50,7 +47,7 @@
     h2 {
         color: @adk-blue;
         &.display-title {
-             color: @adk-red;
+             color: @adk-blue;
              font-weight: 400;
              font-size: ceil(@font-size-base * 2.5);
         }
