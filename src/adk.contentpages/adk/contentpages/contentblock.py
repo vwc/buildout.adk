@@ -23,6 +23,13 @@ from plone.formwidget.contenttree import ObjPathSourceBinder
 from adk.contentpages import MessageFactory as _
 
 
+organizers = SimpleVocabulary(
+    [SimpleTerm(value=u'Bill', title=_(u'Bill')),
+     SimpleTerm(value=u'Bob', title=_(u'Bob')),
+     SimpleTerm(value=u'Jim', title=_(u'Jim'))]
+)
+
+
 class IContentBlock(form.Schema, IImageScaleTraversable):
     """
     A blcok of content usable inside a content page.

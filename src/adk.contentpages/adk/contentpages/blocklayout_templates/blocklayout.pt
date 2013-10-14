@@ -15,7 +15,8 @@
     <div class="content-block"
       tal:define="context_url context/absolute_url">
       <div class="tile tile-editable">
-        <a class="btn btn-warning btn-small pull-right">
+        <a class="btn btn-warning btn-small pull-right"
+          tal:attributes="href view/parentpage_url">
           <i class="icon-chevron-up"></i>
         </a>
         <small class="pull-right"
@@ -36,6 +37,7 @@
         <p>Diese Seite ist noch nicht funktionsf&auml;hig und gemachte &Auml;nderungen
           werden noch nicht f&uuml;r die weitere Verwendung nutzbar abgelegt</p>
       </div>
+    <hr>
     <form tal:attributes="action request/URL"
       method="post">
       <span tal:replace="structure context/@@authenticator/authenticator" />
