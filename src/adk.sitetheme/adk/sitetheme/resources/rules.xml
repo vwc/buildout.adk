@@ -35,7 +35,7 @@
             <theme href="frontpage-fr.html" css:if-content="body.section-front-page" />
             <theme href="theme-fr.html" />
         </rules>-->
-        <theme href="dist/theme.html" />
+        <theme href="dist/index.html" />
 
         <replace css:theme="base" css:content="base" />
         <replace css:theme="title" css:content="title" />
