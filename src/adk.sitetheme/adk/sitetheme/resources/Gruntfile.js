@@ -139,6 +139,27 @@ module.exports = function (grunt) {
             theme: {}
         },
 
+        sed: {
+            'clean-source-assets': {
+                path: 'dist/',
+                pattern: '../../assets/',
+                replacement: '../assets/',
+                recursive: true
+            },
+            'clean-source-css': {
+                path: 'dist/',
+                pattern: '../dist/css/styles.css',
+                replacement: 'css/styles.css',
+                recursive: true
+            },
+            'clean-source-js': {
+                path: 'dist/',
+                pattern: '../dist/js/rms.js',
+                replacement: 'js/rms.js.min',
+                recursive: true
+            }
+        },
+
         validation: {
             options: {
                 reset: true
@@ -181,6 +202,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-html-validation');
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-recess');
+    grunt.loadNpmTasks('grunt-sed');
     grunt.loadNpmTasks('grunt-rev');
 
     // Copy jekyll generated templates and rename for diazo
@@ -211,7 +233,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-cb', ['rev']);
 
     // Template distribution task.
-    grunt.registerTask('dist-templates', ['jekyll:theme', 'theme-templates']);
+    grunt.registerTask('dist-templates', ['jekyll:theme', 'theme-templates', 'sed']);
 
     // Full distribution task.
     grunt.registerTask('dist', ['clean', 'dist-css', 'dist-assets', 'dist-js']);
