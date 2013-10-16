@@ -89,7 +89,7 @@ module.exports = function (grunt) {
                 flatten: true,
                 cwd: 'bower_components/',
                 src: ['font-awesome/font/*'],
-                dest: 'assets/fonts/'
+                dest: 'dist/assets/fonts/'
             },
             templates: {
                 expand: true,
@@ -201,7 +201,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-templates', ['jekyll:theme', 'theme-templates']);
 
     // Full distribution task.
-    grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
+    grunt.registerTask('dist', ['clean', 'dist-css', 'dist-assets', 'dist-js']);
 
     // Default task.
     grunt.registerTask('default', ['test', 'dist']);
