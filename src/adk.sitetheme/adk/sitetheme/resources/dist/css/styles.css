@@ -10945,6 +10945,7 @@ body,
 
 #content.mceContentBody {
   padding: 11px;
+  background: #fff;
 }
 
 #content h2 {

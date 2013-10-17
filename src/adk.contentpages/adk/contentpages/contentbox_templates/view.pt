@@ -1,0 +1,61 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="adk.contentpages">
+<body>
+
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
+  <section class="cp-box" id="content-core">
+    <div class="content-block"
+      tal:define="context_url context/absolute_url">
+      <div class="tile tile-editable">
+          <a class="btn btn-warning btn-small pull-right"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Edit content block"
+            tal:attributes="href python:context_url + '/@@edit'">
+            <i class="icon-edit-sign"></i>
+          </a>
+          <a class="btn btn-warning btn-small pull-right"
+            tal:attributes="href view/parentpage_url">
+            <i class="icon-chevron-up"></i>
+          </a>
+          <small class="pull-right"
+            tal:content="view/parentpage_title">Contentblock 1</small>
+      </div>
+      <header class="cp-block-header page-header">
+        <h2>Content Box
+          <small tal:content="context/Title" />
+        </h2>
+      </header>
+      <div class="cp-block-content">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+              <p>Links sehen Sie eine Vorschau der Content Box</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" tal:content="context/Title" />
+                  </div>
+                  <div class="panel-body">
+                    <p tal:content="context/Description" />
+                    <div tal:condition="context/text"
+                      tal:replace="structure context/text/output" />
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+

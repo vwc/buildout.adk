@@ -1,6 +1,7 @@
 from Acquisition import aq_inner
 from Acquisition import aq_parent
 from five import grok
+from plone import api
 from plone.directives import dexterity, form
 
 from zope import schema
@@ -20,13 +21,18 @@ from plone.app.textfield import RichText
 from z3c.relationfield.schema import RelationList, RelationChoice
 from plone.formwidget.contenttree import ObjPathSourceBinder
 
+from plone.app.contentlisting.interfaces import IContentListing
+
+from adk.contentpages.contentbox import IContentBox
+
 from adk.contentpages import MessageFactory as _
 
 
-organizers = SimpleVocabulary(
-    [SimpleTerm(value=u'Bill', title=_(u'Bill')),
-     SimpleTerm(value=u'Bob', title=_(u'Bob')),
-     SimpleTerm(value=u'Jim', title=_(u'Jim'))]
+display_options = SimpleVocabulary([
+    SimpleTerm(value=u'left', title=_(u'Sidebar Left')),
+    SimpleTerm(value=u'right', title=_(u'Sidebar Right')),
+    SimpleTerm(value=u'split', title=_(u'Split View')),
+    SimpleTerm(value=u'full', title=_(u'Full View'))]
 )
 
 
@@ -44,6 +50,11 @@ class IContentBlock(form.Schema, IImageScaleTraversable):
         title=_(u"Content Block Body"),
         required=False,
     )
+    blockDisplay = schema.Choice(
+        title=_(u"Organiser"),
+        vocabulary=display_options,
+        required=False,
+    )
 
 
 class ContentBlock(dexterity.Container):
@@ -55,6 +66,9 @@ class View(grok.View):
     grok.require('zope2.View')
     grok.name('view')
 
+    def update(self):
+        self.has_boxes = len(self.contentboxes()) > 0
+
     def parentpage_url(self):
         context = aq_inner(self.context)
         parent = aq_parent(context)
@@ -65,8 +79,33 @@ class View(grok.View):
         parent = aq_parent(context)
         return parent.Title()
 
+    def contentboxes(self):
+        context = aq_inner(self.context)
+        catalog = api.portal.get_tool(name='portal_catalog')
+        blocks = catalog(object_provides=IContentBox.__identifier__,
+                         path=dict(query='/'.join(context.getPhysicalPath()),
+                                   depth=1),
+                         review_state='published',
+                         sort_on='getObjPositionInParent')
+        results = IContentListing(blocks)
+        return results
+
 
 class ContentView(grok.View):
     grok.context(IContentBlock)
     grok.require('zope2.View')
     grok.name('content-view')
+
+    def update(self):
+        self.has_boxes = len(self.contentboxes()) > 0
+
+    def contentboxes(self):
+        context = aq_inner(self.context)
+        catalog = api.portal.get_tool(name='portal_catalog')
+        blocks = catalog(object_provides=IContentBox.__identifier__,
+                         path=dict(query='/'.join(context.getPhysicalPath()),
+                                   depth=1),
+                         review_state='published',
+                         sort_on='getObjPositionInParent')
+        results = IContentListing(blocks)
+        return results

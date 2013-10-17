@@ -52,6 +52,14 @@ def test_suite():
 
         # -*- extra stuff goes here -*-
 
+        # Integration tests for ContentBox
+        ztc.ZopeDocFileSuite(
+            'ContentBox.txt',
+            package='adk.contentpages',
+            optionflags = OPTION_FLAGS,
+            test_class=TestCase),
+
+
         # Integration tests for ContentBlock
         ztc.ZopeDocFileSuite(
             'ContentBlock.txt',
