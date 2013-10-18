@@ -90,6 +90,9 @@ class View(grok.View):
         results = IContentListing(blocks)
         return results
 
+    def can_edit(self):
+        return not api.user.is_anonymous()
+
 
 class ContentView(grok.View):
     grok.context(IContentBlock)

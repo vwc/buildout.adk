@@ -16,6 +16,13 @@
       tal:define="context_url context/absolute_url">
       <div class="tile tile-editable">
         <a class="btn btn-warning btn-small pull-right"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Edit content block"
+            tal:attributes="href python:context_url + '/@@edit'">
+            <i class="icon-edit-sign"></i>
+        </a>
+        <a class="btn btn-warning btn-small pull-right"
           tal:attributes="href view/parentpage_url">
           <i class="icon-chevron-up"></i>
         </a>
@@ -35,6 +42,18 @@
       <tal:block tal:condition="not:view/has_boxes">
         <div tal:condition="context/text"
           tal:replace="structure context/text/output" />
+
+        <section class="content-block"
+          tal:condition="view/can_edit"
+          tal:define="context_url context/absolute_url">
+          <div class="tile tile-editable">
+            <a class="btn btn-warning btn-small pull-right"
+              tal:attributes="href python:context_url + '/@@add-content-box'">
+              <i class="icon-plus-sign"></i>
+              <span i18n:translate="">Add box</span>
+            </a>
+          </div>
+        </section>
       </tal:block>
       <tal:boxes tal:condition="view/has_boxes">
         <div class="row">
@@ -44,6 +63,16 @@
             </div>
             <div class="col-xs-12 col-md-3">
               <tal:items tal:repeat="item view/contentboxes">
+                <div class="tile tile-editable">
+                  <a class="btn btn-warning btn-small pull-right"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Edit content block"
+                      tal:define="item_url item/getURL"
+                      tal:attributes="href python:item_url + '/@@edit'">
+                      <i class="icon-edit-sign"></i>
+                  </a>
+                </div>
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title" tal:content="item/Title" />
@@ -55,6 +84,17 @@
                   </div>
                 </div>
               </tal:items>
+              <section class="content-block"
+                tal:condition="view/can_edit"
+                tal:define="context_url context/absolute_url">
+                <div class="tile tile-editable">
+                  <a class="btn btn-warning btn-small pull-right"
+                    tal:attributes="href python:context_url + '/@@add-content-box'">
+                    <i class="icon-plus-sign"></i>
+                    <span i18n:translate="">Add box</span>
+                  </a>
+                </div>
+              </section>
             </div>
         </div>
       </tal:boxes>

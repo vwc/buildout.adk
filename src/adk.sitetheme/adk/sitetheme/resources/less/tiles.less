@@ -1,0 +1,39 @@
+//
+// Tile editbar
+// -----------------------------------------------
+
+.tile {
+    display: block;
+    font-size: @font-size-base;
+    min-height: @line-height-computed * 1.5;
+}
+
+.tile-editable {
+    .opacity(0.5);
+    border-top: 1px solid @btn-warning-border;
+    margin-bottom: 0;
+    > small {
+        color: @brand-warning;
+        font-size: @font-size-small;
+    }
+    .btn {
+        margin-left: @line-height-computed / 2;
+    }
+    + .page-header {
+        margin-top: @line-height-computed;
+    }
+    &:hover {
+        .opacity(1);
+    }
+}
+
+.content-block {
+    &:hover {
+        .tile {
+            .opacity(1);
+        }
+        .cp-block {
+            margin-top: -2px;
+        }
+    }
+}

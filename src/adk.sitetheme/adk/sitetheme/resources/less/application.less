@@ -132,38 +132,6 @@ body,
     border-top: 1px solid @gray-light;
 }
 
-
-.tile {
-    display: block;
-    font-size: @font-size-base;
-    &.tile-editable {
-        .opacity(0.5);
-        border-top: 1px solid @btn-warning-border;
-        margin-bottom: 0;
-        > small {
-            color: @brand-warning;
-            font-size: @font-size-small;
-        }
-        .btn {
-            margin-left: @line-height-computed / 2;
-        }
-        + .page-header {
-            margin-top: @line-height-computed;
-        }
-    }
-}
-
-.content-block {
-    &:hover {
-        .tile {
-            .opacity(1);
-        }
-        .cp-block {
-            margin-top: -2px;
-        }
-    }
-}
-
 // Visible grids for layout selection
 .show-grid {
   margin-bottom: 15px;

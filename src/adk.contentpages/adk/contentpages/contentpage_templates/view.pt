@@ -12,6 +12,17 @@
 
   <section id="contentpage-view">
     <header id="page-header">
+      <div class="tile tile-editable"
+        tal:condition="view/can_edit"
+         tal:define="item_url context/absolute_url">
+        <a class="btn btn-warning btn-small pull-right"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="Edit content block"
+          tal:attributes="href python:item_url + '/@@edit-page-header'">
+          <i class="icon-edit-sign"></i></a>
+        <small class="pull-right">Content Page Header</small>
+      </div>
       <h1 class="documentFirstHeading page-heading" tal:content="context/Title" />
       <p class="page-lead" tal:condition="context/Description"
           tal:content="context/Description" />
@@ -19,6 +30,17 @@
 
     <section id="content-core">
       <div class="page-header" id="contentpage-header">
+        <div class="tile tile-editable"
+          tal:condition="view/can_edit"
+           tal:define="item_url context/absolute_url">
+          <a class="btn btn-warning btn-small pull-right"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Edit content block"
+            tal:attributes="href python:item_url + '/@@edit-page-subheader'">
+            <i class="icon-edit-sign"></i></a>
+          <small class="pull-right">Content Page Subheader</small>
+        </div>
         <h2 class="display-title"
           tal:condition="context/pageTitle"
           tal:content="context/pageTitle" />
@@ -29,10 +51,21 @@
           tal:content="context/pageTeaser" />
       </div>
       <div class="xrow">
-      <div id="page-body"
-        tal:condition="context/text"
-        tal:content="structure context/text/output" />
-      </div>
+        <div class="tile tile-editable"
+          tal:condition="view/can_edit"
+           tal:define="item_url context/absolute_url">
+          <a class="btn btn-warning btn-small pull-right"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Edit content block"
+            tal:attributes="href python:item_url + '/@@edit-page-body'">
+            <i class="icon-edit-sign"></i></a>
+          <small class="pull-right">Content Page Body</small>
+        </div>
+        <div id="page-body"
+          tal:condition="context/text"
+          tal:content="structure context/text/output" />
+        </div>
       <div id="page-subcontent"
         tal:condition="view/has_content">
         <div class="subcontent"
