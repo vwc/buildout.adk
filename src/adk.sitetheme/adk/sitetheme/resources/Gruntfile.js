@@ -103,12 +103,6 @@ module.exports = function (grunt) {
                 flatten: true,
                 src: ['assets/img/*'],
                 dest: 'dist/assets/img/'
-            },
-            templates: {
-                expand: true,
-                flatten: true,
-                src: ['_site/*.html'],
-                dest: 'dist/'
             }
         },
         rev: {
@@ -206,7 +200,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-rev');
 
     // Copy jekyll generated templates and rename for diazo
-    grunt.registerTask('theme-templates', '', function () {
+    grunt.registerTask('copy-templates', '', function () {
         grunt.file.copy('_site/index.html', 'dist/theme.html');
         grunt.file.copy('_site/front-page/index.html', 'dist/front-page.html');
         grunt.file.copy('_site/signin/index.html', 'dist/signin.html');
@@ -233,7 +227,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-cb', ['rev']);
 
     // Template distribution task.
-    grunt.registerTask('dist-html', ['jekyll:theme', 'theme-templates', 'sed']);
+    grunt.registerTask('dist-html', ['jekyll:theme', 'copy-templates', 'sed']);
 
     // Full distribution task.
     grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js', 'dist-html', 'dist-assets']);
