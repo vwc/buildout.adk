@@ -1,5 +1,6 @@
 from Acquisition import aq_inner
 from five import grok
+from plone import api
 from plone.directives import form
 
 from zope import schema
@@ -252,12 +253,12 @@ class BookingForm(form.SchemaForm):
     description = _(u"Please fill out the form to send a booking request "
                     u"directly to this hotel.")
 
-    def update(self):
-        # Disable editable border
-        self.request.set('disable_border', True)
-        super(BookingForm, self).update()
+    def updateActions(self):
+        super(BookingForm, self).updateActions()
+        self.actions['submit'].addClass("btn btn-primary btn-lg")
+        self.actions['cancel'].addClass("btn btn-link")
 
-    @button.buttonAndHandler(_(u'Book this special now'), name='submit')
+    @button.buttonAndHandler(_(u'Book now'), name='submit')
     def handleApply(self, action):
         data, errors = self.extractData()
         if errors:
@@ -265,15 +266,18 @@ class BookingForm(form.SchemaForm):
             return
         self.status = self.send_email(data)
 
-    def updateActions(self):
-        super(BookingForm, self).updateActions()
-        self.actions["submit"].addClass("btn btn-large btn-primary rounded")
+    @button.buttonAndHandler(_(u"cancel"))
+    def handleCancel(self, action):
+        context = aq_inner(self.context)
+        msg = _(u"Process has been cancelled."),
+        api.portal.show_message(message=msg, request=self.request)
+        return self.request.response.redirect(context.absolute_url())
 
     def send_email(self, data):
         """ Construct and send the registration request. """
         context_url = self.context.absolute_url()
-        mto = 'schaffrath@tophotel.de, %s' % self.context.getEmail()
-        envelope_from = 'anfrage@meintophotel.de'
+        mto = 'info@augsburger-deutschkurse.de'
+        envelope_from = 'anfrage@adk-gertman-courses.com'
         subject = 'Anfrage Hotel Special/Arrangement - meintophotel.de'
         options = dict(
             firstname=data['firstname'],

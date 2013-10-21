@@ -11185,6 +11185,13 @@ body,
   color: #999999;
 }
 
+input.date-widget,
+select.date-widget,
+.ArchetypesCalendarWidget select {
+  display: inline-block;
+  width: auto;
+}
+
 @media screen and (min-width: 768px) {
   
 }
