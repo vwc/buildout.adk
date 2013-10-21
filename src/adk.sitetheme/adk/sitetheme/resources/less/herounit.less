@@ -1,0 +1,43 @@
+//
+// page header hero unit
+// -------------------------------------------------------
+
+
+// Jumbotron - hero unit styles
+
+.hero-unit {
+    background: transparent;
+    margin: 0;
+    padding: @line-height-computed;
+    font-size: @font-size-base * 2;
+}
+
+.hero-content {
+    background:transparent;
+    h1 {
+        color: @adk-blue;
+        //text-align: center;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+@media (min-width: @screen-tablet) {
+    .hero-content {
+        padding-bottom: (@navbar-height * 7);
+        background:url(../../assets/img/sprachschule.png) no-repeat 0 100% transparent;
+    }
+    body.section-sprachkurse .hero-content {
+        background-image:url(../../assets/img/sprachkurse.png);
+    }
+    body.section-sommerkurse .hero-content {
+        background-image:url(../../assets/img/sommerkurse.png);
+    }
+    body.section-sprachreisen .hero-content {
+        background-image:url(../../assets/img/sprachreisen.png);
+    }
+    body.section-termine-preise .hero-content {
+        background-image:url(../../assets/img/terminepreise.png);
+    }
+}

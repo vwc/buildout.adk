@@ -10624,6 +10624,48 @@ ul.visualNoMarker {
   border-bottom: 22px solid #ffffff;
 }
 
+.app-box-contentpage {
+  min-height: 400px;
+}
+
+.hero-unit {
+  padding: 22px;
+  margin: 0;
+  font-size: 32px;
+  background: transparent;
+}
+
+.hero-content {
+  background: transparent;
+}
+
+.hero-content h1 {
+  color: #234493;
+}
+
+.hero-content li {
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    padding-bottom: 350px;
+    background: url(../../assets/img/sprachschule.png) no-repeat 0 100% transparent;
+  }
+  body.section-sprachkurse .hero-content {
+    background-image: url(../../assets/img/sprachkurse.png);
+  }
+  body.section-sommerkurse .hero-content {
+    background-image: url(../../assets/img/sommerkurse.png);
+  }
+  body.section-sprachreisen .hero-content {
+    background-image: url(../../assets/img/sprachreisen.png);
+  }
+  body.section-termine-preise .hero-content {
+    background-image: url(../../assets/img/terminepreise.png);
+  }
+}
+
 .app-topbar {
   display: block;
   margin-bottom: 22px;
@@ -10638,7 +10680,7 @@ ul.visualNoMarker {
   margin: 22px auto 22px;
   overflow: hidden;
   text-indent: -3000px;
-  background: 0 0 url(../assets/img/logo-adk.png) no-repeat;
+  background: 0 0 url(../../assets/img/logo-adk.png) no-repeat;
   background-size: 100%;
   border-right: 0px solid #fff;
   border-left: 0px solid #fff;
@@ -10873,7 +10915,7 @@ ul.visualNoMarker {
 .app-footer {
   padding-top: 44px;
   margin-top: 22px;
-  background: url(../assets/img/skyline.png) repeat-x 0 0 transparent;
+  background: url(../../assets/img/skyline.png) repeat-x 0 0 transparent;
 }
 
 .app-footer-content {
@@ -10899,7 +10941,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .app-colophon {
-    background: url(../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
+    background: url(../../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
   }
 }
 
@@ -10915,7 +10957,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .hero-unit-fp-content {
-    background: url(../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
+    background: url(../../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
   }
 }
 
@@ -10963,25 +11005,7 @@ body,
 .app-lp,
 .site-frontpage,
 .portaltype-adk-contentpages-sectionfolder {
-  background: url(../assets/img/lined_paper.png) repeat 0 0px transparent;
-}
-
-.jumbotron {
-  font-size: 32px;
-}
-
-.jumbotron h1 {
-  color: #234493;
-}
-
-.jumbotron li {
-  list-style: none;
-}
-
-#hero-text .jumbotron {
-  padding-bottom: 11px;
-  background: transparent;
-  border-radius: 0;
+  background: url(../../assets/img/lined_paper.png) repeat 0 0px transparent;
 }
 
 #content {
