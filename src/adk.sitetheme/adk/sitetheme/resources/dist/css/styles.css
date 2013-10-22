@@ -11001,6 +11001,66 @@ ul.visualNoMarker {
   margin-top: -2px;
 }
 
+.app-simple {
+  margin-top: 50px;
+  border-top: 11px solid #af0c41;
+}
+
+.app-signin {
+  display: block;
+  max-width: 768px;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  background: #fff;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ffffff), to(#eeeeee));
+  background-image: -webkit-linear-gradient(top, #ffffff, 0%, #eeeeee, 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
+  background-repeat: repeat-x;
+  border: 1px solid #fff;
+  border-radius: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.page-aside {
+  position: relative;
+  padding: 44px 22px;
+}
+
+.page-signin {
+  color: #999999;
+  background: #fff;
+}
+
+.page-signin .page-content {
+  padding: 22px;
+}
+
+@media (min-width: 768px) {
+  .page-signin {
+    border-left: 1px solid #eeeeee;
+  }
+}
+
+.page-signin .documentDescription {
+  margin-bottom: 22px;
+}
+
+.page-signin p {
+  color: #999999;
+}
+
+.app-register {
+  margin-bottom: 50px;
+  border-bottom: 5px solid #5cb85c;
+}
+
+.app-register-actions {
+  padding: 22px 0;
+}
+
 body,
 .app-lp,
 .site-frontpage,

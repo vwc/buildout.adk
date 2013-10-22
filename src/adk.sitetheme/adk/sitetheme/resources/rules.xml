@@ -9,7 +9,8 @@
     <theme href="dist/signin.html" css:if-content="body.template-logged_out" />
     <theme href="dist/signin.html" css:if-content="body.template-login_failed" />
     <theme href="dist/signin.html" css:if-content="body.template-mail_password_form" />
-    
+
+    <theme href="dist/blog.html" css:if-content="body.section-blog" />
     <theme href="dist/bookingform.html" css:if-content="body.template-booking-form" />
     <theme href="dist/front-page.html" css:if-content="body.portaltype-adk-contentpages-sectionfolder" />
 
@@ -74,7 +75,7 @@
         <drop css:theme="#app-toolbar"
             css:if-content="#anon-personalbar" />
         <replace css:theme="#app-toolbar"
-            css:content="#toolbar" />
+            css:content="#app-toolbar" />
 
         <!-- Site actions -->
         <replace css:content="#portal-siteactions li" css:theme-children="#actions" />
@@ -146,6 +147,8 @@
 
         <!-- Columns -->
         <replace css:content-children="#portal-column-one" css:theme-children="#left-sidebar" />
+
+        <replace css:content-children="#portal-column-two" css:theme-children="#app-sidebar" />
         
         <replace css:content="#document-toc" css:theme="#actionbox-toc-content"
             css:if-content="#document-toc" />
