@@ -1,15 +1,19 @@
-from zope.interface import alsoProvides, implements
-from zope.component import adapts
+from zope.interface import alsoProvides
 from zope import schema
 from plone.directives import form
-from plone.dexterity.interfaces import IDexterityContent
 from plone.autoform.interfaces import IFormFieldProvider
 
-from plone.namedfile import field as namedfile
-from z3c.relationfield.schema import RelationChoice, RelationList
-from plone.formwidget.contenttree import ObjPathSourceBinder
+from zope.schema.vocabulary import SimpleVocabulary
+from zope.schema.vocabulary import SimpleTerm
 
 from adk.contentpages import MessageFactory as _
+
+display_options = SimpleVocabulary([
+    SimpleTerm(value=u'left', title=_(u'Sidebar Left')),
+    SimpleTerm(value=u'right', title=_(u'Sidebar Right')),
+    SimpleTerm(value=u'split', title=_(u'Split View')),
+    SimpleTerm(value=u'full', title=_(u'Full View'))]
+)
 
 
 class IDisplaySettings(form.Schema):
@@ -19,17 +23,18 @@ class IDisplaySettings(form.Schema):
     form.fieldset(
         'settings',
         label=_(u"Display Settings"),
-        fields=['featured', 'selected_layout']
+        fields=['featured', 'blockDisplay']
     )
     featured = schema.Bool(
         title=_(u"Featured Block"),
         description=_(u"Mark as featured to visually highlight this block"),
         required=False,
     )
-    selected_layout = schema.TextLine(
-        title=_(u"Selected Layout"),
-        description=_(u"User selected layout for display as string"),
-        required=False
+    blockDisplay = schema.Choice(
+        title=_(u"Block Layout"),
+        vocabulary=display_options,
+        default='left',
+        required=False,
     )
 
 

@@ -12,14 +12,11 @@
     <tal:boxes tal:condition="view/has_boxes">
       <div class="row">
           <div class="col-xs-12 col-md-8"
-            tal:define="klass view/get_column_class(col='left')"
-            tal:attributes="class python:'col-xs-12 col-md-' + klass">
-            <div tal:condition="context/text"
-              tal:replace="structure context/text/output" />
+              tal:condition="python:view.col_display(col='left')">
+              <div tal:condition="context/text"
+                tal:replace="structure context/text/output" />
           </div>
-          <div class="col-xs-12 col-md-4"
-            tal:define="klass view/get_column_class(col='right')"
-            tal:attributes="class python:'col-xs-12 col-md-' + klass">
+          <div class="col-xs-12 col-md-4">
             <tal:items tal:repeat="item view/contentboxes">
               <div class="panel panel-default">
                 <div class="panel-heading">
@@ -32,6 +29,11 @@
                 </div>
               </div>
             </tal:items>
+          </div>
+          <div class="col-xs-12 col-md-8"
+              tal:condition="python:view.col_display(col='right')">
+              <div tal:condition="context/text"
+                tal:replace="structure context/text/output" />
           </div>
       </div>
     </tal:boxes>    

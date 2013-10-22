@@ -18,8 +18,16 @@ from plone.namedfile.interfaces import IImageScaleTraversable
 
 from adk.contentpages import MessageFactory as _
 
+icon_klass = SimpleVocabulary([
+    SimpleTerm(value=u'icon-info', title=_(u'Info')),
+    SimpleTerm(value=u'icon-film', title=_(u'Video')),
+    SimpleTerm(value=u'icon-picture', title=_(u'Image')),
+    SimpleTerm(value=u'icon-thumbs-up', title=_(u'Thumbs Up!')),
+    SimpleTerm(value=u'icon-warning-sign', title=_(u'Attention')),
+    SimpleTerm(value=u'icon-time', title=_(u'Time')),
+    SimpleTerm(value=u'icon-download', title=_(u'Download'))]
+)
 
-# Interface class; used to define content-type schema.
 
 class IContentBox(form.Schema, IImageScaleTraversable):
     """
@@ -28,6 +36,13 @@ class IContentBox(form.Schema, IImageScaleTraversable):
     text = RichText(
         title=_(u"Box Content Body"),
         required=False,
+    )
+    selected_icon = schema.Choice(
+        title=_(u"Selected Icon"),
+        description=_(u"Box Heading Icon"),
+        vocabulary=icon_klass,
+        default='icon-info',
+        required=False
     )
 
 

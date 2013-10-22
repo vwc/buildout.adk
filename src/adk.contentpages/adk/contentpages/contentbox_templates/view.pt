@@ -40,7 +40,10 @@
             <div class="col-xs-12 col-md-4">
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h4 class="panel-title" tal:content="context/Title" />
+                    <h4 class="panel-title">
+                      <i tal:attributes="class context/selected_icon"></i>
+                      <span tal:replace="context/Title" />
+                    </h4>
                   </div>
                   <div class="panel-body">
                     <p tal:content="context/Description" />
