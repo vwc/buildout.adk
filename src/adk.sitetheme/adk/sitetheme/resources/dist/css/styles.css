@@ -11182,6 +11182,7 @@ body,
   padding-bottom: 10px;
   margin: 44px 0 22px;
   border-bottom: 1px solid #eeeeee;
+  border-bottom: 0;
 }
 
 .content-block .content-block-description {
@@ -11226,25 +11227,6 @@ body,
   background-color: #ddd;
 }
 
-.page-signin {
-  display: block;
-  max-width: 480px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.page-signin .page-content {
-  padding-top: 22px;
-}
-
-.page-signin .documentDescription {
-  margin-bottom: 22px;
-}
-
-.page-signin p {
-  color: #999999;
-}
-
 input.date-widget,
 select.date-widget,
 .ArchetypesCalendarWidget select {
@@ -11252,12 +11234,68 @@ select.date-widget,
   width: auto;
 }
 
+.page-header {
+  border-bottom: 0;
+}
+
+.app-list-item {
+  margin-bottom: 22px;
+  font-size: 16px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-color: #dddddd;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.app-list-item > .list-group {
+  margin-bottom: 0;
+}
+
+.app-list-item > .list-group .list-group-item {
+  border-width: 1px 0;
+}
+
+.app-list-item > .list-group .list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.app-list-item > .list-group .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+.app-list-item > .table {
+  margin-bottom: 0;
+}
+
+.app-list-item > .panel-body + .table {
+  border-top: 1px solid #dddddd;
+}
+
+.app-list-item > .panel-heading {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #dddddd;
+}
+
+.app-list-item > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #dddddd;
+}
+
+.app-list-item > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #dddddd;
+}
+
 @media screen and (min-width: 768px) {
   
 }
 
 @media screen and (min-width: 992px) {
-  
+  .app-sidebar {
+    padding-top: 44px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

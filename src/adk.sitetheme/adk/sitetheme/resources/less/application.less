@@ -116,26 +116,6 @@ body,
   background-color: #ddd;
 }
 
-// Custom signin page styles
-
-.page-signin {
-    .center-block();
-    max-width: 480px;
-    .page-content {
-        padding-top: @line-height-computed;
-    }
-    .page-footer {
-        //padding-top: @line-height-computed;
-        //border-top: 1px solid @gray-lighter;
-    }
-}
-
-.page-signin .documentDescription {
-    margin-bottom: @line-height-computed;
-}
-.page-signin p {
-    .text-muted();
-}
 
 // Slow down
 
@@ -144,6 +124,17 @@ select.date-widget,
 .ArchetypesCalendarWidget select {
     display: inline-block;
     width: auto;
+}
+
+// Override page header due to background image
+
+.page-header {
+    border-bottom: 0;
+}
+
+.app-list-item {
+    .panel();
+    .panel-default();
 }
 
 
@@ -156,7 +147,9 @@ select.date-widget,
 
 // Responsive: Desktops and up
 @media screen and (min-width: @screen-desktop) {
-
+    .app-sidebar {
+        padding-top: (@line-height-computed * 2);
+    }
 }
 
 // Responsive: Large desktops and up
