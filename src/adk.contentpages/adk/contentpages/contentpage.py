@@ -12,6 +12,7 @@ from plone.app.textfield import RichText
 from plone.app.contentlisting.interfaces import IContentListing
 
 from adk.contentpages.contentblock import IContentBlock
+from adk.contentpages.contentbox import IContentBox
 
 from adk.contentpages import MessageFactory as _
 
@@ -54,6 +55,7 @@ class View(grok.View):
     def update(self):
         self.has_content = len(self.context.items()) > 0
         self.has_blocks = len(self.contentblocks()) > 0
+        self.has_boxes = len(self.contentboxes()) > 0
 
     def subcontent(self):
         if self.has_blocks:
@@ -64,6 +66,17 @@ class View(grok.View):
             items = self.contentpages()
             results = {'item_type': 'pages',
                        'items': IContentListing(items)}
+        return results
+
+    def contentboxes(self):
+        context = aq_inner(self.context)
+        catalog = api.portal.get_tool(name='portal_catalog')
+        blocks = catalog(object_provides=IContentBox.__identifier__,
+                         path=dict(query='/'.join(context.getPhysicalPath()),
+                                   depth=1),
+                         review_state='published',
+                         sort_on='getObjPositionInParent')
+        results = IContentListing(blocks)
         return results
 
     def contentblocks(self):

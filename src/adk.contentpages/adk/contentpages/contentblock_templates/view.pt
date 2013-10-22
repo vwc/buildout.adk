@@ -55,13 +55,18 @@
           </div>
         </section>
       </tal:block>
+
       <tal:boxes tal:condition="view/has_boxes">
         <div class="row">
-            <div class="col-xs-12 col-md-9">
+            <div class="col-xs-12 col-md-9"
+              tal:define="klass python:view.get_column_class(col='left')"
+              tal:attributes="class python:'col-xs-12 col-md-' + klass">
               <div tal:condition="context/text"
                 tal:replace="structure context/text/output" />
             </div>
-            <div class="col-xs-12 col-md-3">
+            <div class="col-xs-12 col-md-3"
+              tal:define="klass python:view.get_column_class(col='right')"
+              tal:attributes="class python:'col-xs-12 col-md-' + klass">
               <tal:items tal:repeat="item view/contentboxes">
                 <div class="tile tile-editable">
                   <a class="btn btn-warning btn-small pull-right"

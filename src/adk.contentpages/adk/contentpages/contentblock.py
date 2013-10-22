@@ -51,7 +51,7 @@ class IContentBlock(form.Schema, IImageScaleTraversable):
         required=False,
     )
     blockDisplay = schema.Choice(
-        title=_(u"Organiser"),
+        title=_(u"Block Layout"),
         vocabulary=display_options,
         required=False,
     )
@@ -93,6 +93,15 @@ class View(grok.View):
     def can_edit(self):
         return not api.user.is_anonymous()
 
+    def get_column_class(self, col):
+        context = aq_inner(self.context)
+        selected = getattr(context, 'blockDisplay', '')
+        if col == selected:
+            klass = '8'
+        else:
+            klass = '4'
+        return klass
+
 
 class ContentView(grok.View):
     grok.context(IContentBlock)
@@ -112,3 +121,12 @@ class ContentView(grok.View):
                          sort_on='getObjPositionInParent')
         results = IContentListing(blocks)
         return results
+
+    def get_column_class(self, col):
+        context = aq_inner(self.context)
+        selected = getattr(context, 'blockDisplay', '')
+        if col == selected:
+            klass = '8'
+        else:
+            klass = '4'
+        return klass
