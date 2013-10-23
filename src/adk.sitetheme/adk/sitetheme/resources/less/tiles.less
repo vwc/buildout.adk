@@ -9,6 +9,8 @@
 }
 
 .tile-editable {
+    position: relative;
+    display: block;
     .opacity(0.5);
     border-top: 1px solid @btn-warning-border;
     margin-bottom: 0;
@@ -21,6 +23,16 @@
     }
     + .page-header {
         margin-top: @line-height-computed;
+    }
+    .tile-edit-link {
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        z-index: 500;
+        //display: inline-block;
+        padding: @padding-base-vertical @padding-base-horizontal;
+        .btn();
+        .btn-warning();
     }
     &:hover {
         .opacity(1);

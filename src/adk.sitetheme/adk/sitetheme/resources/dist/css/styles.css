@@ -10520,6 +10520,7 @@ ul.visualNoMarker {
 }
 
 .app-box {
+  display: block;
   padding: 22px;
   margin-bottom: 22px;
   font-size: 16px;
@@ -10529,6 +10530,8 @@ ul.visualNoMarker {
   border-radius: 0;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-transition: background 0.25s ease-in-out;
+          transition: background 0.25s ease-in-out;
 }
 
 .app-box > .list-group {
@@ -10570,14 +10573,32 @@ ul.visualNoMarker {
   border-bottom-color: #dddddd;
 }
 
+.app-box:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background: #eeeeee;
+}
+
+.app-box-header {
+  display: block;
+}
+
 .app-box-header > i {
+  display: block;
   color: #af0c41;
 }
 
 .app-box-title {
+  display: block;
   font-weight: 600;
   color: #234493;
   text-transform: uppercase;
+}
+
+.app-box-lead {
+  display: block;
+  margin: 0 0 11px;
 }
 
 .app-box-ribbon {
@@ -10593,7 +10614,7 @@ ul.visualNoMarker {
 
 .app-box-ribbon > a {
   display: inline-block;
-  margin-bottom: 6px;
+  margin: 0 0 6px;
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
@@ -10610,22 +10631,22 @@ ul.visualNoMarker {
   height: 0;
   margin-right: auto;
   margin-left: auto;
-  border-top: 22px solid transparent;
-  border-right: 22px solid transparent;
-  border-left: 22px solid transparent;
+  border-top: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
 }
 
 .app-box-arrow-default {
-  border-bottom: 22px solid #999999;
+  border-bottom: 25px solid #999999;
 }
 
 .app-box-arrow-light {
-  margin-top: -22px;
-  border-bottom: 22px solid #ffffff;
+  margin-top: -25px;
+  border-bottom: 25px solid #ffffff;
 }
 
 .app-box-contentpage {
-  min-height: 400px;
+  min-height: 250px;
 }
 
 .hero-unit {
@@ -10650,19 +10671,19 @@ ul.visualNoMarker {
 @media (min-width: 768px) {
   .hero-content {
     padding-bottom: 350px;
-    background: url(../assets/img/sprachschule.png) no-repeat 0 100% transparent;
+    background: url(../../assets/img/sprachschule.png) no-repeat 0 100% transparent;
   }
   body.section-sprachkurse .hero-content {
-    background-image: url(../assets/img/sprachkurse.png);
+    background-image: url(../../assets/img/sprachkurse.png);
   }
   body.section-sommerkurse .hero-content {
-    background-image: url(../assets/img/sommerkurse.png);
+    background-image: url(../../assets/img/sommerkurse.png);
   }
   body.section-sprachreisen .hero-content {
-    background-image: url(../assets/img/sprachreisen.png);
+    background-image: url(../../assets/img/sprachreisen.png);
   }
   body.section-termine-preise .hero-content {
-    background-image: url(../assets/img/terminepreise.png);
+    background-image: url(../../assets/img/terminepreise.png);
   }
 }
 
@@ -10680,7 +10701,7 @@ ul.visualNoMarker {
   margin: 22px auto 22px;
   overflow: hidden;
   text-indent: -3000px;
-  background: 0 0 url(../assets/img/logo-adk.png) no-repeat;
+  background: 0 0 url(../../assets/img/logo-adk.png) no-repeat;
   background-size: 100%;
   border-right: 0px solid #fff;
   border-left: 0px solid #fff;
@@ -10912,10 +10933,14 @@ ul.visualNoMarker {
   padding: 10px 18px;
 }
 
+.actionbar-block.actionbar-block-phone {
+  padding: 5px 10px;
+}
+
 .app-footer {
   padding-top: 44px;
   margin-top: 22px;
-  background: url(../assets/img/skyline.png) repeat-x 0 0 transparent;
+  background: url(../../assets/img/skyline.png) repeat-x 0 0 transparent;
 }
 
 .app-footer-content {
@@ -10941,7 +10966,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .app-colophon {
-    background: url(../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
+    background: url(../../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
   }
 }
 
@@ -10957,7 +10982,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .hero-unit-fp-content {
-    background: url(../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
+    background: url(../../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
   }
 }
 
@@ -10968,6 +10993,8 @@ ul.visualNoMarker {
 }
 
 .tile-editable {
+  position: relative;
+  display: block;
   margin-bottom: 0;
   border-top: 1px solid #eea236;
   opacity: 0.5;
@@ -10985,6 +11012,53 @@ ul.visualNoMarker {
 
 .tile-editable + .page-header {
   margin-top: 22px;
+}
+
+.tile-editable .tile-edit-link {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  z-index: 500;
+  padding: 6px 12px;
+  margin-left: 11px;
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.tile-editable .tile-edit-link:hover,
+.tile-editable .tile-edit-link:focus,
+.tile-editable .tile-edit-link:active,
+.tile-editable .tile-edit-link.active,
+.open .dropdown-toggle.tile-editable .tile-edit-link {
+  color: #ffffff;
+  background-color: #ed9c28;
+  border-color: #d58512;
+}
+
+.tile-editable .tile-edit-link:active,
+.tile-editable .tile-edit-link.active,
+.open .dropdown-toggle.tile-editable .tile-edit-link {
+  background-image: none;
+}
+
+.tile-editable .tile-edit-link.disabled,
+.tile-editable .tile-edit-link[disabled],
+fieldset[disabled] .tile-editable .tile-edit-link,
+.tile-editable .tile-edit-link.disabled:hover,
+.tile-editable .tile-edit-link[disabled]:hover,
+fieldset[disabled] .tile-editable .tile-edit-link:hover,
+.tile-editable .tile-edit-link.disabled:focus,
+.tile-editable .tile-edit-link[disabled]:focus,
+fieldset[disabled] .tile-editable .tile-edit-link:focus,
+.tile-editable .tile-edit-link.disabled:active,
+.tile-editable .tile-edit-link[disabled]:active,
+fieldset[disabled] .tile-editable .tile-edit-link:active,
+.tile-editable .tile-edit-link.disabled.active,
+.tile-editable .tile-edit-link[disabled].active,
+fieldset[disabled] .tile-editable .tile-edit-link.active {
+  background-color: #f0ad4e;
+  border-color: #eea236;
 }
 
 .tile-editable:hover {
@@ -11065,7 +11139,7 @@ body,
 .app-lp,
 .site-frontpage,
 .portaltype-adk-contentpages-sectionfolder {
-  background: url(../assets/img/lined_paper.png) repeat 0 0px transparent;
+  background: url(../../assets/img/lined_paper.png) repeat 0 0px transparent;
 }
 
 #content {
@@ -11190,12 +11264,12 @@ body,
 }
 
 .feature {
-  padding: 66px;
+  padding: 33px;
   margin: 44px auto 66px;
   font-size: 20px;
   font-weight: 700;
-  color: #555555;
-  border: 1px solid #4871d4;
+  color: #234493;
+  border: 1px solid #555555;
   border-width: 5px 0;
 }
 

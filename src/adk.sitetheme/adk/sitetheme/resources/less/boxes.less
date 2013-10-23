@@ -3,62 +3,78 @@
 // ------------------------------------------------
 
 .app-box {
+    display: block;
     .panel();
     .panel-default();
     padding: @line-height-computed;
+    .transition(background .25s ease-in-out);
+    &:hover {
+        background: @gray-lighter;
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
 .app-box-header {
+    display: block;
     > i {
+        display: block;
         color: @adk-red;
     }
 }
 
 .app-box-title {
+    display: block;
     color: @adk-blue;
     text-transform: uppercase;
     font-weight: 600;
 }
 
+.app-box-lead {
+    display: block;
+    margin: 0 0 (@line-height-computed / 2);
+}
+
 .app-box-ribbon {
- position: relative;
- display: block;
- .square(@navbar-height);
- margin: -(@line-height-computed) auto @line-height-computed;
- background: @link-color;
- color: #fff;
- text-align: center;
- > a {
-    display: inline-block;
-    margin-bottom: 6px;
+    position: relative;
+    display: block;
+    .square(@navbar-height);
+    margin: -(@line-height-computed) auto @line-height-computed;
+    background: @link-color;
     color: #fff;
-    font-size: @font-size-small;
-    text-transform: uppercase;
- }
- > .icon-caret-up {
-    line-height: @line-height-computed;
-    font-size: (@navbar-height * 1.75);
- }
+    text-align: center;
+    > a {
+       display: inline-block;
+       margin: 0 0 6px;
+       color: #fff;
+       font-size: @font-size-small;
+       text-transform: uppercase;
+    }
+    > .icon-caret-up {
+       line-height: @line-height-computed;
+       font-size: (@navbar-height * 1.75);
+    }
 }
 
 .app-box-arrow {
     .center-block();
     width: 0;
     height: 0;
-    border-left: (@line-height-computed) solid transparent;
-    border-right: (@line-height-computed) solid transparent;
-    border-top: (@line-height-computed) solid transparent;
+    border-left:    (@navbar-height / 2) solid transparent;
+    border-right:   (@navbar-height / 2) solid transparent;
+    border-top:     (@navbar-height / 2) solid transparent;
 }
 .app-box-arrow-default {
-    border-bottom: (@line-height-computed) solid @gray-light;
+    border-bottom: (@navbar-height / 2) solid @gray-light;
 }
 .app-box-arrow-light {
-    border-bottom: (@line-height-computed) solid #fff;
-    margin-top: -(@line-height-computed);
+    border-bottom: (@navbar-height / 2) solid #fff;
+    margin-top: -(@navbar-height / 2);
 }
 
 // Specific box styles 
 
 .app-box-contentpage {
-    min-height: 400px;
+    min-height: 250px;
 }

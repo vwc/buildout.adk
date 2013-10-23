@@ -54,9 +54,9 @@
                     <img src="/++theme++adk.sitetheme/assets/img/summer.jpg" />
                 </div>
                 <div class="app-box-ribbon">
-                    <a href="#">Mehr</a>
-                    <i class="icon-caret-up"></i>
-                </div>
+                  <a href="#">Mehr</a>
+                  <span class="app-box-arrow app-box-arrow-light"></span>
+              </div>
             </div>
             <div class="col-xs-12 col-lg-4">
                 <div class="app-box text-center">

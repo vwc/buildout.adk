@@ -1,42 +1,51 @@
 <section class="cp-block">
-  <header class="cp-block-header page-header">
-    <h2 tal:content="context/Title">Title inserted here</h2>
-  </header>
-    <p class="cp-block-teaser text-muted" tal:condition="context/Description"
-      tal:content="context/Description" />
-  <div class="cp-block-content">
-    <tal:block tal:condition="not:view/has_boxes">
-      <div tal:condition="context/text"
-        tal:replace="structure context/text/output" />
-    </tal:block>
-    <tal:boxes tal:condition="view/has_boxes">
-      <div class="row">
-          <div class="col-xs-12 col-md-8"
-              tal:condition="python:view.col_display(col='left')">
-              <div tal:condition="context/text"
-                tal:replace="structure context/text/output" />
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <tal:items tal:repeat="item view/contentboxes">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title" tal:content="item/Title" />
+  <tal:block tal:condition="not:context/featured">
+    <header class="cp-block-header page-header">
+      <h2 tal:content="context/Title">Title inserted here</h2>
+    </header>
+      <p class="cp-block-teaser text-muted" tal:condition="context/Description"
+        tal:content="context/Description" />
+    <div class="cp-block-content">
+      <tal:block tal:condition="not:view/has_boxes">
+        <div tal:condition="context/text"
+          tal:replace="structure context/text/output" />
+      </tal:block>
+      <tal:boxes tal:condition="view/has_boxes">
+        <div class="row">
+            <div class="col-xs-12 col-md-8"
+                tal:condition="python:view.col_display(col='left')">
+                <div tal:condition="context/text"
+                  tal:replace="structure context/text/output" />
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <tal:items tal:repeat="item view/contentboxes">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title" tal:content="item/Title" />
+                  </div>
+                  <div class="panel-body">
+                    <p tal:content="item/Description" />
+                    <div tal:condition="item/text"
+                      tal:replace="structure item/text/output" />
+                  </div>
                 </div>
-                <div class="panel-body">
-                  <p tal:content="item/Description" />
-                  <div tal:condition="item/text"
-                    tal:replace="structure item/text/output" />
-                </div>
-              </div>
-            </tal:items>
-          </div>
-          <div class="col-xs-12 col-md-8"
-              tal:condition="python:view.col_display(col='right')">
-              <div tal:condition="context/text"
-                tal:replace="structure context/text/output" />
-          </div>
-      </div>
-    </tal:boxes>    
-
-  </div>
+              </tal:items>
+            </div>
+            <div class="col-xs-12 col-md-8"
+                tal:condition="python:view.col_display(col='right')">
+                <div tal:condition="context/text"
+                  tal:replace="structure context/text/output" />
+            </div>
+        </div>
+      </tal:boxes>    
+    </div>
+  </tal:block>
+  <tal:block tal:condition="context/featured">
+    <div class="cp-block-content">
+      <div class="feature">
+        <div tal:condition="context/text"
+          tal:replace="structure context/text/output" />
+        </div>
+    </div>
+  </tal:block>
 </section>
