@@ -10530,8 +10530,6 @@ ul.visualNoMarker {
   border-radius: 0;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  -webkit-transition: background 0.25s ease-in-out;
-          transition: background 0.25s ease-in-out;
 }
 
 .app-box > .list-group {
@@ -10573,7 +10571,12 @@ ul.visualNoMarker {
   border-bottom-color: #dddddd;
 }
 
-.app-box:hover {
+.app-box.app-box-link {
+  -webkit-transition: background 0.25s ease-in-out;
+          transition: background 0.25s ease-in-out;
+}
+
+.app-box.app-box-link:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
