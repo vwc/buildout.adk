@@ -10671,19 +10671,19 @@ ul.visualNoMarker {
 @media (min-width: 768px) {
   .hero-content {
     padding-bottom: 350px;
-    background: url(../../assets/img/sprachschule.png) no-repeat 0 100% transparent;
+    background: url(../assets/img/sprachschule.png) no-repeat 0 100% transparent;
   }
   body.section-sprachkurse .hero-content {
-    background-image: url(../../assets/img/sprachkurse.png);
+    background-image: url(../assets/img/sprachkurse.png);
   }
   body.section-sommerkurse .hero-content {
-    background-image: url(../../assets/img/sommerkurse.png);
+    background-image: url(../assets/img/sommerkurse.png);
   }
   body.section-sprachreisen .hero-content {
-    background-image: url(../../assets/img/sprachreisen.png);
+    background-image: url(../assets/img/sprachreisen.png);
   }
   body.section-termine-preise .hero-content {
-    background-image: url(../../assets/img/terminepreise.png);
+    background-image: url(../assets/img/terminepreise.png);
   }
 }
 
@@ -10701,7 +10701,7 @@ ul.visualNoMarker {
   margin: 22px auto 22px;
   overflow: hidden;
   text-indent: -3000px;
-  background: 0 0 url(../../assets/img/logo-adk.png) no-repeat;
+  background: 0 0 url(../assets/img/logo-adk.png) no-repeat;
   background-size: 100%;
   border-right: 0px solid #fff;
   border-left: 0px solid #fff;
@@ -10940,7 +10940,7 @@ ul.visualNoMarker {
 .app-footer {
   padding-top: 44px;
   margin-top: 22px;
-  background: url(../../assets/img/skyline.png) repeat-x 0 0 transparent;
+  background: url(../assets/img/skyline.png) repeat-x 0 0 transparent;
 }
 
 .app-footer-content {
@@ -10966,7 +10966,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .app-colophon {
-    background: url(../../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
+    background: url(../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
   }
 }
 
@@ -10982,7 +10982,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .hero-unit-fp-content {
-    background: url(../../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
+    background: url(../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
   }
 }
 
@@ -11139,7 +11139,7 @@ body,
 .app-lp,
 .site-frontpage,
 .portaltype-adk-contentpages-sectionfolder {
-  background: url(../../assets/img/lined_paper.png) repeat 0 0px transparent;
+  background: url(../assets/img/lined_paper.png) repeat 0 0px transparent;
 }
 
 #content {
