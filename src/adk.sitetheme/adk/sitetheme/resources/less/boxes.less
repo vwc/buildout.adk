@@ -7,12 +7,14 @@
     .panel();
     .panel-default();
     padding: @line-height-computed;
-    .transition(background .25s ease-in-out);
-    &:hover {
-        background: @gray-lighter;
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
+    &.app-box-link {
+        .transition(background .25s ease-in-out);
+        &:hover {
+            background: @gray-lighter;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
     }
 }
 
