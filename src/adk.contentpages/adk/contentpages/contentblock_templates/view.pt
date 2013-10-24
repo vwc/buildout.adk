@@ -76,7 +76,9 @@
                   </a>
                 </div>
                 <div class="panel panel-default">
-                  <div class="panel-heading">
+                  <div class="panel-heading"
+                    tal:define="klass item/selected_icon">
+                    <i tal:attributes="class python:'fa ' + klass"></i>
                     <h4 class="panel-title" tal:content="item/Title" />
                   </div>
                   <div class="panel-body">

@@ -40,8 +40,9 @@
             <div class="col-xs-12 col-md-4">
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <i tal:attributes="class context/selected_icon"></i>
+                    <h4 class="panel-title"
+                        tal:define="klass context/selected_icon">
+                    <i tal:attributes="class python:'fa ' + klass"></i>
                       <span tal:replace="context/Title" />
                     </h4>
                   </div>
