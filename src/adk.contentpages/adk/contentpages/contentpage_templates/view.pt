@@ -20,7 +20,7 @@
           data-placement="top"
           title="Edit content block"
           tal:attributes="href python:item_url + '/@@edit-page-header'">
-          <i class="icon-edit-sign"></i></a>
+          <i class="fa fa-pencil-square-o"></i></a>
         <small class="pull-right">Content Page Header</small>
       </div>
       <h1 class="documentFirstHeading page-heading" tal:content="context/Title" />
@@ -38,7 +38,7 @@
             data-placement="top"
             title="Edit content block"
             tal:attributes="href python:item_url + '/@@edit-page-subheader'">
-            <i class="icon-edit-sign"></i></a>
+            <i class="fa fa-pencil-square-o"></i></a>
           <small class="pull-right">Content Page Subheader</small>
         </div>
         <h2 class="display-title"
@@ -59,13 +59,13 @@
             data-placement="top"
             title="Edit content block"
             tal:attributes="href python:item_url + '/@@edit-page-body'">
-            <i class="icon-edit-sign"></i></a>
+            <i class="fa fa-pencil-square-o"></i></a>
           <a class="btn btn-warning btn-small pull-right"
             data-toggle="tooltip"
             data-placement="top"
             title="Edit content block"
             tal:attributes="href python:item_url + '/@@add-content-box'">
-            <i class="icon-list-alt"></i></a>
+            <i class="fa fa-list-alt"></i></a>
           <small class="pull-right">Content Page Body</small>
         </div>
 
@@ -84,7 +84,7 @@
                         title="Edit content block"
                         tal:define="item_url item/getURL"
                         tal:attributes="href python:item_url + '/@@edit'">
-                        <i class="icon-edit-sign"></i>
+                        <i class="fa fa-pencil-square-o"></i>
                     </a>
                   </div>
                   <div class="panel panel-default">
@@ -104,7 +104,7 @@
                   <div class="tile tile-editable">
                     <a class="btn btn-warning btn-small pull-right"
                       tal:attributes="href python:context_url + '/@@add-content-box'">
-                      <i class="icon-plus-sign"></i>
+                      <i class="fa fa-plus-square"></i>
                       <span i18n:translate="">Add box</span>
                     </a>
                   </div>
@@ -133,13 +133,13 @@
                     data-placement="top"
                     title="Edit content block"
                     tal:attributes="href python:item_url + '/@@edit-content-block'">
-                    <i class="icon-edit-sign"></i></a>
+                    <i class="fa fa-pencil-square-o"></i></a>
                   <a class="btn btn-warning btn-small pull-right"
                     data-toggle="tooltip"
                     data-placement="top"
                     title="Layout and display settings"
-                    tal:attributes="href python:item_url + '/@@block-layout'">
-                    <i class="icon-columns"></i></a>
+                    tal:attributes="href python:item_url">
+                    <i class="fa fa-cog"></i></a>
                   <small class="pull-right">Contentblock <span tal:replace="item_count" /></small>
                 </div>
                 <div tal:define="cbc python:view.get_contentblock(item)">
@@ -155,7 +155,7 @@
                 <a class="app-box app-box-contentpage app-box-link text-center"
                   tal:attributes="href item/getURL">
                     <span class="app-box-header">
-                        <i class="icon-bullhorn icon-2x app-box-icon"></i>
+                        <i class="fa fa-bullhorn fa-2x app-box-icon"></i>
                         <span class="h3 app-box-title" tal:content="item/Title">Sprachkurse</span>
                     </span>
                     <span class="app-box-lead" tal:content="item/Description" />
@@ -166,23 +166,6 @@
                     <span class="app-box-arrow app-box-arrow-light"></span>
                 </div>
               </div>
-
-              <tal:comment tal:content="nothing">
-              <article class="subpage">
-                <header class="subpage-header">
-                  <h2><a tal:content="item/Title"
-                        tal:attributes="href item/getURL" /></h2>
-                  <p class="subpage-description"
-                    tal:condition="item/Description"
-                    tal:content="item/Description" />
-                </header>
-                <div class="subpage-content">
-                  <a class="btn btn-default"
-                    tal:attributes="href item/getURL"
-                    i18n:translate="">Read more</a>
-                </div>
-              </article>
-              </tal:comment>
 
             </tal:block>
             
@@ -195,8 +178,8 @@
         <div class="tile tile-editable">
           <a class="btn btn-warning btn-small pull-right"
             tal:attributes="href python:context_url + '/@@add-content-block'">
-            <i class="icon-plus-sign"></i>
-            <span i18n:translate="">Add block</span>
+            <i class="fa fa-plus-square"></i>
+            <small i18n:translate="">Add block</small>
           </a>
         </div>
       </section>

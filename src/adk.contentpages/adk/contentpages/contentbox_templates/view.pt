@@ -18,7 +18,7 @@
             data-placement="top"
             title="Edit content block"
             tal:attributes="href python:context_url + '/@@edit'">
-            <i class="icon-edit-sign"></i>
+            <i class="fa fa-edit-sign"></i>
           </a>
           <a class="btn btn-warning btn-small pull-right"
             tal:attributes="href view/parentpage_url">
