@@ -8,6 +8,17 @@ body,
     background: url(../../assets/img/lined_paper.png) repeat 0px 0px transparent;
 }
 
+
+// Override default diazo image styling
+
+.image-left,
+.image-right,
+.image-inline {
+   border: 0;
+   background-color: #fff;
+}
+
+
 // Content Page styles
 
 #content {
@@ -46,7 +57,6 @@ body,
         color: @adk-blue;
     }
     .captioned {
-        .thumbnail();
         border-radius: 0px;
         padding: @line-height-computed / 2;
         .image-caption {
