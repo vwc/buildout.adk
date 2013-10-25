@@ -151,6 +151,11 @@ module.exports = function (grunt) {
                 pattern: '../dist/js/rms.js',
                 replacement: 'js/rms.js.min',
                 recursive: true
+            },
+            'clean-logo': {
+                path: 'dist/',
+                pattern: '../assets/img/logo-adk.png',
+                replacement: '/++theme++adk.sitetheme/assets/img/logo-adk.png'
             }
         },
 

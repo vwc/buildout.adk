@@ -8,10 +8,11 @@
     .panel-default();
     padding: @line-height-computed;
     &.app-box-link {
+        color: @text-color;
         .transition(background .25s ease-in-out);
         &:hover {
-            background: @gray-lighter;
-            color: #000;
+            background: @brand-primary;
+            color: #fff;
             text-decoration: none;
             cursor: pointer;
         }
@@ -30,6 +31,7 @@
     display: block;
     color: @adk-blue;
     text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
     font-weight: 600;
 }
 

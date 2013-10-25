@@ -13,66 +13,82 @@
   <section id="contentpage-view">
     <header id="page-header">
       <h1 class="documentFirstHeading" tal:content="context/Title" />
-      <div class="row">
-        <div class="col-xs-12 col-lg-9 col-lg-offset-3">
-          <p class="lead" tal:condition="context/Description"
-            tal:content="context/Description" />
-        </div>
+      <p tal:condition="context/Description"
+        tal:content="context/Description" />
+      <div class="hero-unit-fp-actions"
+          tal:condition="view/has_pages">
+          <a href="" class="btn btn-primary btn-lg"
+            tal:define="item python:view.page_details(0)"
+            tal:attributes="href item/getURL"
+            tal:content="item/Title">
+              Sprachschule
+          </a>
+          <a href="" class="btn btn-danger btn-lg"
+            tal:define="item python:view.page_details(4)"
+            tal:attributes="href item/getURL"
+            tal:content="item/Title">
+              Termine &amp; Preise
+          </a>
       </div>
     </header>
 
     <section id="content-core">
        <div class="row">
             <div class="col-xs-12 col-lg-4">
-                <div class="app-box text-center">
-                    <div class="app-box-header">
+                <a class="app-box app-box-link text-center"
+                  tal:attributes="href context/absolute_url">
+                    <span class="app-box-header">
                         <i class="icon-bullhorn icon-2x app-box-icon"></i>
                         <h3 class="app-box-title">Sprachkurse</h3>
-                    </div>
-                    <p i18n:translate="">Deutsch in Deutschland lernen Sie effektiv
+                    </span>
+                    <span i18n:translate="">Deutsch in Deutschland lernen Sie effektiv
                         und erfolgreich in einem Sprachkurs der Sprachschule ADK
                         Augsburger Deutschkurse
-                    </p>
-                    <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/fp-lead" />
+                    </span>
+                    <span tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/fp-lead" />
                     <img src="/++theme++adk.sitetheme/assets/img/board.jpg" />
-                </div>
+                </a>
                 <div class="app-box-ribbon">
                     <a href="#">Mehr</a>
-                    <i class="icon-caret-up"></i>
+                    <span class="app-box-arrow app-box-arrow-light"></span>
                 </div>
             </div>
             <div class="col-xs-12 col-lg-4">
-                <div class="app-box text-center">
-                    <div class="app-box-header">
-                        <i class="icon-sun icon-2x app-box-icon"></i>
+                <a class="app-box app-box-link text-center"
+                  tal:attributes="href context/absolute_url">
+                    <span class="app-box-header">
+                        <i class="icon-bullhorn icon-2x app-box-icon"></i>
                         <h3 class="app-box-title">Sommerkurse</h3>
-                    </div>
-                    <p i18n:translate="">Deutsch in Deutschland lernen Sie effektiv
+                    </span>
+                    <span i18n:translate="">Deutsch in Deutschland lernen Sie effektiv
                         und erfolgreich in einem Sprachkurs der Sprachschule ADK
                         Augsburger Deutschkurse
-                    </p>
+                    </span>
+                    <span tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/fp-lead" />
                     <img src="/++theme++adk.sitetheme/assets/img/summer.jpg" />
-                </div>
+                </a>
                 <div class="app-box-ribbon">
                   <a href="#">Mehr</a>
                   <span class="app-box-arrow app-box-arrow-light"></span>
               </div>
             </div>
             <div class="col-xs-12 col-lg-4">
-                <div class="app-box text-center">
-                    <div class="app-box-header">
-                        <i class="icon-suitcase icon-2x app-box-icon"></i>
+                <a class="app-box app-box-link text-center"
+                  tal:attributes="href context/absolute_url">
+                    <span class="app-box-header">
+                        <i class="icon-bullhorn icon-2x app-box-icon"></i>
                         <h3 class="app-box-title">Sprachreisen</h3>
-                    </div>
-                    <p i18n:translate="">Deutsch in Deutschland lernen Sie effektiv
+                    </span>
+                    <span i18n:translate="">Deutsch in Deutschland lernen Sie effektiv
                         und erfolgreich in einem Sprachkurs der Sprachschule ADK
                         Augsburger Deutschkurse
-                    </p>
+                    </span>
+                    <span tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/fp-lead" />
                     <img src="/++theme++adk.sitetheme/assets/img/bulli.jpg" />
-                </div>
+                </a>
                 <div class="app-box-ribbon">
                     <a href="#">Mehr</a>
-                    <i class="icon-caret-up"></i>
+                    <span class="app-box-arrow app-box-arrow-light"></span>
                 </div>
             </div>
         </div>

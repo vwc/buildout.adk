@@ -10356,15 +10356,16 @@ ul.visualNoMarker {
 }
 
 .app-box.app-box-link {
+  color: #333333;
   -webkit-transition: background 0.25s ease-in-out;
           transition: background 0.25s ease-in-out;
 }
 
 .app-box.app-box-link:hover {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
-  background: #eeeeee;
+  background: #af0c41;
 }
 
 .app-box-header {
@@ -10380,6 +10381,7 @@ ul.visualNoMarker {
   display: block;
   font-weight: 600;
   color: #234493;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
   text-transform: uppercase;
 }
 
