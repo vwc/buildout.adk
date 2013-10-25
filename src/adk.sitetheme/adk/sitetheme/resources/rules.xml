@@ -157,6 +157,10 @@
         <drop css:theme="#actionbox-toc" if-content="not(//*[@id='document-toc'])"/>
 
         <!-- Footer -->
+
+        <replace css:theme-children="#footer-box-quotes"
+            css:content-children="#random-quote" />
+
         <after css:content="#kss-spinner" theme-children="/html/body" />
 
         <drop css:theme="#app-fonts-dev" />

@@ -1,0 +1,23 @@
+<tal:block tal:define="portal_url viewlet/portal_url">
+<div class="footer-box" id="random-quote">
+    <div class="footer-box-header">
+        <i class="fa fa-comment fa-2x pull-right"></i>
+        <h4 i18n:translate="">Customer quotes</h4>
+    </div>
+    <div class="footer-box-content"
+        tal:condition="viewlet/has_quotes">
+        <blockquote tal:define="quote viewlet/selected_quote">
+            <i class="fa fa-quote-left fa-4x pull-left"></i>
+            <div tal:replace="structure quote/text/output" />
+            <small><span tal:replace="quote/Title" />
+              <cite title="Source Title"
+                tal:content="quote/country">Source Title</cite>
+            </small>
+        </blockquote>
+        <a class="btn btn-default btn-lg" href="/"
+            tal:attributes="href python:portal_url + '/testimonials'"
+            i18n:translate="">
+            Read more</a>
+    </div>
+</div>
+</tal:block>
