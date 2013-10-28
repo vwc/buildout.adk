@@ -1,0 +1,43 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+     xmlns:tal="http://xml.zope.org/namespaces/tal"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="adk.contentpages" 
+     tal:omit-tag=""
+     tal:define="portal context/@@plone_portal_state/portal;
+                 charset portal/email_charset|string:utf-8;
+                 dummy python:request.RESPONSE.setHeader('Content-Type', 'text/plain;;charset=%s' % charset);">
+
+Buchungsanfrage Kursangebot
+===========================
+
+Ein Besucher von adk-german-courses.com hat folgende Anfrage abgeschickt:
+
+Persönliche Daten
+-----------------
+
+Vorname: <span tal:replace="options/firstname | nothing" tal:omit-tag="" />
+Nachname: <span tal:replace="options/lastname | nothing" tal:omit-tag="" />
+Beruf: <span tal:replace="options/occupation | nothing" tal:omit-tag="" />
+E-Mail-Adresse: <span tal:replace="options/email | nothing" tal:omit-tag="" />
+Telefon: <span tal:replace="options/phone | string:Keine Angabe" tal:omit-tag="" />
+
+
+Rechnungsadresse
+--------------
+
+Ort: <span tal:content="options/city | nothing" tal:omit-tag="" />
+Postleitzahl: <span tal:content="options/zipcode | nothing" tal:omit-tag="" />
+Strasse und Hausnummer:
+<span tal:replace="options/street | string:Keine Angabe" tal:omit-tag="" />
+Land: <span tal:content="options/country | string:Keine Angabe" tal:omit-tag="" />
+
+Weitere Angaben:
+----------------
+
+
+---
+Bestellanfrage
+http://adk-german-courses.com
+
+
+</div>

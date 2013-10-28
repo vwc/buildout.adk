@@ -357,6 +357,7 @@ class RegistrationForm(formbase.PageForm):
                       immediate=False,
                       charset='utf8',
                       msg_type='text/plain')
-        confirm_msg = _(u'Your reservation has been forwarded successfully.')
-        IStatusMessage(self.request).addStatusMessage(confirm_msg, type='info')
+        IStatusMessage(self.request).add(
+            _(u'Your reservation has been forwarded successfully.'),
+            type='info')
         return self.result_template()

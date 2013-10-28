@@ -55,12 +55,6 @@ class IBooking(form.Schema):
         required=True,
         default=u'Deutschland',
     )
-
-    email = schema.TextLine(
-        title=_(u'Email'),
-        required=True,
-    )
-
     occupation = schema.TextLine(
         title=_(u"Occupation"),
         description=u'',
@@ -249,9 +243,9 @@ class BookingForm(form.SchemaForm):
     ignoreContext = True
     ignoreRequest = False
 
-    label = _(u"Book Hotel Arrangement")
-    description = _(u"Please fill out the form to send a booking request "
-                    u"directly to this hotel.")
+    label = _(u"Booking form")
+    description = _(u"Register for the selected course by filling out the "
+                    u"form below.")
 
     def updateActions(self):
         super(BookingForm, self).updateActions()
@@ -278,44 +272,27 @@ class BookingForm(form.SchemaForm):
         context_url = self.context.absolute_url()
         mto = 'info@augsburger-deutschkurse.de'
         envelope_from = 'anfrage@adk-gertman-courses.com'
-        subject = 'Anfrage Hotel Special/Arrangement - meintophotel.de'
-        options = dict(
-            firstname=data['firstname'],
-            lastname=data['lastname'],
-            postcode=data['postcode'],
-            city=data['city'],
-            country=data['country'],
-            email=data['email'],
-            message=data['message'],
-            special=data['special'],
-            url=context_url,
-        )
-        body = ViewPageTemplateFile(
-            "browser/templates/bookspecial_email.pt")(self, **options)
+        subject = 'Buchungsanfrage Sprachkurse'
+        options = data
+        body = ViewPageTemplateFile("booking_email.pt")(self, **options)
         # send email
-        mailhost = getToolByName(self.context, 'MailHost')
-        mailhost.send(body, mto=mto, mfrom=envelope_from,
-                      subject=subject, charset='utf-8')
+        mailhost = api.portal.get_tool(name='MailHost')
+        mailhost.send(body,
+                      mto=mto,
+                      mfrom=envelope_from,
+                      subject=subject,
+                      charset='utf-8')
 
-        IStatusMessage(self.request).addStatusMessage(
+        IStatusMessage(self.request).add(
             _(u"Thank you for your interest in this special. "
               u"Your Request has been forwarded to the hotel.",
-              type="info")
+              type='info')
         )
         return self.request.response.redirect(
-            '%s/@@bookspecial-success' % context_url)
+            '%s/@@booking-form-success' % context_url)
 
-    def special(self):
-        """Query the context object ids for the requested special"""
-        context = aq_inner(self.context)
-        request = self.request
-        special_id = request.get('form.widgets.specialid')
-        for item in context.items():
-            if item[0] == special_id:
-                info = item[1]
-                result = {}
-                result['title'] = info.Title()
-                result['price'] = getattr(info, 'price', '')
-                result['currency'] = getattr(info, 'currency', '')
-                result['info'] = getattr(info, 'info', '')
-                return result
+
+class BookingFormSuccess(grok.View):
+    grok.context(ISectionFolder)
+    grok.require('zope2.View')
+    grok.name('booking-form-success')
