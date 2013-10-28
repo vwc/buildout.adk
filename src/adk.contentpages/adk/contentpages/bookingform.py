@@ -296,3 +296,6 @@ class BookingFormSuccess(grok.View):
     grok.context(ISectionFolder)
     grok.require('zope2.View')
     grok.name('booking-form-success')
+
+    def render(self):
+        return ''
