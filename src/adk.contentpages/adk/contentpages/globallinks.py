@@ -1,3 +1,4 @@
+from Acquisition import aq_inner
 from five import grok
 from plone import api
 
@@ -14,3 +15,11 @@ class GlobalLinksViewlet(grok.Viewlet):
 
     def update(self):
         self.portal_url = api.portal.get().absolute_url()
+
+    def get_root_url(self):
+        context = aq_inner(self.context)
+        nav_root = api.portal.get_navigation_root(context)
+        if nav_root:
+            return nav_root.absolute_url()
+        else:
+            return api.portal.get().absolute_url()

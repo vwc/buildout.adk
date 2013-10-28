@@ -134,21 +134,6 @@ module.exports = function (grunt) {
         },
 
         sed: {
-            'clean-logo': {
-                path: 'dist/',
-                pattern: '../assets/img/logo-adk.png',
-                replacement: '/++theme++adk.sitetheme/assets/img/logo-adk.png'
-            },
-            'clean-certit-logo': {
-                path: 'dist/',
-                pattern: '../assets/img/logo-certit.jpg',
-                replacement: '/++theme++adk.sitetheme/assets/img/logo-certit.jpg'
-            },
-            'clean-ea-logo': {
-                path: 'dist/',
-                pattern: '../assets/img/excellence-award.png',
-                replacement: '/++theme++adk.sitetheme/assets/img/excellence-award.png'
-            },
             'clean-source-assets': {
                 path: 'dist/',
                 pattern: '../../assets/',
@@ -166,6 +151,21 @@ module.exports = function (grunt) {
                 pattern: '../dist/js/rms.js',
                 replacement: 'js/rms.js.min',
                 recursive: true
+            },
+            'clean-logo': {
+                path: 'dist/',
+                pattern: '../assets/img/logo-adk.png',
+                replacement: '/++theme++adk.sitetheme/assets/img/logo-adk.png'
+            },
+            'clean-certit-logo': {
+                path: 'dist/',
+                pattern: '../assets/img/logo-certit.jpg',
+                replacement: '/++theme++adk.sitetheme/assets/img/logo-certit.jpg'
+            },
+            'clean-ea-logo': {
+                path: 'dist/',
+                pattern: '../assets/img/excellence-award.png',
+                replacement: '/++theme++adk.sitetheme/assets/img/excellence-award.png'
             }
         },
 

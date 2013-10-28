@@ -19,26 +19,6 @@
     <!-- Rules applying to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
         
-        <!--<rules if="$host = 'adk-german-courses.com'">
-            <theme href="frontpage-en.html" css:if-content="body.section-front-page" />
-            <theme href="theme-en.html" />
-        </rules>-->
-        <!--<rules if="$host = 'augsburger-deutschkurse.de'">
-            <theme href="frontpage-de.html" css:if-content="body.section-front-page" />
-            <theme href="theme-de.html" />
-        </rules>-->
-        <!--<rules if="$host = 'estudiar-aleman.es'">
-            <theme href="frontpage-es.html" css:if-content="body.section-front-page" />
-            <theme href="theme-es.html" />
-        </rules> -->
-        <!--<rules if="$host = 'studiare-tedesco.it'">
-            <theme href="frontpage-it.html" css:if-content="body.section-front-page" />
-            <theme href="theme-it.html" />
-        </rules>-->
-        <!-- <rules if="$host = 'apprendre-allemand.fr'">
-            <theme href="frontpage-fr.html" css:if-content="body.section-front-page" />
-            <theme href="theme-fr.html" />
-        </rules>-->
         <theme href="dist/theme.html" />
 
         <replace css:theme="base" css:content="base" />
@@ -80,21 +60,7 @@
             css:content="#app-toolbar" />
 
         <!-- Site actions -->
-        <replace css:content="#portal-siteactions li" css:theme-children="#actions" />
-
-        <!-- User actions -->
-
-        <!-- The logged-in actions are a list... -->
-        <after css:content="#portal-personaltools li" css:theme-children="#actions" />
-
-        <!-- ... but for anonymous users, it's a dl, so we build list elements
-             using XSL directives
-          -->
-        <after css:theme-children="#actions">
-            <xsl:for-each css:select="#anon-personalbar > a">
-                <li><xsl:copy-of css:select="a"/></li>
-            </xsl:for-each>
-        </after>
+        <replace css:content="#actionbar-signup" css:theme="#actionbar-signup" />
 
         <!-- Global navigation -->
         <replace css:content='#portal-globalnav li' css:theme-children="#main-navigation" />
@@ -133,12 +99,6 @@
         <replace css:content-children="#content-core"
             css:theme-children="#fp-content" />
         
-        <!-- Edit bar -->
-        <!--<replace css:content="#edit-bar" css:theme="#edit-bar" /> 
-        <drop css:theme="#editbar-wrapper"
-            css:if-content="#anon-personalbar" />
-        <replace css:theme="#editbar-wrapper"
-            css:content="#toolbar" />-->
 
         <!-- Status messages not inside #content -->
         <drop css:content="#content .portalMessage"/>
@@ -151,17 +111,11 @@
         <replace css:content-children="#portal-column-one" css:theme-children="#left-sidebar" />
 
         <replace css:content-children="#portal-column-two" css:theme-children="#app-sidebar" />
-        
-        <replace css:content="#document-toc" css:theme="#actionbox-toc-content"
-            css:if-content="#document-toc" />
-        <drop css:theme="#actionbox-toc" if-content="not(//*[@id='document-toc'])"/>
 
         <!-- Footer -->
 
         <replace css:theme-children="#footer-box-quotes"
             css:content-children="#random-quote" />
-
-        <after css:content="#kss-spinner" theme-children="/html/body" />
 
         <drop css:theme="#app-fonts-dev" />
     
