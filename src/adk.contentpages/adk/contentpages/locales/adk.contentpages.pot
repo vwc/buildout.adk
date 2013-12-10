@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-06-04 11:59+0000\n"
+"POT-Creation-Date: 2013-12-10 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,16 +25,89 @@ msgstr ""
 msgid "A folder acting as navigation root"
 msgstr ""
 
-#: ./../contentpage.py:25
+#: ./../blockaddform.py:78
+msgid "A new job opening has successfully been added"
+msgstr ""
+
+#: ./../profiles/default/types/adk.contentpages.contentbox.xml
+msgid "A sinlge content panel or box"
+msgstr ""
+
+#: ./../contentpage_templates/view.pt:182
+msgid "Add block"
+msgstr ""
+
+#: ./../contentblock_templates/view.pt:53
+#: ./../contentpage_templates/view.pt:108
+msgid "Add box"
+msgstr ""
+
+#: ./../boxaddform.py:53
+msgid "Add content bbox"
+msgstr ""
+
+#: ./../blockaddform.py:53
+msgid "Add content block"
+msgstr ""
+
+#: ./../blockaddform.py:46
+msgid "Add new content block"
+msgstr ""
+
+#: ./../boxaddform.py:46
+msgid "Add new content box"
+msgstr ""
+
+#: ./../contentpage.py:26
+#: ./../editpageheader.py:33
 msgid "Alternative Title for displaying alternative headline"
 msgstr ""
 
-#: ./../contentpage.py:40
+#: ./../contentbox.py:26
+msgid "Attention"
+msgstr ""
+
+#: ./../contentblock.py:54
+#: ./../displaysettings.py:34
+msgid "Block Layout"
+msgstr ""
+
+#: ./../contentpage.py:41
+#: ./../editpagebody.py:25
 msgid "Body Text"
 msgstr ""
 
-#: ./../contentblock.py:29
+#: ./../bookingform.py:255
+msgid "Book now"
+msgstr ""
+
+#: ./../bookingform.py:246
+#: ./../bookingform_templates/bookingformsuccess.pt:16
+msgid "Booking form"
+msgstr ""
+
+#: ./../contentbox.py:37
+msgid "Box Content Body"
+msgstr ""
+
+#: ./../contentbox.py:42
+msgid "Box Heading Icon"
+msgstr ""
+
+#: ./../bookingform.py:44
+msgid "City"
+msgstr ""
+
+#: ./../blockaddform.py:32
+#: ./../blockeditform.py:29
+#: ./../boxaddform.py:32
 msgid "Content Block Body"
+msgstr ""
+
+#: ./../editpagebody.py:88
+#: ./../editpageheader.py:97
+#: ./../editpagesubheader.py:93
+msgid "Content page has successfully been updated"
 msgstr ""
 
 #: ./../profiles/default/types/adk.contentpages.contentpage.xml
@@ -45,35 +118,354 @@ msgstr ""
 msgid "ContentBlock"
 msgstr ""
 
+#: ./../profiles/default/types/adk.contentpages.contentbox.xml
+msgid "ContentBox"
+msgstr ""
+
 #: ./../profiles/default/types/adk.contentpages.contentpage.xml
 msgid "ContentPage"
 msgstr ""
 
-#: ./../contentpage.py:24
+#: ./../bookingform.py:54
+msgid "Country"
+msgstr ""
+
+#: ./../bookingform.py:107
+msgid "DSH Preparation Course"
+msgstr ""
+
+#: ./../bookingform.py:81
+msgid "Date of Birth"
+msgstr ""
+
+#: ./../sectionfolder_templates/view.pt:44
+msgid "Deutsch in Deutschland lernen Sie effektiv und erfolgreich in einem Sprachkurs der Sprachschule ADK Augsburger Deutschkurse"
+msgstr ""
+
+#: ./../displaysettings.py:25
+msgid "Display Settings"
+msgstr ""
+
+#: ./../contentpage.py:25
+#: ./../editpageheader.py:32
 msgid "Display Title"
 msgstr ""
 
-#: ./../contentpage.py:36
+#: ./../contentbox.py:28
+msgid "Download"
+msgstr ""
+
+#: ./../bookingform.py:76
+msgid "E-Mail"
+msgstr ""
+
+#: ./../blockeditform.py:43
+msgid "Edit content block"
+msgstr ""
+
+#: ./../editpagebody.py:46
+#: ./../editpageheader.py:55
+#: ./../editpagesubheader.py:51
+msgid "Edit content page"
+msgstr ""
+
+#: ./../editpagebody.py:39
+#: ./../editpageheader.py:48
+#: ./../editpagesubheader.py:44
+msgid "Edit content page header"
+msgstr ""
+
+#: ./../contentpage.py:37
+#: ./../editpagesubheader.py:30
 msgid "Enter a sumamry or teaser text"
 msgstr ""
 
-#: ./../contentpage.py:31
+#: ./../bookingform.py:71
+msgid "Fax"
+msgstr ""
+
+#: ./../displaysettings.py:29
+msgid "Featured Block"
+msgstr ""
+
+#: ./../contentpage.py:32
+#: ./../editpagesubheader.py:25
 msgid "First headline of the page body"
 msgstr ""
 
-#: ./../contentpage.py:35
+#: ./../bookingform.py:35
+msgid "Firstname"
+msgstr ""
+
+#: ./../bookingform.py:31
+msgid "Frau"
+msgstr ""
+
+#: ./../contentblock.py:35
+#: ./../displaysettings.py:15
+msgid "Full View"
+msgstr ""
+
+#: ./../bookingform.py:31
+msgid "Herr"
+msgstr ""
+
+#: ./../bookingform.py:230
+msgid "I confirm the correctness of my entries and acknowledge the terms and conditions of ADK."
+msgstr ""
+
+#: ./../contentbox.py:24
+msgid "Image"
+msgstr ""
+
+#: ./../contentbox.py:22
+msgid "Info"
+msgstr ""
+
+#: ./../bookingform.py:96
+msgid "Intensive Course"
+msgstr ""
+
+#: ./../bookingform.py:99
+msgid "Intensive Plus Course (24 lessions)"
+msgstr ""
+
+#: ./../bookingform.py:102
+msgid "Intensive Plus Course (30 lessons)"
+msgstr ""
+
+#: ./../boxaddform.py:28
+#: ./../editpageheader.py:28
+msgid "Introduction"
+msgstr ""
+
+#: ./../bookingform.py:39
+msgid "Lastname"
+msgstr ""
+
+#: ./../displaysettings.py:30
+msgid "Mark as featured to visually highlight this block"
+msgstr ""
+
+#: ./../bookingform.py:86
+msgid "Nationality"
+msgstr ""
+
+#: ./../boxaddform.py:78
+msgid "New item has successfully been added"
+msgstr ""
+
+#: ./../bookingform.py:59
+msgid "Occupation"
+msgstr ""
+
+#: ./../blockaddform.py:27
+#: ./../contentblock.py:45
+msgid "Optional extra information displayed along the section title"
+msgstr ""
+
+#: ./../contentpage.py:36
+#: ./../editpagesubheader.py:29
 msgid "Page Teaser"
 msgstr ""
 
-#: ./../contentpage.py:30
+#: ./../contentpage.py:31
+#: ./../editpagesubheader.py:24
 msgid "Page Title"
 msgstr ""
 
-#: ./../contentpage_templates/view.pt:74
-msgid "Read more"
+#: ./../bookingform.py:66
+msgid "Phone"
+msgstr ""
+
+#: ./../bookingform.py:49
+msgid "Postal Code"
+msgstr ""
+
+#: ./../bookingform.py:104
+msgid "Private Tuition"
+msgstr ""
+
+#: ./../blockaddform.py:64
+#: ./../blockeditform.py:61
+#: ./../bookingform.py:266
+msgid "Process has been cancelled."
+msgstr ""
+
+#: ./../globallinks_templates/globallinksviewlet.pt:23
+msgid "Register"
+msgstr ""
+
+#: ./../bookingform.py:247
+msgid "Register for the selected course by filling out the form below."
+msgstr ""
+
+#: ./../bookingform.py:30
+msgid "Salutation"
 msgstr ""
 
 #: ./../profiles/default/types/adk.contentpages.sectionfolder.xml
 msgid "SectionFolder"
+msgstr ""
+
+#: ./../contentbox.py:41
+msgid "Selected Icon"
+msgstr ""
+
+#: ./../contentblock.py:32
+#: ./../displaysettings.py:12
+msgid "Sidebar Left"
+msgstr ""
+
+#: ./../contentblock.py:33
+#: ./../displaysettings.py:13
+msgid "Sidebar Right"
+msgstr ""
+
+#: ./../contentblock.py:34
+#: ./../displaysettings.py:14
+msgid "Split View"
+msgstr ""
+
+#: ./../blockaddform.py:26
+#: ./../contentblock.py:44
+msgid "Subtitle"
+msgstr ""
+
+#: ./../bookingform.py:113
+msgid "Summer Course Classic"
+msgstr ""
+
+#: ./../bookingform.py:110
+msgid "TestDAF Preparation Course"
+msgstr ""
+
+#: ./../bookingform_templates/bookingformsuccess.pt:17
+msgid "Thank you for your interest in ADK Augsburger Deutschkurse. Your booking request has successfully been forwarded to us."
+msgstr ""
+
+#. Default: "info"
+#: ./../bookingform.py:287
+msgid "Thank you for your interest in this special. Your Request has been forwarded to the hotel."
+msgstr ""
+
+#: ./../blockeditform.py:91
+msgid "The content block has successfully been updated"
+msgstr ""
+
+#: ./../contentbox.py:25
+msgid "Thumbs Up!"
+msgstr ""
+
+#: ./../contentbox.py:27
+msgid "Time"
+msgstr ""
+
+#: ./../blockaddform.py:22
+#: ./../blockeditform.py:25
+#: ./../boxaddform.py:24
+msgid "Title"
+msgstr ""
+
+#: ./../contentbox.py:23
+msgid "Video"
+msgstr ""
+
+#: ./../blocklayout.py:36
+msgid "Your layout selection has been safed"
+msgstr ""
+
+#: ./../bookingform.py:139
+msgid "advanced"
+msgstr ""
+
+#: ./../bookingform.py:148
+msgid "advertisment"
+msgstr ""
+
+#: ./../blockaddform.py:61
+#: ./../blockeditform.py:58
+#: ./../bookingform.py:263
+msgid "cancel"
+msgstr ""
+
+#: ./../bookingform.py:203
+msgid "car"
+msgstr ""
+
+#: ./../bookingform.py:134
+msgid "elementary"
+msgstr ""
+
+#: ./../bookingform.py:150
+msgid "former student"
+msgstr ""
+
+#: ./../bookingform.py:137
+msgid "good"
+msgstr ""
+
+#: ./../bookingform.py:168
+msgid "host family, double room, full board"
+msgstr ""
+
+#: ./../bookingform.py:165
+msgid "host family, double room, half board"
+msgstr ""
+
+#: ./../bookingform.py:174
+msgid "host family, single room, full board"
+msgstr ""
+
+#: ./../bookingform.py:171
+msgid "host family, single room, half board"
+msgstr ""
+
+#: ./../bookingform.py:177
+msgid "hotel or guesthouse"
+msgstr ""
+
+#: ./../bookingform.py:136
+msgid "intermediate"
+msgstr ""
+
+#: ./../bookingform.py:212
+msgid "no"
+msgstr ""
+
+#: ./../bookingform.py:183
+msgid "no accomodation needed"
+msgstr ""
+
+#: ./../bookingform.py:132
+msgid "none"
+msgstr ""
+
+#: ./../bookingform.py:155
+msgid "other sources"
+msgstr ""
+
+#: ./../bookingform.py:201
+msgid "plane"
+msgstr ""
+
+#: ./../bookingform.py:152
+msgid "recommendation"
+msgstr ""
+
+#: ./../bookingform.py:180
+msgid "room in a shared flat"
+msgstr ""
+
+#: ./../bookingform.py:202
+msgid "train"
+msgstr ""
+
+#: ./../bookingform.py:153
+msgid "website"
+msgstr ""
+
+#: ./../bookingform.py:211
+msgid "yes"
 msgstr ""
 
