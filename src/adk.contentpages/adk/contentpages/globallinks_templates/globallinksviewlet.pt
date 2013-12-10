@@ -25,4 +25,16 @@
         i18n:domain="adk.contentpages"
         i18n:translate="">Register</a>
 </div>
+<div class="footer-actionbar" id="colophon-actions"
+    i18n:domain="adk.contentpages">
+    <a class="btn btn-default" href="#"
+        tal:attributes="href python:root_url + '/contact'"
+        i18n:translate="">Contact</a> &ndash;
+    <a class="btn btn-default" href="#"
+        tal:attributes="href python:root_url + '/imprint'"
+        i18n:translate="">Imprint</a> &ndash;
+    <a class="btn btn-default" href="#"
+        tal:attributes="href python:root_url + '/agb'"
+        i18n:translate="">AGB</a>
+</div>
 </tal:block>
