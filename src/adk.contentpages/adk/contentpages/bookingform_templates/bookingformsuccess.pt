@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="adk.contentpages">
+<body>
+
+
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
+
+  <section class="cp-block" id="content-core">
+    <header class="cp-block-header page-header">
+      <h1 i18n:translate="">Booking form</h1>
+      <p class="lead" i18n:translate="">
+        Thank you for your interest in ADK Augsburger Deutschkurse. 
+        Your booking request has successfully been forwarded to us.</p>
+    </header>
+    <div class="cp-block-content">
+      <div class="alert alert-warning">
+        <h4><i class="icon-warning-sign"></i>
+          Heads Up!</h4>
+        <p>Diese Seite ist noch nicht funktionsf&auml;hig und gemachte &Auml;nderungen
+          werden noch nicht f&uuml;r die weitere Verwendung nutzbar abgelegt</p>
+      </div>
+    <hr>
+    </div>
+  </section>
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>

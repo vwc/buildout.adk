@@ -10938,6 +10938,10 @@ body,
   border: 0;
 }
 
+.app-content .table {
+  background: #fff;
+}
+
 #content {
   padding: 0;
 }
