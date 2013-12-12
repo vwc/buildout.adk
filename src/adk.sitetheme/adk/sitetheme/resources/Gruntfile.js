@@ -94,8 +94,7 @@ module.exports = function (grunt) {
             ico: {
                 expand: true,
                 flatten: true,
-                cwd: 'bower_components/',
-                src: ['bootstrap/assets/ico/*'],
+                src: ['assets/ico/*'],
                 dest: 'dist/assets/ico/'
             }
         },
@@ -154,8 +153,8 @@ module.exports = function (grunt) {
             },
             'clean-source-js': {
                 path: 'dist/',
-                pattern: '../dist/js/rms.js',
-                replacement: 'js/rms.js.min',
+                pattern: '../dist/js/adk.js',
+                replacement: 'js/adk.js.min',
                 recursive: true
             },
             'clean-logo': {
@@ -185,13 +184,12 @@ module.exports = function (grunt) {
         },
 
         watch: {
-            src: {
-                files: '<%= jshint.src.src %>',
-                tasks: ['jshint:src', 'qunit']
-            },
-            test: {
-                files: '<%= jshint.test.src %>',
-                tasks: ['jshint:test', 'qunit']
+            scripts: {
+                files: ['js/*.js'],
+                tasks: ['concat', 'uglify'],
+                options: {
+                    spawn: false
+                }
             },
             recess: {
                 files: 'less/*.less',

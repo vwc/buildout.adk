@@ -6872,8 +6872,8 @@ td.visible-print {
   font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
-  src: url('../../assets/fonts/fontawesome-webfont.eot?v=4.0.0');
-  src: url('../../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.0') format('embedded-opentype'), url('../../assets/fonts/fontawesome-webfont.woff?v=4.0.0') format('woff'), url('../../assets/fonts/fontawesome-webfont.ttf?v=4.0.0') format('truetype'), url('../../assets/fonts/fontawesome-webfont.svg?v=4.0.0#fontawesomeregular') format('svg');
+  src: url('../assets/fonts/fontawesome-webfont.eot?v=4.0.0');
+  src: url('../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.0') format('embedded-opentype'), url('../assets/fonts/fontawesome-webfont.woff?v=4.0.0') format('woff'), url('../assets/fonts/fontawesome-webfont.ttf?v=4.0.0') format('truetype'), url('../assets/fonts/fontawesome-webfont.svg?v=4.0.0#fontawesomeregular') format('svg');
 }
 
 .fa {
@@ -10303,6 +10303,64 @@ ul.visualNoMarker {
   clear: both;
 }
 
+@-webkit-keyframes dimIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes dimIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dimIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dim-in {
+  opacity: 0;
+  -webkit-animation: dimIn ease-in 1;
+     -moz-animation: dimIn ease-in 1;
+          animation: dimIn ease-in 1;
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.dim-in.one {
+  -webkit-animation-delay: 0.5s;
+     -moz-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.dim-in.two {
+  -webkit-animation-delay: 1.2s;
+     -moz-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.dim-in.three {
+  -webkit-animation-delay: 1.6s;
+     -moz-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
 .app-box {
   display: block;
   padding: 22px;
@@ -10460,19 +10518,19 @@ ul.visualNoMarker {
 @media (min-width: 768px) {
   .hero-content {
     padding-bottom: 350px;
-    background: url(../../assets/img/hero-sprachschule.png) no-repeat 0 100% transparent;
+    background: url(../assets/img/hero-sprachschule.png) no-repeat 0 100% transparent;
   }
   body.section-sprachkurse .hero-content {
-    background-image: url(../../assets/img/hero-sprachkurse.png);
+    background-image: url(../assets/img/hero-sprachkurse.png);
   }
   body.section-sommerkurse .hero-content {
-    background-image: url(../../assets/img/hero-sommerkurse.png);
+    background-image: url(../assets/img/hero-sommerkurse.png);
   }
   body.section-sprachreisen .hero-content {
-    background-image: url(../../assets/img/hero-sprachreisen.png);
+    background-image: url(../assets/img/hero-sprachreisen.png);
   }
   body.section-termine-preise .hero-content {
-    background-image: url(../../assets/img/hero-terminepreise.png);
+    background-image: url(../assets/img/hero-terminepreise.png);
   }
 }
 
@@ -10490,7 +10548,7 @@ ul.visualNoMarker {
   margin: 22px auto 22px;
   overflow: hidden;
   text-indent: -3000px;
-  background: 0 0 url(../../assets/img/logo-adk.png) no-repeat;
+  background: 0 0 url(../assets/img/logo-adk.png) no-repeat;
   background-size: 100%;
   border-right: 0px solid #fff;
   border-left: 0px solid #fff;
@@ -10729,7 +10787,7 @@ ul.visualNoMarker {
 .app-footer {
   padding-top: 44px;
   margin-top: 22px;
-  background: url(../../assets/img/skyline.png) repeat-x 0 0 transparent;
+  background: url(../assets/img/skyline.png) repeat-x 0 0 transparent;
 }
 
 .app-footer-content {
@@ -10755,7 +10813,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .app-colophon {
-    background: url(../../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
+    background: url(../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
   }
 }
 
@@ -10771,7 +10829,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .hero-unit-fp-content {
-    background: url(../../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
+    background: url(../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
   }
 }
 
@@ -10928,7 +10986,11 @@ body,
 .app-lp,
 .site-frontpage,
 .portaltype-adk-contentpages-sectionfolder {
-  background: url(../../assets/img/lined_paper.png) repeat 0 0px transparent;
+  background: url(../assets/img/lined_paper.png) repeat 0 0px transparent;
+}
+
+a {
+  transition: color 0.25s linear;
 }
 
 .image-left,
