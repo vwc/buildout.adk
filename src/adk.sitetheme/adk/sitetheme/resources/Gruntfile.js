@@ -97,14 +97,20 @@ module.exports = function (grunt) {
                 cwd: 'bower_components/',
                 src: ['bootstrap/assets/ico/*'],
                 dest: 'dist/assets/ico/'
-            },
-            images: {
-                expand: true,
-                flatten: true,
-                src: ['assets/img/*'],
-                dest: 'dist/assets/img/'
             }
         },
+
+        imagemin: {
+            dynamic: {
+                files: [{
+                    expand: true,
+                    cwd: 'assets/img/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'dist/assets/img/'
+                }]
+            }
+        },
+
         rev: {
             options:  {
                 algorithm: 'sha256',
@@ -174,7 +180,7 @@ module.exports = function (grunt) {
                 reset: true
             },
             files: {
-                src: ['_gh_pages/**/*.html']
+                src: ['_site/**/*.html']
             }
         },
 
@@ -189,7 +195,10 @@ module.exports = function (grunt) {
             },
             recess: {
                 files: 'less/*.less',
-                tasks: ['recess']
+                tasks: ['recess'],
+                options: {
+                    spawn: false
+                }
             },
             templates: {
                 files: '*.html',
@@ -207,6 +216,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-html-validation');
     grunt.loadNpmTasks('grunt-jekyll');
@@ -239,7 +249,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-css', ['recess']);
 
     // Assets distribution task.
-    grunt.registerTask('dist-assets', ['copy']);
+    grunt.registerTask('dist-assets', ['copy', 'imagemin']);
 
     // Cache buster distribution task.
     grunt.registerTask('dist-cb', ['rev']);
