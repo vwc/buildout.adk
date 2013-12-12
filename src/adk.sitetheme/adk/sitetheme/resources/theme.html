@@ -1,40 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Example Theme, based on Twitter Bootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="ADK Augsburger Deutschkurse - Learning German in Augsburg"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://adk-german-courses.com"/>
-    <meta property="og:image" content="http://adk-german-courses.com/static/images/adk-german-courses.jpg"/>
-    <meta property="og:site_name" content="ADK German Courses - Learning German in Augsburg"/>
-    <meta property="fb:app_id" content="214786038540769"/>
-    <meta property="og:description"
-          content="ADK is your language school where you can easily learn German in Germany. We are a
-          certified institute and we guarantee you for the best quality in our courses. Our special
-          offers: Intensive courses A1 to C1, Preparation for Language examinations, Summer courses for
-          teenagers and teens, Language trips to Germany, Class excursions"/>
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta property="og:title" content="ADK Augsburger Deutschkurse - Learning German in Augsburg"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://adk-german-courses.com"/>
+<meta property="og:image" content="http://adk-german-courses.com/static/images/adk-german-courses.jpg"/>
+<meta property="og:site_name" content="ADK German Courses - Learning German in Augsburg"/>
+<meta property="fb:app_id" content="214786038540769"/>
+<meta property="og:description"
+      content="ADK is your language school where you can easily learn German in Germany. We are a
+      certified institute and we guarantee you for the best quality in our courses. Our special
+      offers: Intensive courses A1 to C1, Preparation for Language examinations, Summer courses for
+      teenagers and teens, Language trips to Germany, Class excursions"/>
 
-    <!-- Le styles -->
-    <link href="less/styles.less" rel="stylesheet/less" type="text/css">
+<title>
+  {% if page.title == "ADK Augsburger Deutschkurse" %}
+    {{ page.title }}
+  {% else %}
+    {{ page.title }} &middot; ADK Augsburger Deutschkurse
+  {% endif %}
+</title>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-    <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
-    <script type="text/javascript" src="assets/js/less-1.4.1.min.js"></script>
-  </head><body>
-<header class="app-toolbar" id="toolbar">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <a class="navbar-brand" href="#">Plone Toolbar</a>
+<!-- Bootstrap core CSS -->
+<link href="{{ page.base_url }}dist/css/styles.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="{{ page.base_url }}assets/js/html5shiv.js"></script>
+  <script src="{{ page.base_url }}assets/js/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ page.base_url }}assets/ico/apple-touch-icon-144-precomposed.png">
+                               <link rel="shortcut icon" href="{{ page.base_url }}assets/ico/favicon.png"><body>
+<div class="navbar navbar-default navbar-fixed-top app-toolbar" id="app-toolbar">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".app-toolbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">CMS Toolbar</a>
     </div>
-</header><header class="topbar" id="topbar">
+    <div class="navbar-collapse collapse app-toolbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Inhalte</a></li>
+          <li><a href="#about">Anzeigen</a></li>
+          <li><a href="#contact">Bearbeiten</a></li>
+          <li><a href="#contact">Freigabe</a></li>
+          <li><a href="#contact">Regeln</a></li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+          <li id="plone-personal-actions" class="dropdown dropdown-userinfo">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="/author/123456789">
+              <span>John Doe</span>
+              <b class="caret">
+            </b></a>
+            <ul class="dropdown-menu"><li id="plone-personal-actions-dashboard">
+                <a href="/dashboard">My workspace</a>
+              </li>
+              <li id="plone-personal-actions-preferences">
+                <a href="/preferences">Settings</a>
+              </li>
+              <li id="plone-personal-actions-plone_setup">
+                <a href="/controlpanel">Configuration</a>
+              </li>
+              <li id="plone-personal-actions-logout">
+                <a href="/logout">Signout</a>
+              </li>
+            </ul></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hinzufügen <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+        </ul>
+    </div><!--/.nav-collapse -->
+</div><header class="topbar" id="topbar">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6">
@@ -44,13 +97,13 @@
             </div>
             <div class="col-12 col-lg-6">
                 <div class="actionbar">
-    <div class="actionbar-signup">
-        <a class="btn btn-primary" href="#">Anmeldung</a>
+    <div class="actionbar-signup" id="actionbar-signup">
+        <a class="btn btn-default" href="#">Anmeldung</a>
     </div>
     <div id="actionbar-social" class="actionbar-block actionbar-block-social hidden-sm pull-right">
         <ul class="nav nav-pills">
-            <li><a href="http://twitter.com/#!/ADKgermancourse" class="nav-icon nav-icon-tw"><i class="icon-twitter"></i></a></li>
-            <li><a href="http://www.facebook.com/adk.germancourses" class="nav-icon nav-icon-fb"><i class="icon-facebook"></i></a></li>
+            <li><a href="http://twitter.com/#!/ADKgermancourse" class="nav-icon nav-icon-tw"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://www.facebook.com/adk.germancourses" class="nav-icon nav-icon-fb"><i class="fa fa-facebook"></i></a></li>
         </ul>
     </div>
     <div id="actionbar-language" class="actionbar-block actionbar-block-language hidden-sm pull-right">
@@ -61,6 +114,9 @@
             <li><a href="http://studiare-tedesco.it/" id="flag-it" class="language-flag-link">IT</a></li>
             <li><a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link">ES</a></li>
         </ul>
+    </div>
+    <div id="actionbar-phone" class="actionbar-block actionbar-block-phone pull-right">
+        <i class="fa fa-phone"></i> + 49 (0) 821 - 31 49 05
     </div>
 </div>            </div>
         </div>
@@ -87,12 +143,12 @@
     </div>
 </nav></header>
 
-<section class="hero-unit" id="hero-text">
-    <div class="jumbotron">
-        <div class="container" id="hero-content">
+<section class="jumbotron hero-unit" id="hero-text">
+    <div class="container">
+        <div class="hero-content" id="hero-content">
         <h1>Deutschlernen in Deutschland</h1>
             <div class="row">
-                <div class="col col-lg-9 col-offset-3">
+                <div class="col-xs-12 col-lg-9 col-offset-3">
                     <p>Lernen Sie Deutsch in einem Intensivkurs,
                     bereiten Sie sich auf deutsche Sprachprüfungen vor, oder verbessern
                     Sie Ihr berufsbezogenes Deutsch.
@@ -165,7 +221,7 @@
         <div class="col-xs-12 col-lg-6">
             <div class="footer-box">
                 <div class="footer-box-header">
-                    <i class="icon-globe icon-2x pull-right"></i>
+                    <i class="fa fa-globe fa-2x pull-right"></i>
                     <h4>Über uns</h4>
                 </div>
                 <div class="footer-box-content">
@@ -180,9 +236,9 @@
             </div>
         </div>
         <div class="col-xs-12 col-lg-6">
-            <div class="footer-box">
+            <div class="footer-box" id="footer-box-quotes">
                 <div class="footer-box-header">
-                    <i class="icon-comment icon-2x pull-right"></i>
+                    <i class="fa fa-comment fa-2x pull-right"></i>
                     <h4>Schülermeinungen</h4>
                 </div>
                 <div class="footer-box-content">
@@ -200,18 +256,25 @@
         <div class="col-xs-12 col-lg-6">
             <div class="footer-box">
                 <div class="footer-box-header">
-                    <i class="icon-thumbs-up icon-2x pull-right"></i>
+                    <i class="fa fa-thumbs-o-up fa-2x pull-right"></i>
                     <h4>Zertifikate</h4>
                 </div>
                 <div class="footer-box-content">
-                    <p>Add Certificate images here</p>
+                    <p>Unser Sprachinstitut wurde 2011 und 2012 mit dem
+                        Excellence Award der Sprachreiseagentur languagecourse.net
+                        ausgezeichnet. Der hohe Qualitätsstandard unserer Schule
+                        ist durch die Zertifizierungsstelle CERT-IT anerkannt.</p>
+                    <img class="img-responsive"
+                         src="{{ page.base_url }}assets/img/excellence-award.png" />
+                    <img class="img-responsive"
+                         src="{{ page.base_url }}assets/img/logo-certit.jpg" />
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-lg-6">
             <div class="footer-box">
                 <div class="footer-box-header">
-                    <i class="icon-envelope icon-2x pull-right"></i>
+                    <i class="fa fa-envelope fa-2x pull-right"></i>
                     <h4>Kontakt</h4>
                 </div>
                 <div class="footer-box-content">
@@ -231,18 +294,19 @@
         </div>
         <div class="container">
             <div class="app-colophon">
-<div class="row">
-    <div class="col-xs-12 col-lg-5">
-        <p class="colophon-actions">
-        <a href="/kontakt">Kontakt</a>
-        - <a href="/impressum">Impressum</a>
-        </p>
+    <div class="row">
+        <div class="col-xs-12 col-lg-5">
+            <p class="colophon-actions" id="colophon-actions">
+                <a href="/kontakt">Kontakt</a>
+                - <a href="/impressum">Impressum</a>
+                - <a href="/agb">AGB</a>
+            </p>
+        </div>
+         <div class="col-xs-12 col-lg-5 col-md-offset-2">
+            <p>&copy; Copyright 2013 - ADK Augsburger Deutschkurse<br/>
+                Deutschlernen in Augsburg</p>
+        </div>
     </div>
-     <div class="col-xs-12 col-lg-5 col-md-offset-2">
-        <p>&copy; Copyright 2013 - ADK Augsburger Deutschkurse<br/>
-            Deutschlernen in Augsburg</p>
-    </div>
-</div>
 </div>        </div>
     </footer>
 
