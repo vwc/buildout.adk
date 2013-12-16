@@ -7,6 +7,65 @@
         i18n:domain="adk.contentpages"
         i18n:translate="">Register</a>
 </div>
+<hr><!-- Content for footer boxes -->
+<div i18n:domain="adk.contentpages">
+    <h4>Footer boxes</h4>
+    <div id="footer-box-about">
+        <div class="footer-box-header">
+            <i class="fa fa-globe fa-2x pull-right"></i>
+            <h4 i18n:translate="">About us</h4>
+        </div>
+        <div class="footer-box-content">
+            <p class="h5" i18n:translate="">
+                ADK Augsburger Deutschkurse – that means learning German in one
+                of the leading private institutes in Germany.
+                We are a certified school.
+            </p>
+            <p i18n:translate="">
+                Being one of the most renowned and surely one of the oldest
+                language schools in Augsburg (founded in 1963),
+                ADK has specialized in teaching German as a foreign language
+                right from the start.
+            </p>
+            <p class="h5">ADK in Augsburg, Bayern ist die Sprachschule,
+                um in Deutschland Deutsch zu lernen. Lernen Sie Deutsch
+                in einem Intensivkurs, bereiten Sie sich auf deutsche
+                Sprachprüfungen vor oder verbessern Sie Ihr
+                berufsbezogenes Deutsch.</p>
+            <p>ADK ist ein "Familienunternehmen" unter persönlicher Leitung der Inhaber.
+                Unbürokratisch, flexibel und persönlich - so ist hier der Service. Das unterscheidet ADK von großen Schulen.
+            </p>
+            <a class="btn btn-default btn-lg" href="/">Mehr</a>
+        </div>
+    </div>
+    <div class="footer-box" id="footer-box-certificates">
+        <div class="footer-box-header">
+            <i class="fa fa-thumbs-o-up fa-2x pull-right"></i>
+            <h4 i18n:translate="">Certificates</h4>
+        </div>
+        <div class="footer-box-content">
+            <p>Unser Sprachinstitut wurde 2011 und 2012 mit dem
+                Excellence Award der Sprachreiseagentur languagecourse.net
+                ausgezeichnet. Der hohe Qualitätsstandard unserer Schule
+                ist durch die Zertifizierungsstelle CERT-IT anerkannt.</p>
+            <p i18n:translate="">Our language school has recieved both the 2011
+                and 2012 Excelence Award by the language course agency
+                languagecourse.net.</p>
+            <p i18n:translate="">Our high quality standards have been certified by
+                CERT-IT.</p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <img class="img-responsive"
+                        src="/++theme++adk.sitetheme/assets/img/logo-certit.jpg" />
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <img class="img-responsive"
+                        src="/++theme++adk.sitetheme/assets/img/excellence-award.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- / Footer boxes -->
 <div class="footer-actionbar" id="colophon-actions"
     i18n:domain="adk.contentpages">
     <a class="btn btn-default" href="#"

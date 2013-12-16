@@ -7147,29 +7147,8 @@ td.visible-print {
 }
 
 /*!
- *  Font Awesome 4.0.0
- *  the iconic font designed for Bootstrap
- *  ------------------------------------------------------------------------------
- *  The full suite of pictographic icons, examples, and documentation can be
- *  found at http://fontawesome.io.  Stay up to date on Twitter at
- *  http://twitter.com/fontawesome.
- *
- *  License
- *  ------------------------------------------------------------------------------
- *  - The Font Awesome font is licensed under SIL OFL 1.1 -
- *    http://scripts.sil.org/OFL
- *  - Font Awesome CSS, LESS, and SASS files are licensed under MIT License -
- *    http://opensource.org/licenses/mit-license.html
- *  - Font Awesome documentation licensed under CC BY 3.0 -
- *    http://creativecommons.org/licenses/by/3.0/
- *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
- *    "Font Awesome by Dave Gandy - http://fontawesome.io"
- *
- *  Author - Dave Gandy
- *  ------------------------------------------------------------------------------
- *  Email: dave@fontawesome.io
- *  Twitter: http://twitter.com/davegandy
- *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 
 /* FONT PATH
@@ -7179,8 +7158,8 @@ td.visible-print {
   font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
-  src: url('../assets/fonts/fontawesome-webfont.eot?v=4.0.0');
-  src: url('../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.0') format('embedded-opentype'), url('../assets/fonts/fontawesome-webfont.woff?v=4.0.0') format('woff'), url('../assets/fonts/fontawesome-webfont.ttf?v=4.0.0') format('truetype'), url('../assets/fonts/fontawesome-webfont.svg?v=4.0.0#fontawesomeregular') format('svg');
+  src: url('../../assets/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('../../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../../assets/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../../assets/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../../assets/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
 }
 
 .fa {
@@ -7375,6 +7354,7 @@ td.visible-print {
 .fa-stack-1x,
 .fa-stack-2x {
   position: absolute;
+  left: 0;
   width: 100%;
   text-align: center;
 }
@@ -7666,7 +7646,7 @@ td.visible-print {
   content: "\f046";
 }
 
-.fa-move:before {
+.fa-arrows:before {
   content: "\f047";
 }
 
@@ -7779,11 +7759,11 @@ td.visible-print {
   content: "\f064";
 }
 
-.fa-resize-full:before {
+.fa-expand:before {
   content: "\f065";
 }
 
-.fa-resize-small:before {
+.fa-compress:before {
   content: "\f066";
 }
 
@@ -7872,11 +7852,11 @@ td.visible-print {
   content: "\f07c";
 }
 
-.fa-resize-vertical:before {
+.fa-arrows-v:before {
   content: "\f07d";
 }
 
-.fa-resize-horizontal:before {
+.fa-arrows-h:before {
   content: "\f07e";
 }
 
@@ -8001,7 +7981,7 @@ td.visible-print {
   content: "\f09e";
 }
 
-.fa-hdd:before {
+.fa-hdd-o:before {
   content: "\f0a0";
 }
 
@@ -8069,11 +8049,12 @@ td.visible-print {
   content: "\f0b1";
 }
 
-.fa-fullscreen:before {
+.fa-arrows-alt:before {
   content: "\f0b2";
 }
 
-.fa-group:before {
+.fa-group:before,
+.fa-users:before {
   content: "\f0c0";
 }
 
@@ -8113,7 +8094,7 @@ td.visible-print {
   content: "\f0c8";
 }
 
-.fa-reorder:before {
+.fa-bars:before {
   content: "\f0c9";
 }
 
@@ -8293,11 +8274,11 @@ td.visible-print {
   content: "\f0f6";
 }
 
-.fa-building:before {
+.fa-building-o:before {
   content: "\f0f7";
 }
 
-.fa-hospital:before {
+.fa-hospital-o:before {
   content: "\f0f8";
 }
 
@@ -8409,14 +8390,6 @@ td.visible-print {
 
 .fa-folder-open-o:before {
   content: "\f115";
-}
-
-.fa-expand-o:before {
-  content: "\f116";
-}
-
-.fa-collapse-o:before {
-  content: "\f117";
 }
 
 .fa-smile-o:before {
@@ -8570,7 +8543,7 @@ td.visible-print {
   content: "\f13d";
 }
 
-.fa-unlock-o:before {
+.fa-unlock-alt:before {
   content: "\f13e";
 }
 
@@ -8578,11 +8551,11 @@ td.visible-print {
   content: "\f140";
 }
 
-.fa-ellipsis-horizontal:before {
+.fa-ellipsis-h:before {
   content: "\f141";
 }
 
-.fa-ellipsis-vertical:before {
+.fa-ellipsis-v:before {
   content: "\f142";
 }
 
@@ -8911,6 +8884,10 @@ td.visible-print {
 .fa-turkish-lira:before,
 .fa-try:before {
   content: "\f195";
+}
+
+.fa-plus-square-o:before {
+  content: "\f196";
 }
 
 /*!
@@ -10949,6 +10926,15 @@ ul.visualNoMarker {
   background: #af0c41;
 }
 
+.app-box.app-box-link > img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin-top: 22px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .app-box-header {
   display: block;
 }
@@ -10969,6 +10955,11 @@ ul.visualNoMarker {
 .app-box-lead {
   display: block;
   margin: 0 0 11px;
+}
+
+.app-box-body {
+  display: block;
+  min-height: 113px;
 }
 
 .app-box-ribbon {
@@ -11041,19 +11032,19 @@ ul.visualNoMarker {
 @media (min-width: 768px) {
   .hero-content {
     padding-bottom: 350px;
-    background: url(../assets/img/hero-sprachschule.png) no-repeat 0 100% transparent;
+    background: url(../../assets/img/hero-sprachschule.png) no-repeat 0 100% transparent;
   }
   body.section-sprachkurse .hero-content {
-    background-image: url(../assets/img/hero-sprachkurse.png);
+    background-image: url(../../assets/img/hero-sprachkurse.png);
   }
   body.section-sommerkurse .hero-content {
-    background-image: url(../assets/img/hero-sommerkurse.png);
+    background-image: url(../../assets/img/hero-sommerkurse.png);
   }
   body.section-sprachreisen .hero-content {
-    background-image: url(../assets/img/hero-sprachreisen.png);
+    background-image: url(../../assets/img/hero-sprachreisen.png);
   }
   body.section-termine-preise .hero-content {
-    background-image: url(../assets/img/hero-terminepreise.png);
+    background-image: url(../../assets/img/hero-terminepreise.png);
   }
 }
 
@@ -11071,7 +11062,7 @@ ul.visualNoMarker {
   margin: 22px auto 22px;
   overflow: hidden;
   text-indent: -3000px;
-  background: 0 0 url(../assets/img/logo-adk.png) no-repeat;
+  background: 0 0 url(../../assets/img/logo-adk.png) no-repeat;
   background-size: 100%;
   border-right: 0px solid #fff;
   border-left: 0px solid #fff;
@@ -11296,7 +11287,7 @@ ul.visualNoMarker {
 .app-footer {
   padding-top: 44px;
   margin-top: 22px;
-  background: url(../assets/img/skyline.png) repeat-x 0 0 transparent;
+  background: url(../../assets/img/skyline.png) repeat-x 0 0 transparent;
 }
 
 .app-footer-content {
@@ -11322,7 +11313,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .app-colophon {
-    background: url(../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
+    background: url(../../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
   }
 }
 
@@ -11338,7 +11329,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .hero-unit-fp-content {
-    background: url(../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
+    background: url(../../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
   }
 }
 
@@ -11498,7 +11489,7 @@ body,
 .app-lp,
 .site-frontpage,
 .portaltype-adk-contentpages-sectionfolder {
-  background: url(../assets/img/lined_paper.png) repeat 0 0px transparent;
+  background: url(../../assets/img/lined_paper.png) repeat 0 0px transparent;
 }
 
 a {

@@ -16,6 +16,11 @@
             text-decoration: none;
             cursor: pointer;
         }
+        > img {
+            .img-responsive();
+            .center-block();
+            margin-top: @line-height-computed;
+        }
     }
 }
 
@@ -38,6 +43,11 @@
 .app-box-lead {
     display: block;
     margin: 0 0 (@line-height-computed / 2);
+}
+
+.app-box-body {
+    display: block;
+    min-height: ceil(@navbar-height * 2.25);
 }
 
 .app-box-ribbon {

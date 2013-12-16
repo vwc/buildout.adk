@@ -83,6 +83,9 @@
                     css:theme-children="#app-signin-content"
                     css:if-content="body.template-login_form" />
             <replace css:content-children="#content-core"
+                    css:theme-children="#app-signin-content"
+                    css:if-content="body.template-login_failed" />
+            <replace css:content-children="#content-core"
                     css:theme-children="#page-content"
                     css:if-content="body.template-logged_out" />
             <replace css:content-children="#content"
@@ -93,13 +96,14 @@
         <drop css:theme="#hero-content"
             css:if-not-content="#page-header" />
 
-        <replace css:content-children="#content"
-            css:theme-children="#content" />
-
         <replace css:content-children="#content-core"
             css:theme-children="#app-frontpage-boxes"
             css:if-content="body.portaltype-adk-contentpages-sectionfolder"
             />
+
+        <replace css:content-children="#content"
+            css:theme-children="#content"
+            css:if-not-content="body.portaltype-adk-contentpages-sectionfolder" />
         
 
         <!-- Status messages not inside #content -->
@@ -115,6 +119,12 @@
         <replace css:content-children="#portal-column-two" css:theme-children="#app-sidebar" />
 
         <!-- Footer -->
+
+        <replace css:theme-children="#footer-box-about"
+            css:content-children="#footer-box-about" />
+
+        <replace css:theme-children="#footer-box-certificates"
+            css:content-children="#footer-box-certificates" />
 
         <replace css:theme-children="#footer-box-quotes"
             css:content-children="#random-quote" />
