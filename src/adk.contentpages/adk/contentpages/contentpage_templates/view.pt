@@ -159,7 +159,6 @@
                         <span class="h3 app-box-title" tal:content="item/Title">Sprachkurse</span>
                     </span>
                     <span class="app-box-lead" tal:content="item/Description" />
-                    <img src="{{ page.base_url }}assets/img/board.jpg" />
                 </a>
                 <div class="app-box-ribbon">
                     <a href="#" tal:attributes="href item/getURL">Mehr</a>
