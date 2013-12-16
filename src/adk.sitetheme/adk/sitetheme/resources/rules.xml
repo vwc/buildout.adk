@@ -97,7 +97,9 @@
             css:theme-children="#content" />
 
         <replace css:content-children="#content-core"
-            css:theme-children="#fp-content" />
+            css:theme-children="#app-frontpage-boxes"
+            css:if-content="body.portaltype-adk-contentpages-sectionfolder"
+            />
         
 
         <!-- Status messages not inside #content -->
