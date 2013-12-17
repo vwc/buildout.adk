@@ -61,6 +61,9 @@
 
         <!-- Site actions -->
         <replace css:content="#actionbar-signup" css:theme="#actionbar-signup" />
+        <!-- Language actions -->
+        <replace css:content-children="#actionbar-language"
+            css:theme-children="#actionbar-language" />
 
         <!-- Global navigation -->
         <replace css:content='#portal-globalnav li' css:theme-children="#main-navigation" />

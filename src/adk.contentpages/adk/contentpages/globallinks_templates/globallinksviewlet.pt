@@ -7,6 +7,20 @@
         i18n:domain="adk.contentpages"
         i18n:translate="">Register</a>
 </div>
+<div id="actionbar-language" class="actionbar-block actionbar-block-language hidden-sm pull-right">
+    <ul class="nav nav-pills">
+        <li><a href="http://augsburger-deutschkurse.de/" id="flag-de" class="language-flag-link"
+                tal:attributes="href python:portal_url + '/de?set_language=de'">DE</a></li>
+        <li><a href="http://adk-german-courses.com/" id="flag-en" class="language-flag-link"
+                tal:attributes="href python:portal_url + '/en?set_language=en'">EN</a></li>
+        <li><a href="http://apprendre-allemand.fr/" id="flag-fr" class="language-flag-link"
+                tal:attributes="href python:portal_url + '/fr?set_language=fr'">FR</a></li>
+        <li><a href="http://studiare-tedesco.it/" id="flag-it" class="language-flag-link"
+                tal:attributes="href python:portal_url + '/it?set_language=it'">IT</a></li>
+        <li><a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link"
+                tal:attributes="href python:portal_url + '/es?set_language=es'">ES</a></li>
+    </ul>
+</div>
 <hr><!-- Content for footer boxes -->
 <div i18n:domain="adk.contentpages">
     <h4>Footer boxes</h4>

@@ -11034,16 +11034,50 @@ ul.visualNoMarker {
     padding-bottom: 350px;
     background: url(../../assets/img/hero-sprachschule.png) no-repeat 0 100% transparent;
   }
-  body.section-sprachkurse .hero-content {
+  .section-sprachkurse .hero-content,
+  .section-language-courses .hero-content {
     background-image: url(../../assets/img/hero-sprachkurse.png);
   }
-  body.section-sommerkurse .hero-content {
+  .section-sprachkurse.subsection-deutsch-intensivkurse .hero-content,
+  .section-language-courses.subsection-deutsch-intensivkurse .hero-content,
+  .section-sprachkurse.subsection-german-intensive-courses .hero-content,
+  .section-language-courses.subsection-german-intensive-courses .hero-content {
+    background-image: url(../../assets/img/hero-deutsch-intensivkurse.png);
+  }
+  .section-sprachkurse.subsection-deutsch-intensiv-plus .hero-content,
+  .section-language-courses.subsection-deutsch-intensiv-plus .hero-content,
+  .section-sprachkurse.subsection-german-intensive-plus .hero-content,
+  .section-language-courses.subsection-german-intensive-plus .hero-content {
+    background-image: url(../../assets/img/hero-deutsch-intensiv-plus.png);
+  }
+  .section-sprachkurse.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
+  .section-language-courses.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
+  .section-sprachkurse.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
+  .section-language-courses.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content {
+    background-image: url(../../assets/img/hero-dsh.png);
+  }
+  .section-sprachkurse.subsection-berufsorientierter-deutschunterricht .hero-content,
+  .section-language-courses.subsection-berufsorientierter-deutschunterricht .hero-content,
+  .section-sprachkurse.subsection-business-german .hero-content,
+  .section-language-courses.subsection-business-german .hero-content {
+    background-image: url(../../assets/img/hero-berufsorientierter-deutschunterricht.png);
+  }
+  .section-sprachkurse.subsection-integrationskurse .hero-content,
+  .section-language-courses.subsection-integrationskurse .hero-content,
+  .section-sprachkurse.subsection-integration-courses .hero-content,
+  .section-language-courses.subsection-integration-courses .hero-content {
+    background-image: url(../../assets/img/hero-integrationskurse.png);
+  }
+  .section-sommerkurse .hero-content,
+  .section-sommer-courses .hero-content {
     background-image: url(../../assets/img/hero-sommerkurse.png);
   }
-  body.section-sprachreisen .hero-content {
+  .section-sprachreisen .hero-content,
+  .section-study-trips .hero-content {
     background-image: url(../../assets/img/hero-sprachreisen.png);
   }
-  body.section-termine-preise .hero-content {
+  .section-termine-preise .hero-content,
+  .section-dates-fees .hero-content {
     background-image: url(../../assets/img/hero-terminepreise.png);
   }
 }
