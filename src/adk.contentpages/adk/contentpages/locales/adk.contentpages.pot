@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-12-10 14:37+0000\n"
+"POT-Creation-Date: 2013-12-17 11:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,19 @@ msgstr ""
 msgid "A sinlge content panel or box"
 msgstr ""
 
-#: ./../contentpage_templates/view.pt:182
+#: ./../globallinks_templates/globallinksviewlet.pt:19
+msgid "ADK Augsburger Deutschkurse - that means learning German in one of the leading private institutes in Germany. We are a certified school."
+msgstr ""
+
+#: ./../globallinks_templates/globallinksviewlet.pt:65
+msgid "AGB"
+msgstr ""
+
+#: ./../globallinks_templates/globallinksviewlet.pt:16
+msgid "About us"
+msgstr ""
+
+#: ./../contentpage_templates/view.pt:181
 msgid "Add block"
 msgstr ""
 
@@ -67,6 +79,10 @@ msgstr ""
 msgid "Attention"
 msgstr ""
 
+#: ./../globallinks_templates/globallinksviewlet.pt:24
+msgid "Being one of the most renowned and surely one of the oldest language schools in Augsburg (founded in 1963), ADK has specialized in teaching German as a foreign language right from the start."
+msgstr ""
+
 #: ./../contentblock.py:54
 #: ./../displaysettings.py:34
 msgid "Block Layout"
@@ -94,8 +110,16 @@ msgstr ""
 msgid "Box Heading Icon"
 msgstr ""
 
+#: ./../globallinks_templates/globallinksviewlet.pt:36
+msgid "Certificates"
+msgstr ""
+
 #: ./../bookingform.py:44
 msgid "City"
+msgstr ""
+
+#: ./../globallinks_templates/globallinksviewlet.pt:59
+msgid "Contact"
 msgstr ""
 
 #: ./../blockaddform.py:32
@@ -136,10 +160,6 @@ msgstr ""
 
 #: ./../bookingform.py:81
 msgid "Date of Birth"
-msgstr ""
-
-#: ./../sectionfolder_templates/view.pt:44
-msgid "Deutsch in Deutschland lernen Sie effektiv und erfolgreich in einem Sprachkurs der Sprachschule ADK Augsburger Deutschkurse"
 msgstr ""
 
 #: ./../displaysettings.py:25
@@ -218,6 +238,10 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
+#: ./../globallinks_templates/globallinksviewlet.pt:62
+msgid "Imprint"
+msgstr ""
+
 #: ./../contentbox.py:22
 msgid "Info"
 msgstr ""
@@ -264,6 +288,14 @@ msgstr ""
 msgid "Optional extra information displayed along the section title"
 msgstr ""
 
+#: ./../globallinks_templates/globallinksviewlet.pt:42
+msgid "Our high quality standards have been certified by CERT-IT."
+msgstr ""
+
+#: ./../globallinks_templates/globallinksviewlet.pt:39
+msgid "Our language school has recieved both the 2011 and 2012 Excelence Award by the language course agency languagecourse.net."
+msgstr ""
+
 #: ./../contentpage.py:36
 #: ./../editpagesubheader.py:29
 msgid "Page Teaser"
@@ -292,7 +324,7 @@ msgstr ""
 msgid "Process has been cancelled."
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:23
+#: ./../globallinks_templates/globallinksviewlet.pt:5
 msgid "Register"
 msgstr ""
 
