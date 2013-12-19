@@ -50,9 +50,16 @@ module.exports = function (grunt) {
                     'bower_components/jquery/jquery.js',
                     'bower_components/modernizr/modernizr.js',
                     'bower_components/bootstrap/dist/js/bootstrap.js',
-                    'js/main.js'
+                    'js/application.js'
                 ],
                 dest: 'dist/js/<%= pkg.name %>.js'
+            },
+            theme: {
+                src: [
+                    'bower_components/bootstrap/dist/js/bootstrap.js',
+                    'js/application.js'
+                ],
+                dest: 'dist/js/application.js'
             }
         },
 
