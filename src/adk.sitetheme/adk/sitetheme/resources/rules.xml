@@ -123,6 +123,9 @@
 
         <!-- Footer -->
 
+        <replace css:theme-children="#colophon-actions"
+            css:content-children="#colophon-actions" />
+
         <replace css:theme-children="#footer-box-about"
             css:content-children="#footer-box-about" />
 

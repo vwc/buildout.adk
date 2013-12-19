@@ -11035,49 +11035,166 @@ ul.visualNoMarker {
     background: url(../../assets/img/hero-sprachschule.png) no-repeat 0 100% transparent;
   }
   .section-sprachkurse .hero-content,
-  .section-language-courses .hero-content {
+  .section-language-courses .hero-content,
+  .section-corsi-di-tedesco .hero-content,
+  .section-cours-dallemand .hero-content,
+  .section-nuestros-cursos .hero-content {
     background-image: url(../../assets/img/hero-sprachkurse.png);
   }
   .section-sprachkurse.subsection-deutsch-intensivkurse .hero-content,
   .section-language-courses.subsection-deutsch-intensivkurse .hero-content,
+  .section-corsi-di-tedesco.subsection-deutsch-intensivkurse .hero-content,
+  .section-cours-dallemand.subsection-deutsch-intensivkurse .hero-content,
+  .section-nuestros-cursos.subsection-deutsch-intensivkurse .hero-content,
   .section-sprachkurse.subsection-german-intensive-courses .hero-content,
-  .section-language-courses.subsection-german-intensive-courses .hero-content {
+  .section-language-courses.subsection-german-intensive-courses .hero-content,
+  .section-corsi-di-tedesco.subsection-german-intensive-courses .hero-content,
+  .section-cours-dallemand.subsection-german-intensive-courses .hero-content,
+  .section-nuestros-cursos.subsection-german-intensive-courses .hero-content,
+  .section-sprachkurse.subsection-corsi-intensivi-di-tedesco .hero-content,
+  .section-language-courses.subsection-corsi-intensivi-di-tedesco .hero-content,
+  .section-corsi-di-tedesco.subsection-corsi-intensivi-di-tedesco .hero-content,
+  .section-cours-dallemand.subsection-corsi-intensivi-di-tedesco .hero-content,
+  .section-nuestros-cursos.subsection-corsi-intensivi-di-tedesco .hero-content,
+  .section-sprachkurse.subsection-cours-intensifs-dallemand .hero-content,
+  .section-language-courses.subsection-cours-intensifs-dallemand .hero-content,
+  .section-corsi-di-tedesco.subsection-cours-intensifs-dallemand .hero-content,
+  .section-cours-dallemand.subsection-cours-intensifs-dallemand .hero-content,
+  .section-nuestros-cursos.subsection-cours-intensifs-dallemand .hero-content,
+  .section-sprachkurse.subsection-cursos-intensivos .hero-content,
+  .section-language-courses.subsection-cursos-intensivos .hero-content,
+  .section-corsi-di-tedesco.subsection-cursos-intensivos .hero-content,
+  .section-cours-dallemand.subsection-cursos-intensivos .hero-content,
+  .section-nuestros-cursos.subsection-cursos-intensivos .hero-content {
     background-image: url(../../assets/img/hero-deutsch-intensivkurse.png);
   }
   .section-sprachkurse.subsection-deutsch-intensiv-plus .hero-content,
   .section-language-courses.subsection-deutsch-intensiv-plus .hero-content,
+  .section-corsi-di-tedesco.subsection-deutsch-intensiv-plus .hero-content,
+  .section-cours-dallemand.subsection-deutsch-intensiv-plus .hero-content,
+  .section-nuestros-cursos.subsection-deutsch-intensiv-plus .hero-content,
   .section-sprachkurse.subsection-german-intensive-plus .hero-content,
-  .section-language-courses.subsection-german-intensive-plus .hero-content {
+  .section-language-courses.subsection-german-intensive-plus .hero-content,
+  .section-corsi-di-tedesco.subsection-german-intensive-plus .hero-content,
+  .section-cours-dallemand.subsection-german-intensive-plus .hero-content,
+  .section-nuestros-cursos.subsection-german-intensive-plus .hero-content,
+  .section-sprachkurse.subsection-corsi-intensivi-plus .hero-content,
+  .section-language-courses.subsection-corsi-intensivi-plus .hero-content,
+  .section-corsi-di-tedesco.subsection-corsi-intensivi-plus .hero-content,
+  .section-cours-dallemand.subsection-corsi-intensivi-plus .hero-content,
+  .section-nuestros-cursos.subsection-corsi-intensivi-plus .hero-content,
+  .section-sprachkurse.subsection-cours-intensif-plus .hero-content,
+  .section-language-courses.subsection-cours-intensif-plus .hero-content,
+  .section-corsi-di-tedesco.subsection-cours-intensif-plus .hero-content,
+  .section-cours-dallemand.subsection-cours-intensif-plus .hero-content,
+  .section-nuestros-cursos.subsection-cours-intensif-plus .hero-content,
+  .section-sprachkurse.subsection-curso-intensivo-plus .hero-content,
+  .section-language-courses.subsection-curso-intensivo-plus .hero-content,
+  .section-corsi-di-tedesco.subsection-curso-intensivo-plus .hero-content,
+  .section-cours-dallemand.subsection-curso-intensivo-plus .hero-content,
+  .section-nuestros-cursos.subsection-curso-intensivo-plus .hero-content {
     background-image: url(../../assets/img/hero-deutsch-intensiv-plus.png);
   }
   .section-sprachkurse.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
   .section-language-courses.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
+  .section-corsi-di-tedesco.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
+  .section-cours-dallemand.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
+  .section-nuestros-cursos.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
   .section-sprachkurse.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
-  .section-language-courses.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content {
+  .section-language-courses.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
+  .section-corsi-di-tedesco.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
+  .section-cours-dallemand.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
+  .section-nuestros-cursos.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
+  .section-sprachkurse.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
+  .section-language-courses.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
+  .section-corsi-di-tedesco.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
+  .section-cours-dallemand.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
+  .section-nuestros-cursos.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
+  .section-sprachkurse.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
+  .section-language-courses.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
+  .section-corsi-di-tedesco.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
+  .section-cours-dallemand.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
+  .section-nuestros-cursos.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
+  .section-sprachkurse.subsection-preparacion-para-examenes .hero-content,
+  .section-language-courses.subsection-preparacion-para-examenes .hero-content,
+  .section-corsi-di-tedesco.subsection-preparacion-para-examenes .hero-content,
+  .section-cours-dallemand.subsection-preparacion-para-examenes .hero-content,
+  .section-nuestros-cursos.subsection-preparacion-para-examenes .hero-content {
     background-image: url(../../assets/img/hero-dsh.png);
   }
   .section-sprachkurse.subsection-berufsorientierter-deutschunterricht .hero-content,
   .section-language-courses.subsection-berufsorientierter-deutschunterricht .hero-content,
+  .section-corsi-di-tedesco.subsection-berufsorientierter-deutschunterricht .hero-content,
+  .section-cours-dallemand.subsection-berufsorientierter-deutschunterricht .hero-content,
+  .section-nuestros-cursos.subsection-berufsorientierter-deutschunterricht .hero-content,
   .section-sprachkurse.subsection-business-german .hero-content,
-  .section-language-courses.subsection-business-german .hero-content {
+  .section-language-courses.subsection-business-german .hero-content,
+  .section-corsi-di-tedesco.subsection-business-german .hero-content,
+  .section-cours-dallemand.subsection-business-german .hero-content,
+  .section-nuestros-cursos.subsection-business-german .hero-content,
+  .section-sprachkurse.subsection-corsi-per-le-aziende .hero-content,
+  .section-language-courses.subsection-corsi-per-le-aziende .hero-content,
+  .section-corsi-di-tedesco.subsection-corsi-per-le-aziende .hero-content,
+  .section-cours-dallemand.subsection-corsi-per-le-aziende .hero-content,
+  .section-nuestros-cursos.subsection-corsi-per-le-aziende .hero-content,
+  .section-sprachkurse.subsection-cours-dallemand-pour-professionnels .hero-content,
+  .section-language-courses.subsection-cours-dallemand-pour-professionnels .hero-content,
+  .section-corsi-di-tedesco.subsection-cours-dallemand-pour-professionnels .hero-content,
+  .section-cours-dallemand.subsection-cours-dallemand-pour-professionnels .hero-content,
+  .section-nuestros-cursos.subsection-cours-dallemand-pour-professionnels .hero-content,
+  .section-sprachkurse.subsection-cursos-para-trabajadores-y-empresas .hero-content,
+  .section-language-courses.subsection-cursos-para-trabajadores-y-empresas .hero-content,
+  .section-corsi-di-tedesco.subsection-cursos-para-trabajadores-y-empresas .hero-content,
+  .section-cours-dallemand.subsection-cursos-para-trabajadores-y-empresas .hero-content,
+  .section-nuestros-cursos.subsection-cursos-para-trabajadores-y-empresas .hero-content {
     background-image: url(../../assets/img/hero-berufsorientierter-deutschunterricht.png);
   }
   .section-sprachkurse.subsection-integrationskurse .hero-content,
   .section-language-courses.subsection-integrationskurse .hero-content,
+  .section-corsi-di-tedesco.subsection-integrationskurse .hero-content,
+  .section-cours-dallemand.subsection-integrationskurse .hero-content,
+  .section-nuestros-cursos.subsection-integrationskurse .hero-content,
   .section-sprachkurse.subsection-integration-courses .hero-content,
-  .section-language-courses.subsection-integration-courses .hero-content {
+  .section-language-courses.subsection-integration-courses .hero-content,
+  .section-corsi-di-tedesco.subsection-integration-courses .hero-content,
+  .section-cours-dallemand.subsection-integration-courses .hero-content,
+  .section-nuestros-cursos.subsection-integration-courses .hero-content,
+  .section-sprachkurse.subsection-corsi-dintegrazione .hero-content,
+  .section-language-courses.subsection-corsi-dintegrazione .hero-content,
+  .section-corsi-di-tedesco.subsection-corsi-dintegrazione .hero-content,
+  .section-cours-dallemand.subsection-corsi-dintegrazione .hero-content,
+  .section-nuestros-cursos.subsection-corsi-dintegrazione .hero-content,
+  .section-sprachkurse.subsection-cours-dintegration .hero-content,
+  .section-language-courses.subsection-cours-dintegration .hero-content,
+  .section-corsi-di-tedesco.subsection-cours-dintegration .hero-content,
+  .section-cours-dallemand.subsection-cours-dintegration .hero-content,
+  .section-nuestros-cursos.subsection-cours-dintegration .hero-content,
+  .section-sprachkurse.subsection-cursos-de-integracion .hero-content,
+  .section-language-courses.subsection-cursos-de-integracion .hero-content,
+  .section-corsi-di-tedesco.subsection-cursos-de-integracion .hero-content,
+  .section-cours-dallemand.subsection-cursos-de-integracion .hero-content,
+  .section-nuestros-cursos.subsection-cursos-de-integracion .hero-content {
     background-image: url(../../assets/img/hero-integrationskurse.png);
   }
   .section-sommerkurse .hero-content,
-  .section-sommer-courses .hero-content {
+  .section-sommer-courses .hero-content,
+  .section-vacanza-studio-all-estero .hero-content,
+  .section-sejour-linguistique-pour-les-ados .hero-content,
+  .section-cursos-de-aleman-y-programa .hero-content {
     background-image: url(../../assets/img/hero-sommerkurse.png);
   }
   .section-sprachreisen .hero-content,
-  .section-study-trips .hero-content {
+  .section-study-trips .hero-content,
+  .section-corsi-per-classi-scholastice .hero-content,
+  .section-voyages-scolaires .hero-content,
+  .section-aprende-mientras-viajas .hero-content {
     background-image: url(../../assets/img/hero-sprachreisen.png);
   }
   .section-termine-preise .hero-content,
-  .section-dates-fees .hero-content {
+  .section-dates-fees .hero-content,
+  .section-date-e-prezzi .hero-content,
+  .section-dates-e-prix .hero-content,
+  .section-fechas-y-precios .hero-content {
     background-image: url(../../assets/img/hero-terminepreise.png);
   }
 }

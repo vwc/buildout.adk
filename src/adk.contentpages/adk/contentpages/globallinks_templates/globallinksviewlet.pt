@@ -78,6 +78,6 @@
         i18n:translate="">Imprint</a> &ndash;
     <a class="btn btn-default" href="#"
         tal:attributes="href python:root_url + '/agb'"
-        i18n:translate="">AGB</a>
+        i18n:translate="">Terms and Conditions</a>
 </div>
 </tal:block>
