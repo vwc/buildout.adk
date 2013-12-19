@@ -70,13 +70,13 @@
 </div> <!-- / Footer boxes -->
 <div class="footer-actionbar" id="colophon-actions"
     i18n:domain="adk.contentpages">
-    <a class="btn btn-default" href="#"
+    <a href="#"
         tal:attributes="href python:root_url + '/contact'"
         i18n:translate="">Contact</a> &ndash;
-    <a class="btn btn-default" href="#"
+    <a  href="#"
         tal:attributes="href python:root_url + '/imprint'"
         i18n:translate="">Imprint</a> &ndash;
-    <a class="btn btn-default" href="#"
+    <a  href="#"
         tal:attributes="href python:root_url + '/agb'"
         i18n:translate="">Terms and Conditions</a>
 </div>
