@@ -10990,7 +10990,8 @@ body,
 }
 
 a {
-  transition: color 0.25s linear;
+  -webkit-transition: color 0.25s linear;
+          transition: color 0.25s linear;
 }
 
 .image-left,

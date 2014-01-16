@@ -117,6 +117,9 @@
         <replace css:theme-children="#footer-box-quotes"
             css:content-children="#random-quote" />
 
+        <replace css:theme-children="#colophon-actions"
+            css:content-children="#colophon-actions" />
+
         <drop css:theme="#app-fonts-dev" />
     
     </rules>
