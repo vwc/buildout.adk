@@ -1,23 +1,5 @@
 <tal:block tal:define="portal_url viewlet/portal_url;
                        root_url viewlet/get_root_url">
-<div id="footer-navbar">
-    <ul class="nav nav-pills nav-stacked" id="footer-navbar">
-        <li><a href="/en-en/downloads-en"
-                tal:attributes="href python:portal_url + '/downloads'"
-                i18n:translate="">
-                Downloads</a>
-        </li>
-        <li><a href="/en-en/links-1-en"
-                tal:attributes="href python:portal_url + '/links'"
-                i18n:translate="">Links</a></li>
-        <li><a href="/en-en/fotos-1-en"
-                tal:attributes="href python:portal_url + '/imprint'"
-                i18n:translate="">Site Notice</a></li>
-        <li><a href="/en-en/agb-1-en"
-                tal:attributes="href python:portal_url + '/en/terms-and-conditions'"
-                i18n:translate="">Terms &amp; Conditions</a></li>
-    </ul>
-</div>
 <hr>
 <div class="actionbar-signup" id="actionbar-signup">
     <a class="btn btn-default" href="#"
@@ -25,16 +7,77 @@
         i18n:domain="adk.contentpages"
         i18n:translate="">Register</a>
 </div>
+<div id="actionbar-language" class="actionbar-block actionbar-block-language hidden-sm pull-right">
+    <ul class="nav nav-pills">
+        <li><a href="http://augsburger-deutschkurse.de/" id="flag-de" class="language-flag-link"
+                tal:attributes="href python:portal_url + '/de?set_language=de'">DE</a></li>
+        <li><a href="http://adk-german-courses.com/" id="flag-en" class="language-flag-link"
+                tal:attributes="href python:portal_url + '/en?set_language=en'">EN</a></li>
+        <li><a href="http://apprendre-allemand.fr/" id="flag-fr" class="language-flag-link"
+                tal:attributes="href python:portal_url + '/fr?set_language=fr'">FR</a></li>
+        <li><a href="http://studiare-tedesco.it/" id="flag-it" class="language-flag-link"
+                tal:attributes="href python:portal_url + '/it?set_language=it'">IT</a></li>
+        <li><a href="http://estudiar-aleman.es/" id="flag-es" class="language-flag-link"
+                tal:attributes="href python:portal_url + '/es?set_language=es'">ES</a></li>
+    </ul>
+</div>
+<hr><!-- Content for footer boxes -->
+<div i18n:domain="adk.contentpages">
+    <h4>Footer boxes</h4>
+    <div id="footer-box-about">
+        <div class="footer-box-header">
+            <i class="fa fa-globe fa-2x pull-right"></i>
+            <h4 i18n:translate="">About us</h4>
+        </div>
+        <div class="footer-box-content">
+            <p class="h5" i18n:translate="">
+                ADK Augsburger Deutschkurse - that means learning German in one
+                of the leading private institutes in Germany.
+                We are a certified school.
+            </p>
+            <p i18n:translate="">
+                Being one of the most renowned and surely one of the oldest
+                language schools in Augsburg (founded in 1963),
+                ADK has specialized in teaching German as a foreign language
+                right from the start.
+            </p>
+            <a class="btn btn-default btn-lg" href="/">Mehr</a>
+        </div>
+    </div>
+    <div class="footer-box" id="footer-box-certificates">
+        <div class="footer-box-header">
+            <i class="fa fa-thumbs-o-up fa-2x pull-right"></i>
+            <h4 i18n:translate="">Certificates</h4>
+        </div>
+        <div class="footer-box-content">
+            <p i18n:translate="">Our language school has recieved both the 2011
+                and 2012 Excelence Award by the language course agency
+                languagecourse.net.</p>
+            <p i18n:translate="">Our high quality standards have been certified by
+                CERT-IT.</p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <img class="img-responsive"
+                        src="/++theme++adk.sitetheme/assets/img/logo-certit.jpg" />
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <img class="img-responsive"
+                        src="/++theme++adk.sitetheme/assets/img/excellence-award.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- / Footer boxes -->
 <div class="footer-actionbar" id="colophon-actions"
     i18n:domain="adk.contentpages">
-    <a class="btn btn-default" href="#"
+    <a href="#"
         tal:attributes="href python:root_url + '/contact'"
         i18n:translate="">Contact</a> &ndash;
-    <a class="btn btn-default" href="#"
+    <a  href="#"
         tal:attributes="href python:root_url + '/imprint'"
         i18n:translate="">Imprint</a> &ndash;
-    <a class="btn btn-default" href="#"
+    <a  href="#"
         tal:attributes="href python:root_url + '/agb'"
-        i18n:translate="">AGB</a>
+        i18n:translate="">Terms and Conditions</a>
 </div>
 </tal:block>

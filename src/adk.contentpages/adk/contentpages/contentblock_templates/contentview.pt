@@ -21,8 +21,10 @@
               <tal:items tal:repeat="item view/contentboxes">
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <i tal:attributes="class item/selected_icon"></i>
-                    <h4 class="panel-title" tal:content="item/Title" />
+                    <h4 class="panel-title">
+                      <i tal:attributes="class string:fa ${item/selected_icon}"></i>
+                      <span tal:content="item/Title" />
+                    </h4>
                   </div>
                   <div class="panel-body">
                     <p tal:content="item/Description" />

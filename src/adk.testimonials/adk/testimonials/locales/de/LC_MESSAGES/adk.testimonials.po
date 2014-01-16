@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: adk.testimonials\n"
+"POT-Creation-Date: 2013-11-29 16:07+0000\n"
+"PO-Revision-Date: 2013-12-16 13:59+0100\n"
+"Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
+"Language-Team: VW Language Team <cb@vorwaerts-werbung.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: de\n"
+"Language-Name: German\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: adk.testimonials\n"
+
+#: ./../profiles/default/types/adk.testimonials.testimonial.xml
+msgid "A sinlge customer statement"
+msgstr "Ein einzelne Kundenmeinung"
+
+#: ./../testimonial.py:29
+msgid "Country"
+msgstr "Land"
+
+#: ./../quotesviewlet_templates/customerquotesviewlet.pt:6
+msgid "Customer quotes"
+msgstr "Kundenmeinungen"
+
+#: ./../profiles/default/types/adk.testimonials.testimonials.xml
+msgid "Folder to hold testimonials"
+msgstr "Ein Sammelordner für KUndenmeinungen/Testimonials"
+
+#: ./../testimonial.py:25
+msgid "Fullname"
+msgstr "Vollständiger Name"
+
+#: ./../quotesviewlet_templates/customerquotesviewlet.pt:18
+msgid "Read more"
+msgstr "mehr"
+
+#: ./../testimonial.py:33
+msgid "Statement"
+msgstr "Meinung/Aussage"
+
+#: ./../profiles/default/types/adk.testimonials.testimonial.xml
+msgid "Testimonial"
+msgstr "Testimonial"
+
+#: ./../profiles/default/types/adk.testimonials.testimonials.xml
+msgid "Testimonials"
+msgstr "Kundenmeinungen"
+

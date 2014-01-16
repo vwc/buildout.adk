@@ -1,0 +1,55 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2013-12-16 12:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: adk.testimonials\n"
+
+#: ./../profiles/default/types/adk.testimonials.testimonial.xml
+msgid "A sinlge customer statement"
+msgstr ""
+
+#: ./../testimonial.py:29
+msgid "Country"
+msgstr ""
+
+#: ./../quotesviewlet_templates/customerquotesviewlet.pt:6
+msgid "Customer quotes"
+msgstr ""
+
+#: ./../profiles/default/types/adk.testimonials.testimonials.xml
+msgid "Folder to hold testimonials"
+msgstr ""
+
+#: ./../testimonial.py:25
+msgid "Fullname"
+msgstr ""
+
+#: ./../quotesviewlet_templates/customerquotesviewlet.pt:18
+msgid "Read more"
+msgstr ""
+
+#: ./../testimonial.py:33
+msgid "Statement"
+msgstr ""
+
+#: ./../profiles/default/types/adk.testimonials.testimonial.xml
+msgid "Testimonial"
+msgstr ""
+
+#: ./../profiles/default/types/adk.testimonials.testimonials.xml
+msgid "Testimonials"
+msgstr ""
+

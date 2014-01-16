@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: 2013-12-10 14:37+0000\n"
-"PO-Revision-Date: 2013-12-10 16:12+0100\n"
+"POT-Creation-Date: 2013-12-17 11:41+0000\n"
+"PO-Revision-Date: 2013-12-17 12:49+0100\n"
 "Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
 "Language-Team: VW Language Team <hallo@vorwaerts-werbung.de>\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,19 @@ msgstr "Das Formular wurde erfolgreich ausgeführt."
 msgid "A sinlge content panel or box"
 msgstr "Ein einzelner Inhaltsblock oder eine einzelne Inhaltsbox"
 
-#: ./../contentpage_templates/view.pt:182
+#: ./../globallinks_templates/globallinksviewlet.pt:19
+msgid "ADK Augsburger Deutschkurse - that means learning German in one of the leading private institutes in Germany. We are a certified school."
+msgstr "ADK in Augsburg, Bayern ist die Sprachschule, um in Deutschland Deutsch zu lernen. Lernen Sie Deutsch in einem Intensivkurs, bereiten Sie sich auf deutsche Sprachprüfungen vor oder verbessern Sie Ihr berufsbezogenes Deutsch."
+
+#: ./../globallinks_templates/globallinksviewlet.pt:65
+msgid "AGB"
+msgstr "AGB"
+
+#: ./../globallinks_templates/globallinksviewlet.pt:16
+msgid "About us"
+msgstr "Über uns"
+
+#: ./../contentpage_templates/view.pt:181
 msgid "Add block"
 msgstr "Inhaltsblock hinzufügen"
 
@@ -64,6 +76,10 @@ msgstr "Alternativer Titel, um den Objekttitel und den angezeigten Titel zu tren
 msgid "Attention"
 msgstr "Vorsicht"
 
+#: ./../globallinks_templates/globallinksviewlet.pt:24
+msgid "Being one of the most renowned and surely one of the oldest language schools in Augsburg (founded in 1963), ADK has specialized in teaching German as a foreign language right from the start."
+msgstr "ADK ist ein \"Familienunternehmen\" unter persönlicher Leitung der Inhaber. Unbürokratisch, flexibel und persönlich - so ist hier der Service. Das unterscheidet ADK von großen Schulen."
+
 #: ./../contentblock.py:54
 #: ./../displaysettings.py:34
 msgid "Block Layout"
@@ -91,9 +107,17 @@ msgstr "Textinhalt der Infobox"
 msgid "Box Heading Icon"
 msgstr "Icon für den Kopf der Infobox"
 
+#: ./../globallinks_templates/globallinksviewlet.pt:36
+msgid "Certificates"
+msgstr "Zertifikate"
+
 #: ./../bookingform.py:44
 msgid "City"
 msgstr "Ort"
+
+#: ./../globallinks_templates/globallinksviewlet.pt:59
+msgid "Contact"
+msgstr "Kontakt"
 
 #: ./../blockaddform.py:32
 #: ./../blockeditform.py:29
@@ -134,10 +158,6 @@ msgstr "DSH Vorbereitungskurs"
 #: ./../bookingform.py:81
 msgid "Date of Birth"
 msgstr "Geburtsdatum"
-
-#: ./../sectionfolder_templates/view.pt:44
-msgid "Deutsch in Deutschland lernen Sie effektiv und erfolgreich in einem Sprachkurs der Sprachschule ADK Augsburger Deutschkurse"
-msgstr "Deutsch in Deutschland lernen Sie effektiv und erfolgreich in einem Sprachkurs der Sprachschule ADK Augsburger Deutschkurse"
 
 #: ./../displaysettings.py:25
 msgid "Display Settings"
@@ -215,6 +235,10 @@ msgstr "Hiermit bestätige ich die Richtigkeit und Vollständigkeit meiner Angab
 msgid "Image"
 msgstr "Bild"
 
+#: ./../globallinks_templates/globallinksviewlet.pt:62
+msgid "Imprint"
+msgstr "Impressum"
+
 #: ./../contentbox.py:22
 msgid "Info"
 msgstr "Information"
@@ -261,6 +285,14 @@ msgstr "Beruf"
 msgid "Optional extra information displayed along the section title"
 msgstr "Optionale Zusatzinformationen, die mit dem Titel dieses Abschnittes angezeigt werden soll"
 
+#: ./../globallinks_templates/globallinksviewlet.pt:42
+msgid "Our high quality standards have been certified by CERT-IT."
+msgstr "Der hohe Qualitätsstandard unserer Schule ist durch die Zertifizierungsstelle CERT-IT anerkannt."
+
+#: ./../globallinks_templates/globallinksviewlet.pt:39
+msgid "Our language school has recieved both the 2011 and 2012 Excelence Award by the language course agency languagecourse.net."
+msgstr "Unser Sprachinstitut wurde 2011 und 2012 mit dem Excellence Award der Sprachreiseagentur languagecourse.net ausgezeichnet."
+
 #: ./../contentpage.py:36
 #: ./../editpagesubheader.py:29
 msgid "Page Teaser"
@@ -289,7 +321,7 @@ msgstr "Privatunterricht"
 msgid "Process has been cancelled."
 msgstr "Der Vorgang wurde abgebrochen"
 
-#: ./../globallinks_templates/globallinksviewlet.pt:23
+#: ./../globallinks_templates/globallinksviewlet.pt:5
 msgid "Register"
 msgstr "Anmelden"
 

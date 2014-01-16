@@ -50,9 +50,16 @@ module.exports = function (grunt) {
                     'bower_components/jquery/jquery.js',
                     'bower_components/modernizr/modernizr.js',
                     'bower_components/bootstrap/dist/js/bootstrap.js',
-                    'js/main.js'
+                    'js/application.js'
                 ],
                 dest: 'dist/js/<%= pkg.name %>.js'
+            },
+            theme: {
+                src: [
+                    'bower_components/bootstrap/dist/js/bootstrap.js',
+                    'js/application.js'
+                ],
+                dest: 'dist/js/application.js'
             }
         },
 
@@ -217,6 +224,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-html-validation');
+    grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-recess');
     grunt.loadNpmTasks('grunt-sed');
@@ -241,19 +250,19 @@ module.exports = function (grunt) {
     grunt.registerTask('test', testSubtasks);
 
     // JS distribution task.
-    grunt.registerTask('dist-js', ['concat', 'uglify']);
+    grunt.registerTask('dist-js', ['concat', 'newer:uglify']);
 
     // CSS distribution task.
     grunt.registerTask('dist-css', ['recess']);
 
     // Assets distribution task.
-    grunt.registerTask('dist-assets', ['copy', 'imagemin']);
+    grunt.registerTask('dist-assets', ['newer:copy', 'newer:imagemin']);
 
     // Cache buster distribution task.
     grunt.registerTask('dist-cb', ['rev']);
 
     // Template distribution task.
-    grunt.registerTask('dist-html', ['jekyll:theme', 'copy-templates', 'sed']);
+    grunt.registerTask('dist-html', ['newer:jekyll:theme', 'copy-templates', 'newer:sed']);
 
     // Full distribution task.
     grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js', 'dist-html', 'dist-assets']);
