@@ -10532,14 +10532,14 @@ ul.visualNoMarker {
 @media (min-width: 768px) {
   .hero-content {
     padding-bottom: 350px;
-    background: url(../../assets/img/hero-sprachschule.png) no-repeat 0 100% transparent;
+    background: url(../assets/img/hero-sprachschule.png) no-repeat 0 100% transparent;
   }
   .section-sprachkurse .hero-content,
   .section-language-courses .hero-content,
   .section-corsi-di-tedesco .hero-content,
   .section-cours-dallemand .hero-content,
   .section-nuestros-cursos .hero-content {
-    background-image: url(../../assets/img/hero-sprachkurse.png);
+    background-image: url(../assets/img/hero-sprachkurse.png);
   }
   .section-sprachkurse.subsection-deutsch-intensivkurse .hero-content,
   .section-language-courses.subsection-deutsch-intensivkurse .hero-content,
@@ -10566,7 +10566,7 @@ ul.visualNoMarker {
   .section-corsi-di-tedesco.subsection-cursos-intensivos .hero-content,
   .section-cours-dallemand.subsection-cursos-intensivos .hero-content,
   .section-nuestros-cursos.subsection-cursos-intensivos .hero-content {
-    background-image: url(../../assets/img/hero-deutsch-intensivkurse.png);
+    background-image: url(../assets/img/hero-deutsch-intensivkurse.png);
   }
   .section-sprachkurse.subsection-deutsch-intensiv-plus .hero-content,
   .section-language-courses.subsection-deutsch-intensiv-plus .hero-content,
@@ -10593,7 +10593,7 @@ ul.visualNoMarker {
   .section-corsi-di-tedesco.subsection-curso-intensivo-plus .hero-content,
   .section-cours-dallemand.subsection-curso-intensivo-plus .hero-content,
   .section-nuestros-cursos.subsection-curso-intensivo-plus .hero-content {
-    background-image: url(../../assets/img/hero-deutsch-intensiv-plus.png);
+    background-image: url(../assets/img/hero-deutsch-intensiv-plus.png);
   }
   .section-sprachkurse.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
   .section-language-courses.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
@@ -10620,7 +10620,7 @@ ul.visualNoMarker {
   .section-corsi-di-tedesco.subsection-preparacion-para-examenes .hero-content,
   .section-cours-dallemand.subsection-preparacion-para-examenes .hero-content,
   .section-nuestros-cursos.subsection-preparacion-para-examenes .hero-content {
-    background-image: url(../../assets/img/hero-dsh.png);
+    background-image: url(../assets/img/hero-dsh.png);
   }
   .section-sprachkurse.subsection-berufsorientierter-deutschunterricht .hero-content,
   .section-language-courses.subsection-berufsorientierter-deutschunterricht .hero-content,
@@ -10647,7 +10647,7 @@ ul.visualNoMarker {
   .section-corsi-di-tedesco.subsection-cursos-para-trabajadores-y-empresas .hero-content,
   .section-cours-dallemand.subsection-cursos-para-trabajadores-y-empresas .hero-content,
   .section-nuestros-cursos.subsection-cursos-para-trabajadores-y-empresas .hero-content {
-    background-image: url(../../assets/img/hero-berufsorientierter-deutschunterricht.png);
+    background-image: url(../assets/img/hero-berufsorientierter-deutschunterricht.png);
   }
   .section-sprachkurse.subsection-integrationskurse .hero-content,
   .section-language-courses.subsection-integrationskurse .hero-content,
@@ -10674,28 +10674,28 @@ ul.visualNoMarker {
   .section-corsi-di-tedesco.subsection-cursos-de-integracion .hero-content,
   .section-cours-dallemand.subsection-cursos-de-integracion .hero-content,
   .section-nuestros-cursos.subsection-cursos-de-integracion .hero-content {
-    background-image: url(../../assets/img/hero-integrationskurse.png);
+    background-image: url(../assets/img/hero-integrationskurse.png);
   }
   .section-sommerkurse .hero-content,
   .section-sommer-courses .hero-content,
   .section-vacanza-studio-all-estero .hero-content,
   .section-sejour-linguistique-pour-les-ados .hero-content,
   .section-cursos-de-aleman-y-programa .hero-content {
-    background-image: url(../../assets/img/hero-sommerkurse.png);
+    background-image: url(../assets/img/hero-sommerkurse.png);
   }
   .section-sprachreisen .hero-content,
   .section-study-trips .hero-content,
   .section-corsi-per-classi-scholastice .hero-content,
   .section-voyages-scolaires .hero-content,
   .section-aprende-mientras-viajas .hero-content {
-    background-image: url(../../assets/img/hero-sprachreisen.png);
+    background-image: url(../assets/img/hero-sprachreisen.png);
   }
   .section-termine-preise .hero-content,
   .section-dates-fees .hero-content,
   .section-date-e-prezzi .hero-content,
   .section-dates-e-prix .hero-content,
   .section-fechas-y-precios .hero-content {
-    background-image: url(../../assets/img/hero-terminepreise.png);
+    background-image: url(../assets/img/hero-terminepreise.png);
   }
 }
 
@@ -10713,7 +10713,7 @@ ul.visualNoMarker {
   margin: 22px auto 22px;
   overflow: hidden;
   text-indent: -3000px;
-  background: 0 0 url(../../assets/img/logo-adk.png) no-repeat;
+  background: 0 0 url(../assets/img/logo-adk.png) no-repeat;
   background-size: 100%;
   border-right: 0px solid #fff;
   border-left: 0px solid #fff;
@@ -10952,7 +10952,7 @@ ul.visualNoMarker {
 .app-footer {
   padding-top: 44px;
   margin-top: 22px;
-  background: url(../../assets/img/skyline.png) repeat-x 0 0 transparent;
+  background: url(../assets/img/skyline.png) repeat-x 0 0 transparent;
 }
 
 .app-footer-content {
@@ -10978,7 +10978,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .app-colophon {
-    background: url(../../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
+    background: url(../assets/img/brand-globe.png) no-repeat 50% 50% transparent;
   }
 }
 
@@ -10994,7 +10994,7 @@ ul.visualNoMarker {
 
 @media screen and (min-width: 992px) {
   .hero-unit-fp-content {
-    background: url(../../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
+    background: url(../assets/img/speech-bubbles.png) no-repeat 100% 0 transparent;
   }
 }
 
@@ -11151,7 +11151,7 @@ body,
 .app-lp,
 .site-frontpage,
 .portaltype-adk-contentpages-sectionfolder {
-  background: url(../../assets/img/lined_paper.png) repeat 0 0px transparent;
+  background: url(../assets/img/lined_paper.png) repeat 0 0px transparent;
 }
 
 a {
