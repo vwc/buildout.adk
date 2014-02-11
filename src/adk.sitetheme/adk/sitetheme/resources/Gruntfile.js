@@ -42,7 +42,7 @@ module.exports = function (grunt) {
 
         concat: {
             options: {
-                banner: '<%= banner %><%= jqueryCheck %>',
+                banner: '<%= banner %>',
                 stripBanners: false
             },
             dist: {
@@ -73,20 +73,38 @@ module.exports = function (grunt) {
             }
         },
 
-        recess: {
-            options: {
-                compile: true
-            },
-            theme: {
-                src: ['less/styles.less'],
-                dest: 'dist/css/styles.css'
-            },
-            min: {
+        less: {
+            compileTheme: {
                 options: {
-                    compress: true
+                    strictMath: false,
+                    sourceMap: true,
+                    outputSourceFiles: true,
+                    sourceMapURL: '<%= pkg.name %>.css.map',
+                    sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
                 },
-                src: ['less/styles.less'],
-                dest: 'dist/css/styles.min.css'
+                files: {
+                    'dist/css/<%= pkg.name %>.css': 'less/styles.less'
+                }
+            },
+            minify: {
+                options: {
+                    cleancss: true,
+                    report: 'min'
+                },
+                files: {
+                    'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css'
+                }
+            }
+        },
+
+        csscomb: {
+            sort: {
+                options: {
+                    config: 'less/.csscomb.json'
+                },
+                files: {
+                    'dist/css/<%= pkg.name %>.css': ['dist/css/<%= pkg.name %>.css']
+                }
             }
         },
 
@@ -97,6 +115,12 @@ module.exports = function (grunt) {
                 cwd: 'bower_components/',
                 src: ['font-awesome/fonts/*'],
                 dest: 'dist/assets/fonts/'
+            },
+            images: {
+                expand: true,
+                flatten: true,
+                src: ['assets/img/*'],
+                dest: 'dist/assets/img/'
             },
             ico: {
                 expand: true,
@@ -146,38 +170,39 @@ module.exports = function (grunt) {
         },
 
         sed: {
-            'clean-source-assets': {
+            cleanSourceAssets: {
                 path: 'dist/',
                 pattern: '../../assets/',
                 replacement: '../assets/',
                 recursive: true
             },
-            'clean-source-css': {
+            cleanSourceCss: {
                 path: 'dist/',
                 pattern: '../dist/css/styles.css',
                 replacement: 'css/styles.css',
                 recursive: true
             },
-            'clean-source-js': {
+            cleanSourceJs: {
                 path: 'dist/',
                 pattern: '../dist/js/adk.js',
                 replacement: 'js/adk.js.min',
                 recursive: true
             },
-            'clean-logo': {
+            cleanLogo: {
                 path: 'dist/',
                 pattern: '../assets/img/logo-adk.png',
-                replacement: '/++theme++adk.sitetheme/assets/img/logo-adk.png'
+                replacement: '++theme++adk.sitetheme/dist/assets/img/logo-adk.png',
+                recursive: true
             },
-            'clean-certit-logo': {
+            cleanLogoCertit: {
                 path: 'dist/',
                 pattern: '../assets/img/logo-certit.jpg',
-                replacement: '/++theme++adk.sitetheme/assets/img/logo-certit.jpg'
+                replacement: '++theme++adk.sitetheme/dist/assets/img/logo-certit.jpg'
             },
-            'clean-ea-logo': {
+            cleanLogoEa: {
                 path: 'dist/',
                 pattern: '../assets/img/excellence-award.png',
-                replacement: '/++theme++adk.sitetheme/assets/img/excellence-award.png'
+                replacement: '/++theme++adk.sitetheme/dist/assets/img/excellence-award.png'
             }
         },
 
@@ -212,24 +237,11 @@ module.exports = function (grunt) {
         }
     });
 
+    // -------------------------------------------------
+    // These are the available tasks provided
+    // Run them in the Terminal like e.g. grunt dist-css
+    // -------------------------------------------------
 
-    // These plugins provide necessary tasks.
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-qunit');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-html-validation');
-    grunt.loadNpmTasks('grunt-concurrent');
-    grunt.loadNpmTasks('grunt-newer');
-    grunt.loadNpmTasks('grunt-jekyll');
-    grunt.loadNpmTasks('grunt-recess');
-    grunt.loadNpmTasks('grunt-sed');
-    grunt.loadNpmTasks('grunt-rev');
 
     // Copy jekyll generated templates and rename for diazo
     grunt.registerTask('copy-templates', '', function () {
@@ -244,29 +256,41 @@ module.exports = function (grunt) {
     // Docs HTML validation task
     grunt.registerTask('validate-html', ['jekyll', 'validation']);
 
+    // Javascript Unittests
+    grunt.registerTask('unit-test', ['qunit']);
+
     // Test task.
-    var testSubtasks = ['dist-css', 'jshint', 'qunit', 'validate-html'];
+    var testSubtasks = ['dist-css', 'jshint', 'validate-html'];
 
     grunt.registerTask('test', testSubtasks);
 
     // JS distribution task.
-    grunt.registerTask('dist-js', ['concat', 'newer:uglify']);
+    grunt.registerTask('dist-js', ['concat', 'uglify']);
 
     // CSS distribution task.
-    grunt.registerTask('dist-css', ['recess']);
+    grunt.registerTask('dist-css', ['less', 'csscomb']);
 
     // Assets distribution task.
-    grunt.registerTask('dist-assets', ['newer:copy', 'newer:imagemin']);
+    grunt.registerTask('dist-assets', ['copy']);
 
     // Cache buster distribution task.
     grunt.registerTask('dist-cb', ['rev']);
 
     // Template distribution task.
-    grunt.registerTask('dist-html', ['newer:jekyll:theme', 'copy-templates', 'newer:sed']);
+    grunt.registerTask('dist-html', ['jekyll:theme', 'copy-templates', 'sed']);
+
+    // Concurrent distribution task
+    grunt.registerTask('dist-cc', ['test', 'concurrent:cj', 'concurrent:ha']);
+
+    // Development task.
+    grunt.registerTask('dev', ['dist-css', 'dist-js', 'dist-html']);
 
     // Full distribution task.
     grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js', 'dist-html', 'dist-assets']);
 
+    // Shim theme compilation alias
+    grunt.registerTask('compile-theme', ['dist']);
+
     // Default task.
-    grunt.registerTask('default', ['test', 'dist']);
+    grunt.registerTask('default', ['dev']);
 };

@@ -1,10 +1,17 @@
 // Actionbar including langage switcher and sign in
 // ------------------------------------------------
 
+.app-actionbar {
+    text-align: center;
+    @media screen and (min-width: @screen-sm) {
+        text-align: right;
+    }
+}
+
+
 .actionbar-signup {
     padding: 0  0 @line-height-computed / 2;
     margin-right: @line-height-computed;
-    text-align: right;
     text-transform: uppercase;
     .btn {
         background: @adk-blue;
@@ -14,6 +21,7 @@
 
 .actionbar-block {
     margin-right: @navbar-height;
+    text-align: center;
     .nav-pills > li > a {
         color: @gray;
         font-size: @font-size-base;
