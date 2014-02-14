@@ -9,14 +9,111 @@
 
 <metal:main fill-slot="main">
   <metal:content-core define-macro="main">
-
     <div class="page-header">
-      <h1 i18n:translate="">Terms and Conditions</h1>
-    </div>
-    <div class="page-content" id="content-core">
-        <div class="alert alert-warning">
-          Content will be added here
+        <h1 i18n:translate="">Terms and Conditions</h1>
+      </div>
+  <div class="page-content" id="content-core">
+  
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-4 col-sm-push-8">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title" i18n:translate="">Bank details</h4>
+          </div>
+          <div class="panel-body">
+            <strong i18n:translate="">Beneficiary - Account owner:</strong><br>
+              Bernhard Weichlein<br>
+            <strong i18n:translate="">Beneficiary´s bank:</strong><br>
+              Commerzbank Augsburg, Holbeinstrasse 3, 86150 Augsburg<br>
+            <strong i18n:translate="">Beneficiary´s account number:</strong><br>
+              103 190 900<br>
+            <strong i18n:translate="">Bank code:</strong><br>
+              BLZ 720 800 01<br>
+            <strong i18n:translate="">Swift Code:</strong><br>
+              DRESDEFF720<br>
+            <strong i18n:translate="">IBAN:</strong><br>
+              DE92 72080001 0103190900
+          </div>
         </div>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-sm-pull-4">
+  
+        <div class="content-block">
+          <h2 i18n:translate="">Registration</h2>
+          <p i18n:translate="">To register for a course with ADK please use our online registration. We will confirm your registration, as part of this confirmation, we will request the transfer of an initial payment of € 100 which should be completed within the next 10 days. This initial payment serves as a deposit and is part of your tuition fee. In the case of a last minute booking (up to 2 days before the course start date), an individual arrangement will be agreed upon with ADK.  The information about the host family and further details will be sent to you by then as well. Your registration for a German language course is only completed when you have made the required payments and have received a registration confirmation from us. Participants requiring a visa should register at least 2 months prior to the beginning of the course. With your application you accept the terms and conditions of ADK.  The application is legally valid and you are bound by this contract to pay the course fees. Course fees are exclusive of VAT. With your registration you accept the terms and conditions.</p>
+        </div>
+  
+        <div class="content-block">
+          <h2 i18n:translate="">Subject matter of contract | Place of jurisdiction</h2>
+          <p i18n:translate="">Prices and scope of contractual services are binding according to the respective description in this price list. However, ADK reserves the right to non-detrimental program changes and to revise calculation, printing and translation errors.</p>
+        </div>
+  
+        <div class="content-block"> 
+          <h2 i18n:translate="">Payment - How can I pay for my language program in full?</h2>
+          <p i18n:translate="">As soon as you have received the invoice and course confirmation, the following options are available to you for the payment of the full course fee and accommodation costs. Payment in advance by bank transfer to the previously mentioned account. Payment in cash on the first day of the course. On request we accept payment in installments. Your registration is effective upon receipt of payment. Please note that any bank charges must be undertaken by you. If you have booked a room in a shared students apartment, a hotel room or a private apartment, these costs should be paid directly.</p>
+        </div>
+  
+        <div class="content-block">  
+          <h2 i18n:translate="">General conditions and guarantees</h2>
+          <p i18n:translate="">ADK is a private concern. We are members of fadaf (Fachverband für Deutsch als Fremdsprache) and a certified school (CertIT), accredited by the Bundesamt. Course applicants in our Intensive courses must be 16 years or over, 12 years in summer courses. One "teaching hour" lasts 45 minutes. Classes do not take place on bank holidays. No reimbursement will be made for tuition which is missed due to the student’s own actions. Arrival is usually on Sunday before the course starts, departure on Saturday. In private accommodation, your room is available to you from Sunday to Saturday. All students must book their holiday at least 7 days in advance. Classes cannot be changed mid-week. Please note that you can only change class if there is a space in the class into which you wish to transfer. ADK reserves the right to change any teacher, timetable and/or classroom location and to combine classes if necessary. The school reserves the right to remove students from the class register if their attendance is not satisfactory. All students are expected to behave in an orderly manner. Willful damage to our property or threatening behaviour to our staff will lead to expulsion from our school. Expelled students will be held personally responsible, no refund of fees will be made.</p>
+          <p i18n:translate="">Audio recording of lessons at ADK is prohibited!</p>
+        </div>
+  
+        <div class="content-block">  
+          <h2 i18n:translate="">Service description</h2>
+          <p i18n:translate="">Course fees include tuition as booked, placement test, interim exams, certificate, personal all-round service and the tuition material provided and designed by our teachers. Books are not included in the price can be bought or borrowed in our office. Fees are not transferable to any other students under any circumstances.</p>
+        </div>
+  
+        <div class="content-block">  
+          <h2 i18n:translate="">Bank holidays</h2>
+          <p i18n:translate="">Please note: Classes do not take place on German bank holidays. There will be no reimbursement.</p>
+        </div>
+  
+        <div class="content-block">  
+          <h2 i18n:translate="">Annual closing</h2>
+          <p i18n:translate="">Every year in December the school will be closed for 2 weeks. This offers participants the opportunity to spend Christmas at home. Courses booked within the annual closing period will be extended for the respective number of course weeks.</p>
+        </div>
+  
+        <div class="content-block">  
+          <h2 i18n:translate="">Cancellations /Booking Changes</h2>
+          <p i18n:translate="">Unless otherwise arranged, the following charges apply in the case of a cancellation:</p>
+          <ul>
+            <li i18n:translate="">up to 14 days before the course start date: you can either postpone your course to a more convenient date at no charge or you will be required to pay 25% of the course fees and accommodation costs</li>
+            <li i18n:translate="">14-7 days before the course start date: 30% of the course fees and accommodation costs will be charged.</li>
+            <li i18n:translate="">up to 7 days before the course start date: 60% of the course fees and accommodation costs will be charged.</li>
+          </ul>
+          <p i18n:translate="">If a Visa is refused by the Home Office or Embassy: all fees received, less than € 40,- handling fee, will be refunded. The student will have to show the original letter of refusal from the Embassy / Home Office.</p>
+          <p i18n:translate="">No cancellation is possible after the course began or entering on class.</p>
+          <p i18n:translate="">If we are obliged to cancel a course in advance due to an insufficient number of students i.e. we will refund all fees. We are unable to make further recompensation. Please note that the Augsburger Deutschkurse cannot accept liability for personal injury and/or damage to property</p>
+        </div>
+  
+        <div class="content-block">
+          <h2 i18n:translate="">Certificate</h2>
+          <p i18n:translate="">After successful participation every student will receive at the end of the course our ADK-certificate. If a students fails (e.g. irregular attendance) we only issue a letter of confirmation.</p>
+        </div>
+  
+        <div class="content-block">
+          <h2 i18n:translate="">Liability</h2>
+          <p i18n:translate="">Please understand that ADK cannot be held financially responsible for unforeseen catastrophes or for personal or health problems. You must accept liability for any damage you may cause in the school, in the accommodation or to the property of the landlord. The school cannot be made liable for the loss of personal property. If you participate in leisure activities offered by ADK you do so at your own personal risk. The school or any private person working for the school cannot be made liable for accidents or damage of personal property. We therefore strongly recommend that you make your own insurance arrangements. If you are non EU-citizen and need health insurance we will be glad to help you in this matter. Any liability for misprints excluded. Misprints and errors excepted.</p>
+        </div>
+  
+        <div class="content-block">
+          <h2 i18n:translate="">Disabilities / Illness</h2>
+          <p i18n:translate="">Our premises are not suitable for clients in wheelchairs. We try to help students with some difficulties with their sight or their hearing but our courses are probably not suitable for the totally blind or deaf. Please contact us if you need special arrangements. If you are dyslexic it is very helpful if you can tell us in advance. Please note that we do not have the staff or the facilities to accept clients with significant mental health problems and we strongly advise clients - or their parents - to tell us before enrolling anyone who has a history of mental health problems or is on medication!</p>
+        </div>
+  
+        <div class="content-block">
+          <h2 i18n:translate="">Jurisdiction</h2>
+          <p i18n:translate="">The agreement is construed in accordance with and is subject to German law. Place of fullfilment is Augsburg, Germany. Place of jurisdiction is Augsburg, Germany.</p>
+        </div>
+  
+        <blockquote>
+          <footer>January 2014, <cite title="Source Title">Headmaster / general management  ADK </cite></footer>
+        </blockquote>
+      </div>
+    </div>
+
     </div>
   </metal:content-core>
 </metal:main>

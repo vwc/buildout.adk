@@ -11,11 +11,25 @@
   <metal:content-core define-macro="main">
 
     <div class="page-header">
-      <h1 i18n:translate="">Contact</h1>
+      <h1>Augsburger Deutschkurse</h1>
     </div>
     <div class="page-content" id="content-core">
-        <div class="alert alert-warning">
-          Content will be added here
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+              <address>
+                <strong>Sabine Steinacher, Bernhard Weichlein</strong><br />
+                Schaezlerstr. 8<br />
+                86150 Augsburg<br />
+                <span i18n:translate="">Phone:</span>
+                  <a href="tel:+49821314905">+49 (0) 821 / 31 49 05</a><br />
+                <span i18n:translate="">Fax:</span>+49 (0) 821 / 31 49 10<br />
+                E-mail: <a class="mail-link" href="mailto:info@augsburger-deutschkurse.de"><span class="mail-link">info@augsburger-deutschkurse.de</a>
+              </address>
+              <p><a href="callto:adkgermancourses">skype: adkgermancourses</a></p>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <img class="img-responsive" src="resolveuid/99c5a49cb38844dd8c008b1e2c9c1e1e" />
+          </div>
         </div>
     </div>
   </metal:content-core>

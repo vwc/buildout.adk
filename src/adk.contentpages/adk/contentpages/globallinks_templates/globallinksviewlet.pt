@@ -71,13 +71,13 @@
 <div class="footer-actionbar" id="colophon-actions"
     i18n:domain="adk.contentpages">
     <a href="#"
-        tal:attributes="href python:root_url + '/contact'"
+        tal:attributes="href python:root_url + '/@@contact-view'"
         i18n:translate="">Contact</a> &ndash;
     <a  href="#"
-        tal:attributes="href python:root_url + '/imprint'"
+        tal:attributes="href python:root_url + '/@@imprint-view'"
         i18n:translate="">Imprint</a> &ndash;
     <a  href="#"
-        tal:attributes="href python:root_url + '/agb'"
+        tal:attributes="href python:root_url + '/@@terms-and-conditions'"
         i18n:translate="">Terms and Conditions</a>
 </div>
 </tal:block>
