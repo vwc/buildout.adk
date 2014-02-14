@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="adk.contentpages">
+<body>
+
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
+
+    <div class="page-header">
+      <h1 i18n:translate="">Imprint</h1>
+    </div>
+    <div class="page-content" id="content-core">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <h2>Augsburger Deutschkurse</h2>
+          <p>Sabine Steinacher, Bernhard Weichlein<br />
+              Schaezlerstr. 8<br />
+              86150 Augsburg<br />
+              Telefon: +49 (0) 821 / 31 49 05<br />
+              Telefax: +49 (0) 821 / 31 49 10<br />
+              E-mail: <a class="mail-link" href="mailto:info@augsburger-deutschkurse.de">info@augsburger-deutschkurse.de</a>
+              <br />
+              <br />Ust.-ID-Nr.: DE 180 80 31 86
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                  <i class="fa fa-picture-0"></i>
+                  <span i18n:translate="">Picture credits</span>
+                </h4>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">&copy; Aguaviva <small>fotolia.com</small></li>
+              <li class="list-group-item">&copy; pressmaster <small>fotolia.com</small></li>
+              <li class="list-group-item">&copy; p!xel 66 <small>fotolia.com</small></li>
+              <li class="list-group-item">&copy; Ewe Degiampietro <small>fotolia.com</small></li>
+              <li class="list-group-item">&copy; Bernd_Leitner <small>fotolia.com</small></li>
+              <li class="list-group-item">&copy; Bernd_Leitner <small>fotolia.com</small></li>
+              <li class="list-group-item">&copy; Aldo Murillo <small>istockphoto.com</small></li>
+              <li class="list-group-item">&copy; Franz Pfluegl <small>fotolia.com</small></li>
+              <li class="list-group-item">&copy; ADK <small>Augsburger Deutschkurse</small></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
