@@ -4263,9 +4263,6 @@ input[type='button'].btn-block
 }
 .input-group .form-control
 {
-    position: relative;
-    z-index: 2;
-
     float: left;
 
     width: 100%;
@@ -11594,7 +11591,7 @@ ul.visualNoMarker
   .section-cours-dallemand .hero-content,
   .section-nuestros-cursos .hero-content
     {
-        background-image: url(../assets/img/hero-sprachkurse.png);
+        background-image: url(../assets/img/hero-sprachkurs.png);
     }
     .section-sprachkurse.subsection-deutsch-intensivkurse .hero-content,
   .section-language-courses.subsection-deutsch-intensivkurse .hero-content,
