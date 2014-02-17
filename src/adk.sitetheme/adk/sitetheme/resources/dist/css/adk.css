@@ -4263,6 +4263,9 @@ input[type='button'].btn-block
 }
 .input-group .form-control
 {
+    position: relative;
+    z-index: 2;
+
     float: left;
 
     width: 100%;
