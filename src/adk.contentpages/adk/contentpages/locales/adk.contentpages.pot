@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-12-17 11:41+0000\n"
+"POT-Creation-Date: 2014-02-17 10:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,15 +33,11 @@ msgstr ""
 msgid "A sinlge content panel or box"
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:19
+#: ./../globallinks_templates/globallinksviewlet.pt:33
 msgid "ADK Augsburger Deutschkurse - that means learning German in one of the leading private institutes in Germany. We are a certified school."
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:65
-msgid "AGB"
-msgstr ""
-
-#: ./../globallinks_templates/globallinksviewlet.pt:16
+#: ./../globallinks_templates/globallinksviewlet.pt:30
 msgid "About us"
 msgstr ""
 
@@ -79,8 +75,16 @@ msgstr ""
 msgid "Attention"
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:24
+#: ./../infoview_templates/termsandconditions.pt:22
+msgid "Bank details"
+msgstr ""
+
+#: ./../globallinks_templates/globallinksviewlet.pt:38
 msgid "Being one of the most renowned and surely one of the oldest language schools in Augsburg (founded in 1963), ADK has specialized in teaching German as a foreign language right from the start."
+msgstr ""
+
+#: ./../infoview_templates/termsandconditions.pt:25
+msgid "Beneficiary - Account owner:"
 msgstr ""
 
 #: ./../contentblock.py:54
@@ -110,7 +114,7 @@ msgstr ""
 msgid "Box Heading Icon"
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:36
+#: ./../globallinks_templates/globallinksviewlet.pt:50
 msgid "Certificates"
 msgstr ""
 
@@ -118,7 +122,7 @@ msgstr ""
 msgid "City"
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:59
+#: ./../globallinks_templates/globallinksviewlet.pt:73
 msgid "Contact"
 msgstr ""
 
@@ -204,6 +208,10 @@ msgstr ""
 msgid "Fax"
 msgstr ""
 
+#: ./../infoview_templates/contactinfo.pt:25
+msgid "Fax:"
+msgstr ""
+
 #: ./../displaysettings.py:29
 msgid "Featured Block"
 msgstr ""
@@ -238,7 +246,8 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:62
+#: ./../globallinks_templates/globallinksviewlet.pt:76
+#: ./../infoview_templates/imprint.pt:14
 msgid "Imprint"
 msgstr ""
 
@@ -288,11 +297,11 @@ msgstr ""
 msgid "Optional extra information displayed along the section title"
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:42
+#: ./../globallinks_templates/globallinksviewlet.pt:56
 msgid "Our high quality standards have been certified by CERT-IT."
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:39
+#: ./../globallinks_templates/globallinksviewlet.pt:53
 msgid "Our language school has recieved both the 2011 and 2012 Excelence Award by the language course agency languagecourse.net."
 msgstr ""
 
@@ -308,6 +317,14 @@ msgstr ""
 
 #: ./../bookingform.py:66
 msgid "Phone"
+msgstr ""
+
+#: ./../infoview_templates/contactinfo.pt:23
+msgid "Phone:"
+msgstr ""
+
+#: ./../infoview_templates/imprint.pt:35
+msgid "Picture credits"
 msgstr ""
 
 #: ./../bookingform.py:49
@@ -366,6 +383,11 @@ msgstr ""
 
 #: ./../bookingform.py:113
 msgid "Summer Course Classic"
+msgstr ""
+
+#: ./../globallinks_templates/globallinksviewlet.pt:79
+#: ./../infoview_templates/termsandconditions.pt:13
+msgid "Terms and Conditions"
 msgstr ""
 
 #: ./../bookingform.py:110
