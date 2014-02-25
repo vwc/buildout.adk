@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: 2014-02-17 10:12+0000\n"
-"PO-Revision-Date: 2013-12-17 12:49+0100\n"
+"POT-Creation-Date: 2014-02-17 13:15+0000\n"
+"PO-Revision-Date: 2014-02-17 14:10+0100\n"
 "Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
 "Language-Team: VW Language Team <hallo@vorwaerts-werbung.de>\n"
 "MIME-Version: 1.0\n"
@@ -68,13 +68,21 @@ msgstr "Neue Infobox anlegen"
 msgid "Alternative Title for displaying alternative headline"
 msgstr "Alternativer Titel, um den Objekttitel und den angezeigten Titel zu trennen."
 
+#: ./../infoview_templates/termsandconditions.pt:54
+msgid "As soon as you have received the invoice and course confirmation, the following options are available to you for the payment of the full course fee and accommodation costs. Payment in advance by bank transfer to the previously mentioned account. Payment in cash on the first day of the course. On request we accept payment in installments. Your registration is effective upon receipt of payment. Please note that any bank charges must be undertaken by you. If you have booked a room in a shared students apartment, a hotel room or a private apartment, these costs should be paid directly."
+msgstr "Nach Eingang Ihrer Anmeldung erhalten Sie von uns eine Rechnung. Diese ist vor Kursbeginn zu bezahlen. Banküberweisung oder Barzahlung in unserem Büro. Nach Absprache mit der Schulleitung kann eine Ratenzahlung vereinbart werden. In diesem Fall ist die 1. Rate vor Kursbeginn zu begleichen. Die letzte Rate hat vor Kursende zu erfolgen. Bankgebühren übernimmt der Absender (bitte bei Überweisungen aus dem Ausland hinzufügen). Geben Sie bitte bei jeder Zahlung unbedingt den Teilnehmernamen an, damit die Kursgebühr zugeordnet werden kann."
+
 #: ./../contentbox.py:26
 msgid "Attention"
 msgstr "Vorsicht"
 
+#: ./../infoview_templates/termsandconditions.pt:31
+msgid "Bank code:"
+msgstr "Bankleitzahl"
+
 #: ./../infoview_templates/termsandconditions.pt:22
 msgid "Bank details"
-msgstr ""
+msgstr "Bankverbindung"
 
 #: ./../globallinks_templates/globallinksviewlet.pt:38
 msgid "Being one of the most renowned and surely one of the oldest language schools in Augsburg (founded in 1963), ADK has specialized in teaching German as a foreign language right from the start."
@@ -82,7 +90,15 @@ msgstr "ADK ist ein \"Familienunternehmen\" unter persönlicher Leitung der Inha
 
 #: ./../infoview_templates/termsandconditions.pt:25
 msgid "Beneficiary - Account owner:"
-msgstr ""
+msgstr "Kontoinhaber"
+
+#: ./../infoview_templates/termsandconditions.pt:29
+msgid "Beneficiary's account number:"
+msgstr "Kontonummer:"
+
+#: ./../infoview_templates/termsandconditions.pt:27
+msgid "Beneficiary's bank:"
+msgstr "Kreditinstitut:"
 
 #: ./../contentblock.py:54
 #: ./../displaysettings.py:34
@@ -207,7 +223,7 @@ msgstr "Fax"
 
 #: ./../infoview_templates/contactinfo.pt:25
 msgid "Fax:"
-msgstr ""
+msgstr "Fax:"
 
 #: ./../displaysettings.py:29
 msgid "Featured Block"
@@ -231,6 +247,10 @@ msgstr "Frau"
 msgid "Full View"
 msgstr "Komplettansicht"
 
+#: ./../infoview_templates/termsandconditions.pt:58
+msgid "General conditions and guarantees"
+msgstr "AGB / Allgemeine Geschäftsbedingungen"
+
 #: ./../bookingform.py:31
 msgid "Herr"
 msgstr "Herr"
@@ -238,6 +258,10 @@ msgstr "Herr"
 #: ./../bookingform.py:230
 msgid "I confirm the correctness of my entries and acknowledge the terms and conditions of ADK."
 msgstr "Hiermit bestätige ich die Richtigkeit und Vollständigkeit meiner Angaben und akzeptiere die AGB von Augsburger Deutschkurse"
+
+#: ./../infoview_templates/termsandconditions.pt:35
+msgid "IBAN:"
+msgstr "IBAN:"
 
 #: ./../contentbox.py:24
 msgid "Image"
@@ -312,21 +336,29 @@ msgstr "Anreisser"
 msgid "Page Title"
 msgstr "Seitentitel"
 
+#: ./../infoview_templates/termsandconditions.pt:53
+msgid "Payment - How can I pay for my language program in full?"
+msgstr "Zahlung der Kursgebühr"
+
 #: ./../bookingform.py:66
 msgid "Phone"
 msgstr "Telefon"
 
 #: ./../infoview_templates/contactinfo.pt:23
 msgid "Phone:"
-msgstr ""
+msgstr "Telefon:"
 
 #: ./../infoview_templates/imprint.pt:35
 msgid "Picture credits"
-msgstr ""
+msgstr "Quellennachweis Bilder"
 
 #: ./../bookingform.py:49
 msgid "Postal Code"
 msgstr "Postleitzahl"
+
+#: ./../infoview_templates/termsandconditions.pt:49
+msgid "Prices and scope of contractual services are binding according to the respective description in this price list. However, ADK reserves the right to non-detrimental program changes and to revise calculation, printing and translation errors."
+msgstr "Auf alle mit der Sprachschule ADK getroffenen Vereinbarungen ist deutsches Recht anwendbar. Als Gerichtsstand wird Augsburg vereinbart."
 
 #: ./../bookingform.py:104
 msgid "Private Tuition"
@@ -345,6 +377,10 @@ msgstr "Anmelden"
 #: ./../bookingform.py:247
 msgid "Register for the selected course by filling out the form below."
 msgstr "Melden Sie sich für den ausgewählten Kurs über das Formular an"
+
+#: ./../infoview_templates/termsandconditions.pt:43
+msgid "Registration"
+msgstr "Anmeldung"
 
 #: ./../bookingform.py:30
 msgid "Salutation"
@@ -373,6 +409,10 @@ msgstr "Rechte Seitenleiste"
 msgid "Split View"
 msgstr "Geteilte Anzeige"
 
+#: ./../infoview_templates/termsandconditions.pt:48
+msgid "Subject matter of contract / Place of jurisdiction"
+msgstr "Vertragsgegenstand und Gerichtsstand"
+
 #: ./../blockaddform.py:26
 #: ./../contentblock.py:44
 msgid "Subtitle"
@@ -382,10 +422,14 @@ msgstr "Subtitel"
 msgid "Summer Course Classic"
 msgstr "Sommerkurs Klassik"
 
+#: ./../infoview_templates/termsandconditions.pt:33
+msgid "Swift Code:"
+msgstr "Swift Code:"
+
 #: ./../globallinks_templates/globallinksviewlet.pt:79
 #: ./../infoview_templates/termsandconditions.pt:13
 msgid "Terms and Conditions"
-msgstr ""
+msgstr "Allgemeine Geschäftsbedingungen"
 
 #: ./../bookingform.py:110
 msgid "TestDAF Preparation Course"
@@ -417,6 +461,10 @@ msgstr "Zeitpunkt"
 #: ./../boxaddform.py:24
 msgid "Title"
 msgstr "Titel"
+
+#: ./../infoview_templates/termsandconditions.pt:44
+msgid "To register for a course with ADK please use our online registration. We will confirm your registration, as part of this confirmation, we will request the transfer of an initial payment of 100 EUR which should be completed within the next 10 days. This initial payment serves as a deposit and is part of your tuition fee. In the case of a last minute booking (up to 2 days before the course start date), an individual arrangement will be agreed upon with ADK. The information about the host family and further details will be sent to you by then as well. Your registration for a German language course is only completed when you have made the required payments and have received a registration confirmation from us. Participants requiring a visa should register at least 2 months prior to the beginning of the course. With your application you accept the terms and conditions of ADK. The application is legally valid and you are bound by this contract to pay the course fees. Course fees are exclusive of VAT. With your registration you accept the terms and conditions."
+msgstr "Bitte benutzen Sie unser Online-Formular und wir senden eine kurze Bestätigung. Die Anmeldung ist gültig, sobald die Anzahlung von € 100,- bei uns eingegangen ist. Die Anzahlung wird angerechnet, d.h. der Betrag wird abgezogen von der Gesamtrechnung. Eine Reservierung des gewünschten Kursplatzes kann nur erfolgen, wenn die Kursgebühr bis spätestens 7 Tage vor Kursbeginn entrichtet wird. Falls Sie eine Unterkunft gebucht haben, erhalten Sie weitere Informationen dazu sobald die Anzahlung auf unser Konto eingegangen ist. Mit Ihrer Anmeldung akzeptieren Sie die allgemeinen Geschäftsbedingungen. Die Anmeldung ist rechtsgültig und verpflichtet zur Bezahlung des gebuchten Kurses. Der Kurs ist mehrwertsteuerfrei."
 
 #: ./../contentbox.py:23
 msgid "Video"

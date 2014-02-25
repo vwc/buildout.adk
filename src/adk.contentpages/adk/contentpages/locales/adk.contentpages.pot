@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-02-17 10:12+0000\n"
+"POT-Creation-Date: 2014-02-17 13:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,8 +71,16 @@ msgstr ""
 msgid "Alternative Title for displaying alternative headline"
 msgstr ""
 
+#: ./../infoview_templates/termsandconditions.pt:54
+msgid "As soon as you have received the invoice and course confirmation, the following options are available to you for the payment of the full course fee and accommodation costs. Payment in advance by bank transfer to the previously mentioned account. Payment in cash on the first day of the course. On request we accept payment in installments. Your registration is effective upon receipt of payment. Please note that any bank charges must be undertaken by you. If you have booked a room in a shared students apartment, a hotel room or a private apartment, these costs should be paid directly."
+msgstr ""
+
 #: ./../contentbox.py:26
 msgid "Attention"
+msgstr ""
+
+#: ./../infoview_templates/termsandconditions.pt:31
+msgid "Bank code:"
 msgstr ""
 
 #: ./../infoview_templates/termsandconditions.pt:22
@@ -85,6 +93,14 @@ msgstr ""
 
 #: ./../infoview_templates/termsandconditions.pt:25
 msgid "Beneficiary - Account owner:"
+msgstr ""
+
+#: ./../infoview_templates/termsandconditions.pt:29
+msgid "Beneficiary's account number:"
+msgstr ""
+
+#: ./../infoview_templates/termsandconditions.pt:27
+msgid "Beneficiary's bank:"
 msgstr ""
 
 #: ./../contentblock.py:54
@@ -234,12 +250,20 @@ msgstr ""
 msgid "Full View"
 msgstr ""
 
+#: ./../infoview_templates/termsandconditions.pt:58
+msgid "General conditions and guarantees"
+msgstr ""
+
 #: ./../bookingform.py:31
 msgid "Herr"
 msgstr ""
 
 #: ./../bookingform.py:230
 msgid "I confirm the correctness of my entries and acknowledge the terms and conditions of ADK."
+msgstr ""
+
+#: ./../infoview_templates/termsandconditions.pt:35
+msgid "IBAN:"
 msgstr ""
 
 #: ./../contentbox.py:24
@@ -315,6 +339,10 @@ msgstr ""
 msgid "Page Title"
 msgstr ""
 
+#: ./../infoview_templates/termsandconditions.pt:53
+msgid "Payment - How can I pay for my language program in full?"
+msgstr ""
+
 #: ./../bookingform.py:66
 msgid "Phone"
 msgstr ""
@@ -329,6 +357,10 @@ msgstr ""
 
 #: ./../bookingform.py:49
 msgid "Postal Code"
+msgstr ""
+
+#: ./../infoview_templates/termsandconditions.pt:49
+msgid "Prices and scope of contractual services are binding according to the respective description in this price list. However, ADK reserves the right to non-detrimental program changes and to revise calculation, printing and translation errors."
 msgstr ""
 
 #: ./../bookingform.py:104
@@ -347,6 +379,10 @@ msgstr ""
 
 #: ./../bookingform.py:247
 msgid "Register for the selected course by filling out the form below."
+msgstr ""
+
+#: ./../infoview_templates/termsandconditions.pt:43
+msgid "Registration"
 msgstr ""
 
 #: ./../bookingform.py:30
@@ -376,6 +412,10 @@ msgstr ""
 msgid "Split View"
 msgstr ""
 
+#: ./../infoview_templates/termsandconditions.pt:48
+msgid "Subject matter of contract / Place of jurisdiction"
+msgstr ""
+
 #: ./../blockaddform.py:26
 #: ./../contentblock.py:44
 msgid "Subtitle"
@@ -383,6 +423,10 @@ msgstr ""
 
 #: ./../bookingform.py:113
 msgid "Summer Course Classic"
+msgstr ""
+
+#: ./../infoview_templates/termsandconditions.pt:33
+msgid "Swift Code:"
 msgstr ""
 
 #: ./../globallinks_templates/globallinksviewlet.pt:79
@@ -419,6 +463,10 @@ msgstr ""
 #: ./../blockeditform.py:25
 #: ./../boxaddform.py:24
 msgid "Title"
+msgstr ""
+
+#: ./../infoview_templates/termsandconditions.pt:44
+msgid "To register for a course with ADK please use our online registration. We will confirm your registration, as part of this confirmation, we will request the transfer of an initial payment of 100 EUR which should be completed within the next 10 days. This initial payment serves as a deposit and is part of your tuition fee. In the case of a last minute booking (up to 2 days before the course start date), an individual arrangement will be agreed upon with ADK. The information about the host family and further details will be sent to you by then as well. Your registration for a German language course is only completed when you have made the required payments and have received a registration confirmation from us. Participants requiring a visa should register at least 2 months prior to the beginning of the course. With your application you accept the terms and conditions of ADK. The application is legally valid and you are bound by this contract to pay the course fees. Course fees are exclusive of VAT. With your registration you accept the terms and conditions."
 msgstr ""
 
 #: ./../contentbox.py:23
