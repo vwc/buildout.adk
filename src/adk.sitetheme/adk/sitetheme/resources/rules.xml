@@ -99,6 +99,12 @@
                     css:if-content="body.template-mail_password_form" />
         </rules>
 
+        <replace css:content-children="#content"
+            css:theme-children="#content"
+            css:if-content="body.template-booking-form"
+            />
+        
+
         <drop css:theme="#hero-content"
             css:if-not-content="#page-header" />
 
