@@ -285,8 +285,7 @@ class BookingForm(form.SchemaForm):
 
         IStatusMessage(self.request).add(
             _(u"Thank you for your interest in this special. "
-              u"Your Request has been forwarded to the hotel.",
-              type='info')
+              u"Your Request has been forwarded to the hotel.")
         )
         return self.request.response.redirect(
             '%s/@@booking-form-success' % context_url)
