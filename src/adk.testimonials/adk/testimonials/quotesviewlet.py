@@ -1,3 +1,4 @@
+from Acquisition import aq_inner
 from random import randint
 from five import grok
 from plone import api
@@ -29,3 +30,10 @@ class CustomerQuotesViewlet(grok.Viewlet):
                          review_state='published')
         quotes = IContentListing(brains)
         return quotes
+
+    def is_de(self):
+        context = aq_inner(self.context)
+        item_in_path = False
+        if 'de' in context.getPhysicalPath():
+            item_in_path = True
+        return item_in_path

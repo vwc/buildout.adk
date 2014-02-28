@@ -1,9 +1,11 @@
-<tal:block tal:define="portal_url viewlet/portal_url"
+<tal:block tal:define="portal_url viewlet/portal_url;
+                       is_de viewlet/is_de"
     i18n:domain="adk.testimonials">
 <div class="footer-box" id="random-quote">
     <div class="footer-box-header">
         <i class="fa fa-comment fa-2x pull-right"></i>
-        <h4 i18n:translate="">Customer quotes</h4>
+        <h4 tal:condition="not:is_de">Customer quotes</h4>
+        <h4 tal:condition="is_de">Kundenmeinungen</h4>
     </div>
     <div class="footer-box-content"
         tal:condition="viewlet/has_quotes">
@@ -17,7 +19,8 @@
         </blockquote>
         <a class="btn btn-default btn-lg" href="/"
             tal:attributes="href string:${context/absolute_url}/@@testimonial-listing">
-            Read more
+            <span tal:condition="not:is_de" tal:omit-tag="">more</span>
+            <span tal:condition="is_de" tal:omit-tag="">mehr</span>
         </a>
     </div>
 </div>
