@@ -57,14 +57,18 @@
     <div class="footer-box" id="footer-box-certificates">
         <div class="footer-box-header">
             <i class="fa fa-thumbs-o-up fa-2x pull-right"></i>
-            <h4 i18n:translate="">Certificates</h4>
+            <h4 tal:condition="not:is_de">Certificates</h4>
+            <h4 tal:condition="is_de">Zertifikate</h4>
         </div>
         <div class="footer-box-content">
-            <p i18n:translate="">Our language school has recieved both the 2011
+            <p tal:condition="not:is_de">Our language school has recieved both the 2011
                 and 2012 Excelence Award by the language course agency
                 languagecourse.net.</p>
-            <p i18n:translate="">Our high quality standards have been certified by
+            <p tal:condition="not:is_de">Our high quality standards have been certified by
                 CERT-IT.</p>
+            <p tal:condition="is_de">Unser Sprachinstitut wurde 2011 und 2012 mit dem Excellence Award der Sprachreiseagentur languagecourse.net ausgezeichnet.</p>
+
+            <p tal:condition="is_de">Der hohe Qualitätsstandard unserer Schule ist durch die Zertifizierungsstelle CERT-IT anerkannt.</p>
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <img class="img-responsive"
