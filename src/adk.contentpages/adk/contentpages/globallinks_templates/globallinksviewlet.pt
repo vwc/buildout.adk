@@ -4,9 +4,10 @@
 <hr>
 <div class="actionbar-signup" id="actionbar-signup">
     <a class="btn btn-default" href="#"
-        tal:attributes="href python:root_url + '/@@booking-form'"
-        i18n:domain="adk.contentpages"
-        i18n:translate="">Register</a>
+        tal:attributes="href python:root_url + '/@@booking-form'">
+        <span tal:condition="not:is_de" tal:omit-tag="">Register</span>
+        <span tal:condition="is_de" tal:omit-tag="">Anmeldung</span>
+    </a>
 </div>
 <div id="actionbar-language" class="actionbar-block actionbar-block-language hidden-sm pull-right">
     <ul class="nav nav-pills">
@@ -88,13 +89,16 @@
 <div class="footer-actionbar" id="colophon-actions"
     i18n:domain="adk.contentpages">
     <a href="#"
-        tal:attributes="href python:root_url + '/@@contact-view'"
-        i18n:translate="">Contact</a> &ndash;
+        tal:attributes="href python:root_url + '/@@contact-view'">
+        <span tal:condition="not:is_de">Contact</span><span tal:condition="is_de">Kontakt</span>
+    </a> &ndash;
     <a  href="#"
-        tal:attributes="href python:root_url + '/@@imprint-view'"
-        i18n:translate="">Imprint</a> &ndash;
+        tal:attributes="href python:root_url + '/@@imprint-view'">
+        <span tal:condition="not:is_de">Imprint</span><span tal:condition="is_de">Impressum</span>
+    </a> &ndash;
     <a  href="#"
-        tal:attributes="href python:root_url + '/@@terms-and-conditions'"
-        i18n:translate="">Terms and Conditions</a>
+        tal:attributes="href python:root_url + '/@@terms-and-conditions'">
+        <span tal:condition="not:is_de">Terms and Conditions</span><span tal:condition="is_de">AGB</span>
+    </a>
 </div>
 </tal:block>
