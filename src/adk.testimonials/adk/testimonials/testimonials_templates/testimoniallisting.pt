@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="adk.testimonials">
+<body>
+
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
+
+
+    <header class="page-header">
+      <h1 class="documentFirstHeading page-heading">
+        Testimonials
+      </h1>
+    </header>
+
+    <section id="content-core">
+      <div class="app-list" tal:define="
+            Batch python:modules['Products.CMFPlone'].Batch;
+            b_size python:int(request.get('b_size', 20));
+            b_start python:int(request.get('b_start', 0));
+            results view/testimonials;
+            batch python:Batch(results, b_size, b_start);">
+            <tal:block tal:repeat="item results">
+              <div class="app-list-item">
+                <h3 tal:content="item/Title" />
+                <blockquote>
+                  <p tal:content="structure item/text/output" />
+                  <small><span tal:replace="item/Title" />
+                    <cite title="Source Title"
+                      tal:content="item/country">Source Title</cite>
+                  </small>
+                </blockquote>
+              </div>
+            </tal:block>
+          <div metal:use-macro="context/batch_macros/macros/navigation" />
+      </div>
+    </section>
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+

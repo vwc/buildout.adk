@@ -16,9 +16,9 @@
             </small>
         </blockquote>
         <a class="btn btn-default btn-lg" href="/"
-            tal:attributes="href python:portal_url + '/testimonials'"
-            i18n:translate="">
-            Read more</a>
+            tal:attributes="href string:${context/absolute_url}/@@testimonial-listing">
+            Read more
+        </a>
     </div>
 </div>
 </tal:block>
