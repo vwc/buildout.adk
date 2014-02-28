@@ -1,5 +1,6 @@
 <tal:block tal:define="portal_url viewlet/portal_url;
-                       root_url viewlet/get_root_url">
+                       root_url viewlet/get_root_url;
+                       is_de viewlet/de_in_path">
 <hr>
 <div class="actionbar-signup" id="actionbar-signup">
     <a class="btn btn-default" href="#"
@@ -27,21 +28,30 @@
     <div id="footer-box-about">
         <div class="footer-box-header">
             <i class="fa fa-globe fa-2x pull-right"></i>
-            <h4 i18n:translate="">About us</h4>
+            <h4 tal:condition="not:is_de">About us</h4>
+            <h4 tal:condition="is_de">Über uns</h4>
         </div>
         <div class="footer-box-content">
-            <p class="h5" i18n:translate="">
+            <p class="h5" tal:condition="not:is_de">
                 ADK Augsburger Deutschkurse - that means learning German in one
                 of the leading private institutes in Germany.
                 We are a certified school.
             </p>
-            <p i18n:translate="">
+            <p class="h5" tal:condition="is_de">
+                ADK in Augsburg, Bayern ist die Sprachschule, um in Deutschland Deutsch zu lernen. Lernen Sie Deutsch in einem Intensivkurs, bereiten Sie sich auf deutsche Sprachprüfungen vor oder verbessern Sie Ihr berufsbezogenes Deutsch.
+            </p>
+            <p tal:condition="not:is_de">
                 Being one of the most renowned and surely one of the oldest
                 language schools in Augsburg (founded in 1963),
                 ADK has specialized in teaching German as a foreign language
                 right from the start.
             </p>
-            <a class="btn btn-default btn-lg" href="/">Mehr</a>
+            <p tal:condition="is_de">
+                ADK ist ein "Familienunternehmen" unter persönlicher Leitung der Inhaber. Unbürokratisch, flexibel und persönlich - so ist hier der Service. Das unterscheidet ADK von großen Schulen.
+            </p>
+            <a class="btn btn-default btn-lg" href="/">
+                <span tal:condition="is_de">mehr</span><span tal:condition="not:is_de">more</span>
+            </a>
         </div>
     </div>
     <div class="footer-box" id="footer-box-certificates">
@@ -68,6 +78,9 @@
         </div>
     </div>
 </div> <!-- / Footer boxes -->
+<div id="app-navroot-marker">
+    <p tal:content="viewlet/de_in_path" />
+</div>
 <div class="footer-actionbar" id="colophon-actions"
     i18n:domain="adk.contentpages">
     <a href="#"

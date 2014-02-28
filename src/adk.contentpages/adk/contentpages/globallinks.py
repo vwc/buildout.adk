@@ -44,3 +44,10 @@ class GlobalLinksViewlet(grok.Viewlet):
         )
         lang = portal_state.language()
         return lang
+
+    def de_in_path(self):
+        context = aq_inner(self.context)
+        item_in_path = False
+        if 'de' in context.getPhysicalPath():
+            item_in_path = True
+        return item_in_path
