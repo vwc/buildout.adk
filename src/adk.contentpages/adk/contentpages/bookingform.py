@@ -271,7 +271,7 @@ class BookingForm(form.SchemaForm):
         """ Construct and send the registration request. """
         context_url = self.context.absolute_url()
         mto = 'info@augsburger-deutschkurse.de'
-        envelope_from = 'anfrage@adk-gertman-courses.com'
+        envelope_from = 'anfrage@adk-german-courses.com'
         subject = 'Buchungsanfrage Sprachkurse'
         options = data
         body = ViewPageTemplateFile("booking_email.pt")(self, **options)
