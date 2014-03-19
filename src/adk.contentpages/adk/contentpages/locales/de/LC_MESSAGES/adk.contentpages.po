@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: 2014-02-17 13:15+0000\n"
-"PO-Revision-Date: 2014-02-17 14:10+0100\n"
+"POT-Creation-Date: 2014-03-19 13:51+0000\n"
+"PO-Revision-Date: 2014-03-19 14:52+0100\n"
 "Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
 "Language-Team: VW Language Team <hallo@vorwaerts-werbung.de>\n"
 "MIME-Version: 1.0\n"
@@ -29,14 +29,6 @@ msgstr "Das Formular wurde erfolgreich ausgeführt."
 #: ./../profiles/default/types/adk.contentpages.contentbox.xml
 msgid "A sinlge content panel or box"
 msgstr "Ein einzelner Inhaltsblock oder eine einzelne Inhaltsbox"
-
-#: ./../globallinks_templates/globallinksviewlet.pt:33
-msgid "ADK Augsburger Deutschkurse - that means learning German in one of the leading private institutes in Germany. We are a certified school."
-msgstr "ADK in Augsburg, Bayern ist die Sprachschule, um in Deutschland Deutsch zu lernen. Lernen Sie Deutsch in einem Intensivkurs, bereiten Sie sich auf deutsche Sprachprüfungen vor oder verbessern Sie Ihr berufsbezogenes Deutsch."
-
-#: ./../globallinks_templates/globallinksviewlet.pt:30
-msgid "About us"
-msgstr "Über uns"
 
 #: ./../contentpage_templates/view.pt:181
 msgid "Add block"
@@ -84,10 +76,6 @@ msgstr "Bankleitzahl"
 msgid "Bank details"
 msgstr "Bankverbindung"
 
-#: ./../globallinks_templates/globallinksviewlet.pt:38
-msgid "Being one of the most renowned and surely one of the oldest language schools in Augsburg (founded in 1963), ADK has specialized in teaching German as a foreign language right from the start."
-msgstr "ADK ist ein \"Familienunternehmen\" unter persönlicher Leitung der Inhaber. Unbürokratisch, flexibel und persönlich - so ist hier der Service. Das unterscheidet ADK von großen Schulen."
-
 #: ./../infoview_templates/termsandconditions.pt:25
 msgid "Beneficiary - Account owner:"
 msgstr "Kontoinhaber"
@@ -127,17 +115,9 @@ msgstr "Textinhalt der Infobox"
 msgid "Box Heading Icon"
 msgstr "Icon für den Kopf der Infobox"
 
-#: ./../globallinks_templates/globallinksviewlet.pt:50
-msgid "Certificates"
-msgstr "Zertifikate"
-
-#: ./../bookingform.py:44
+#: ./../bookingform.py:46
 msgid "City"
 msgstr "Ort"
-
-#: ./../globallinks_templates/globallinksviewlet.pt:73
-msgid "Contact"
-msgstr "Kontakt"
 
 #: ./../blockaddform.py:32
 #: ./../blockeditform.py:29
@@ -234,11 +214,11 @@ msgstr "Hervorgehobener Inhaltsblock"
 msgid "First headline of the page body"
 msgstr "Die erste Überschrift des Inhaltsbereiches."
 
-#: ./../bookingform.py:35
+#: ./../bookingform.py:34
 msgid "Firstname"
 msgstr "Vorname"
 
-#: ./../bookingform.py:31
+#: ./../bookingform.py:30
 msgid "Frau"
 msgstr "Frau"
 
@@ -251,7 +231,7 @@ msgstr "Komplettansicht"
 msgid "General conditions and guarantees"
 msgstr "AGB / Allgemeine Geschäftsbedingungen"
 
-#: ./../bookingform.py:31
+#: ./../bookingform.py:30
 msgid "Herr"
 msgstr "Herr"
 
@@ -267,7 +247,6 @@ msgstr "IBAN:"
 msgid "Image"
 msgstr "Bild"
 
-#: ./../globallinks_templates/globallinksviewlet.pt:76
 #: ./../infoview_templates/imprint.pt:14
 msgid "Imprint"
 msgstr "Impressum"
@@ -293,7 +272,7 @@ msgstr "Intensivkurs Plus (30 Unterrichtsstunden)"
 msgid "Introduction"
 msgstr "Einleitung"
 
-#: ./../bookingform.py:39
+#: ./../bookingform.py:38
 msgid "Lastname"
 msgstr "Nachname"
 
@@ -317,14 +296,6 @@ msgstr "Beruf"
 #: ./../contentblock.py:45
 msgid "Optional extra information displayed along the section title"
 msgstr "Optionale Zusatzinformationen, die mit dem Titel dieses Abschnittes angezeigt werden soll"
-
-#: ./../globallinks_templates/globallinksviewlet.pt:56
-msgid "Our high quality standards have been certified by CERT-IT."
-msgstr "Der hohe Qualitätsstandard unserer Schule ist durch die Zertifizierungsstelle CERT-IT anerkannt."
-
-#: ./../globallinks_templates/globallinksviewlet.pt:53
-msgid "Our language school has recieved both the 2011 and 2012 Excelence Award by the language course agency languagecourse.net."
-msgstr "Unser Sprachinstitut wurde 2011 und 2012 mit dem Excellence Award der Sprachreiseagentur languagecourse.net ausgezeichnet."
 
 #: ./../contentpage.py:36
 #: ./../editpagesubheader.py:29
@@ -352,7 +323,7 @@ msgstr "Telefon:"
 msgid "Picture credits"
 msgstr "Quellennachweis Bilder"
 
-#: ./../bookingform.py:49
+#: ./../bookingform.py:50
 msgid "Postal Code"
 msgstr "Postleitzahl"
 
@@ -370,10 +341,6 @@ msgstr "Privatunterricht"
 msgid "Process has been cancelled."
 msgstr "Der Vorgang wurde abgebrochen"
 
-#: ./../globallinks_templates/globallinksviewlet.pt:5
-msgid "Register"
-msgstr "Anmelden"
-
 #: ./../bookingform.py:247
 msgid "Register for the selected course by filling out the form below."
 msgstr "Melden Sie sich für den ausgewählten Kurs über das Formular an"
@@ -382,7 +349,7 @@ msgstr "Melden Sie sich für den ausgewählten Kurs über das Formular an"
 msgid "Registration"
 msgstr "Anmeldung"
 
-#: ./../bookingform.py:30
+#: ./../bookingform.py:29
 msgid "Salutation"
 msgstr "Anrede"
 
@@ -409,6 +376,10 @@ msgstr "Rechte Seitenleiste"
 msgid "Split View"
 msgstr "Geteilte Anzeige"
 
+#: ./../bookingform.py:42
+msgid "Street"
+msgstr "Straße und Hausnummer"
+
 #: ./../infoview_templates/termsandconditions.pt:48
 msgid "Subject matter of contract / Place of jurisdiction"
 msgstr "Vertragsgegenstand und Gerichtsstand"
@@ -426,7 +397,6 @@ msgstr "Sommerkurs Klassik"
 msgid "Swift Code:"
 msgstr "Swift Code:"
 
-#: ./../globallinks_templates/globallinksviewlet.pt:79
 #: ./../infoview_templates/termsandconditions.pt:13
 msgid "Terms and Conditions"
 msgstr "Allgemeine Geschäftsbedingungen"
@@ -435,7 +405,7 @@ msgstr "Allgemeine Geschäftsbedingungen"
 msgid "TestDAF Preparation Course"
 msgstr "TestDAF Vorbereitungskurs"
 
-#: ./../bookingform_templates/bookingformsuccess.pt:17
+#: ./../bookingform_templates/bookingformsuccess.pt:19
 msgid "Thank you for your interest in ADK Augsburger Deutschkurse. Your booking request has successfully been forwarded to us."
 msgstr "Vielen Dank für Ihr Interesse an ADK Augsburger Deutschkurse. Die Anfrage zur Kursanmeldung wurde erfolgreich an uns weitergeleitet."
 

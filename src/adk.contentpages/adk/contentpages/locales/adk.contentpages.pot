@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-02-17 13:15+0000\n"
+"POT-Creation-Date: 2014-03-19 13:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,14 +31,6 @@ msgstr ""
 
 #: ./../profiles/default/types/adk.contentpages.contentbox.xml
 msgid "A sinlge content panel or box"
-msgstr ""
-
-#: ./../globallinks_templates/globallinksviewlet.pt:33
-msgid "ADK Augsburger Deutschkurse - that means learning German in one of the leading private institutes in Germany. We are a certified school."
-msgstr ""
-
-#: ./../globallinks_templates/globallinksviewlet.pt:30
-msgid "About us"
 msgstr ""
 
 #: ./../contentpage_templates/view.pt:181
@@ -87,10 +79,6 @@ msgstr ""
 msgid "Bank details"
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:38
-msgid "Being one of the most renowned and surely one of the oldest language schools in Augsburg (founded in 1963), ADK has specialized in teaching German as a foreign language right from the start."
-msgstr ""
-
 #: ./../infoview_templates/termsandconditions.pt:25
 msgid "Beneficiary - Account owner:"
 msgstr ""
@@ -130,16 +118,8 @@ msgstr ""
 msgid "Box Heading Icon"
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:50
-msgid "Certificates"
-msgstr ""
-
-#: ./../bookingform.py:44
+#: ./../bookingform.py:46
 msgid "City"
-msgstr ""
-
-#: ./../globallinks_templates/globallinksviewlet.pt:73
-msgid "Contact"
 msgstr ""
 
 #: ./../blockaddform.py:32
@@ -237,11 +217,11 @@ msgstr ""
 msgid "First headline of the page body"
 msgstr ""
 
-#: ./../bookingform.py:35
+#: ./../bookingform.py:34
 msgid "Firstname"
 msgstr ""
 
-#: ./../bookingform.py:31
+#: ./../bookingform.py:30
 msgid "Frau"
 msgstr ""
 
@@ -254,7 +234,7 @@ msgstr ""
 msgid "General conditions and guarantees"
 msgstr ""
 
-#: ./../bookingform.py:31
+#: ./../bookingform.py:30
 msgid "Herr"
 msgstr ""
 
@@ -270,7 +250,6 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:76
 #: ./../infoview_templates/imprint.pt:14
 msgid "Imprint"
 msgstr ""
@@ -296,7 +275,7 @@ msgstr ""
 msgid "Introduction"
 msgstr ""
 
-#: ./../bookingform.py:39
+#: ./../bookingform.py:38
 msgid "Lastname"
 msgstr ""
 
@@ -319,14 +298,6 @@ msgstr ""
 #: ./../blockaddform.py:27
 #: ./../contentblock.py:45
 msgid "Optional extra information displayed along the section title"
-msgstr ""
-
-#: ./../globallinks_templates/globallinksviewlet.pt:56
-msgid "Our high quality standards have been certified by CERT-IT."
-msgstr ""
-
-#: ./../globallinks_templates/globallinksviewlet.pt:53
-msgid "Our language school has recieved both the 2011 and 2012 Excelence Award by the language course agency languagecourse.net."
 msgstr ""
 
 #: ./../contentpage.py:36
@@ -355,7 +326,7 @@ msgstr ""
 msgid "Picture credits"
 msgstr ""
 
-#: ./../bookingform.py:49
+#: ./../bookingform.py:50
 msgid "Postal Code"
 msgstr ""
 
@@ -373,10 +344,6 @@ msgstr ""
 msgid "Process has been cancelled."
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:5
-msgid "Register"
-msgstr ""
-
 #: ./../bookingform.py:247
 msgid "Register for the selected course by filling out the form below."
 msgstr ""
@@ -385,7 +352,7 @@ msgstr ""
 msgid "Registration"
 msgstr ""
 
-#: ./../bookingform.py:30
+#: ./../bookingform.py:29
 msgid "Salutation"
 msgstr ""
 
@@ -412,6 +379,10 @@ msgstr ""
 msgid "Split View"
 msgstr ""
 
+#: ./../bookingform.py:42
+msgid "Street"
+msgstr ""
+
 #: ./../infoview_templates/termsandconditions.pt:48
 msgid "Subject matter of contract / Place of jurisdiction"
 msgstr ""
@@ -429,7 +400,6 @@ msgstr ""
 msgid "Swift Code:"
 msgstr ""
 
-#: ./../globallinks_templates/globallinksviewlet.pt:79
 #: ./../infoview_templates/termsandconditions.pt:13
 msgid "Terms and Conditions"
 msgstr ""
@@ -438,11 +408,10 @@ msgstr ""
 msgid "TestDAF Preparation Course"
 msgstr ""
 
-#: ./../bookingform_templates/bookingformsuccess.pt:17
+#: ./../bookingform_templates/bookingformsuccess.pt:19
 msgid "Thank you for your interest in ADK Augsburger Deutschkurse. Your booking request has successfully been forwarded to us."
 msgstr ""
 
-#. Default: "info"
 #: ./../bookingform.py:287
 msgid "Thank you for your interest in this special. Your Request has been forwarded to the hotel."
 msgstr ""
