@@ -15,14 +15,19 @@ Ein Besucher von adk-german-courses.com hat folgende Anfrage abgeschickt:
 Persönliche Daten
 -----------------
 
+Anrede: <span tal:replace="options/salutation | nothing" tal:omit-tag="" />
 Vorname: <span tal:replace="options/firstname | nothing" tal:omit-tag="" />
 Nachname: <span tal:replace="options/lastname | nothing" tal:omit-tag="" />
 Beruf: <span tal:replace="options/occupation | nothing" tal:omit-tag="" />
 E-Mail-Adresse: <span tal:replace="options/email | nothing" tal:omit-tag="" />
 Telefon: <span tal:replace="options/phone | string:Keine Angabe" tal:omit-tag="" />
+Telefon: <span tal:replace="options/fax | string:Keine Angabe" tal:omit-tag="" />
+----------
+Geburtstag: <span tal:replace="options/birthday | nothing" tal:omit-tag="" />
+Nationalität: <span tal:replace="options/nationality | nothing" tal:omit-tag="" />
 
 
-Rechnungsadresse
+Adresse
 --------------
 
 Ort: <span tal:content="options/city | nothing" tal:omit-tag="" />
@@ -31,8 +36,34 @@ Strasse und Hausnummer:
 <span tal:replace="options/street | string:Keine Angabe" tal:omit-tag="" />
 Land: <span tal:content="options/country | string:Keine Angabe" tal:omit-tag="" />
 
-Weitere Angaben:
-----------------
+
+Angaben zum gewünschten Kurs:
+-----------------------------
+Kurs: <span tal:replace="options/course | nothing" tal:omit-tag="" />
+Kursbeginn: <span tal:replace="options/startdate | nothing" tal:omit-tag="" />
+Kursdauer: <span tal:replace="options/duration | nothing" tal:omit-tag="" />
+Sprachkenntnisse: <span tal:replace="options/knowledge | string:Keine Angabe" tal:omit-tag="" />
+
+Auf ADK aufmerksam geworden durch: <span tal:replace="options/recommendation | nothing" tal:omit-tag="" />
+
+
+Weitere Informationen:
+----------------------
+
+Unterkunft: <span tal:replace="options/accomodation | nothing" tal:omit-tag="" />
+Anreisetag: <span tal:replace="options/arrival | nothing" tal:omit-tag="" />
+Abreisetag: <span tal:replace="options/departure | nothing" tal:omit-tag="" />
+Anreise: <span tal:replace="options/transport | nothing" tal:omit-tag="" />
+Transfer benötigt: <span tal:replace="options/airporttransfer | nothing" tal:omit-tag="" />
+
+Raucher: <span tal:replace="options/smoker | nothing" tal:omit-tag="" />
+
+
+Mitteilung:
+-----------
+
+<span tal:replace="optionsmessage| nothing" tal:omit-tag="" />
+
 
 
 ---
