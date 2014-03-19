@@ -38,17 +38,18 @@ class IBooking(form.Schema):
         title=_(u'Lastname'),
         required=True,
     )
-
+    street = schema.TextLine(
+        title=_(u'Street'),
+        required=True,
+    )
     city = schema.TextLine(
         title=_(u'City'),
         required=True,
     )
-
     postcode = schema.TextLine(
         title=_(u'Postal Code'),
         required=True,
     )
-
     country = schema.TextLine(
         title=_(u'Country'),
         required=True,

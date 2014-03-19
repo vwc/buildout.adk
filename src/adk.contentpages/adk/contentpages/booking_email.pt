@@ -62,7 +62,7 @@ Raucher: <span tal:replace="options/smoker | nothing" tal:omit-tag="" />
 Mitteilung:
 -----------
 
-<span tal:replace="optionsmessage| nothing" tal:omit-tag="" />
+<span tal:replace="options/message| nothing" tal:omit-tag="" />
 
 
 
