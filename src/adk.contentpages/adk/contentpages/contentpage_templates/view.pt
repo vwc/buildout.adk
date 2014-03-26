@@ -165,9 +165,13 @@
                     <span class="app-box-arrow app-box-arrow-light"></span>
                 </div>
               </div>
-
+              <tal:clearer tal:define="number repeat/item/number;
+                                       divcount python:int(number)/2.0">
+                  <span tal:condition="python:divcount % 1 == 0"
+                      class="clearfix visible-md visible-lg" />
+              </tal:clearer>
             </tal:block>
-            
+
           </div>
         </div>
       </div>
