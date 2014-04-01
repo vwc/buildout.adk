@@ -1,6 +1,9 @@
+import os
 from Acquisition import aq_inner
 from five import grok
 from plone import api
+from string import Template
+
 from plone.directives import form
 
 from zope import schema
@@ -13,6 +16,10 @@ from Products.statusmessages.interfaces import IStatusMessage
 
 from adk.contentpages.sectionfolder import ISectionFolder
 
+from adk.contentpages.mailer import create_plaintext_message
+from adk.contentpages.mailer import prepare_email_message
+from adk.contentpages.mailer import send_mail
+
 from adk.contentpages import MessageFactory as _
 
 
@@ -22,12 +29,18 @@ def validateAcceptConstraint(value):
         return False
     return True
 
+gender = SimpleVocabulary(
+    [SimpleTerm(value=u'male', title=_(u'male')),
+     SimpleTerm(value=u'female', title=_(u'female')),
+     SimpleTerm(value=u'other', title=_(u'other'))]
+)
+
 
 class IBooking(form.Schema):
 
-    salutation = schema.Choice(
+    gender = schema.Choice(
         title=_(u"Salutation"),
-        values=[_(u'Frau'), _(u'Herr')],
+        vocabulary=gender,
         required=True,
     )
     firstname = schema.TextLine(
@@ -175,9 +188,6 @@ class IBooking(form.Schema):
             SimpleTerm(value='hotel or guesthouse',
                        token='hotel or guesthouse',
                        title=_(u'hotel or guesthouse')),
-            SimpleTerm(value='room in a shared flat',
-                       token='room in a shared flat',
-                       title=_(u'room in a shared flat')),
             SimpleTerm(value='no accomodation needed',
                        token='no accomodation needed',
                        title=_(u'no accomodation needed'))
@@ -272,7 +282,7 @@ class BookingForm(form.SchemaForm):
         context_url = self.context.absolute_url()
         mto = 'info@augsburger-deutschkurse.de'
         envelope_from = 'anfrage@adk-german-courses.com'
-        subject = 'Buchungsanfrage Sprachkurse'
+        subject = 'Anfrage Sprachkurse'
         options = data
         body = ViewPageTemplateFile("booking_email.pt")(self, **options)
         # send email
@@ -284,11 +294,37 @@ class BookingForm(form.SchemaForm):
                       charset='utf-8')
 
         IStatusMessage(self.request).add(
-            _(u"Thank you for your interest in this special. "
-              u"Your Request has been forwarded to the hotel.")
+            _(u"Thank you for your interest in our courses. "
+              u"Your Request has been forwarded")
         )
         return self.request.response.redirect(
             '%s/@@booking-form-success' % context_url)
+
+    def build_and_send(self):
+        addresses = self.get_addresses()
+        idx = 0
+        for addr in addresses:
+            subject = _(u"Booking request langauge courses")
+            mail_tpl = self._compose_invitation_message()
+            mail_plain = create_plaintext_message(mail_tpl)
+            msg = prepare_email_message(mail_tpl, mail_plain)
+            send_mail(msg, addr, subject)
+            idx += 1
+        return idx
+
+    def get_addresses(self):
+        records = ('info@augsburger-deutschkurse.de')
+        return records
+
+    def _compose_invitation_message(self):
+        portal_url = api.portal.get().absolute_url()
+        template_file = os.path.join(os.path.dirname(__file__),
+                                     'mail-invitation.html')
+        template = Template(open(template_file).read())
+        template_vars = {
+            'url': portal_url
+        }
+        return template.substitute(template_vars)
 
 
 class BookingFormSuccess(grok.View):
