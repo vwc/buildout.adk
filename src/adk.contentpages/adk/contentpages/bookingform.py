@@ -280,7 +280,7 @@ class BookingForm(form.SchemaForm):
     def send_email(self, data):
         """ Construct and send the registration request. """
         context_url = self.context.absolute_url()
-        mto = 'info@augsburger-deutschkurse.de'
+        mto = ('info@augsburger-deutschkurse.de')
         envelope_from = 'anfrage@adk-german-courses.com'
         subject = 'Anfrage Sprachkurse'
         options = data
@@ -300,31 +300,27 @@ class BookingForm(form.SchemaForm):
         return self.request.response.redirect(
             '%s/@@booking-form-success' % context_url)
 
-    def build_and_send(self):
-        addresses = self.get_addresses()
-        idx = 0
-        for addr in addresses:
-            subject = _(u"Booking request langauge courses")
-            mail_tpl = self._compose_invitation_message()
-            mail_plain = create_plaintext_message(mail_tpl)
-            msg = prepare_email_message(mail_tpl, mail_plain)
-            send_mail(msg, addr, subject)
-            idx += 1
-        return idx
+    def build_and_send(self, data):
+        context = aq_inner(self.context)
+        mto = ('info@augsburger-deutschkurse.de')
+        subject = 'Anfrage Sprachkurse'
+        subject = _(u"Booking request langauge courses")
+        mail_tpl = self._compose_invitation_message(data)
+        mail_plain = create_plaintext_message(mail_tpl)
+        msg = prepare_email_message(mail_tpl, mail_plain)
+        send_mail(msg, mto, subject)
+        IStatusMessage(self.request).add(
+            _(u"Thank you for your interest in our courses. "
+              u"Your Request has been forwarded")
+        )
+        next_url = '{0}/@@booking-form-success'.format(context.absolute_url())
+        return self.request.response.redirect(next_url)
 
-    def get_addresses(self):
-        records = ('info@augsburger-deutschkurse.de')
-        return records
-
-    def _compose_invitation_message(self):
-        portal_url = api.portal.get().absolute_url()
+    def _compose_invitation_message(self, data):
         template_file = os.path.join(os.path.dirname(__file__),
                                      'mail-invitation.html')
         template = Template(open(template_file).read())
-        template_vars = {
-            'url': portal_url
-        }
-        return template.substitute(template_vars)
+        return template.substitute(data)
 
 
 class BookingFormSuccess(grok.View):
