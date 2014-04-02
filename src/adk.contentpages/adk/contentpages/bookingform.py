@@ -1,3 +1,4 @@
+import datetime
 import os
 from Acquisition import aq_inner
 from five import grok
@@ -300,11 +301,12 @@ class BookingForm(form.SchemaForm):
         return self.request.response.redirect(
             '%s/@@booking-form-success' % context_url)
 
-    def build_and_send(self, data):
+    def build_and_send(self, formdata):
         context = aq_inner(self.context)
         mto = ('info@augsburger-deutschkurse.de')
         subject = 'Anfrage Sprachkurse'
         subject = _(u"Booking request langauge courses")
+        data = self._prepare_data(formdata)
         mail_tpl = self._compose_invitation_message(data)
         mail_plain = create_plaintext_message(mail_tpl)
         msg = prepare_email_message(mail_tpl, mail_plain)
@@ -318,9 +320,23 @@ class BookingForm(form.SchemaForm):
 
     def _compose_invitation_message(self, data):
         template_file = os.path.join(os.path.dirname(__file__),
-                                     'mail-invitation.html')
+                                     'mailtemplate-booking.html')
         template = Template(open(template_file).read())
         return template.substitute(data)
+
+    def _prepare_data(self, formdata):
+        date_fields = ('arrival', 'departure', 'startdate')
+        timestamp = datetime.datetime.now()
+        data = {}
+        for item in formdata:
+            value = formdata[item]
+            if value in date_fields:
+                pretty_value = value.strftime('%d.%m.%Y %H:%M')
+                data[item] = pretty_value
+            else:
+                data[item] = value
+        data['timestamp'] = timestamp.strftime("%Y-%m-%d %H:%M:%S")
+        return data
 
 
 class BookingFormSuccess(grok.View):
