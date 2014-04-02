@@ -8,6 +8,7 @@ from string import Template
 from plone.directives import form
 
 from zope import schema
+from z3c.form import field
 from z3c.form import button
 
 from zope.schema.vocabulary import SimpleVocabulary
@@ -251,6 +252,8 @@ class BookingForm(form.SchemaForm):
     grok.name('booking-form')
 
     schema = IBooking
+    fields = field.Fields(IBooking)
+
     ignoreContext = True
     ignoreRequest = False
 
@@ -330,11 +333,14 @@ class BookingForm(form.SchemaForm):
         data = {}
         for item in formdata:
             value = formdata[item]
-            if value in date_fields:
+            if item in date_fields and value is not None:
                 pretty_value = value.strftime('%d.%m.%Y %H:%M')
                 data[item] = pretty_value
             else:
-                data[item] = value
+                if value is None:
+                    data['item'] = _(u"Not provided")
+                else:
+                    data[item] = value
         data['timestamp'] = timestamp.strftime("%Y-%m-%d %H:%M:%S")
         return data
 
