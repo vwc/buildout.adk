@@ -8,11 +8,11 @@ from string import Template
 from plone.directives import form
 
 from zope import schema
-from z3c.form import field
 from z3c.form import button
 
 from zope.schema.vocabulary import SimpleVocabulary
 from zope.schema.vocabulary import SimpleTerm
+from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.statusmessages.interfaces import IStatusMessage
 
@@ -252,7 +252,6 @@ class BookingForm(form.SchemaForm):
     grok.name('booking-form')
 
     schema = IBooking
-    fields = field.Fields(IBooking)
 
     ignoreContext = True
     ignoreRequest = False
@@ -330,17 +329,23 @@ class BookingForm(form.SchemaForm):
     def _prepare_data(self, formdata):
         date_fields = ('arrival', 'departure', 'startdate')
         timestamp = datetime.datetime.now()
+        fields = schema.getFieldsInOrder(IBooking)
         data = {}
-        for item in formdata:
-            value = formdata[item]
-            if item in date_fields and value is not None:
-                pretty_value = value.strftime('%d.%m.%Y %H:%M')
-                data[item] = pretty_value
-            else:
-                if value is None:
-                    data['item'] = _(u"Not provided")
+        for key, val in fields:
+            try:
+                value = formdata[key]
+                if key in date_fields and value is not None:
+                    pretty_value = value.strftime('%d.%m.%Y %H:%M')
+                    value = pretty_value
                 else:
-                    data[item] = value
+                    if not isinstance(value, (str, unicode)):
+                        if value is None:
+                            value = _(u"Not provided")
+                        else:
+                            value = str(value)
+            except KeyError:
+                value = _(u"Not provided")
+            data[key] = safe_unicode(value, 'utf-8')
         data['timestamp'] = timestamp.strftime("%Y-%m-%d %H:%M:%S")
         return data
 
