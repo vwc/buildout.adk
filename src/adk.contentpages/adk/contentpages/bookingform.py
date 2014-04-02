@@ -301,8 +301,8 @@ class BookingForm(form.SchemaForm):
             _(u"Thank you for your interest in our courses. "
               u"Your Request has been forwarded")
         )
-        return self.request.response.redirect(
-            '%s/@@booking-form-success' % context_url)
+        next_url = '{0}/@@booking-form-success'.format(context_url)
+        return self.request.response.redirect(next_url)
 
     def build_and_send(self, formdata):
         context = aq_inner(self.context)
