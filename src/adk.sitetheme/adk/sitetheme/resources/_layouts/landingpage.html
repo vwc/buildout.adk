@@ -51,10 +51,10 @@
           {% include footer-colophon.html %}
         </div>
     </footer>
+    {% include g-webfonts.html %}
     {% include javascript.html %}
-    <div id="app-fonts-dev">
-        {% include g-webfonts.html %}
+    <div class="app-js-slot">
+        {% include analytics.html %}
     </div>
-    {% include analytics.html %}
 </body>
 </html>

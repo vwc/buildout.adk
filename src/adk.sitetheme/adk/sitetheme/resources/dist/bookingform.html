@@ -10,6 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
+<meta name="google-site-verification" content="1WfNvtwznLhbixzgm3Qj5_8lAay_EHZrnpWFH09W1a8" />
 <meta property="og:title" content="ADK Augsburger Deutschkurse - Learning German in Augsburg"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="http://adk-german-courses.com"/>
@@ -781,14 +782,21 @@ jQuery("#form-widgets-departure-day").val(value[2]);
   </div>
 </main>
     </div>
-    <!-- Bootstrap core JavaScript
+    <!-- Defered JavaScript Loader
+(see: http://www.feedthebot.com/pagespeed/defer-loading-javascript.html)
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="../../bower_components/jquery/jquery.js"></script>
-<script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="../../bower_components/holderjs/holder.js"></script>
-
-<script src="../assets/js/application.js"></script>
+<script type="text/javascript">
+function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "../../dist/js/klikev.min.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+</script>
     <script type="text/javascript">
   WebFontConfig = {
     google: { families: [ 'Quicksand:400italic,400,700:latin' ] }

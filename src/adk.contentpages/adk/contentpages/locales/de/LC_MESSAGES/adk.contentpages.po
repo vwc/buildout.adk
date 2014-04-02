@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: 2014-03-19 13:51+0000\n"
-"PO-Revision-Date: 2014-03-19 14:52+0100\n"
+"POT-Creation-Date: 2014-04-02 08:47+0000\n"
+"PO-Revision-Date: 2014-04-02 11:41+0100\n"
 "Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
 "Language-Team: VW Language Team <hallo@vorwaerts-werbung.de>\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr "Das Formular wurde erfolgreich ausgeführt."
 msgid "A sinlge content panel or box"
 msgstr "Ein einzelner Inhaltsblock oder eine einzelne Inhaltsbox"
 
-#: ./../contentpage_templates/view.pt:181
+#: ./../contentpage_templates/view.pt:185
 msgid "Add block"
 msgstr "Inhaltsblock hinzufügen"
 
@@ -98,14 +98,18 @@ msgstr "Block Layout"
 msgid "Body Text"
 msgstr "Haupttext"
 
-#: ./../bookingform.py:255
+#: ./../bookingform.py:265
 msgid "Book now"
 msgstr "Jetzt anmelden"
 
-#: ./../bookingform.py:246
+#: ./../bookingform.py:256
 #: ./../bookingform_templates/bookingformsuccess.pt:16
 msgid "Booking form"
 msgstr "Kursanmeldung"
+
+#: ./../bookingform.py:307
+msgid "Booking request langauge courses"
+msgstr "Anfrage Sprachkurse"
 
 #: ./../contentbox.py:37
 msgid "Box Content Body"
@@ -115,7 +119,7 @@ msgstr "Textinhalt der Infobox"
 msgid "Box Heading Icon"
 msgstr "Icon für den Kopf der Infobox"
 
-#: ./../bookingform.py:46
+#: ./../bookingform.py:59
 msgid "City"
 msgstr "Ort"
 
@@ -147,15 +151,15 @@ msgstr "Infobox"
 msgid "ContentPage"
 msgstr "Inhaltsseite"
 
-#: ./../bookingform.py:54
+#: ./../bookingform.py:67
 msgid "Country"
 msgstr "Land"
 
-#: ./../bookingform.py:107
+#: ./../bookingform.py:120
 msgid "DSH Preparation Course"
 msgstr "DSH Vorbereitungskurs"
 
-#: ./../bookingform.py:81
+#: ./../bookingform.py:94
 msgid "Date of Birth"
 msgstr "Geburtsdatum"
 
@@ -172,7 +176,7 @@ msgstr "Angezeigter Titel"
 msgid "Download"
 msgstr "Download"
 
-#: ./../bookingform.py:76
+#: ./../bookingform.py:89
 msgid "E-Mail"
 msgstr "E-Mail-Adresse"
 
@@ -197,7 +201,7 @@ msgstr "Seitenkopf der Inhaltsseite bearbeiten"
 msgid "Enter a sumamry or teaser text"
 msgstr "Bitte geben Sie eine kurze ZUsammenfassung bzw EInleitung ein"
 
-#: ./../bookingform.py:71
+#: ./../bookingform.py:84
 msgid "Fax"
 msgstr "Fax"
 
@@ -214,28 +218,24 @@ msgstr "Hervorgehobener Inhaltsblock"
 msgid "First headline of the page body"
 msgstr "Die erste Überschrift des Inhaltsbereiches."
 
-#: ./../bookingform.py:34
+#: ./../bookingform.py:47
 msgid "Firstname"
 msgstr "Vorname"
-
-#: ./../bookingform.py:30
-msgid "Frau"
-msgstr "Frau"
 
 #: ./../contentblock.py:35
 #: ./../displaysettings.py:15
 msgid "Full View"
 msgstr "Komplettansicht"
 
+#: ./../bookingform.py:42
+msgid "Gender"
+msgstr "Geschlecht"
+
 #: ./../infoview_templates/termsandconditions.pt:58
 msgid "General conditions and guarantees"
 msgstr "AGB / Allgemeine Geschäftsbedingungen"
 
-#: ./../bookingform.py:30
-msgid "Herr"
-msgstr "Herr"
-
-#: ./../bookingform.py:230
+#: ./../bookingform.py:240
 msgid "I confirm the correctness of my entries and acknowledge the terms and conditions of ADK."
 msgstr "Hiermit bestätige ich die Richtigkeit und Vollständigkeit meiner Angaben und akzeptiere die AGB von Augsburger Deutschkurse"
 
@@ -255,15 +255,15 @@ msgstr "Impressum"
 msgid "Info"
 msgstr "Information"
 
-#: ./../bookingform.py:96
+#: ./../bookingform.py:109
 msgid "Intensive Course"
 msgstr "Intensivkurs"
 
-#: ./../bookingform.py:99
+#: ./../bookingform.py:112
 msgid "Intensive Plus Course (24 lessions)"
 msgstr "Intensivkurs Plus (24 Unterrichtsstunden)"
 
-#: ./../bookingform.py:102
+#: ./../bookingform.py:115
 msgid "Intensive Plus Course (30 lessons)"
 msgstr "Intensivkurs Plus (30 Unterrichtsstunden)"
 
@@ -272,7 +272,7 @@ msgstr "Intensivkurs Plus (30 Unterrichtsstunden)"
 msgid "Introduction"
 msgstr "Einleitung"
 
-#: ./../bookingform.py:38
+#: ./../bookingform.py:51
 msgid "Lastname"
 msgstr "Nachname"
 
@@ -280,7 +280,7 @@ msgstr "Nachname"
 msgid "Mark as featured to visually highlight this block"
 msgstr "Diesen Block als hervorgehoben markieren"
 
-#: ./../bookingform.py:86
+#: ./../bookingform.py:99
 msgid "Nationality"
 msgstr "Nationalität"
 
@@ -288,7 +288,7 @@ msgstr "Nationalität"
 msgid "New item has successfully been added"
 msgstr "Ein neuer Inhalt wurde erfolgreich hinzugefügt"
 
-#: ./../bookingform.py:59
+#: ./../bookingform.py:72
 msgid "Occupation"
 msgstr "Beruf"
 
@@ -311,7 +311,7 @@ msgstr "Seitentitel"
 msgid "Payment - How can I pay for my language program in full?"
 msgstr "Zahlung der Kursgebühr"
 
-#: ./../bookingform.py:66
+#: ./../bookingform.py:79
 msgid "Phone"
 msgstr "Telefon"
 
@@ -323,7 +323,7 @@ msgstr "Telefon:"
 msgid "Picture credits"
 msgstr "Quellennachweis Bilder"
 
-#: ./../bookingform.py:50
+#: ./../bookingform.py:63
 msgid "Postal Code"
 msgstr "Postleitzahl"
 
@@ -331,27 +331,23 @@ msgstr "Postleitzahl"
 msgid "Prices and scope of contractual services are binding according to the respective description in this price list. However, ADK reserves the right to non-detrimental program changes and to revise calculation, printing and translation errors."
 msgstr "Auf alle mit der Sprachschule ADK getroffenen Vereinbarungen ist deutsches Recht anwendbar. Als Gerichtsstand wird Augsburg vereinbart."
 
-#: ./../bookingform.py:104
+#: ./../bookingform.py:117
 msgid "Private Tuition"
 msgstr "Privatunterricht"
 
 #: ./../blockaddform.py:64
 #: ./../blockeditform.py:61
-#: ./../bookingform.py:266
+#: ./../bookingform.py:276
 msgid "Process has been cancelled."
 msgstr "Der Vorgang wurde abgebrochen"
 
-#: ./../bookingform.py:247
+#: ./../bookingform.py:257
 msgid "Register for the selected course by filling out the form below."
 msgstr "Melden Sie sich für den ausgewählten Kurs über das Formular an"
 
 #: ./../infoview_templates/termsandconditions.pt:43
 msgid "Registration"
 msgstr "Anmeldung"
-
-#: ./../bookingform.py:29
-msgid "Salutation"
-msgstr "Anrede"
 
 #: ./../profiles/default/types/adk.contentpages.sectionfolder.xml
 msgid "SectionFolder"
@@ -376,7 +372,7 @@ msgstr "Rechte Seitenleiste"
 msgid "Split View"
 msgstr "Geteilte Anzeige"
 
-#: ./../bookingform.py:42
+#: ./../bookingform.py:55
 msgid "Street"
 msgstr "Straße und Hausnummer"
 
@@ -389,7 +385,7 @@ msgstr "Vertragsgegenstand und Gerichtsstand"
 msgid "Subtitle"
 msgstr "Subtitel"
 
-#: ./../bookingform.py:113
+#: ./../bookingform.py:126
 msgid "Summer Course Classic"
 msgstr "Sommerkurs Klassik"
 
@@ -401,7 +397,7 @@ msgstr "Swift Code:"
 msgid "Terms and Conditions"
 msgstr "Allgemeine Geschäftsbedingungen"
 
-#: ./../bookingform.py:110
+#: ./../bookingform.py:123
 msgid "TestDAF Preparation Course"
 msgstr "TestDAF Vorbereitungskurs"
 
@@ -409,10 +405,9 @@ msgstr "TestDAF Vorbereitungskurs"
 msgid "Thank you for your interest in ADK Augsburger Deutschkurse. Your booking request has successfully been forwarded to us."
 msgstr "Vielen Dank für Ihr Interesse an ADK Augsburger Deutschkurse. Die Anfrage zur Kursanmeldung wurde erfolgreich an uns weitergeleitet."
 
-#. Default: "info"
-#: ./../bookingform.py:287
-msgid "Thank you for your interest in this special. Your Request has been forwarded to the hotel."
-msgstr "Vielen Dank für Ihr Interesse. Ihre Anfrage wurde an uns weitergeleitet."
+#: ./../bookingform.py:297
+msgid "Thank you for your interest in our courses. Your Request has been forwarded"
+msgstr "Vielen Dank für Ihr Interesse an unseren Angeboten. Ihre Anfrage wurde weitergeleitet."
 
 #: ./../blockeditform.py:91
 msgid "The content block has successfully been updated"
@@ -444,97 +439,105 @@ msgstr "Video/Film"
 msgid "Your layout selection has been safed"
 msgstr "Ihre Auswahl wurde gespeichert"
 
-#: ./../bookingform.py:139
+#: ./../bookingform.py:152
 msgid "advanced"
 msgstr "fortgeschritten"
 
-#: ./../bookingform.py:148
+#: ./../bookingform.py:161
 msgid "advertisment"
 msgstr "Werbung"
 
 #: ./../blockaddform.py:61
 #: ./../blockeditform.py:58
-#: ./../bookingform.py:263
+#: ./../bookingform.py:273
 msgid "cancel"
 msgstr "abbrechen"
 
-#: ./../bookingform.py:203
+#: ./../bookingform.py:213
 msgid "car"
 msgstr "Auto"
 
-#: ./../bookingform.py:134
+#: ./../bookingform.py:147
 msgid "elementary"
 msgstr "grundlegend"
 
-#: ./../bookingform.py:150
+#: ./../bookingform.py:34
+msgid "female"
+msgstr "weiblich"
+
+#: ./../bookingform.py:163
 msgid "former student"
 msgstr "ehemaliger Schüler"
 
-#: ./../bookingform.py:137
+#: ./../bookingform.py:150
 msgid "good"
 msgstr "gut"
 
-#: ./../bookingform.py:168
+#: ./../bookingform.py:181
 msgid "host family, double room, full board"
 msgstr "Gastfamilie, Doppelzimmer, Vollpension"
 
-#: ./../bookingform.py:165
+#: ./../bookingform.py:178
 msgid "host family, double room, half board"
 msgstr "Gastfamilie, Doppelzimmer, Halbpension"
 
-#: ./../bookingform.py:174
+#: ./../bookingform.py:187
 msgid "host family, single room, full board"
 msgstr "Gastfamilie, Einzelzimmer, Vollpension"
 
-#: ./../bookingform.py:171
+#: ./../bookingform.py:184
 msgid "host family, single room, half board"
 msgstr "Gastfamilie, Einzelzimmer, Halbpension"
 
-#: ./../bookingform.py:177
+#: ./../bookingform.py:190
 msgid "hotel or guesthouse"
 msgstr "Hotel oder Gasthaus"
 
-#: ./../bookingform.py:136
+#: ./../bookingform.py:149
 msgid "intermediate"
 msgstr "mittelmässig"
 
-#: ./../bookingform.py:212
+#: ./../bookingform.py:33
+msgid "male"
+msgstr "männlich"
+
+#: ./../bookingform.py:222
 msgid "no"
 msgstr "nein"
 
-#: ./../bookingform.py:183
+#: ./../bookingform.py:193
 msgid "no accomodation needed"
 msgstr "keine Unterkunft notwendig"
 
-#: ./../bookingform.py:132
+#: ./../bookingform.py:145
 msgid "none"
 msgstr "keine"
 
-#: ./../bookingform.py:155
+#: ./../bookingform.py:35
+msgid "other"
+msgstr "andere"
+
+#: ./../bookingform.py:168
 msgid "other sources"
 msgstr "andere Quellen"
 
-#: ./../bookingform.py:201
+#: ./../bookingform.py:211
 msgid "plane"
 msgstr "Flugzeug"
 
-#: ./../bookingform.py:152
+#: ./../bookingform.py:165
 msgid "recommendation"
 msgstr "Empfehlung"
 
-#: ./../bookingform.py:180
-msgid "room in a shared flat"
-msgstr "WG-Zimmer"
-
-#: ./../bookingform.py:202
+#: ./../bookingform.py:212
 msgid "train"
 msgstr "Zug"
 
-#: ./../bookingform.py:153
+#: ./../bookingform.py:166
 msgid "website"
 msgstr "Webseite"
 
-#: ./../bookingform.py:211
+#: ./../bookingform.py:221
 msgid "yes"
 msgstr "ja"
 

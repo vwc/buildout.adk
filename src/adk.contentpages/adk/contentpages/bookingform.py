@@ -39,7 +39,7 @@ gender = SimpleVocabulary(
 class IBooking(form.Schema):
 
     gender = schema.Choice(
-        title=_(u"Salutation"),
+        title=_(u"Gender"),
         vocabulary=gender,
         required=True,
     )
@@ -101,7 +101,7 @@ class IBooking(form.Schema):
         required=False,
     )
     course = schema.Choice(
-        title=u'Herby, I register for following course',
+        title=_(u'Herby, I register for following course'),
         description=u'',
         required=True,
         vocabulary=SimpleVocabulary((
@@ -128,17 +128,17 @@ class IBooking(form.Schema):
     )
 
     startdate = schema.Date(
-        title=u'Course starting date',
+        title=_(u'Course starting date'),
         description=u'',
         required=True,
     )
     duration = schema.TextLine(
-        title=u'Course duration in weeks',
+        title=_(u'Course duration in weeks'),
         description=u'',
         required=False,
     )
     knowledge = schema.Choice(
-        title=u'German language skills',
+        title=_(u'German language skills'),
         description=u'',
         required=True,
         vocabulary=SimpleVocabulary((
@@ -153,7 +153,7 @@ class IBooking(form.Schema):
         ))
     )
     recommendation = schema.Choice(
-        title=u'I learned about Augsburger Deutschkurse from',
+        title=_(u'I learned about Augsburger Deutschkurse from'),
         description=u'',
         required=False,
         vocabulary=SimpleVocabulary((
@@ -169,7 +169,7 @@ class IBooking(form.Schema):
         ))
     )
     accomodation = schema.Choice(
-        title=u'Preferred type of accomodation',
+        title=_(u'Preferred type of accomodation'),
         description=u'',
         required=True,
         vocabulary=SimpleVocabulary((
@@ -194,17 +194,17 @@ class IBooking(form.Schema):
         ))
     )
     arrival = schema.Date(
-        title=u'Day of arrival',
+        title=_(u'Day of arrival'),
         description=u'',
         required=True,
     )
     departure = schema.Date(
-        title=u'Day of departure',
+        title=_(u'Day of departure'),
         description=u'',
         required=False,
     )
     transport = schema.Choice(
-        title=u'I will arrive by',
+        title=_(u'I will arrive by'),
         description=u'',
         required=True,
         vocabulary=SimpleVocabulary((
@@ -214,7 +214,7 @@ class IBooking(form.Schema):
         ))
     )
     airporttransfer = schema.Choice(
-        title=u'Airport transfer',
+        title=_(u'Airport transfer'),
         description=u'',
         required=True,
         vocabulary=SimpleVocabulary((
@@ -223,7 +223,7 @@ class IBooking(form.Schema):
         ))
     )
     smoker = schema.Choice(
-        title=u'Do you smoke?',
+        title=_(u'Do you smoke?'),
         description=u'',
         required=False,
         vocabulary=SimpleVocabulary((
@@ -232,7 +232,7 @@ class IBooking(form.Schema):
         ))
     )
     message = schema.Text(
-        title=u'Message',
+        title=_(u'Message'),
         description=u'',
         required=False,
     )
@@ -268,7 +268,7 @@ class BookingForm(form.SchemaForm):
         if errors:
             self.status = self.formErrorsMessage
             return
-        self.status = self.send_email(data)
+        self.status = self.build_and_send(data)
 
     @button.buttonAndHandler(_(u"cancel"))
     def handleCancel(self, action):
