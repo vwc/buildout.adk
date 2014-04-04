@@ -1,6 +1,10 @@
+import datetime
+import os
 from Acquisition import aq_inner
 from five import grok
 from plone import api
+from string import Template
+
 from plone.directives import form
 
 from zope import schema
@@ -8,10 +12,15 @@ from z3c.form import button
 
 from zope.schema.vocabulary import SimpleVocabulary
 from zope.schema.vocabulary import SimpleTerm
+from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.statusmessages.interfaces import IStatusMessage
 
 from adk.contentpages.sectionfolder import ISectionFolder
+
+from adk.contentpages.mailer import create_plaintext_message
+from adk.contentpages.mailer import prepare_email_message
+from adk.contentpages.mailer import send_mail
 
 from adk.contentpages import MessageFactory as _
 
@@ -22,12 +31,18 @@ def validateAcceptConstraint(value):
         return False
     return True
 
+gender = SimpleVocabulary(
+    [SimpleTerm(value=u'male', title=_(u'male')),
+     SimpleTerm(value=u'female', title=_(u'female')),
+     SimpleTerm(value=u'other', title=_(u'other'))]
+)
+
 
 class IBooking(form.Schema):
 
-    salutation = schema.Choice(
-        title=_(u"Salutation"),
-        values=[_(u'Frau'), _(u'Herr')],
+    gender = schema.Choice(
+        title=_(u"Gender"),
+        vocabulary=gender,
         required=True,
     )
     firstname = schema.TextLine(
@@ -88,44 +103,43 @@ class IBooking(form.Schema):
         required=False,
     )
     course = schema.Choice(
-        title=u'Herby, I register for following course',
+        title=_(u'Herby, I register for following course'),
         description=u'',
         required=True,
         vocabulary=SimpleVocabulary((
             SimpleTerm(value='Intensive Course',
-                       token='Intensive Course', title=_(u'Intensive Course')),
+                       token='Intensive Course',
+                       title=_(u'Intensive Course 25 lessons per week')),
             SimpleTerm(value='Intensive Plus Course 24h',
                        token='Intensive Plus Course (24 lessons)',
-                       title=_(u'Intensive Plus Course (24 lessions)')),
-            SimpleTerm(value='Intensive Plus Course 30h',
-                       token='Intensive Plus Course (30 lessions)',
-                       title=_(u'Intensive Plus Course (30 lessons)')),
+                       title=_(u'Intensive Plus Course 30 lessons per week')),
             SimpleTerm(value='Private Tuition',
-                       token='Private Tuition', title=_(u'Private Tuition')),
+                       token='Private Tuition',
+                       title=_(u'Private Tuition')),
             SimpleTerm(value='DSH Preperation Course',
                        token='DSH Preparation Course',
-                       title=_(u'DSH Preparation Course')),
+                       title=_(u'Preparation Course')),
             SimpleTerm(value='TestDAF',
                        token='TestDAF Preparation Course',
                        title=_(u'TestDAF Preparation Course')),
             SimpleTerm(value='Summer Course Classic',
                        token='Summer Course Classic',
-                       title=_(u'Summer Course Classic')),
+                       title=_(u'Summer Course')),
         ))
     )
 
     startdate = schema.Date(
-        title=u'Course starting date',
+        title=_(u'Course starting date'),
         description=u'',
         required=True,
     )
     duration = schema.TextLine(
-        title=u'Course duration in weeks',
+        title=_(u'Course duration in weeks'),
         description=u'',
         required=False,
     )
     knowledge = schema.Choice(
-        title=u'German language skills',
+        title=_(u'German language skills'),
         description=u'',
         required=True,
         vocabulary=SimpleVocabulary((
@@ -140,7 +154,7 @@ class IBooking(form.Schema):
         ))
     )
     recommendation = schema.Choice(
-        title=u'I learned about Augsburger Deutschkurse from',
+        title=_(u'I learned about Augsburger Deutschkurse from'),
         description=u'',
         required=False,
         vocabulary=SimpleVocabulary((
@@ -156,7 +170,7 @@ class IBooking(form.Schema):
         ))
     )
     accomodation = schema.Choice(
-        title=u'Preferred type of accomodation',
+        title=_(u'Preferred type of accomodation'),
         description=u'',
         required=True,
         vocabulary=SimpleVocabulary((
@@ -175,26 +189,23 @@ class IBooking(form.Schema):
             SimpleTerm(value='hotel or guesthouse',
                        token='hotel or guesthouse',
                        title=_(u'hotel or guesthouse')),
-            SimpleTerm(value='room in a shared flat',
-                       token='room in a shared flat',
-                       title=_(u'room in a shared flat')),
             SimpleTerm(value='no accomodation needed',
                        token='no accomodation needed',
                        title=_(u'no accomodation needed'))
         ))
     )
     arrival = schema.Date(
-        title=u'Day of arrival',
+        title=_(u'Day of arrival'),
         description=u'',
         required=True,
     )
     departure = schema.Date(
-        title=u'Day of departure',
+        title=_(u'Day of departure'),
         description=u'',
         required=False,
     )
     transport = schema.Choice(
-        title=u'I will arrive by',
+        title=_(u'I will arrive by'),
         description=u'',
         required=True,
         vocabulary=SimpleVocabulary((
@@ -204,7 +215,7 @@ class IBooking(form.Schema):
         ))
     )
     airporttransfer = schema.Choice(
-        title=u'Airport transfer',
+        title=_(u'Airport transfer'),
         description=u'',
         required=True,
         vocabulary=SimpleVocabulary((
@@ -213,7 +224,7 @@ class IBooking(form.Schema):
         ))
     )
     smoker = schema.Choice(
-        title=u'Do you smoke?',
+        title=_(u'Do you smoke?'),
         description=u'',
         required=False,
         vocabulary=SimpleVocabulary((
@@ -222,7 +233,7 @@ class IBooking(form.Schema):
         ))
     )
     message = schema.Text(
-        title=u'Message',
+        title=_(u'Message'),
         description=u'',
         required=False,
     )
@@ -240,6 +251,7 @@ class BookingForm(form.SchemaForm):
     grok.name('booking-form')
 
     schema = IBooking
+
     ignoreContext = True
     ignoreRequest = False
 
@@ -258,7 +270,7 @@ class BookingForm(form.SchemaForm):
         if errors:
             self.status = self.formErrorsMessage
             return
-        self.status = self.send_email(data)
+        self.status = self.build_and_send(data)
 
     @button.buttonAndHandler(_(u"cancel"))
     def handleCancel(self, action):
@@ -270,9 +282,9 @@ class BookingForm(form.SchemaForm):
     def send_email(self, data):
         """ Construct and send the registration request. """
         context_url = self.context.absolute_url()
-        mto = 'info@augsburger-deutschkurse.de'
+        mto = ('info@augsburger-deutschkurse.de')
         envelope_from = 'anfrage@adk-german-courses.com'
-        subject = 'Buchungsanfrage Sprachkurse'
+        subject = 'Anfrage Sprachkurse'
         options = data
         body = ViewPageTemplateFile("booking_email.pt")(self, **options)
         # send email
@@ -284,11 +296,58 @@ class BookingForm(form.SchemaForm):
                       charset='utf-8')
 
         IStatusMessage(self.request).add(
-            _(u"Thank you for your interest in this special. "
-              u"Your Request has been forwarded to the hotel.")
+            _(u"Thank you for your interest in our courses. "
+              u"Your Request has been forwarded")
         )
-        return self.request.response.redirect(
-            '%s/@@booking-form-success' % context_url)
+        next_url = '{0}/@@booking-form-success'.format(context_url)
+        return self.request.response.redirect(next_url)
+
+    def build_and_send(self, formdata):
+        context = aq_inner(self.context)
+        mto = ('info@augsburger-deutschkurse.de')
+        # mto = ('cb@vorwaerts-werbung.de')
+        subject = 'Anfrage Sprachkurse'
+        subject = _(u"Booking request langauge courses")
+        data = self._prepare_data(formdata)
+        mail_tpl = self._compose_invitation_message(data)
+        mail_plain = create_plaintext_message(mail_tpl)
+        msg = prepare_email_message(mail_tpl, mail_plain)
+        send_mail(msg, mto, subject)
+        IStatusMessage(self.request).add(
+            _(u"Thank you for your interest in our courses. "
+              u"Your Request has been forwarded")
+        )
+        next_url = '{0}/@@booking-form-success'.format(context.absolute_url())
+        return self.request.response.redirect(next_url)
+
+    def _compose_invitation_message(self, data):
+        template_file = os.path.join(os.path.dirname(__file__),
+                                     'mailtemplate-booking.html')
+        template = Template(open(template_file).read())
+        return template.substitute(data)
+
+    def _prepare_data(self, formdata):
+        date_fields = ('arrival', 'departure', 'startdate')
+        timestamp = datetime.datetime.now()
+        fields = schema.getFieldsInOrder(IBooking)
+        data = {}
+        for key, val in fields:
+            try:
+                value = formdata[key]
+                if key in date_fields and value is not None:
+                    pretty_value = value.strftime('%d.%m.%Y %H:%M')
+                    value = pretty_value
+                else:
+                    if not isinstance(value, (str, unicode)):
+                        if value is None:
+                            value = _(u"Not provided")
+                        else:
+                            value = str(value)
+            except KeyError:
+                value = _(u"Not provided")
+            data[key] = safe_unicode(value, 'utf-8')
+        data['timestamp'] = timestamp.strftime("%Y-%m-%d %H:%M:%S")
+        return data
 
 
 class BookingFormSuccess(grok.View):
