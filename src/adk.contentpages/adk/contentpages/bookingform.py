@@ -282,7 +282,7 @@ class BookingForm(form.SchemaForm):
     def send_email(self, data):
         """ Construct and send the registration request. """
         context_url = self.context.absolute_url()
-        mto = ('info@augsburger-deutschkurse.de')
+        mto = ['info@augsburger-deutschkurse.de']
         envelope_from = 'anfrage@adk-german-courses.com'
         subject = 'Anfrage Sprachkurse'
         options = data
