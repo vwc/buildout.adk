@@ -159,7 +159,10 @@ def create_plaintext_message(message):
         cleaner.javascript = True
         cleaner.style = True
         cleaner.kill_tags = ['style']
-        doc = message.decode('utf-8', 'ignore')
+        try:
+            doc = message.decode(get_charset(), 'ignore')
+        except UnicodeEncodeError:
+            doc = message
         to_clean = lxml.html.fromstring(doc)
         cleaned_msg = lxml.html.tostring(cleaner.clean_html(to_clean))
         plain_text_maxcols = 72
