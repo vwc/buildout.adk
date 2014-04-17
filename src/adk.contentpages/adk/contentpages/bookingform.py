@@ -304,7 +304,9 @@ class BookingForm(form.SchemaForm):
 
     def build_and_send(self, formdata):
         context = aq_inner(self.context)
-        mto = ['ed@vorwaerts-werbung.de', 'info@augsburger-deutschkurse.de']
+        mto = ['ed@vorwaerts-werbung.de',
+               'info@augsburger-deutschkurse.de',
+               'adk-sprachinstitut@arcor.de']
         subject = 'Anfrage Sprachkurse'
         subject = _(u"Booking request for language courses")
         data = self._prepare_data(formdata)
