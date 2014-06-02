@@ -1426,7 +1426,7 @@ p
 .lead
 {
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.4;
 
     margin-bottom: 22px;
@@ -3355,6 +3355,10 @@ select[multiple].input-lg
 {
     color: #a94442;
 }
+.has-feedback label.sr-only ~ .form-control-feedback
+{
+    top: 0;
+}
 .form-control-static
 {
     margin-bottom: 0;
@@ -3415,9 +3419,13 @@ select[multiple].input-lg
 
         margin-top: 0;
         margin-bottom: 0;
-        padding-left: 0;
 
         vertical-align: middle;
+    }
+    .form-inline .radio label,
+  .form-inline .checkbox label
+    {
+        padding-left: 0;
     }
     .form-inline .radio input[type='radio'],
   .form-inline .checkbox input[type='checkbox']
@@ -4325,6 +4333,10 @@ tbody.collapse.in
 {
     width: 100%;
 }
+.btn-group-justified > .btn-group .dropdown-menu
+{
+    left: auto;
+}
 [data-toggle='buttons'] > .btn > input[type='radio'],
 [data-toggle='buttons'] > .btn > input[type='checkbox']
 {
@@ -4332,6 +4344,8 @@ tbody.collapse.in
     z-index: -1;
 
     opacity: 0;
+
+    filter: alpha(opacity=0);
 }
 .input-group
 {
@@ -5170,9 +5184,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 
         margin-top: 0;
         margin-bottom: 0;
-        padding-left: 0;
 
         vertical-align: middle;
+    }
+    .navbar-form .radio label,
+  .navbar-form .checkbox label
+    {
+        padding-left: 0;
     }
     .navbar-form .radio input[type='radio'],
   .navbar-form .checkbox input[type='checkbox']
@@ -6990,7 +7008,7 @@ button.close
     line-height: 1.4;
 
     position: absolute;
-    z-index: 1030;
+    z-index: 1070;
 
     display: block;
     visibility: visible;
@@ -7122,7 +7140,7 @@ button.close
 .popover
 {
     position: absolute;
-    z-index: 1010;
+    z-index: 1060;
     top: 0;
     left: 0;
 
@@ -7416,11 +7434,15 @@ button.close
 .carousel-control .glyphicon-chevron-left
 {
     left: 50%;
+
+    margin-left: -10px;
 }
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-right
 {
     right: 50%;
+
+    margin-right: -10px;
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next
@@ -7430,7 +7452,6 @@ button.close
     width: 20px;
     height: 20px;
     margin-top: -10px;
-    margin-left: -10px;
 }
 .carousel-control .icon-prev:before
 {
@@ -7511,7 +7532,16 @@ button.close
         width: 30px;
         height: 30px;
         margin-top: -15px;
+    }
+    .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev
+    {
         margin-left: -15px;
+    }
+    .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next
+    {
+        margin-right: -15px;
     }
     .carousel-caption
     {

@@ -1,6 +1,5 @@
 from fabric.api import task
 from fabric.api import env
-from fabric.api import get
 
 from ade25.fabfiles import project
 
@@ -11,7 +10,7 @@ env.user = 'root'
 env.hosts = ['6zu4']
 env.webserver = '/opt/webserver/buildout.webserver'
 env.code_root = '/opt/sites/adk-staging/buildout.adk'
-env.local_root = '/Users/cb/dev/adk/buildout.adk'
+env.local_root = '/Users/sd/dev/adk/buildout.adk'
 env.sitename = 'adk'
 env.code_user = 'root'
 env.prod_user = 'www'
@@ -38,13 +37,6 @@ def rebuild():
     project.site.update()
     project.site.build_full()
     project.site.restart()
-
-
-@task
-def get_db():
-    lp = 'var/filestorage'
-    rp = '%(code_root)s/var/filestorage/Data.fs' % env
-    get(rp, lp)
 
 
 @task
