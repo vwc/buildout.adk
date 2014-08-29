@@ -271,7 +271,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-css', ['less', 'csscomb']);
 
     // Assets distribution task.
-    grunt.registerTask('dist-assets', ['copy']);
+    grunt.registerTask('dist-assets', ['newer:copy', 'newer:imagemin']);
 
     // Cache buster distribution task.
     grunt.registerTask('dist-cb', ['rev']);
