@@ -62,12 +62,11 @@
             <h4 tal:condition="is_de">Zertifikate</h4>
         </div>
         <div class="footer-box-content">
-            <p tal:condition="not:is_de">Our language school has recieved both the 2011
-                and 2012 Excelence Award by the language course agency
-                languagecourse.net.</p>
+            <p tal:condition="not:is_de">Our language school has recieved the yearly excelence award by the language course agency
+                languagecourse.net since 2011.</p>
             <p tal:condition="not:is_de">Our high quality standards have been certified by
                 CERT-IT.</p>
-            <p tal:condition="is_de">Unser Sprachinstitut wurde 2011 und 2012 mit dem Excellence Award der Sprachreiseagentur languagecourse.net ausgezeichnet.</p>
+            <p tal:condition="is_de">Unser Sprachinstitut wurde seit 2011 jährlich mit dem Excellence Award der Sprachreiseagentur languagecourse.net ausgezeichnet.</p>
 
             <p tal:condition="is_de">Der hohe Qualitätsstandard unserer Schule ist durch die Zertifizierungsstelle CERT-IT anerkannt.</p>
             <div class="row">
