@@ -17,17 +17,19 @@
         tal:content="context/Description" />
       <div class="hero-unit-fp-actions"
           tal:condition="view/has_pages">
-          <a href="" class="btn btn-primary btn-lg"
-            tal:define="item python:view.page_details(0)"
-            tal:attributes="href item/getURL"
-            tal:content="item/Title">
-              Sprachschule
-          </a>
           <a href="" class="btn btn-danger btn-lg"
             tal:define="item python:view.page_details(4)"
             tal:attributes="href item/getURL"
             tal:content="item/Title">
               Termine &amp; Preise
+          </a>
+          <a href="" class="btn btn-primary btn-lg"
+            tal:define="section python:view.page_details(1);
+                        results python:context.restrictedTraverse('@@folderListing')(portal_type='adk.contentpages.contentpage');
+                        item python:results[:0]"
+            tal:attributes="href string:${item/getURL}"
+            tal:content="item/Title">
+              Sprachkurse Visum
           </a>
       </div>
     </header>
