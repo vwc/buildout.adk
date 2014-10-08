@@ -25,9 +25,9 @@
           </a>
           <a href="" class="btn btn-primary btn-lg"
             tal:define="section python:view.page_details(1);
-                        results python:context.restrictedTraverse('@@folderListing')(portal_type='adk.contentpages.contentpage');
-                        item python:results[:0]"
-            tal:attributes="href string:${item/getURL}"
+                        results python:section.getObject().restrictedTraverse('@@folderListing')(portal_type='adk.contentpages.contentpage');
+                        item python:results[5]"
+            tal:attributes="href item/getURL"
             tal:content="item/Title">
               Sprachkurse Visum
           </a>
