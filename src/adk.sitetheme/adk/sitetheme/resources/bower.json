@@ -7,8 +7,6 @@
     "bootstrap": "git@github.com:twbs/bootstrap.git#master",
     "diazo-plone": "git@github.com:ade25/diazo-plone.git",
     "font-awesome": "4.2.0",
-    "respond": "~1.3.0",
-    "html5shiv": "~3.6.2",
     "holderjs": "~2.1.0",
     "animate.css": "~3.0.0",
     "blazy": "*"
