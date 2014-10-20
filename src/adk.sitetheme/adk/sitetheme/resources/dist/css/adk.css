@@ -120,8 +120,9 @@ figure
 }
 hr
 {
-    -moz-box-sizing: content-box;
-         box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
     height: 0;
 }
 pre
@@ -185,7 +186,9 @@ input
 input[type='checkbox'],
 input[type='radio']
 {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 0;
 }
 input[type='number']::-webkit-inner-spin-button,
@@ -243,11 +246,12 @@ th
     {
         color: #000 !important;
         background: transparent !important;
-        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
         text-shadow: none !important;
     }
     a,
-  a:visited
+    a:visited
     {
         text-decoration: underline;
     }
@@ -260,12 +264,12 @@ th
         content: ' (' attr(title) ')';
     }
     a[href^='javascript:']:after,
-  a[href^='#']:after
+    a[href^='#']:after
     {
         content: '';
     }
     pre,
-  blockquote
+    blockquote
     {
         border: 1px solid #999;
 
@@ -276,7 +280,7 @@ th
         display: table-header-group;
     }
     tr,
-  img
+    img
     {
         page-break-inside: avoid;
     }
@@ -285,14 +289,14 @@ th
         max-width: 100% !important;
     }
     p,
-  h2,
-  h3
+    h2,
+    h3
     {
         orphans: 3;
         widows: 3;
     }
     h2,
-  h3
+    h3
     {
         page-break-after: avoid;
     }
@@ -305,12 +309,12 @@ th
         display: none;
     }
     .table td,
-  .table th
+    .table th
     {
         background-color: #fff !important;
     }
     .btn > .caret,
-  .dropup > .btn > .caret
+    .dropup > .btn > .caret
     {
         border-top-color: #000 !important;
     }
@@ -323,12 +327,13 @@ th
         border-collapse: collapse !important;
     }
     .table-bordered th,
-  .table-bordered td
+    .table-bordered td
     {
         border: 1px solid #ddd !important;
     }
 }
-@font-face {
+@font-face
+{
     font-family: 'Glyphicons Halflings';
 
     src: url('../fonts/glyphicons-halflings-regular.eot');
@@ -1744,7 +1749,8 @@ kbd
     color: #fff;
     border-radius: 0;
     background-color: #333;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
 }
 pre
 {
@@ -1822,7 +1828,54 @@ pre code
     margin-right: -15px;
     margin-left: -15px;
 }
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12
 {
     position: relative;
 
@@ -1830,7 +1883,18 @@ pre code
     padding-right: 15px;
     padding-left: 15px;
 }
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12
 {
     float: left;
 }
@@ -2040,7 +2104,18 @@ pre code
 }
 @media (min-width: 768px)
 {
-    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12
     {
         float: left;
     }
@@ -2251,7 +2326,18 @@ pre code
 }
 @media (min-width: 992px)
 {
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12
     {
         float: left;
     }
@@ -2462,7 +2548,18 @@ pre code
 }
 @media (min-width: 1200px)
 {
-    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12
     {
         float: left;
     }
@@ -2911,11 +3008,11 @@ table th[class*='col-']
         margin-bottom: 0;
     }
     .table-responsive > .table > thead > tr > th,
-  .table-responsive > .table > tbody > tr > th,
-  .table-responsive > .table > tfoot > tr > th,
-  .table-responsive > .table > thead > tr > td,
-  .table-responsive > .table > tbody > tr > td,
-  .table-responsive > .table > tfoot > tr > td
+    .table-responsive > .table > tbody > tr > th,
+    .table-responsive > .table > tfoot > tr > th,
+    .table-responsive > .table > thead > tr > td,
+    .table-responsive > .table > tbody > tr > td,
+    .table-responsive > .table > tfoot > tr > td
     {
         white-space: nowrap;
     }
@@ -2924,27 +3021,27 @@ table th[class*='col-']
         border: 0;
     }
     .table-responsive > .table-bordered > thead > tr > th:first-child,
-  .table-responsive > .table-bordered > tbody > tr > th:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-  .table-responsive > .table-bordered > thead > tr > td:first-child,
-  .table-responsive > .table-bordered > tbody > tr > td:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:first-child
+    .table-responsive > .table-bordered > tbody > tr > th:first-child,
+    .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+    .table-responsive > .table-bordered > thead > tr > td:first-child,
+    .table-responsive > .table-bordered > tbody > tr > td:first-child,
+    .table-responsive > .table-bordered > tfoot > tr > td:first-child
     {
         border-left: 0;
     }
     .table-responsive > .table-bordered > thead > tr > th:last-child,
-  .table-responsive > .table-bordered > tbody > tr > th:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-  .table-responsive > .table-bordered > thead > tr > td:last-child,
-  .table-responsive > .table-bordered > tbody > tr > td:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:last-child
+    .table-responsive > .table-bordered > tbody > tr > th:last-child,
+    .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+    .table-responsive > .table-bordered > thead > tr > td:last-child,
+    .table-responsive > .table-bordered > tbody > tr > td:last-child,
+    .table-responsive > .table-bordered > tfoot > tr > td:last-child
     {
         border-right: 0;
     }
     .table-responsive > .table-bordered > tbody > tr:last-child > th,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-  .table-responsive > .table-bordered > tbody > tr:last-child > td,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > td
+    .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+    .table-responsive > .table-bordered > tbody > tr:last-child > td,
+    .table-responsive > .table-bordered > tfoot > tr:last-child > td
     {
         border-bottom: 0;
     }
@@ -3040,7 +3137,7 @@ output
     height: 36px;
     padding: 6px 12px;
 
-    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
          -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
             transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
@@ -3393,8 +3490,8 @@ select[multiple].input-lg
         vertical-align: middle;
     }
     .form-inline .input-group .input-group-addon,
-  .form-inline .input-group .input-group-btn,
-  .form-inline .input-group .form-control
+    .form-inline .input-group .input-group-btn,
+    .form-inline .input-group .form-control
     {
         width: auto;
     }
@@ -3409,7 +3506,7 @@ select[multiple].input-lg
         vertical-align: middle;
     }
     .form-inline .radio,
-  .form-inline .checkbox
+    .form-inline .checkbox
     {
         display: inline-block;
 
@@ -3420,7 +3517,7 @@ select[multiple].input-lg
         vertical-align: middle;
     }
     .form-inline .radio input[type='radio'],
-  .form-inline .checkbox input[type='checkbox']
+    .form-inline .checkbox input[type='checkbox']
     {
         float: none;
 
@@ -3982,7 +4079,8 @@ tbody.collapse.in
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 0;
     background-color: #fff;
-    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+            background-clip: padding-box;
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
             box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
@@ -4047,7 +4145,7 @@ tbody.collapse.in
     background-color: transparent;
     background-image: none;
 
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .open > .dropdown-menu
 {
@@ -4717,8 +4815,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn
         border-radius: 0 0 0 0;
     }
     .nav-tabs.nav-justified > .active > a,
-  .nav-tabs.nav-justified > .active > a:hover,
-  .nav-tabs.nav-justified > .active > a:focus
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:focus
     {
         border-bottom-color: #fff;
     }
@@ -4807,8 +4905,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn
         border-radius: 0 0 0 0;
     }
     .nav-tabs-justified > .active > a,
-  .nav-tabs-justified > .active > a:hover,
-  .nav-tabs-justified > .active > a:focus
+    .nav-tabs-justified > .active > a:hover,
+    .nav-tabs-justified > .active > a:focus
     {
         border-bottom-color: #fff;
     }
@@ -4859,7 +4957,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     padding-left: 15px;
 
     border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
 
     -webkit-overflow-scrolling: touch;
 }
@@ -4874,7 +4973,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn
         width: auto;
 
         border-top: 0;
-        box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
     }
     .navbar-collapse.collapse
     {
@@ -4889,8 +4989,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn
         overflow-y: visible;
     }
     .navbar-fixed-top .navbar-collapse,
-  .navbar-static-top .navbar-collapse,
-  .navbar-fixed-bottom .navbar-collapse
+    .navbar-static-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse
     {
         padding-right: 0;
         padding-left: 0;
@@ -4904,7 +5004,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 @media (max-width: 480px) and (orientation: landscape)
 {
     .navbar-fixed-top .navbar-collapse,
-  .navbar-fixed-bottom .navbar-collapse
+    .navbar-fixed-bottom .navbar-collapse
     {
         max-height: 200px;
     }
@@ -4920,9 +5020,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 @media (min-width: 768px)
 {
     .container > .navbar-header,
-  .container-fluid > .navbar-header,
-  .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse
+    .container-fluid > .navbar-header,
+    .container > .navbar-collapse,
+    .container-fluid > .navbar-collapse
     {
         margin-right: 0;
         margin-left: 0;
@@ -4952,7 +5052,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 @media (min-width: 768px)
 {
     .navbar-fixed-top,
-  .navbar-fixed-bottom
+    .navbar-fixed-bottom
     {
         border-radius: 0;
     }
@@ -4989,7 +5089,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 @media (min-width: 768px)
 {
     .navbar > .container .navbar-brand,
-  .navbar > .container-fluid .navbar-brand
+    .navbar > .container-fluid .navbar-brand
     {
         margin-left: -15px;
     }
@@ -5058,10 +5158,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 
         border: 0;
         background-color: transparent;
-        box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
     }
     .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-nav .open .dropdown-menu .dropdown-header
+    .navbar-nav .open .dropdown-menu .dropdown-header
     {
         padding: 5px 15px 5px 25px;
     }
@@ -5070,7 +5171,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
         line-height: 22px;
     }
     .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-nav .open .dropdown-menu > li > a:focus
+    .navbar-nav .open .dropdown-menu > li > a:focus
     {
         background-image: none;
     }
@@ -5148,8 +5249,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn
         vertical-align: middle;
     }
     .navbar-form .input-group .input-group-addon,
-  .navbar-form .input-group .input-group-btn,
-  .navbar-form .input-group .form-control
+    .navbar-form .input-group .input-group-btn,
+    .navbar-form .input-group .form-control
     {
         width: auto;
     }
@@ -5164,7 +5265,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
         vertical-align: middle;
     }
     .navbar-form .radio,
-  .navbar-form .checkbox
+    .navbar-form .checkbox
     {
         display: inline-block;
 
@@ -5175,7 +5276,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
         vertical-align: middle;
     }
     .navbar-form .radio input[type='radio'],
-  .navbar-form .checkbox input[type='checkbox']
+    .navbar-form .checkbox input[type='checkbox']
     {
         float: none;
 
@@ -5333,21 +5434,21 @@ select[multiple].input-group-sm > .input-group-btn > .btn
         color: #777;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus
     {
         color: #333;
         background-color: transparent;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus
     {
         color: #555;
         background-color: #e7e7e7;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus
     {
         color: #ccc;
         background-color: transparent;
@@ -5460,21 +5561,21 @@ fieldset[disabled] .navbar-default .btn-link:focus
         color: #999;
     }
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus
     {
         color: #fff;
         background-color: transparent;
     }
     .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus
     {
         color: #fff;
         background-color: #080808;
     }
     .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus
     {
         color: #444;
         background-color: transparent;
@@ -5886,7 +5987,7 @@ a.list-group-item.active > .badge,
         padding-left: 60px;
     }
     .jumbotron h1,
-  .jumbotron .h1
+    .jumbotron .h1
     {
         font-size: 72px;
     }
@@ -6021,6 +6122,28 @@ a.thumbnail.active
 {
     color: #843534;
 }
+@-webkit-keyframes progress-bar-stripes
+{
+    from
+    {
+        background-position: 40px 0;
+    }
+    to
+    {
+        background-position: 0 0;
+    }
+}
+@-o-keyframes progress-bar-stripes
+{
+    from
+    {
+        background-position: 40px 0;
+    }
+    to
+    {
+        background-position: 0 0;
+    }
+}
 @keyframes progress-bar-stripes
 {
     from
@@ -6069,7 +6192,8 @@ a.thumbnail.active
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-    background-size: 40px 40px;
+    -webkit-background-size: 40px 40px;
+            background-size: 40px 40px;
 }
 .progress.active .progress-bar
 {
@@ -6089,7 +6213,8 @@ a.thumbnail.active
     color: #999;
     background-color: transparent;
     background-image: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 .progress-bar-success
 {
@@ -6848,7 +6973,6 @@ button.close
 .modal.fade .modal-dialog
 {
     -webkit-transition: -webkit-transform .3s ease-out;
-       -moz-transition:    -moz-transform .3s ease-out;
          -o-transition:      -o-transform .3s ease-out;
             transition:         transform .3s ease-out;
     -webkit-transform: translate(0, -25%);
@@ -6879,7 +7003,8 @@ button.close
     border-radius: 0;
     outline: 0;
     background-color: #fff;
-    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+            background-clip: padding-box;
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
             box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
@@ -7138,7 +7263,8 @@ button.close
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 0;
     background-color: #fff;
-    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+            background-clip: padding-box;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
             box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
@@ -7373,10 +7499,12 @@ button.close
 {
     background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, .5) 0%), color-stop(rgba(0, 0, 0, .0001) 100%));
     background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
     background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
     background-repeat: repeat-x;
 
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
 .carousel-control.right
 {
@@ -7385,10 +7513,12 @@ button.close
 
     background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, .0001) 0%), color-stop(rgba(0, 0, 0, .5) 100%));
     background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
     background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
     background-repeat: repeat-x;
 
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 .carousel-control:hover,
 .carousel-control:focus
@@ -7502,9 +7632,9 @@ button.close
 @media screen and (min-width: 768px)
 {
     .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next
     {
         font-size: 30px;
 
@@ -7629,7 +7759,8 @@ ul.formTabs:after,
 {
     position: fixed;
 }
-@-ms-viewport {
+@-ms-viewport
+{
     width: device-width;
 }
 .visible-xs,
@@ -7669,7 +7800,7 @@ ul.formTabs:after,
         display: table-row !important;
     }
     th.visible-xs,
-  td.visible-xs
+    td.visible-xs
     {
         display: table-cell !important;
     }
@@ -7710,7 +7841,7 @@ ul.formTabs:after,
         display: table-row !important;
     }
     th.visible-sm,
-  td.visible-sm
+    td.visible-sm
     {
         display: table-cell !important;
     }
@@ -7751,7 +7882,7 @@ ul.formTabs:after,
         display: table-row !important;
     }
     th.visible-md,
-  td.visible-md
+    td.visible-md
     {
         display: table-cell !important;
     }
@@ -7792,7 +7923,7 @@ ul.formTabs:after,
         display: table-row !important;
     }
     th.visible-lg,
-  td.visible-lg
+    td.visible-lg
     {
         display: table-cell !important;
     }
@@ -7865,7 +7996,7 @@ ul.formTabs:after,
         display: table-row !important;
     }
     th.visible-print,
-  td.visible-print
+    td.visible-print
     {
         display: table-cell !important;
     }
@@ -7911,28 +8042,28 @@ ul.formTabs:after,
     }
 }
 /*!
- *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
-@font-face {
+@font-face
+{
     font-family: 'FontAwesome';
     font-weight: normal;
     font-style: normal;
 
-    src: url('../assets/fonts/fontawesome-webfont.eot?v=4.0.3');
-    src: url('../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../assets/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../assets/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../assets/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+    src: url('../assets/fonts/fontawesome-webfont.eot?v=4.2.0');
+    src: url('../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../assets/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../assets/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../assets/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
 }
 .fa
 {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
 
     display: inline-block;
 
+    text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -8016,115 +8147,106 @@ ul.formTabs:after,
 }
 .fa-spin
 {
-    -webkit-animation: spin 2s infinite linear;
-       -moz-animation: spin 2s infinite linear;
-         -o-animation: spin 2s infinite linear;
-            animation: spin 2s infinite linear;
+    -webkit-animation: fa-spin 2s infinite linear;
+         -o-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear;
 }
-@-moz-keyframes spin
-{
-    0%
-    {
-        -moz-transform: rotate(0deg);
-    }
-    100%
-    {
-        -moz-transform: rotate(359deg);
-    }
-}
-@-webkit-keyframes spin
+@-webkit-keyframes fa-spin
 {
     0%
     {
         -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     100%
     {
         -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
     }
 }
-@-o-keyframes spin
+@-o-keyframes fa-spin
 {
     0%
     {
-        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+             -o-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     100%
     {
-        -o-transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+             -o-transform: rotate(359deg);
+                transform: rotate(359deg);
     }
 }
-@-ms-keyframes spin
+@keyframes fa-spin
 {
     0%
     {
-        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+             -o-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     100%
     {
-        -ms-transform: rotate(359deg);
-    }
-}
-@keyframes spin
-{
-    0%
-    {
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+             -o-transform: rotate(359deg);
+                transform: rotate(359deg);
     }
 }
 .fa-rotate-90
 {
     -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
          -o-transform: rotate(90deg);
             transform: rotate(90deg);
 
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 }
 .fa-rotate-180
 {
     -webkit-transform: rotate(180deg);
-       -moz-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
          -o-transform: rotate(180deg);
             transform: rotate(180deg);
 
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 .fa-rotate-270
 {
     -webkit-transform: rotate(270deg);
-       -moz-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
          -o-transform: rotate(270deg);
             transform: rotate(270deg);
 
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 .fa-flip-horizontal
 {
     -webkit-transform: scale(-1, 1);
-       -moz-transform: scale(-1, 1);
         -ms-transform: scale(-1, 1);
          -o-transform: scale(-1, 1);
             transform: scale(-1, 1);
 
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
 }
 .fa-flip-vertical
 {
     -webkit-transform: scale(1, -1);
-       -moz-transform: scale(1, -1);
         -ms-transform: scale(1, -1);
          -o-transform: scale(1, -1);
             transform: scale(1, -1);
 
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+}
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical
+{
+    -webkit-filter: none;
+            filter: none;
 }
 .fa-stack
 {
@@ -8215,6 +8337,8 @@ ul.formTabs:after,
 {
     content: '\f00c';
 }
+.fa-remove:before,
+.fa-close:before,
 .fa-times:before
 {
     content: '\f00d';
@@ -8402,6 +8526,8 @@ ul.formTabs:after,
 {
     content: '\f03d';
 }
+.fa-photo:before,
+.fa-image:before,
 .fa-picture-o:before
 {
     content: '\f03e';
@@ -8649,7 +8775,8 @@ ul.formTabs:after,
 {
     content: '\f07e';
 }
-.fa-bar-chart-o:before
+.fa-bar-chart-o:before,
+.fa-bar-chart:before
 {
     content: '\f080';
 }
@@ -8883,6 +9010,8 @@ ul.formTabs:after,
 {
     content: '\f0c8';
 }
+.fa-navicon:before,
+.fa-reorder:before,
 .fa-bars:before
 {
     content: '\f0c9';
@@ -8961,12 +9090,12 @@ ul.formTabs:after,
     content: '\f0dc';
 }
 .fa-sort-down:before,
-.fa-sort-asc:before
+.fa-sort-desc:before
 {
     content: '\f0dd';
 }
 .fa-sort-up:before,
-.fa-sort-desc:before
+.fa-sort-asc:before
 {
     content: '\f0de';
 }
@@ -9217,11 +9346,8 @@ ul.formTabs:after,
 {
     content: '\f121';
 }
+.fa-mail-reply-all:before,
 .fa-reply-all:before
-{
-    content: '\f122';
-}
-.fa-mail-reply-all:before
 {
     content: '\f122';
 }
@@ -9679,6 +9805,472 @@ ul.formTabs:after,
 {
     content: '\f196';
 }
+.fa-space-shuttle:before
+{
+    content: '\f197';
+}
+.fa-slack:before
+{
+    content: '\f198';
+}
+.fa-envelope-square:before
+{
+    content: '\f199';
+}
+.fa-wordpress:before
+{
+    content: '\f19a';
+}
+.fa-openid:before
+{
+    content: '\f19b';
+}
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before
+{
+    content: '\f19c';
+}
+.fa-mortar-board:before,
+.fa-graduation-cap:before
+{
+    content: '\f19d';
+}
+.fa-yahoo:before
+{
+    content: '\f19e';
+}
+.fa-google:before
+{
+    content: '\f1a0';
+}
+.fa-reddit:before
+{
+    content: '\f1a1';
+}
+.fa-reddit-square:before
+{
+    content: '\f1a2';
+}
+.fa-stumbleupon-circle:before
+{
+    content: '\f1a3';
+}
+.fa-stumbleupon:before
+{
+    content: '\f1a4';
+}
+.fa-delicious:before
+{
+    content: '\f1a5';
+}
+.fa-digg:before
+{
+    content: '\f1a6';
+}
+.fa-pied-piper:before
+{
+    content: '\f1a7';
+}
+.fa-pied-piper-alt:before
+{
+    content: '\f1a8';
+}
+.fa-drupal:before
+{
+    content: '\f1a9';
+}
+.fa-joomla:before
+{
+    content: '\f1aa';
+}
+.fa-language:before
+{
+    content: '\f1ab';
+}
+.fa-fax:before
+{
+    content: '\f1ac';
+}
+.fa-building:before
+{
+    content: '\f1ad';
+}
+.fa-child:before
+{
+    content: '\f1ae';
+}
+.fa-paw:before
+{
+    content: '\f1b0';
+}
+.fa-spoon:before
+{
+    content: '\f1b1';
+}
+.fa-cube:before
+{
+    content: '\f1b2';
+}
+.fa-cubes:before
+{
+    content: '\f1b3';
+}
+.fa-behance:before
+{
+    content: '\f1b4';
+}
+.fa-behance-square:before
+{
+    content: '\f1b5';
+}
+.fa-steam:before
+{
+    content: '\f1b6';
+}
+.fa-steam-square:before
+{
+    content: '\f1b7';
+}
+.fa-recycle:before
+{
+    content: '\f1b8';
+}
+.fa-automobile:before,
+.fa-car:before
+{
+    content: '\f1b9';
+}
+.fa-cab:before,
+.fa-taxi:before
+{
+    content: '\f1ba';
+}
+.fa-tree:before
+{
+    content: '\f1bb';
+}
+.fa-spotify:before
+{
+    content: '\f1bc';
+}
+.fa-deviantart:before
+{
+    content: '\f1bd';
+}
+.fa-soundcloud:before
+{
+    content: '\f1be';
+}
+.fa-database:before
+{
+    content: '\f1c0';
+}
+.fa-file-pdf-o:before
+{
+    content: '\f1c1';
+}
+.fa-file-word-o:before
+{
+    content: '\f1c2';
+}
+.fa-file-excel-o:before
+{
+    content: '\f1c3';
+}
+.fa-file-powerpoint-o:before
+{
+    content: '\f1c4';
+}
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before
+{
+    content: '\f1c5';
+}
+.fa-file-zip-o:before,
+.fa-file-archive-o:before
+{
+    content: '\f1c6';
+}
+.fa-file-sound-o:before,
+.fa-file-audio-o:before
+{
+    content: '\f1c7';
+}
+.fa-file-movie-o:before,
+.fa-file-video-o:before
+{
+    content: '\f1c8';
+}
+.fa-file-code-o:before
+{
+    content: '\f1c9';
+}
+.fa-vine:before
+{
+    content: '\f1ca';
+}
+.fa-codepen:before
+{
+    content: '\f1cb';
+}
+.fa-jsfiddle:before
+{
+    content: '\f1cc';
+}
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before
+{
+    content: '\f1cd';
+}
+.fa-circle-o-notch:before
+{
+    content: '\f1ce';
+}
+.fa-ra:before,
+.fa-rebel:before
+{
+    content: '\f1d0';
+}
+.fa-ge:before,
+.fa-empire:before
+{
+    content: '\f1d1';
+}
+.fa-git-square:before
+{
+    content: '\f1d2';
+}
+.fa-git:before
+{
+    content: '\f1d3';
+}
+.fa-hacker-news:before
+{
+    content: '\f1d4';
+}
+.fa-tencent-weibo:before
+{
+    content: '\f1d5';
+}
+.fa-qq:before
+{
+    content: '\f1d6';
+}
+.fa-wechat:before,
+.fa-weixin:before
+{
+    content: '\f1d7';
+}
+.fa-send:before,
+.fa-paper-plane:before
+{
+    content: '\f1d8';
+}
+.fa-send-o:before,
+.fa-paper-plane-o:before
+{
+    content: '\f1d9';
+}
+.fa-history:before
+{
+    content: '\f1da';
+}
+.fa-circle-thin:before
+{
+    content: '\f1db';
+}
+.fa-header:before
+{
+    content: '\f1dc';
+}
+.fa-paragraph:before
+{
+    content: '\f1dd';
+}
+.fa-sliders:before
+{
+    content: '\f1de';
+}
+.fa-share-alt:before
+{
+    content: '\f1e0';
+}
+.fa-share-alt-square:before
+{
+    content: '\f1e1';
+}
+.fa-bomb:before
+{
+    content: '\f1e2';
+}
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before
+{
+    content: '\f1e3';
+}
+.fa-tty:before
+{
+    content: '\f1e4';
+}
+.fa-binoculars:before
+{
+    content: '\f1e5';
+}
+.fa-plug:before
+{
+    content: '\f1e6';
+}
+.fa-slideshare:before
+{
+    content: '\f1e7';
+}
+.fa-twitch:before
+{
+    content: '\f1e8';
+}
+.fa-yelp:before
+{
+    content: '\f1e9';
+}
+.fa-newspaper-o:before
+{
+    content: '\f1ea';
+}
+.fa-wifi:before
+{
+    content: '\f1eb';
+}
+.fa-calculator:before
+{
+    content: '\f1ec';
+}
+.fa-paypal:before
+{
+    content: '\f1ed';
+}
+.fa-google-wallet:before
+{
+    content: '\f1ee';
+}
+.fa-cc-visa:before
+{
+    content: '\f1f0';
+}
+.fa-cc-mastercard:before
+{
+    content: '\f1f1';
+}
+.fa-cc-discover:before
+{
+    content: '\f1f2';
+}
+.fa-cc-amex:before
+{
+    content: '\f1f3';
+}
+.fa-cc-paypal:before
+{
+    content: '\f1f4';
+}
+.fa-cc-stripe:before
+{
+    content: '\f1f5';
+}
+.fa-bell-slash:before
+{
+    content: '\f1f6';
+}
+.fa-bell-slash-o:before
+{
+    content: '\f1f7';
+}
+.fa-trash:before
+{
+    content: '\f1f8';
+}
+.fa-copyright:before
+{
+    content: '\f1f9';
+}
+.fa-at:before
+{
+    content: '\f1fa';
+}
+.fa-eyedropper:before
+{
+    content: '\f1fb';
+}
+.fa-paint-brush:before
+{
+    content: '\f1fc';
+}
+.fa-birthday-cake:before
+{
+    content: '\f1fd';
+}
+.fa-area-chart:before
+{
+    content: '\f1fe';
+}
+.fa-pie-chart:before
+{
+    content: '\f200';
+}
+.fa-line-chart:before
+{
+    content: '\f201';
+}
+.fa-lastfm:before
+{
+    content: '\f202';
+}
+.fa-lastfm-square:before
+{
+    content: '\f203';
+}
+.fa-toggle-off:before
+{
+    content: '\f204';
+}
+.fa-toggle-on:before
+{
+    content: '\f205';
+}
+.fa-bicycle:before
+{
+    content: '\f206';
+}
+.fa-bus:before
+{
+    content: '\f207';
+}
+.fa-ioxhost:before
+{
+    content: '\f208';
+}
+.fa-angellist:before
+{
+    content: '\f209';
+}
+.fa-cc:before
+{
+    content: '\f20a';
+}
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before
+{
+    content: '\f20b';
+}
+.fa-meanpath:before
+{
+    content: '\f20c';
+}
 /*!
  * Plone Combat Styles v1.0.0
  *
@@ -9826,7 +10418,7 @@ a.list-group-item.active > #plone-contentmenu-workflow .state-expired,
 /* Shared CSS between the two tab types */
 #content-views a
 {
-  /* this isn't supported by all browsers, so we keep it in a separate rule */
+    /* this isn't supported by all browsers, so we keep it in a separate rule */
     display: inline-block;
 }
 #content-views a
@@ -10257,8 +10849,8 @@ ul.formTabs.nav-justified > .active > a:focus
         border-radius: 0 0 0 0;
     }
     ul.formTabs.nav-justified > .active > a,
-  ul.formTabs.nav-justified > .active > a:hover,
-  ul.formTabs.nav-justified > .active > a:focus
+    ul.formTabs.nav-justified > .active > a:hover,
+    ul.formTabs.nav-justified > .active > a:focus
     {
         border-bottom-color: #fff;
     }
@@ -10574,7 +11166,7 @@ input[type='color']
     height: 36px;
     padding: 6px 12px;
 
-    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
          -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
             transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
@@ -10940,12 +11532,12 @@ span.required
 }
 div.overlay
 {
-  /* initially overlay is hidden */
+    /* initially overlay is hidden */
     display: none;
 
     width: auto;
     height: auto;
-  /* some padding to layout nested elements nicely  */
+    /* some padding to layout nested elements nicely  */
     margin: 1em;
 }
 div.overlay-iframe,
@@ -10956,7 +11548,7 @@ div.overlay-ajax
 
     width: auto;
     min-height: 100px;
-  /* overlays should be above everything */
+    /* overlays should be above everything */
 }
 div.overlay-iframe
 {
@@ -11010,8 +11602,8 @@ div.overlay div.close:after
 }
 div.overlay
 {
-  /* Hide form elements that don't make sense within an overlay. */
-  /* lets play nice with paragraphs, links, tabbed pages in overlay e.g. when plone.openid is installed */
+    /* Hide form elements that don't make sense within an overlay. */
+    /* lets play nice with paragraphs, links, tabbed pages in overlay e.g. when plone.openid is installed */
 }
 div.overlay div.close span,
 div.overlay div.close a
@@ -11512,8 +12104,8 @@ img.image-right .caption,
 dd.image-caption
 {
     font-size: 85%;
+    /*image padding+border with*/
 
-  /*image padding+border with*/
     margin: 0;
     padding: 0 0 0 3px;
 
@@ -11571,8 +12163,8 @@ dd.image-caption
     height: .1em;
     margin: -.1em 0 0 -.1em;
     padding: 0;
+    /* safari bug */
 
-  /* safari bug */
     border: none;
     background: transparent;
     background-image: none;
@@ -11598,7 +12190,7 @@ ul.visualNoMarker
         opacity: 1;
     }
 }
-@-moz-keyframes dimIn
+@-o-keyframes dimIn
 {
     from
     {
@@ -11622,38 +12214,38 @@ ul.visualNoMarker
 }
 .dim-in
 {
-  /* make things invisible upon start */
+    /* make things invisible upon start */
     -webkit-animation: dimIn ease-in 1;
-  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-       -moz-animation: dimIn ease-in 1;
+    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+         -o-animation: dimIn ease-in 1;
             animation: dimIn ease-in 1;
     -webkit-animation-duration: 1s;
-       -moz-animation-duration: 1s;
+         -o-animation-duration: 1s;
             animation-duration: 1s;
 
     opacity: 0;
 
     -webkit-animation-fill-mode: forwards;
-  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-       -moz-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+         -o-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
 }
 .dim-in.one
 {
     -webkit-animation-delay: .5s;
-       -moz-animation-delay: .5s;
+         -o-animation-delay: .5s;
             animation-delay: .5s;
 }
 .dim-in.two
 {
     -webkit-animation-delay: 1.2s;
-       -moz-animation-delay: 1.2s;
+         -o-animation-delay: 1.2s;
             animation-delay: 1.2s;
 }
 .dim-in.three
 {
     -webkit-animation-delay: 1.6s;
-       -moz-animation-delay: 1.6s;
+         -o-animation-delay: 1.6s;
             animation-delay: 1.6s;
 }
 .app-box
@@ -11989,174 +12581,174 @@ ul.visualNoMarker
         background: url(../assets/img/hero-sprachschule.png) no-repeat 0 100% transparent;
     }
     .section-sprachkurse .hero-content,
-  .section-language-courses .hero-content,
-  .section-corsi-di-tedesco .hero-content,
-  .section-cours-dallemand .hero-content,
-  .section-nuestros-cursos .hero-content
+    .section-language-courses .hero-content,
+    .section-corsi-di-tedesco .hero-content,
+    .section-cours-dallemand .hero-content,
+    .section-nuestros-cursos .hero-content
     {
         background-image: url(../assets/img/hero-sprachkurse.png);
     }
     .section-sprachkurse.subsection-deutsch-intensivkurse .hero-content,
-  .section-language-courses.subsection-deutsch-intensivkurse .hero-content,
-  .section-corsi-di-tedesco.subsection-deutsch-intensivkurse .hero-content,
-  .section-cours-dallemand.subsection-deutsch-intensivkurse .hero-content,
-  .section-nuestros-cursos.subsection-deutsch-intensivkurse .hero-content,
-  .section-sprachkurse.subsection-german-intensive-courses .hero-content,
-  .section-language-courses.subsection-german-intensive-courses .hero-content,
-  .section-corsi-di-tedesco.subsection-german-intensive-courses .hero-content,
-  .section-cours-dallemand.subsection-german-intensive-courses .hero-content,
-  .section-nuestros-cursos.subsection-german-intensive-courses .hero-content,
-  .section-sprachkurse.subsection-corsi-intensivi-di-tedesco .hero-content,
-  .section-language-courses.subsection-corsi-intensivi-di-tedesco .hero-content,
-  .section-corsi-di-tedesco.subsection-corsi-intensivi-di-tedesco .hero-content,
-  .section-cours-dallemand.subsection-corsi-intensivi-di-tedesco .hero-content,
-  .section-nuestros-cursos.subsection-corsi-intensivi-di-tedesco .hero-content,
-  .section-sprachkurse.subsection-cours-intensifs-dallemand .hero-content,
-  .section-language-courses.subsection-cours-intensifs-dallemand .hero-content,
-  .section-corsi-di-tedesco.subsection-cours-intensifs-dallemand .hero-content,
-  .section-cours-dallemand.subsection-cours-intensifs-dallemand .hero-content,
-  .section-nuestros-cursos.subsection-cours-intensifs-dallemand .hero-content,
-  .section-sprachkurse.subsection-cursos-intensivos .hero-content,
-  .section-language-courses.subsection-cursos-intensivos .hero-content,
-  .section-corsi-di-tedesco.subsection-cursos-intensivos .hero-content,
-  .section-cours-dallemand.subsection-cursos-intensivos .hero-content,
-  .section-nuestros-cursos.subsection-cursos-intensivos .hero-content
+    .section-language-courses.subsection-deutsch-intensivkurse .hero-content,
+    .section-corsi-di-tedesco.subsection-deutsch-intensivkurse .hero-content,
+    .section-cours-dallemand.subsection-deutsch-intensivkurse .hero-content,
+    .section-nuestros-cursos.subsection-deutsch-intensivkurse .hero-content,
+    .section-sprachkurse.subsection-german-intensive-courses .hero-content,
+    .section-language-courses.subsection-german-intensive-courses .hero-content,
+    .section-corsi-di-tedesco.subsection-german-intensive-courses .hero-content,
+    .section-cours-dallemand.subsection-german-intensive-courses .hero-content,
+    .section-nuestros-cursos.subsection-german-intensive-courses .hero-content,
+    .section-sprachkurse.subsection-corsi-intensivi-di-tedesco .hero-content,
+    .section-language-courses.subsection-corsi-intensivi-di-tedesco .hero-content,
+    .section-corsi-di-tedesco.subsection-corsi-intensivi-di-tedesco .hero-content,
+    .section-cours-dallemand.subsection-corsi-intensivi-di-tedesco .hero-content,
+    .section-nuestros-cursos.subsection-corsi-intensivi-di-tedesco .hero-content,
+    .section-sprachkurse.subsection-cours-intensifs-dallemand .hero-content,
+    .section-language-courses.subsection-cours-intensifs-dallemand .hero-content,
+    .section-corsi-di-tedesco.subsection-cours-intensifs-dallemand .hero-content,
+    .section-cours-dallemand.subsection-cours-intensifs-dallemand .hero-content,
+    .section-nuestros-cursos.subsection-cours-intensifs-dallemand .hero-content,
+    .section-sprachkurse.subsection-cursos-intensivos .hero-content,
+    .section-language-courses.subsection-cursos-intensivos .hero-content,
+    .section-corsi-di-tedesco.subsection-cursos-intensivos .hero-content,
+    .section-cours-dallemand.subsection-cursos-intensivos .hero-content,
+    .section-nuestros-cursos.subsection-cursos-intensivos .hero-content
     {
         background-image: url(../assets/img/hero-deutsch-intensivkurse.png);
     }
     .section-sprachkurse.subsection-deutsch-intensiv-plus .hero-content,
-  .section-language-courses.subsection-deutsch-intensiv-plus .hero-content,
-  .section-corsi-di-tedesco.subsection-deutsch-intensiv-plus .hero-content,
-  .section-cours-dallemand.subsection-deutsch-intensiv-plus .hero-content,
-  .section-nuestros-cursos.subsection-deutsch-intensiv-plus .hero-content,
-  .section-sprachkurse.subsection-german-intensive-plus .hero-content,
-  .section-language-courses.subsection-german-intensive-plus .hero-content,
-  .section-corsi-di-tedesco.subsection-german-intensive-plus .hero-content,
-  .section-cours-dallemand.subsection-german-intensive-plus .hero-content,
-  .section-nuestros-cursos.subsection-german-intensive-plus .hero-content,
-  .section-sprachkurse.subsection-corsi-intensivi-plus .hero-content,
-  .section-language-courses.subsection-corsi-intensivi-plus .hero-content,
-  .section-corsi-di-tedesco.subsection-corsi-intensivi-plus .hero-content,
-  .section-cours-dallemand.subsection-corsi-intensivi-plus .hero-content,
-  .section-nuestros-cursos.subsection-corsi-intensivi-plus .hero-content,
-  .section-sprachkurse.subsection-cours-intensif-plus .hero-content,
-  .section-language-courses.subsection-cours-intensif-plus .hero-content,
-  .section-corsi-di-tedesco.subsection-cours-intensif-plus .hero-content,
-  .section-cours-dallemand.subsection-cours-intensif-plus .hero-content,
-  .section-nuestros-cursos.subsection-cours-intensif-plus .hero-content,
-  .section-sprachkurse.subsection-curso-intensivo-plus .hero-content,
-  .section-language-courses.subsection-curso-intensivo-plus .hero-content,
-  .section-corsi-di-tedesco.subsection-curso-intensivo-plus .hero-content,
-  .section-cours-dallemand.subsection-curso-intensivo-plus .hero-content,
-  .section-nuestros-cursos.subsection-curso-intensivo-plus .hero-content
+    .section-language-courses.subsection-deutsch-intensiv-plus .hero-content,
+    .section-corsi-di-tedesco.subsection-deutsch-intensiv-plus .hero-content,
+    .section-cours-dallemand.subsection-deutsch-intensiv-plus .hero-content,
+    .section-nuestros-cursos.subsection-deutsch-intensiv-plus .hero-content,
+    .section-sprachkurse.subsection-german-intensive-plus .hero-content,
+    .section-language-courses.subsection-german-intensive-plus .hero-content,
+    .section-corsi-di-tedesco.subsection-german-intensive-plus .hero-content,
+    .section-cours-dallemand.subsection-german-intensive-plus .hero-content,
+    .section-nuestros-cursos.subsection-german-intensive-plus .hero-content,
+    .section-sprachkurse.subsection-corsi-intensivi-plus .hero-content,
+    .section-language-courses.subsection-corsi-intensivi-plus .hero-content,
+    .section-corsi-di-tedesco.subsection-corsi-intensivi-plus .hero-content,
+    .section-cours-dallemand.subsection-corsi-intensivi-plus .hero-content,
+    .section-nuestros-cursos.subsection-corsi-intensivi-plus .hero-content,
+    .section-sprachkurse.subsection-cours-intensif-plus .hero-content,
+    .section-language-courses.subsection-cours-intensif-plus .hero-content,
+    .section-corsi-di-tedesco.subsection-cours-intensif-plus .hero-content,
+    .section-cours-dallemand.subsection-cours-intensif-plus .hero-content,
+    .section-nuestros-cursos.subsection-cours-intensif-plus .hero-content,
+    .section-sprachkurse.subsection-curso-intensivo-plus .hero-content,
+    .section-language-courses.subsection-curso-intensivo-plus .hero-content,
+    .section-corsi-di-tedesco.subsection-curso-intensivo-plus .hero-content,
+    .section-cours-dallemand.subsection-curso-intensivo-plus .hero-content,
+    .section-nuestros-cursos.subsection-curso-intensivo-plus .hero-content
     {
         background-image: url(../assets/img/hero-deutsch-intensiv-plus.png);
     }
     .section-sprachkurse.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
-  .section-language-courses.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
-  .section-corsi-di-tedesco.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
-  .section-cours-dallemand.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
-  .section-nuestros-cursos.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
-  .section-sprachkurse.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
-  .section-language-courses.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
-  .section-corsi-di-tedesco.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
-  .section-cours-dallemand.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
-  .section-nuestros-cursos.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
-  .section-sprachkurse.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
-  .section-language-courses.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
-  .section-corsi-di-tedesco.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
-  .section-cours-dallemand.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
-  .section-nuestros-cursos.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
-  .section-sprachkurse.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
-  .section-language-courses.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
-  .section-corsi-di-tedesco.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
-  .section-cours-dallemand.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
-  .section-nuestros-cursos.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
-  .section-sprachkurse.subsection-preparacion-para-examenes .hero-content,
-  .section-language-courses.subsection-preparacion-para-examenes .hero-content,
-  .section-corsi-di-tedesco.subsection-preparacion-para-examenes .hero-content,
-  .section-cours-dallemand.subsection-preparacion-para-examenes .hero-content,
-  .section-nuestros-cursos.subsection-preparacion-para-examenes .hero-content
+    .section-language-courses.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
+    .section-corsi-di-tedesco.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
+    .section-cours-dallemand.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
+    .section-nuestros-cursos.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung .hero-content,
+    .section-sprachkurse.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
+    .section-language-courses.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
+    .section-corsi-di-tedesco.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
+    .section-cours-dallemand.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
+    .section-nuestros-cursos.subsection-c1-testdaf-and-dsh-exam-preparation .hero-content,
+    .section-sprachkurse.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
+    .section-language-courses.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
+    .section-corsi-di-tedesco.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
+    .section-cours-dallemand.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
+    .section-nuestros-cursos.subsection-preparazione-agli-esami-c1-testdaf-e-dsh .hero-content,
+    .section-sprachkurse.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
+    .section-language-courses.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
+    .section-corsi-di-tedesco.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
+    .section-cours-dallemand.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
+    .section-nuestros-cursos.subsection-preparer-lexamen-c1-test-daf-dsh .hero-content,
+    .section-sprachkurse.subsection-preparacion-para-examenes .hero-content,
+    .section-language-courses.subsection-preparacion-para-examenes .hero-content,
+    .section-corsi-di-tedesco.subsection-preparacion-para-examenes .hero-content,
+    .section-cours-dallemand.subsection-preparacion-para-examenes .hero-content,
+    .section-nuestros-cursos.subsection-preparacion-para-examenes .hero-content
     {
         background-image: url(../assets/img/hero-dsh.png);
     }
     .section-sprachkurse.subsection-berufsorientierter-deutschunterricht .hero-content,
-  .section-language-courses.subsection-berufsorientierter-deutschunterricht .hero-content,
-  .section-corsi-di-tedesco.subsection-berufsorientierter-deutschunterricht .hero-content,
-  .section-cours-dallemand.subsection-berufsorientierter-deutschunterricht .hero-content,
-  .section-nuestros-cursos.subsection-berufsorientierter-deutschunterricht .hero-content,
-  .section-sprachkurse.subsection-business-german .hero-content,
-  .section-language-courses.subsection-business-german .hero-content,
-  .section-corsi-di-tedesco.subsection-business-german .hero-content,
-  .section-cours-dallemand.subsection-business-german .hero-content,
-  .section-nuestros-cursos.subsection-business-german .hero-content,
-  .section-sprachkurse.subsection-corsi-per-le-aziende .hero-content,
-  .section-language-courses.subsection-corsi-per-le-aziende .hero-content,
-  .section-corsi-di-tedesco.subsection-corsi-per-le-aziende .hero-content,
-  .section-cours-dallemand.subsection-corsi-per-le-aziende .hero-content,
-  .section-nuestros-cursos.subsection-corsi-per-le-aziende .hero-content,
-  .section-sprachkurse.subsection-cours-dallemand-pour-professionnels .hero-content,
-  .section-language-courses.subsection-cours-dallemand-pour-professionnels .hero-content,
-  .section-corsi-di-tedesco.subsection-cours-dallemand-pour-professionnels .hero-content,
-  .section-cours-dallemand.subsection-cours-dallemand-pour-professionnels .hero-content,
-  .section-nuestros-cursos.subsection-cours-dallemand-pour-professionnels .hero-content,
-  .section-sprachkurse.subsection-cursos-para-trabajadores-y-empresas .hero-content,
-  .section-language-courses.subsection-cursos-para-trabajadores-y-empresas .hero-content,
-  .section-corsi-di-tedesco.subsection-cursos-para-trabajadores-y-empresas .hero-content,
-  .section-cours-dallemand.subsection-cursos-para-trabajadores-y-empresas .hero-content,
-  .section-nuestros-cursos.subsection-cursos-para-trabajadores-y-empresas .hero-content
+    .section-language-courses.subsection-berufsorientierter-deutschunterricht .hero-content,
+    .section-corsi-di-tedesco.subsection-berufsorientierter-deutschunterricht .hero-content,
+    .section-cours-dallemand.subsection-berufsorientierter-deutschunterricht .hero-content,
+    .section-nuestros-cursos.subsection-berufsorientierter-deutschunterricht .hero-content,
+    .section-sprachkurse.subsection-business-german .hero-content,
+    .section-language-courses.subsection-business-german .hero-content,
+    .section-corsi-di-tedesco.subsection-business-german .hero-content,
+    .section-cours-dallemand.subsection-business-german .hero-content,
+    .section-nuestros-cursos.subsection-business-german .hero-content,
+    .section-sprachkurse.subsection-corsi-per-le-aziende .hero-content,
+    .section-language-courses.subsection-corsi-per-le-aziende .hero-content,
+    .section-corsi-di-tedesco.subsection-corsi-per-le-aziende .hero-content,
+    .section-cours-dallemand.subsection-corsi-per-le-aziende .hero-content,
+    .section-nuestros-cursos.subsection-corsi-per-le-aziende .hero-content,
+    .section-sprachkurse.subsection-cours-dallemand-pour-professionnels .hero-content,
+    .section-language-courses.subsection-cours-dallemand-pour-professionnels .hero-content,
+    .section-corsi-di-tedesco.subsection-cours-dallemand-pour-professionnels .hero-content,
+    .section-cours-dallemand.subsection-cours-dallemand-pour-professionnels .hero-content,
+    .section-nuestros-cursos.subsection-cours-dallemand-pour-professionnels .hero-content,
+    .section-sprachkurse.subsection-cursos-para-trabajadores-y-empresas .hero-content,
+    .section-language-courses.subsection-cursos-para-trabajadores-y-empresas .hero-content,
+    .section-corsi-di-tedesco.subsection-cursos-para-trabajadores-y-empresas .hero-content,
+    .section-cours-dallemand.subsection-cursos-para-trabajadores-y-empresas .hero-content,
+    .section-nuestros-cursos.subsection-cursos-para-trabajadores-y-empresas .hero-content
     {
         background-image: url(../assets/img/hero-berufsorientierter-deutschunterricht.png);
     }
     .section-sprachkurse.subsection-integrationskurse .hero-content,
-  .section-language-courses.subsection-integrationskurse .hero-content,
-  .section-corsi-di-tedesco.subsection-integrationskurse .hero-content,
-  .section-cours-dallemand.subsection-integrationskurse .hero-content,
-  .section-nuestros-cursos.subsection-integrationskurse .hero-content,
-  .section-sprachkurse.subsection-integration-courses .hero-content,
-  .section-language-courses.subsection-integration-courses .hero-content,
-  .section-corsi-di-tedesco.subsection-integration-courses .hero-content,
-  .section-cours-dallemand.subsection-integration-courses .hero-content,
-  .section-nuestros-cursos.subsection-integration-courses .hero-content,
-  .section-sprachkurse.subsection-corsi-dintegrazione .hero-content,
-  .section-language-courses.subsection-corsi-dintegrazione .hero-content,
-  .section-corsi-di-tedesco.subsection-corsi-dintegrazione .hero-content,
-  .section-cours-dallemand.subsection-corsi-dintegrazione .hero-content,
-  .section-nuestros-cursos.subsection-corsi-dintegrazione .hero-content,
-  .section-sprachkurse.subsection-cours-dintegration .hero-content,
-  .section-language-courses.subsection-cours-dintegration .hero-content,
-  .section-corsi-di-tedesco.subsection-cours-dintegration .hero-content,
-  .section-cours-dallemand.subsection-cours-dintegration .hero-content,
-  .section-nuestros-cursos.subsection-cours-dintegration .hero-content,
-  .section-sprachkurse.subsection-cursos-de-integracion .hero-content,
-  .section-language-courses.subsection-cursos-de-integracion .hero-content,
-  .section-corsi-di-tedesco.subsection-cursos-de-integracion .hero-content,
-  .section-cours-dallemand.subsection-cursos-de-integracion .hero-content,
-  .section-nuestros-cursos.subsection-cursos-de-integracion .hero-content
+    .section-language-courses.subsection-integrationskurse .hero-content,
+    .section-corsi-di-tedesco.subsection-integrationskurse .hero-content,
+    .section-cours-dallemand.subsection-integrationskurse .hero-content,
+    .section-nuestros-cursos.subsection-integrationskurse .hero-content,
+    .section-sprachkurse.subsection-integration-courses .hero-content,
+    .section-language-courses.subsection-integration-courses .hero-content,
+    .section-corsi-di-tedesco.subsection-integration-courses .hero-content,
+    .section-cours-dallemand.subsection-integration-courses .hero-content,
+    .section-nuestros-cursos.subsection-integration-courses .hero-content,
+    .section-sprachkurse.subsection-corsi-dintegrazione .hero-content,
+    .section-language-courses.subsection-corsi-dintegrazione .hero-content,
+    .section-corsi-di-tedesco.subsection-corsi-dintegrazione .hero-content,
+    .section-cours-dallemand.subsection-corsi-dintegrazione .hero-content,
+    .section-nuestros-cursos.subsection-corsi-dintegrazione .hero-content,
+    .section-sprachkurse.subsection-cours-dintegration .hero-content,
+    .section-language-courses.subsection-cours-dintegration .hero-content,
+    .section-corsi-di-tedesco.subsection-cours-dintegration .hero-content,
+    .section-cours-dallemand.subsection-cours-dintegration .hero-content,
+    .section-nuestros-cursos.subsection-cours-dintegration .hero-content,
+    .section-sprachkurse.subsection-cursos-de-integracion .hero-content,
+    .section-language-courses.subsection-cursos-de-integracion .hero-content,
+    .section-corsi-di-tedesco.subsection-cursos-de-integracion .hero-content,
+    .section-cours-dallemand.subsection-cursos-de-integracion .hero-content,
+    .section-nuestros-cursos.subsection-cursos-de-integracion .hero-content
     {
         background-image: url(../assets/img/hero-integrationskurs.png);
     }
     .section-sommerkurse .hero-content,
-  .section-sommer-courses .hero-content,
-  .section-vacanza-studio-all-estero .hero-content,
-  .section-sejour-linguistique-pour-les-ados .hero-content,
-  .section-cursos-de-aleman-y-programa .hero-content
+    .section-sommer-courses .hero-content,
+    .section-vacanza-studio-all-estero .hero-content,
+    .section-sejour-linguistique-pour-les-ados .hero-content,
+    .section-cursos-de-aleman-y-programa .hero-content
     {
         background-image: url(../assets/img/hero-sommerkurse.png);
     }
     .section-sprachreisen .hero-content,
-  .section-study-trips .hero-content,
-  .section-corsi-per-classi-scholastice .hero-content,
-  .section-voyages-scolaires .hero-content,
-  .section-aprende-mientras-viajas .hero-content
+    .section-study-trips .hero-content,
+    .section-corsi-per-classi-scholastice .hero-content,
+    .section-voyages-scolaires .hero-content,
+    .section-aprende-mientras-viajas .hero-content
     {
         background-image: url(../assets/img/hero-sprachreisen.png);
     }
     .section-termine-preise .hero-content,
-  .section-dates-fees .hero-content,
-  .section-date-e-prezzi .hero-content,
-  .section-dates-e-prix .hero-content,
-  .section-fechas-y-precios .hero-content
+    .section-dates-fees .hero-content,
+    .section-date-e-prezzi .hero-content,
+    .section-dates-e-prix .hero-content,
+    .section-fechas-y-precios .hero-content
     {
         background-image: url(../assets/img/hero-terminepreise.png);
     }
@@ -12184,7 +12776,8 @@ ul.visualNoMarker
 
     border-right: 0 solid #fff;
     border-left: 0 solid #fff;
-    background-size: 100%;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
 }
 .app-topbar #language-flags-wrapper
 {
@@ -12349,21 +12942,21 @@ ul.visualNoMarker
         color: #999;
     }
     #toolbar .navbar-nav .open .dropdown-menu > li > a:hover,
-  #toolbar .navbar-nav .open .dropdown-menu > li > a:focus
+    #toolbar .navbar-nav .open .dropdown-menu > li > a:focus
     {
         color: #fff;
         background-color: transparent;
     }
     #toolbar .navbar-nav .open .dropdown-menu > .active > a,
-  #toolbar .navbar-nav .open .dropdown-menu > .active > a:hover,
-  #toolbar .navbar-nav .open .dropdown-menu > .active > a:focus
+    #toolbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+    #toolbar .navbar-nav .open .dropdown-menu > .active > a:focus
     {
         color: #fff;
         background-color: #080808;
     }
     #toolbar .navbar-nav .open .dropdown-menu > .disabled > a,
-  #toolbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  #toolbar .navbar-nav .open .dropdown-menu > .disabled > a:focus
+    #toolbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    #toolbar .navbar-nav .open .dropdown-menu > .disabled > a:focus
     {
         color: #444;
         background-color: transparent;
@@ -12630,11 +13223,13 @@ fieldset[disabled] .tile-editable .tile-edit-link.active
     background: #fff;
     background-image: -webkit-linear-gradient(top, #fff 0%, #eee 100%);
     background-image:      -o-linear-gradient(top, #fff 0%, #eee 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
     background-image:         linear-gradient(to bottom, #fff 0%, #eee 100%);
     background-repeat: repeat-x;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
 
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
 }
 .page-aside
 {
@@ -12887,26 +13482,26 @@ select.date-widget,
         padding: 11px 0 0;
     }
     #page-body,
-  #page-subcontent,
-  #content-core
+    #page-subcontent,
+    #content-core
     {
         font-size: 20px;
     }
     #page-body .lead-muted,
-  #page-subcontent .lead-muted,
-  #content-core .lead-muted
+    #page-subcontent .lead-muted,
+    #content-core .lead-muted
     {
         color: #222;
     }
     #page-body p,
-  #page-subcontent p,
-  #content-core p
+    #page-subcontent p,
+    #content-core p
     {
         margin-bottom: 22px;
     }
     #page-body p.lead,
-  #page-subcontent p.lead,
-  #content-core p.lead
+    #page-subcontent p.lead,
+    #content-core p.lead
     {
         margin-bottom: 44px;
     }
