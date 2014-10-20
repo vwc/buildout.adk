@@ -31,8 +31,6 @@ src/plone.app.tiles
 src/plone.tiles
 src/vwc.tiles
 src/vwc.toolbar
-src/ade25.fabfiles
-src/ade25.typekit
-src/ade25.toolbar
+src/ade25.*
 src/vwc.blog
 src/vwc.opengraph
