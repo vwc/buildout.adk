@@ -7688,7 +7688,9 @@ button.close
 ul.formTabs:before,
 ul.formTabs:after,
 .listingBar:before,
-.listingBar:after
+.listingBar:after,
+.app-box-lg:before,
+.app-box-lg:after
 {
     display: table;
 
@@ -7710,7 +7712,8 @@ ul.formTabs:after,
 .panel-body:after,
 .modal-footer:after,
 ul.formTabs:after,
-.listingBar:after
+.listingBar:after,
+.app-box-lg:after
 {
     clear: both;
 }
@@ -12546,6 +12549,45 @@ ul.visualNoMarker
     margin-top: -25px;
 
     border-bottom: 25px solid #fff;
+}
+.app-box-lg
+{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.app-box-img
+{
+    position: relative;
+
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 992px)
+{
+    .app-box-img
+    {
+        float: left;
+
+        width: 33.33333333%;
+    }
+}
+.app-box-content
+{
+    position: relative;
+
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 992px)
+{
+    .app-box-content
+    {
+        float: left;
+
+        width: 66.66666667%;
+    }
 }
 .app-box-contentpage
 {

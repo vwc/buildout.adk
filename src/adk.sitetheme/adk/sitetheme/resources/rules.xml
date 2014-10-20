@@ -7,21 +7,21 @@
     <theme href="dist/overlay.html" if-path="@@edit-tile" />
 
     <!-- Setup custom login form -->
-    <theme href="dist/signin.html" css:if-content="body.template-login_form" />
-    <theme href="dist/signin.html" css:if-content="body.template-logged_out" />
-    <theme href="dist/signin.html" css:if-content="body.template-login_failed" />
-    <theme href="dist/signin.html" css:if-content="body.template-mail_password_form" />
+    <theme href="dist/signin/index.html" css:if-content="body.template-login_form" />
+    <theme href="dist/signin/index.html" css:if-content="body.template-logged_out" />
+    <theme href="dist/signin/index.html" css:if-content="body.template-login_failed" />
+    <theme href="dist/signin/index.html" css:if-content="body.template-mail_password_form" />
 
-    <theme href="dist/blog.html" css:if-content="body.section-blog" />
-    <theme href="dist/bookingform.html" css:if-content="body.template-booking-form" />
-    <theme href="dist/front-page.html" css:if-content="body.portaltype-adk-contentpages-sectionfolder" />
+    <theme href="dist/blog/index.html" css:if-content="body.section-blog" />
+    <theme href="dist/bookingform/index.html" css:if-content="body.template-booking-form" />
+    <theme href="dist/front-page/index.html" css:if-content="body.portaltype-adk-contentpages-sectionfolder" />
 
     <!-- Rules applying to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
 
         <notheme if="$ajax_load" />
 
-        <theme href="dist/theme.html" />
+        <theme href="dist/index.html" />
 
         <replace css:theme="title" css:content="title" />
 
