@@ -2,14 +2,15 @@
   "name": "adk",
   "version": "1.0.0",
   "dependencies": {
-    "jquery": ">= 1.9.0",
-    "modernizr": "~2.6.2",
+    "animate.css": "~3.0.0",
+    "blazy": "~1.2.2",
     "bootstrap": "git@github.com:twbs/bootstrap.git#master",
     "diazo-plone": "git@github.com:ade25/diazo-plone.git",
     "font-awesome": "4.2.0",
     "holderjs": "~2.1.0",
-    "animate.css": "~3.0.0",
-    "blazy": "*"
+    "jquery": ">= 1.9.0",
+    "lazysizes": "git@github.com:aFarkas/lazysizes.git#master",
+    "modernizr": "~2.6.2"
   },
   "devDependencies": {
     "chai": "1.7.2"
