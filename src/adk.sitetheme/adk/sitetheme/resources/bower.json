@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "animate.css": "~3.0.0",
-    "blazy": "~1.2.2",
+    "blazy": "*",
     "bootstrap": "git@github.com:twbs/bootstrap.git#master",
     "diazo-plone": "git@github.com:ade25/diazo-plone.git",
     "font-awesome": "4.2.0",

@@ -6,23 +6,26 @@ base_url: "../../"
 ---
 <main class="app-content-body">
     <section id="app-frontpage-boxes">
-      <div class="app-box app-box-lg">
-        <div class="app-box-img">
-          <img src="{{ page.base_url }}assets/img/board.jpg" />
+      <div class="app-box app-box-lg app-box-courses">
+        <div class="app-box-media">
+          <img class="app-box-img lazyload"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-src="{{ page.base_url }}assets/img/board.jpg" />
         </div>
         <div class="app-box-content">
           <div class="app-box-header">
-              <i class="fa fa-bullhorn fa-2x app-box-icon"></i>
-              <h3 class="app-box-title">Sprachkurse</h3>
+              <h3 class="app-box-title">
+                <i class="fa fa-bullhorn fa-2x app-box-icon"></i>
+                Sprachkurse
+              </h3>
           </div>
-          <p>Deutsch in Deutschland lernen Sie effektiv
-            und erfolgreich in einem Sprachkurs der Sprachschule ADK
-              Augsburger Deutschkurse
-          </p>
+          <div class="app-box-body">
+            {% markdown fp-box-courses.md %}
+          </div>
         </div>
       </div>
       <div class="app-box-ribbon">
-          <a href="#">Mehr</a>
+          <a id="app-box-link-courses" href="#">Mehr</a>
           <span class="app-box-arrow app-box-arrow-light"></span>
       </div>
 
@@ -38,7 +41,8 @@ base_url: "../../"
                     und erfolgreich in einem Sprachkurs der Sprachschule ADK
                       Augsburger Deutschkurse
                   </p>
-                  <img src="{{ page.base_url }}assets/img/board.jpg" />
+                  <img class="app-box-img"
+                    src="{{ page.base_url }}assets/img/board.jpg" />
               </div>
               <div class="app-box-ribbon">
                   <a href="#">Mehr</a>
