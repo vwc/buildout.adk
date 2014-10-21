@@ -9,9 +9,19 @@
 
 .app-footer-content {
     margin-top: @line-height-computed;
-    padding: @line-height-computed * 2 @line-height-computed;
     background: #234493;
     color: #fff;
+}
+
+// Fooer boxes
+//
+// The footer consists of themed boxes
+.app-footer-boxes {
+    .container();
+    padding: @padding-small-vertical;
+    @media (min-width: @screen-sm-min) {
+        padding: ceil((@line-height-computed * 2)) @line-height-computed;
+    }
 }
 
 // Footer boxes responsive
@@ -23,6 +33,9 @@
 
 .footer-box-content {
     padding: (@line-height-computed / 2) @line-height-computed;
+    > blockquote {
+        font-size: 0.8rem;
+    }
 }
 
 

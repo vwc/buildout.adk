@@ -1,17 +1,6 @@
 // Application styles
 // -------------------
 
-body,
-.app-lp,
-.site-frontpage,
-.portaltype-adk-contentpages-sectionfolder {
-    background: url(../../assets/img/lined_paper.png) repeat 0px 0px transparent;
-}
-
-// Transition link color on hover pseude states
-a {
-    .transition(color .25s linear);
-}
 
 .image-left,
 .image-right,
@@ -37,7 +26,7 @@ a {
         &.display-title {
              color: @adk-blue;
              font-weight: 400;
-             font-size: ceil(@font-size-base * 2.5);
+             font-size: 2rem;
         }
     }
     .pullquote {
@@ -70,6 +59,11 @@ a {
             color: @gray-light;
         }
     }
+}
+
+// Combat bootstrap panel header
+.panel-title {
+    font-size: 1.25rem;
 }
 
 #contentpage-header {
@@ -173,7 +167,6 @@ select.date-widget,
     #page-body,
     #page-subcontent,
     #content-core {
-        font-size: ceil(@font-size-base * 1.25);
         .lead-muted {
             color: @gray-darker;
         }

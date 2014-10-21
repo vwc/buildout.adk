@@ -8,7 +8,7 @@
     {% include head.html %}
   </head>
   <body>
-    <a class="sr-only" href="#content">Skip navigation</a>
+    <a class="sr-only" href="#content">Skip to main content</a>
     {% include toolbar.html %}
 
     <header class="app-topbar" id="app-topbar">
@@ -51,8 +51,10 @@
           {% include footer-colophon.html %}
         </div>
     </footer>
-    {% include g-webfonts.html %}
     {% include javascript.html %}
+    <div class="app-webfont-slot" id="app-webfont-slot">
+        {% include g-webfonts.html %}
+    </div>
     <div class="app-js-slot">
         {% include analytics.html %}
     </div>

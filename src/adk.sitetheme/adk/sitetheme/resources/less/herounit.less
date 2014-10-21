@@ -9,24 +9,31 @@
     background: transparent;
     margin: 0;
     padding: @line-height-computed;
-    font-size: @font-size-base * 1.5;
+    @media (min-width: @screen-sm-min) {
+        font-size: 1.5rem;
+    }
+}
+
+.hero-section {
+    .container();
 }
 
 .hero-content {
     background:transparent;
-    h1 {
-        color: @adk-blue;
-        //text-align: center;
-    }
-    li {
-        list-style: none;
+}
+
+.hero-title,
+.page-heading {
+    color: @adk-blue;
+    @media (min-width: @screen-sm-min) {
+        font-size: 3rem;
     }
 }
 
-@media (min-width: @screen-tablet) {
+@media (min-width: @screen-sm-min) {
     .hero-content {
         padding-bottom: (@navbar-height * 7);
-        background:url(../../assets/img/hero-sprachschule.png) no-repeat 0 100% transparent;
+        background:url(../assets/img/hero-sprachschule.png) no-repeat 0 100% transparent;
     }
     .section-sprachkurse,
     .section-language-courses,
@@ -34,7 +41,7 @@
     .section-cours-dallemand,
     .section-nuestros-cursos {
         .hero-content {
-            background-image:url(../../assets/img/hero-sprachkurse.png);
+            background-image:url(../assets/img/hero-sprachkurse.png);
         }
         &.subsection-deutsch-intensivkurse,
         &.subsection-german-intensive-courses,
@@ -42,7 +49,7 @@
         &.subsection-cours-intensifs-dallemand,
         &.subsection-cursos-intensivos {
             .hero-content {
-                background-image:url(../../assets/img/hero-deutsch-intensivkurse.png);
+                background-image:url(../assets/img/hero-deutsch-intensivkurse.png);
             }
         }
         &.subsection-deutsch-intensiv-plus,
@@ -51,7 +58,7 @@
         &.subsection-cours-intensif-plus,
         &.subsection-curso-intensivo-plus {
             .hero-content {
-                background-image:url(../../assets/img/hero-deutsch-intensiv-plus.png);
+                background-image:url(../assets/img/hero-deutsch-intensiv-plus.png);
             }
         }
         &.subsection-dsh-und-testdaf-c-1-pruefungsvorbereitung,
@@ -60,7 +67,7 @@
         &.subsection-preparer-lexamen-c1-test-daf-dsh,
         &.subsection-preparacion-para-examenes {
             .hero-content {
-                background-image:url(../../assets/img/hero-dsh.png);
+                background-image:url(../assets/img/hero-dsh.png);
             }
         }
         &.subsection-berufsorientierter-deutschunterricht,
@@ -69,7 +76,7 @@
         &.subsection-cours-dallemand-pour-professionnels,
         &.subsection-cursos-para-trabajadores-y-empresas {
             .hero-content {
-                background-image:url(../../assets/img/hero-berufsorientierter-deutschunterricht.png);
+                background-image:url(../assets/img/hero-berufsorientierter-deutschunterricht.png);
             }
         }
         &.subsection-integrationskurse,
@@ -78,7 +85,7 @@
         &.subsection-cours-dintegration,
         &.subsection-cursos-de-integracion {
             .hero-content {
-                background-image:url(../../assets/img/hero-integrationskurs.png);
+                background-image:url(../assets/img/hero-integrationskurs.png);
             }
         }
     }
@@ -88,7 +95,7 @@
     .section-sejour-linguistique-pour-les-ados,
     .section-cursos-de-aleman-y-programa {
         .hero-content {
-            background-image:url(../../assets/img/hero-sommerkurse.png);
+            background-image:url(../assets/img/hero-sommerkurse.png);
         }
     }
     .section-sprachreisen,
@@ -97,7 +104,7 @@
     .section-voyages-scolaires,
     .section-aprende-mientras-viajas {
         .hero-content {
-            background-image:url(../../assets/img/hero-sprachreisen.png);
+            background-image:url(../assets/img/hero-sprachreisen.png);
         }
     }
     .section-termine-preise,
@@ -106,7 +113,7 @@
     .section-dates-e-prix,
     .section-fechas-y-precios {
         .hero-content {
-            background-image:url(../../assets/img/hero-terminepreise.png);
+            background-image:url(../assets/img/hero-terminepreise.png);
         }
     }
 }

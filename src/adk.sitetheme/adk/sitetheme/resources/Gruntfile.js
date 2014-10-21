@@ -242,31 +242,37 @@ module.exports = function (grunt) {
             cleanCSSFP: {
                 path: '<%= appconfig.dist %>/',
                 pattern: '../../<%= appconfig.dist %>/css/<%= pkg.name %>.min.css',
-                replacement: '../css/<%= pkg.name %>.min.css',
+                replacement: '<%= appconfig.dist %>/css/<%= pkg.name %>.min.css',
                 recursive: true
             },
             cleanCSS: {
                 path: '<%= appconfig.dist %>/',
                 pattern: '../<%= appconfig.dist %>/css/<%= pkg.name %>.min.css',
-                replacement: 'css/<%= pkg.name %>.min.css',
+                replacement: '<%= appconfig.dist %>/css/<%= pkg.name %>.min.css',
                 recursive: true
             },
             cleanJSFP: {
                 path: '<%= appconfig.dist %>/',
                 pattern: '../../<%= appconfig.dist %>/js/<%= pkg.name %>.min.js',
-                replacement: '../js/<%= pkg.name %>.min.js',
+                replacement: '/++theme++adk.sitetheme/<%= appconfig.dist %>/js/<%= pkg.name %>.min.js',
                 recursive: true
             },
             cleanJS: {
                 path: '<%= appconfig.dist %>/',
                 pattern: '../<%= appconfig.dist %>/js/<%= pkg.name %>.min.js',
-                replacement: 'js/<%= pkg.name %>.min.js',
+                replacement: '/++theme++adk.sitetheme/<%= appconfig.dist %>/js/<%= pkg.name %>.min.js',
                 recursive: true
             },
             cleanImgPath: {
                 path: '<%= appconfig.dist %>/',
-                pattern: '../dist/assets/img/',
-                replacement: 'assets/img/',
+                pattern: '../assets/img/',
+                replacement: '/++theme++adk.sitetheme/<%= appconfig.dist %>/assets/img/',
+                recursive: true
+            },
+            lazyLoadDataSrc: {
+                path: '<%= appconfig.dist %>/',
+                pattern: 'data=src="assets/img/',
+                replacement: 'data-src="/++theme++adk.sitetheme/dist/assets/img/',
                 recursive: true
             }
         },

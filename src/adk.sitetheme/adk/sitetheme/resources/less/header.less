@@ -9,15 +9,16 @@
     margin-bottom: @line-height-computed;
     .topbar-logo {
         z-index: 4;
-            display: block;
-            // background: 0 0px url(../../assets/img/logo-adk.png) no-repeat;
-            border-left: 0px solid #fff;
-            border-right: 0px solid #fff;
-            background-size: 100%;
-            .size(310px, 75px);
-            text-indent: -3000px;
-            overflow:hidden;
-            margin: @line-height-computed auto @line-height-computed;
+        display: block;
+        // background: 0 0px url(../../assets/img/logo-adk.png) no-repeat;
+        border-left: 0px solid #fff;
+        border-right: 0px solid #fff;
+        background-size: 100%;
+        .size(310px, 75px);
+        text-indent: -3000px;
+        overflow:hidden;
+        margin: @line-height-computed auto @line-height-computed -(@padding-base-vertical);
+
     }
     #language-flags-wrapper {
         margin-right: 50px;
@@ -61,6 +62,12 @@
     background: @adk-blue;
     border-radius: 0px;
     padding: @line-height-computed / 2 0;
+}
+
+.app-navbar-brand {
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 .app-navbar-nav {

@@ -75,9 +75,7 @@
                         src="/++theme++adk.sitetheme/assets/img/logo-certit.jpg" />
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                    <div id='widget_award_languagecourse_2014'></div>
-                    <script type='text/javascript' src='http://www.languagecourse.net/ext_widget/awards.js'></script>
-                    <script>init_award('103530', '2014');</script>
+                    <a target="_blank" href="http://www.languagecourse.net/excellence-award-2014.php3?id=103530"><img src="http://www.languagecourse.net/images/ExcellenceAward_2014_s.png"></a>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                   <img class="img-responsive"
