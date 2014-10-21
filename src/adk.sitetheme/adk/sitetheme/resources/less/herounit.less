@@ -8,9 +8,10 @@
 .hero-unit {
     background: transparent;
     margin: 0;
-    padding: @line-height-computed;
+    padding: @padding-small-vertical;
     @media (min-width: @screen-sm-min) {
         font-size: 1.5rem;
+        padding: @line-height-computed;
     }
 }
 
@@ -27,6 +28,16 @@
     color: @adk-blue;
     @media (min-width: @screen-sm-min) {
         font-size: 3rem;
+    }
+}
+
+.page-lead {
+    margin-bottom: @line-height-computed;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    @media (min-width: @screen-sm-min) {
+      font-size: 1.75rem;
     }
 }
 

@@ -1313,7 +1313,7 @@ h6,
 .h6
 {
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.1;
 
     color: inherit;
@@ -12550,7 +12550,7 @@ body
 body.ws-active b,
 body.ws-active strong
 {
-    font-weight: 600;
+    font-weight: 500;
 }
 pre
 {
@@ -12616,12 +12616,12 @@ pre
 b,
 strong
 {
-    font-weight: 600;
+    font-weight: 500;
 }
 .ws-active b,
 .ws-active strong
 {
-    font-weight: 600;
+    font-weight: 500;
 }
 a
 {
@@ -13113,7 +13113,7 @@ ul.visualNoMarker
 .hero-unit
 {
     margin: 0;
-    padding: 22.85714286px;
+    padding: .3125rem;
 
     background: transparent;
 }
@@ -13122,6 +13122,8 @@ ul.visualNoMarker
     .hero-unit
     {
         font-size: 1.5rem;
+
+        padding: 22.85714286px;
     }
 }
 .hero-section
@@ -13182,6 +13184,21 @@ ul.visualNoMarker
     .page-heading
     {
         font-size: 3rem;
+    }
+}
+.page-lead
+{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.4;
+
+    margin-bottom: 22.85714286px;
+}
+@media (min-width: 768px)
+{
+    .page-lead
+    {
+        font-size: 1.75rem;
     }
 }
 @media (min-width: 768px)
