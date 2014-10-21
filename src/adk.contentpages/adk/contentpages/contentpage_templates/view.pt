@@ -156,7 +156,7 @@
                   tal:attributes="href item/getURL">
                     <span class="app-box-header">
                         <i class="fa fa-bullhorn fa-2x app-box-icon"></i>
-                        <span class="h3 app-box-title" tal:content="item/Title">Sprachkurse</span>
+                        <span class="app-box-title" tal:content="item/Title">Sprachkurse</span>
                     </span>
                     <span class="app-box-lead" tal:content="item/Description" />
                 </a>

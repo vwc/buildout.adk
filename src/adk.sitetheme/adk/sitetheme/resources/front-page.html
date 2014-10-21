@@ -8,17 +8,17 @@ base_url: "../../"
     <section id="app-boxes-fp">
       <div class="app-box app-box-lg app-box-courses">
         <div class="app-box-media">
-          <img class="app-box-img lazyload"
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            data-src="{{ page.base_url }}assets/img/board.jpg" />
-        </div>
-        <div class="app-box-content">
           <div class="app-box-header">
               <h3 class="app-box-title" id="app-box-title-courses">
                 <i class="fa fa-bullhorn fa-2x app-box-icon"></i>
                 Sprachkurse
               </h3>
           </div>
+          <img class="app-box-img lazyload hidden-xs"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-src="{{ page.base_url }}assets/img/board.jpg" />
+        </div>
+        <div class="app-box-content">
           <div class="app-box-body">
             {% markdown fp-box-courses.md %}
           </div>
