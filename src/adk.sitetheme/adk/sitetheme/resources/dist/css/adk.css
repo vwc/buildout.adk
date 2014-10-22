@@ -13219,6 +13219,14 @@ ul.visualNoMarker
         font-size: 1.75rem;
     }
 }
+.hero-unit-body
+{
+    line-height: 1.25;
+}
+.hero-unit-body > p
+{
+    font-weight: 300;
+}
 @media (min-width: 768px)
 {
     .hero-content
@@ -13779,6 +13787,10 @@ fieldset[disabled] #toolbar .btn-link:focus
 {
     font-size: .8rem;
 }
+.footer-box-content .img-responsive
+{
+    margin-top: 22.85714286px;
+}
 .app-colophon
 {
     padding: 22.85714286px 0;
@@ -13800,13 +13812,6 @@ fieldset[disabled] #toolbar .btn-link:focus
 .hero-unit-body
 {
     padding-bottom: 100px;
-}
-@media screen and (min-width: 992px)
-{
-    .hero-unit-fp-content
-    {
-        background: url('/++theme++adk.sitetheme/dist/assets/img/speech-bubbles.png') no-repeat 100% 0 transparent;
-    }
 }
 .tile
 {
@@ -13913,7 +13918,7 @@ fieldset[disabled] .tile-editable .tile-edit-link.active
 
     filter: alpha(opacity=100);
 }
-.content-block:hover .cp-block
+.content-block:hover .xcp-block
 {
     margin-top: -2px;
 }
@@ -14153,12 +14158,18 @@ fieldset[disabled] .tile-editable .tile-edit-link.active
 {
     font-size: 1.25rem;
 }
+.panel-body
+{
+    font-weight: 300;
+}
 #contentpage-header
 {
     margin: 0 0 22.85714286px;
 }
 #contentpage-header .lead
 {
+    font-weight: 100;
+
     color: #000;
 }
 .content-block

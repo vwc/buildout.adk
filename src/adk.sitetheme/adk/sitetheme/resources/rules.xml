@@ -55,7 +55,7 @@
         <drop css:content="head link[rel='apple-touch-icon']" />
         <drop css:content="head link[rel='shortcut icon']" />
         <after theme="/html/head">
-            <link rel="shortcut icon" href="/++theme++adk.sitetheme/dist/assets/img/favicon.ico" type="image/x-icon" />
+            <link rel="shortcut icon" href="/++theme++adk.sitetheme/dist/assets/ico/favicon.ico" type="image/x-icon" />
         </after>
 
 
