@@ -126,9 +126,11 @@
             <replace css:theme-children="#app-box-title-courses"
                 css:content="#fp-box-courses" />
             <copy attributes="href" css:content="#fp-box-courses" css:theme="#app-box-link-courses" />
-
+            <replace css:theme-children="#app-box-title-summercourses"
+                css:content="#fp-box-summercourses" />
             <copy attributes="href" css:content="#fp-box-summercourses" css:theme="#app-box-link-summercourses" />
-
+            <replace css:theme-children="#app-box-title-languagetravel"
+                css:content="#fp-box-languagetravel" />
             <copy attributes="href" css:content="#fp-box-languagetravel" css:theme="#app-box-link-languagetravel" />
         </rules>
         <!--<replace css:content-children="#content-core"

@@ -39,21 +39,18 @@
         <a id="fp-box-courses"
           tal:define="item python:view.page_details(1)"
           tal:attributes="href item/getURL">
-          <i class="fa fa-bullhorn fa-2x app-box-icon"></i>
           <span tal:replace="item/Title">Courses</span>
         </a>
-        <div id="fp-box-summercourses"
+        <a id="fp-box-summercourses"
           tal:define="item python:view.page_details(2)"
-          tal:attributes="href item/getURL"
-          tal:content="item/Title">
-          Summercourses
-        </div>
-        <div id="fp-box-languagetravel"
+          tal:attributes="href item/getURL">
+          <span tal:replace="item/Title">Summercourses</span>
+        </a>
+        <a id="fp-box-languagetravel"
           tal:define="item python:view.page_details(3)"
-          tal:attributes="href item/getURL"
-          tal:content="item/Title">
-          Language travel
-        </div>
+          tal:attributes="href item/getURL">
+          <span tal:content="item/Title">Language travel</span>
+        </a>
       </div>
        <div class="row" id="app-boxes-fp">
             <div class="col-xs-12 col-lg-4">

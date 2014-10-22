@@ -251,15 +251,15 @@ module.exports = function (grunt) {
                 replacement: '<%= appconfig.dist %>/css/<%= pkg.name %>.min.css',
                 recursive: true
             },
-            cleanJSFP: {
-                path: '<%= appconfig.dist %>/',
-                pattern: '../../<%= appconfig.dist %>/js/<%= pkg.name %>.min.js',
-                replacement: '/++theme++adk.sitetheme/<%= appconfig.dist %>/js/<%= pkg.name %>.min.js',
-                recursive: true
-            },
             cleanJS: {
                 path: '<%= appconfig.dist %>/',
                 pattern: '../<%= appconfig.dist %>/js/<%= pkg.name %>.min.js',
+                replacement: '/++theme++adk.sitetheme/<%= appconfig.dist %>/js/<%= pkg.name %>.min.js',
+                recursive: true
+            },
+            cleanJSFP: {
+                path: '<%= appconfig.dist %>/',
+                pattern: '../../<%= appconfig.dist %>/js/<%= pkg.name %>.min.js',
                 replacement: '/++theme++adk.sitetheme/<%= appconfig.dist %>/js/<%= pkg.name %>.min.js',
                 recursive: true
             },
