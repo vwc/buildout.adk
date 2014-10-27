@@ -1,7 +1,9 @@
-ADK bietet das komplette Sprachprogramm: Deutsch lernen, leben in einer deutschen Gastfamilie, interessantes Freizeitprogramm. Eltern wählen unsere Sommerkurse wegen den internationalen Klassen und weil wir uns um die jüngeren Schüler ganz besonders kümmern.
+Unsere Sommersprachkurse für Jugendliche bieten das komplette Sprachprogramm auf den Niveaus A1 – B2:
 
-Qualifizierte Dozenten leiten den Deutschunterricht auf den Niveaustufen A2, B1 und B2. Motivierte und engagierte Tutoren gestalten das Freizeitprogramm. Das garantiert gleichbleibende und zertifizierte Qualität bei ADK. Augsburg ist eine sehr sichere Stadt und die Schüler können sich frei bewegen.
+- Deutsch lernen
+- leben in einer deutschen Gastfamilie
+- interessantes Freizeitprogramm
 
-Unser beliebtes Freizeitprogramm beinhaltet Ausflüge nach München, Ulm, Nürnberg, Schloss Neuschwanstein und an den Ammersee. Am Nachmittag erwartet unsere jungen Schüler eine interessante Mischung aus Spiel, Spaß, Sport und Kultur. Augsburg, die 2000 Jahre alte Stadt bei München, ist kulturell sehr interessant und freundlich. Es gibt eine historische Altstadt, viele Shopping-Möglichkeiten und ein studentisches Flair mit vielen Kneipen und Cafes.
+Der Sommerkurs ist unser Angebot, um in den Ferien die Deutschkenntnisse zu verbessern und bietet dabei jede Menge Spaß beim Lernen.
 
-Unsere Sommerkurse bieten alles inklusive: Wir organisieren den Kurs, die Freizeit und die Unterkunft. Gerne holen wir die Schüler vom Flughafen oder vom Bahnhof ab.
+Am ersten Tag findet eine exakte Einstufung der Schüler statt. Anhand der Ergebnisse erstellen unsere Dozenten ein speziell erarbeitetes Material zum effektiven Deutschlernen. Am Nachmittag erwartet unsere jungen Schüler eine interessante Mischung aus Spiel, Spaß, Sport und Kultur. 

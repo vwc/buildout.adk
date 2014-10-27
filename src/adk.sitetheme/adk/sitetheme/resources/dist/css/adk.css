@@ -13026,9 +13026,31 @@ ul.visualNoMarker
 }
 .app-box-body
 {
+    font-weight: 200;
+
     display: block;
 
     min-height: 113px;
+}
+.app-box-body > p:first-child
+{
+    font-size: 1.25rem;
+    font-weight: 300;
+
+    margin-bottom: 35px;
+}
+@media (min-width: 768px)
+{
+    .app-box-body
+    {
+        font-size: 1.25rem;
+
+        padding: 22.85714286px;
+    }
+    .app-box-body p:first-child
+    {
+        font-size: 1.4rem;
+    }
 }
 .app-box-ribbon
 {

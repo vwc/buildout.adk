@@ -1,9 +1,9 @@
-Deutsch lernen in Deutschland geht effektiv und erfolgreich in unseren Sprachkursen. Augsburger Deutschkurse liegt mitten im Stadtzentrum Augsburgs. Wir stehen für Qualität, effektiven Deutschunterricht und faire Preise.
+Deutsch lernen Sie effektiv bei Augsburger Deutschkurse. Qualifizierte Dozenten und unsere individuelle Beratung machen für unsere Kunden den Unterschied.
 
-Lernen Sie Deutsch in einer entspannten Atmosphäre in internationalen Gruppen! Qualifizierte Dozenten und unsere individuelle Beratung rund um den gesamten Deutschkurs machen für unsere Kunden den Unterschied. Unsere Intensivkurse tragen Ihren Namen zu Recht: 25 Unterrichtseinheiten, wöchentliche Tests, effektives Training führen zu zügigen Fortschritten.
+Unser Unterricht umfasst Lektionen und Übungen zur deutschen Grammatik, zum Wortschatz und zur sprachlichen Praxis.
 
-ADK ist eine der erfolgreichsten Privatschulen in Bayern und seit 2014 zertifiziertes, zugelassenes telc-Prüfungszentrum.
+Wir bieten das ganze Jahr über Deutschkurse auf allen Niveaustufen von A1 bis C1. Unsere Anfängerkurse starten jeden Monat neu. Teilnehmer mit vorhandenen Deutschkenntnissen können jederzeit in einen unserer laufenden Kurse einsteigen. Unser Kursangebot umfasst: 
 
-Wir bieten das ganze Jahr über Deutschkurse auf allen Niveaustufen von A1 bis C1. Unsere Anfängerkurse starten jeden Monat neu. Teilnehmer mit vorhandenen Deutschkenntnissen können jederzeit in einen unserer laufenden Kurse einsteigen.
-
-Besonders beliebt sind unsere internationalen Sommerkurse für Jugendliche von 14-18 Jahren. Neben dem Unterricht organisieren wir ein attraktives Freizeitprogramm und die Unterbringung bei zuverlässigen und freundlichen Gastfamilien. Wir bieten Prüfungsvorbereitungskurse in Deutsch für die Niveaustufen A1, B1, B2, Testdaf, DSH.
+- Intensivkurse
+- Integrationskurse
+- Prüfungsvorbereitungskurse DSH, testDAF, A1, B1, B2

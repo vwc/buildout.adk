@@ -58,6 +58,19 @@
 .app-box-body {
     display: block;
     min-height: ceil(@navbar-height * 2.25);
+    font-weight: 200;
+    > p:first-child {
+        margin-bottom: ceil((@line-height-computed * 1.5));
+        font-weight: 300;
+        font-size: 1.25rem;
+    }
+    @media (min-width: @screen-sm-min) {
+        padding: @line-height-computed;
+        font-size: 1.25rem;
+        p:first-child {
+            font-size: 1.4rem;
+        }
+    }
 }
 
 .app-box-ribbon {
