@@ -13430,6 +13430,10 @@ ul.visualNoMarker
         background-image: url(/++theme++adk.sitetheme/dist/assets/img/hero-terminepreise.png);
     }
 }
+.btn-hero
+{
+    margin-bottom: 12px;
+}
 .app-topbar
 {
     display: block;

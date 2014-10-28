@@ -1,9 +1,9 @@
-Unsere Sommersprachkurse für Jugendliche bieten das komplette Sprachprogramm auf den Niveaus A1 – B2:
+Our summer school for young learners offer the complete language learning programm levels A1 - B2:
 
-- Deutsch lernen
-- leben in einer deutschen Gastfamilie
-- interessantes Freizeitprogramm
+- learn German
+- stay in a german guest family
+- interessting spare time programm
 
-Der Sommerkurs ist unser Angebot, um in den Ferien die Deutschkenntnisse zu verbessern und bietet dabei jede Menge Spaß beim Lernen.
+Our summer courses invite to spent the holidays increasing your language skills while having fun learning.
 
-Am ersten Tag findet eine exakte Einstufung der Schüler statt. Anhand der Ergebnisse erstellen unsere Dozenten ein speziell erarbeitetes Material zum effektiven Deutschlernen. Am Nachmittag erwartet unsere jungen Schüler eine interessante Mischung aus Spiel, Spaß, Sport und Kultur. 
+On your first day an assessment test is conducted with the pupils. Based on the test results our language teachers provide elaborated teaching materials for learning German effectively. In the afternoons our jung learners enjoy a mixture of game, fun, sport and culture.

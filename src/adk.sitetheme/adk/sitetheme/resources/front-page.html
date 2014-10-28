@@ -19,12 +19,15 @@ base_url: "../../"
             data-src="{{ page.base_url }}assets/img/board.jpg" />
         </div>
         <div class="app-box-content">
-          <div class="app-box-body">
+          <div class="app-box-body" id="app-box-body-01-de">
+            {% markdown fp-box-kurse.md %}
+          </div>
+          <div class="app-box-body" id="app-box-body-01-en">
             {% markdown fp-box-courses.md %}
           </div>
         </div>
       </div>
-      <div class="app-box-ribbon">
+      <div class="app-box-ribbon" id="app-box-ribbon-1">
           <a id="app-box-link-courses" href="#">Mehr</a>
           <span class="app-box-arrow app-box-arrow-light"></span>
       </div>
@@ -42,12 +45,15 @@ base_url: "../../"
             data-src="{{ page.base_url }}assets/img/summer.jpg" />
         </div>
         <div class="app-box-content">
-          <div class="app-box-body">
+          <div class="app-box-body" id="app-box-body-02-de">
+            {% markdown fp-box-sommerkurse.md %}
+          </div>
+          <div class="app-box-body" id="app-box-body-02-en">
             {% markdown fp-box-summercourses.md %}
           </div>
         </div>
       </div>
-      <div class="app-box-ribbon">
+      <div class="app-box-ribbon" id="app-box-ribbon-2">
           <a id="app-box-link-summercourses" href="#">Mehr</a>
           <span class="app-box-arrow app-box-arrow-light"></span>
       </div>
@@ -65,12 +71,15 @@ base_url: "../../"
             data-src="{{ page.base_url }}assets/img/bulli.jpg" />
         </div>
         <div class="app-box-content">
-          <div class="app-box-body">
+          <div class="app-box-body" id="app-box-body-03-de">
+            {% markdown fp-box-sprachreisen.md %}
+          </div>
+          <div class="app-box-body" id="app-box-body-03-en">
             {% markdown fp-box-languagetravel.md %}
           </div>
         </div>
       </div>
-      <div class="app-box-ribbon">
+      <div class="app-box-ribbon" id="app-box-ribbon-3">
           <a id="app-box-link-languagetravel" href="#">Mehr</a>
           <span class="app-box-arrow app-box-arrow-light"></span>
       </div>

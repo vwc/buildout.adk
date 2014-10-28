@@ -1,8 +1,6 @@
-Unser Angebot für Gruppenreisen und Schulklassen in Augsburg. Wir bieten Deutschkurse für Schüler mit abwechslungsreichem Kulturprogramm.
+Our offering for group stays and school classes coming to Augsburg. We offer German courses for pupils and a cultural programm rich in variety.
 
-Dazu organisieren wir erfahrene Gastfamilien, gemeinsame Reisen sowie spannende Ausflüge in die Umgebung von Augsburg. Unsere Sprachreisekurse in Deutsch gibt es auf allen Niveaus von A1 bis C1. Gern erstellen wir auch ein individuelles Programm:
+We organize experienced guest families, collective travels and interesting excursions in the vicinity of Augsburg. We offer language courses designed for language travels on all levels from A1 to C1. We also gladly provide an individual programm and schedule on request:
 
-- Prüfungsvorbereitung
-- Landeskunde Deutschland und Bayern
-
-Am Ende steht eine Fit Deutsch 1/2 Prüfung in unseren Räumen mit offiziell, international anerkanntem Abschluss-Zertifikat. Besondere Konditionen gelten für Begleitpersonen.
+- exam preparations
+- regional and cultural studies on Germany and Bavaria

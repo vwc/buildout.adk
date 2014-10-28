@@ -125,13 +125,28 @@
             <drop css:theme="#app-frontpage-boxes" />
             <replace css:theme-children="#app-box-title-courses"
                 css:content="#fp-box-courses" />
-            <copy attributes="href" css:content="#fp-box-courses" css:theme="#app-box-link-courses" />
+            <replace css:theme="#app-box-ribbon-1" css:content="#app-box-ribbon-1" />
+            <!-- <copy attributes="href" css:content="#fp-box-courses" css:theme="#app-box-link-courses" />-->
             <replace css:theme-children="#app-box-title-summercourses"
                 css:content="#fp-box-summercourses" />
-            <copy attributes="href" css:content="#fp-box-summercourses" css:theme="#app-box-link-summercourses" />
+            <replace css:theme="#app-box-ribbon-2" css:content="#app-box-ribbon-2" />
+            <!-- <copy attributes="href" css:content="#fp-box-summercourses" css:theme="#app-box-link-summercourses" /> -->
             <replace css:theme-children="#app-box-title-languagetravel"
                 css:content="#fp-box-languagetravel" />
-            <copy attributes="href" css:content="#fp-box-languagetravel" css:theme="#app-box-link-languagetravel" />
+            <replace css:theme="#app-box-ribbon-3" css:content="#app-box-ribbon-3" />
+            <!-- <copy attributes="href" css:content="#fp-box-languagetravel" css:theme="#app-box-link-languagetravel" /> -->
+
+            <!-- Drop language specific frontpage text -->
+            <rules css:if-content="body.site-de">
+                <drop css:theme="#app-box-body-01-en" />
+                <drop css:theme="#app-box-body-02-en" />
+                <drop css:theme="#app-box-body-03-en" />
+            </rules>
+            <rules css:if-not-content="body.site-de">
+                <drop css:theme="#app-box-body-01-de" />
+                <drop css:theme="#app-box-body-02-de" />
+                <drop css:theme="#app-box-body-03-de" />
+            </rules>
         </rules>
         <!--<replace css:content-children="#content-core"
             css:theme-children="#app-frontpage-boxes"

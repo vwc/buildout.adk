@@ -1,9 +1,11 @@
-Deutsch lernen Sie effektiv bei Augsburger Deutschkurse. Qualifizierte Dozenten und unsere individuelle Beratung machen für unsere Kunden den Unterschied.
+Learn German at Augsburger Deutschkurse. Our highly qualified teachers and our idividual tuition make the difference for our customers.
 
-Unser Unterricht umfasst Lektionen und Übungen zur deutschen Grammatik, zum Wortschatz und zur sprachlichen Praxis.
+Our lessions consist of lectures and exercises on German Grammar, German vocabulary and practical experience of the language.
 
-Wir bieten das ganze Jahr über Deutschkurse auf allen Niveaustufen von A1 bis C1. Unsere Anfängerkurse starten jeden Monat neu. Teilnehmer mit vorhandenen Deutschkenntnissen können jederzeit in einen unserer laufenden Kurse einsteigen. Unser Kursangebot umfasst: 
+We offer yearround language courses for all levels of experience from A1 to C1. Our beginner courses are start on a monthly schedule. All participants with experience in the German language can enter a running course any time.
 
-- Intensivkurse
-- Integrationskurse
-- Prüfungsvorbereitungskurse DSH, testDAF, A1, B1, B2
+Our courses include
+
+- intensive courses
+- integration courses
+- exam preparations

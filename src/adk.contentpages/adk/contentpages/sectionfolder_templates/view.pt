@@ -17,13 +17,13 @@
         tal:content="context/Description" />
       <div class="hero-unit-fp-actions"
           tal:condition="view/has_pages">
-          <a href="" class="btn btn-danger btn-lg"
+          <a href="" class="btn btn-danger btn-lg btn-hero"
             tal:define="item python:view.page_details(4)"
             tal:attributes="href item/getURL"
             tal:content="item/Title">
               Termine &amp; Preise
           </a>
-          <a href="" class="btn btn-primary btn-lg"
+          <a href="" class="btn btn-primary btn-lg btn-hero"
             tal:define="section python:view.page_details(1);
                         results python:section.getObject().restrictedTraverse('@@folderListing')(portal_type='adk.contentpages.contentpage');
                         item python:results[5]"
@@ -70,8 +70,9 @@
                     </span>
                     <img src="/++theme++adk.sitetheme/assets/img/board.jpg" />
                 </a>
-                <div class="app-box-ribbon">
-                    <a tal:attributes="href item/getURL">Mehr</a>
+                <div class="app-box-ribbon" id="app-box-ribbon-1">
+                    <a tal:attributes="href item/getURL"
+                      i18n:translate="">more</a>
                     <span class="app-box-arrow app-box-arrow-light"></span>
                 </div>
               </tal:block>
@@ -91,8 +92,9 @@
                     </span>
                     <img src="/++theme++adk.sitetheme/assets/img/summer.jpg" />
                 </a>
-                <div class="app-box-ribbon">
-                    <a tal:attributes="href item/getURL">Mehr</a>
+                <div class="app-box-ribbon" id="app-box-ribbon-2">
+                    <a tal:attributes="href item/getURL"
+                      i18n:translate="">more</a>
                     <span class="app-box-arrow app-box-arrow-light"></span>
                 </div>
               </tal:block>
@@ -112,8 +114,9 @@
                     </span>
                     <img src="/++theme++adk.sitetheme/assets/img/bulli.jpg" />
                 </a>
-                <div class="app-box-ribbon">
-                    <a tal:attributes="href item/getURL">Mehr</a>
+                <div class="app-box-ribbon" id="app-box-ribbon-3">
+                    <a tal:attributes="href item/getURL"
+                      i18n:translate="">more</a>
                     <span class="app-box-arrow app-box-arrow-light"></span>
                 </div>
               </tal:block>
