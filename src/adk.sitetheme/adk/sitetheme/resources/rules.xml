@@ -121,6 +121,11 @@
             css:if-not-content="#page-header" />
 
         <rules css:if-content="body.portaltype-adk-contentpages-sectionfolder">
+            <!-- Exclude contact view -->
+            <replace css:content-children="#content"
+                css:theme-children="#content"
+                css:if-not-content="body.template-contact-view" />
+
             <drop css:content="#app-boxes-fp" />
             <drop css:theme="#app-frontpage-boxes" />
             <replace css:theme-children="#app-box-title-courses"
@@ -152,11 +157,6 @@
             css:theme-children="#app-frontpage-boxes"
             css:if-content="body.portaltype-adk-contentpages-sectionfolder"
             />-->
-
-        <replace css:content-children="#content"
-            css:theme-children="#content"
-            css:if-not-content="body.portaltype-adk-contentpages-sectionfolder" />
-
 
         <!-- Status messages not inside #content -->
         <drop css:content="#content .portalMessage"/>
