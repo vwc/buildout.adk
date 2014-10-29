@@ -14,6 +14,10 @@
 
     <theme href="dist/blog/index.html" css:if-content="body.section-blog" />
     <theme href="dist/bookingform/index.html" css:if-content="body.template-booking-form" />
+    <theme href="dist/index.html" css:if-content="body.template-contact-view" />
+    <theme href="dist/index.html" css:if-content="body.template-imprint-view" />
+    <theme href="dist/index.html" css:if-content="body.template-terms-and-conditions" />
+
     <theme href="dist/front-page/index.html" css:if-content="body.portaltype-adk-contentpages-sectionfolder" />
 
     <!-- Rules applying to standard Plone pages -->
@@ -88,9 +92,22 @@
         <!-- Document Content -->
         <!--<drop css:content="#content" css:if-content="body.section-front-page" />-->
 
+        <!-- Use special transform for special pages -->
         <replace css:content-children="#content"
             css:theme-children="#content"
             css:if-content="body.template-booking-form"
+            />
+        <replace css:content-children="#content"
+            css:theme-children="#content"
+            css:if-content="body.template-contact-view"
+            />
+        <replace css:content-children="#content"
+            css:theme-children="#content"
+            css:if-content="body.template-imprint-view"
+            />
+        <replace css:content-children="#content"
+            css:theme-children="#content"
+            css:if-content="body.template-terms-and-conditions"
             />
 
         <rules css:if-content="#page-header">
@@ -121,11 +138,6 @@
             css:if-not-content="#page-header" />
 
         <rules css:if-content="body.portaltype-adk-contentpages-sectionfolder">
-            <!-- Exclude contact view -->
-            <replace css:content-children="#content"
-                css:theme-children="#content"
-                css:if-not-content="body.template-contact-view" />
-
             <drop css:content="#app-boxes-fp" />
             <drop css:theme="#app-frontpage-boxes" />
             <replace css:theme-children="#app-box-title-courses"
