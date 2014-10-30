@@ -17,7 +17,7 @@
     <theme href="dist/index.html" css:if-content="body.template-contact-view" />
     <theme href="dist/index.html" css:if-content="body.template-imprint-view" />
     <theme href="dist/index.html" css:if-content="body.template-terms-and-conditions" />
-
+    <theme href="dist/index.html" css:if-content="body.template-testimonial-listing" />
     <theme href="dist/front-page/index.html" css:if-content="body.portaltype-adk-contentpages-sectionfolder" />
 
     <!-- Rules applying to standard Plone pages -->
@@ -108,6 +108,10 @@
         <replace css:content-children="#content"
             css:theme-children="#content"
             css:if-content="body.template-terms-and-conditions"
+            />
+        <replace css:content-children="#content"
+            css:theme-children="#content"
+            css:if-content="body.template-testimonial-listing"
             />
 
         <rules css:if-content="#page-header">
