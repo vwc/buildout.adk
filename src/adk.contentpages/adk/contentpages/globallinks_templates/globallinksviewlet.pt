@@ -50,8 +50,13 @@
             <p tal:condition="is_de">
                 ADK ist ein "Familienunternehmen" unter persönlicher Leitung der Inhaber. Unbürokratisch, flexibel und persönlich - so ist hier der Service. Das unterscheidet ADK von großen Schulen.
             </p>
-            <a class="btn btn-default btn-lg" href="/">
-                <span tal:condition="is_de">mehr</span><span tal:condition="not:is_de">more</span>
+            <a class="btn btn-default btn-lg" tal:condition="is_de" href="/"
+                tal:attributes="href string:${root_url}/sprachschule">
+                mehr
+            </a>
+            <a class="btn btn-default btn-lg" tal:condition="not:is_de" href="/"
+                tal:attributes="href string:${root_url}/language-school">
+               more
             </a>
         </div>
     </div>
