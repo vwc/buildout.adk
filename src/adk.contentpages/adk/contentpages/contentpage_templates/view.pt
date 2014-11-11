@@ -161,7 +161,8 @@
                     <span class="app-box-lead" tal:content="item/Description" />
                 </a>
                 <div class="app-box-ribbon">
-                    <a href="#" tal:attributes="href item/getURL">Mehr</a>
+                    <a href="#" tal:attributes="href item/getURL"
+                      i18n:translate="">more</a>
                     <span class="app-box-arrow app-box-arrow-light"></span>
                 </div>
               </div>
