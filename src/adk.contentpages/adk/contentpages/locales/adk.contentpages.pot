@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-10-28 13:44+0000\n"
+"POT-Creation-Date: 2014-11-11 14:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "A sinlge content panel or box"
 msgstr ""
 
-#: ./../contentpage_templates/view.pt:185
+#: ./../contentpage_templates/view.pt:186
 msgid "Add block"
 msgstr ""
 
@@ -552,6 +552,7 @@ msgstr ""
 msgid "male"
 msgstr ""
 
+#: ./../contentpage_templates/view.pt:164
 #: ./../sectionfolder_templates/view.pt:74
 msgid "more"
 msgstr ""

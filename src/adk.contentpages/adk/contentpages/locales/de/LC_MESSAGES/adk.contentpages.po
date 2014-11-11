@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: 2014-10-28 13:44+0000\n"
-"PO-Revision-Date: 2014-10-28 14:46+0100\n"
+"POT-Creation-Date: 2014-11-11 14:53+0000\n"
+"PO-Revision-Date: 2014-11-11 17:07+0100\n"
 "Last-Translator: Christoph Boehner <cb@vorwaerts-werbung.de>\n"
 "Language-Team: VW Language Team <hallo@vorwaerts-werbung.de>\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr "Das Formular wurde erfolgreich ausgeführt."
 msgid "A sinlge content panel or box"
 msgstr "Ein einzelner Inhaltsblock oder eine einzelne Inhaltsbox"
 
-#: ./../contentpage_templates/view.pt:185
+#: ./../contentpage_templates/view.pt:186
 msgid "Add block"
 msgstr "Inhaltsblock hinzufügen"
 
@@ -549,6 +549,7 @@ msgstr "mittelmässig"
 msgid "male"
 msgstr "männlich"
 
+#: ./../contentpage_templates/view.pt:164
 #: ./../sectionfolder_templates/view.pt:74
 msgid "more"
 msgstr "mehr"
