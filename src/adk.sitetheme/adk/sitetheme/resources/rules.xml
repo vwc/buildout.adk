@@ -169,10 +169,10 @@
                 <drop css:theme="#app-box-body-03-de" />
             </rules>
         </rules>
-        <!--<replace css:content-children="#content-core"
-            css:theme-children="#app-frontpage-boxes"
-            css:if-content="body.portaltype-adk-contentpages-sectionfolder"
-            />-->
+        
+        <replace css:content-children="#content"
+            css:theme-children="#content"
+            css:if-not-content="body.portaltype-adk-contentpages-sectionfolder" />
 
         <!-- Status messages not inside #content -->
         <drop css:content="#content .portalMessage"/>
