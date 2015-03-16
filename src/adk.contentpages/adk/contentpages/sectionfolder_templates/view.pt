@@ -32,6 +32,16 @@
               Sprachkurse Visum
           </a>
       </div>
+      <div class="hero-unit-fp-aside">
+        <div class="hero-aside-figure">
+          <img class="img-responsive lazyload"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-src="/++theme++adk.sitetheme/dist/assets/img/logo-telc.png" />
+        </div>
+        <div class="hero-aside-text">
+          Prüfungszentrum DTZ, B1, B2, C1
+        </div>
+      </div>
     </header>
 
     <section id="content-core">
