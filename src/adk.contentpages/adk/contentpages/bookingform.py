@@ -1,5 +1,6 @@
 import datetime
 import os
+from AccessControl import Unauthorized
 from Acquisition import aq_inner
 from five import grok
 from plone import api
@@ -27,7 +28,7 @@ from adk.contentpages import MessageFactory as _
 
 def validateAcceptConstraint(value):
     """ Check if the terms and conditions have been accepted. """
-    if not value is True:
+    if value is not True:
         return False
     return True
 
@@ -237,6 +238,11 @@ class IBooking(form.Schema):
         description=u'',
         required=False,
     )
+    form.widget('token', klass='booking-identifier-token')
+    token = schema.TextLine(
+        title=_(u"Please leave empty to use the human identifier token"),
+        required=False,
+    )
     terms_accept = schema.Bool(
         title=_(u"I confirm the correctness of my entries and acknowledge the "
                 u"terms and conditions of ADK."),
@@ -267,6 +273,8 @@ class BookingForm(form.SchemaForm):
     @button.buttonAndHandler(_(u'Book now'), name='submit')
     def handleApply(self, action):
         data, errors = self.extractData()
+        if data['token']:
+            raise Unauthorized
         if errors:
             self.status = self.formErrorsMessage
             return
