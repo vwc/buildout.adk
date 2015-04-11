@@ -14343,6 +14343,8 @@ fieldset[disabled] .tile-editable .tile-edit-link.active
 #formfield-form-widgets-token
 {
     visibility: hidden;
+
+    height: 0;
 }
 .image-left,
 .image-right,
