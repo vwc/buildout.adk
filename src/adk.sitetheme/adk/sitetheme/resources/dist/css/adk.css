@@ -14340,7 +14340,7 @@ fieldset[disabled] .tile-editable .tile-edit-link.active
         font-size: 1.5rem;
     }
 }
-.booking-identifier-token
+#formfield-form-widgets-token
 {
     visibility: hidden;
 }
