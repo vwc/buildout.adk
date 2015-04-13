@@ -238,9 +238,9 @@ class IBooking(form.Schema):
         description=u'',
         required=False,
     )
-    form.widget('token', klass='booking-identifier-token')
-    token = schema.TextLine(
-        title=_(u"Please leave empty to use the human identifier token"),
+    form.widget('note', klass='booking-identifier-token')
+    note = schema.TextLine(
+        title=_(u"Please leave empty to show that you are of flesh and blood"),
         required=False,
     )
     terms_accept = schema.Bool(
@@ -273,7 +273,7 @@ class BookingForm(form.SchemaForm):
     @button.buttonAndHandler(_(u'Book now'), name='submit')
     def handleApply(self, action):
         data, errors = self.extractData()
-        if data['token']:
+        if data['note']:
             raise Unauthorized
         if errors:
             self.status = self.formErrorsMessage
