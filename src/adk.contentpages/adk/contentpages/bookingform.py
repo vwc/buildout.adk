@@ -1,27 +1,24 @@
 # -*- coding: utf-8 -*-
 """Module providing booking form"""
 import datetime
-import os
 import logging
+import os
+
 from AccessControl import Unauthorized
 from Acquisition import aq_inner
-from DateTime import DateTime
-from five import grok
-from plone import api
-from string import Template
-
-from plone.directives import form
-
-from zope import schema
-from z3c.form import button
-
-from zope.schema.vocabulary import SimpleVocabulary
-from zope.schema.vocabulary import SimpleTerm
 from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.statusmessages.interfaces import IStatusMessage
-from zope.interface import Invalid
 from adk.contentpages.sectionfolder import ISectionFolder
+from five import grok
+from plone import api
+from plone.directives import form
+from string import Template
+from z3c.form import button
+from zope import schema
+from zope.interface import Invalid
+from zope.schema.vocabulary import SimpleTerm
+from zope.schema.vocabulary import SimpleVocabulary
 
 from adk.contentpages.mailer import create_plaintext_message
 from adk.contentpages.mailer import prepare_email_message
@@ -41,7 +38,7 @@ def validateAcceptConstraint(value):
 
 def startdateConstraint(value):
     """Check password length"""
-    if value < DateTime():
+    if value < datetime.date.today():
         raise Invalid(_(u"Please enter a valid date"))
     return True
 
