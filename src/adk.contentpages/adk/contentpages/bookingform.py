@@ -1,5 +1,6 @@
 import datetime
 import os
+import logging
 from AccessControl import Unauthorized
 from Acquisition import aq_inner
 from five import grok
@@ -24,6 +25,8 @@ from adk.contentpages.mailer import prepare_email_message
 from adk.contentpages.mailer import send_mail
 
 from adk.contentpages import MessageFactory as _
+
+logger = logging.getLogger("adk-booking")
 
 
 def validateAcceptConstraint(value):
@@ -274,6 +277,7 @@ class BookingForm(form.SchemaForm):
     def handleApply(self, action):
         data, errors = self.extractData()
         if data['note']:
+            logger.error('Bot form submission detected')
             raise Unauthorized
         if errors:
             self.status = self.formErrorsMessage
