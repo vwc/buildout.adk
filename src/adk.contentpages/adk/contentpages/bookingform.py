@@ -5,6 +5,7 @@ import os
 import logging
 from AccessControl import Unauthorized
 from Acquisition import aq_inner
+from DateTime import DateTime
 from five import grok
 from plone import api
 from string import Template
@@ -38,9 +39,9 @@ def validateAcceptConstraint(value):
     return True
 
 
-def passwordConstraint(value):
+def startdateConstraint(value):
     """Check password length"""
-    if len(value) < 8:
+    if value < DateTime():
         raise Invalid(_(u"Please enter a valid date"))
     return True
 
@@ -145,6 +146,7 @@ class IBooking(form.Schema):
         title=_(u'Course starting date'),
         description=u'',
         required=True,
+        constraint=startdateConstraint,
     )
     duration = schema.TextLine(
         title=_(u'Course duration in weeks'),
