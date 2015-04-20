@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+"""Module providing booking form"""
 import datetime
 import os
 import logging
@@ -17,7 +19,7 @@ from zope.schema.vocabulary import SimpleTerm
 from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.statusmessages.interfaces import IStatusMessage
-
+from zope.interface import Invalid
 from adk.contentpages.sectionfolder import ISectionFolder
 
 from adk.contentpages.mailer import create_plaintext_message
@@ -33,6 +35,13 @@ def validateAcceptConstraint(value):
     """ Check if the terms and conditions have been accepted. """
     if value is not True:
         return False
+    return True
+
+
+def passwordConstraint(value):
+    """Check password length"""
+    if len(value) < 8:
+        raise Invalid(_(u"Please enter a valid date"))
     return True
 
 gender = SimpleVocabulary(
