@@ -14,6 +14,7 @@
 
     <theme href="dist/blog/index.html" css:if-content="body.section-blog" />
     <theme href="dist/bookingform/index.html" css:if-content="body.template-booking-form" />
+    <theme href="dist/bookingform/index.html" css:if-content="body.template-booking-form-success" />
     <theme href="dist/index.html" css:if-content="body.template-contact-view" />
     <theme href="dist/index.html" css:if-content="body.template-imprint-view" />
     <theme href="dist/index.html" css:if-content="body.template-terms-and-conditions" />
@@ -169,7 +170,7 @@
                 <drop css:theme="#app-box-body-03-de" />
             </rules>
         </rules>
-        
+
         <replace css:content-children="#content"
             css:theme-children="#content"
             css:if-not-content="body.portaltype-adk-contentpages-sectionfolder" />
